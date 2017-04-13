@@ -42,16 +42,17 @@
   * Classes \(is there a way to do this without diving into OOP?\)
 
 * Object Oriented JavaScript?? \(Should we even dive into this?\)
+
   * What is Object Oriented Programming?
   * Extending Classes
   * Inheriting Classes
+
 * The Document Object Model
   * Attaching JavaScript to HTML
   * How JavaScript interprets HTML
   * Using JavaScript to Modify HTML
 * Working with Text
   * Template literals
-  * 
 * Using Third-Party Modules?
 * Promises?
 * Other Useful Things to Know

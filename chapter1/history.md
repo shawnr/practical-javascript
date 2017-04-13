@@ -42,3 +42,11 @@
         </answer>
     </question>
 </quiz>
+<div class="no-quiz">
+     <h2>Visit Quiz Online</h2>
+     <p> 
+         The quiz on this page has been removed from your PDF 
+         or ebook format. You may take the quiz by visiting
+         this book online.
+     </p>
+</div>

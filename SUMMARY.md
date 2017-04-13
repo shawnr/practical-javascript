@@ -2,12 +2,15 @@
 
 * [Introduction](README.md)
 * [What Is Programming?](chapter1.md)
+  * History
   * Core Concepts
+  * The Code Landscape
 * What is JavaScript?
 
   * History of JavaScript
   * JavaScript on the Web
   * JavaScript in the Wild
+  * Pros and Cons of JavaScript
 
 * Basic Syntax
 
@@ -24,14 +27,33 @@
   * Objects
 
 * Controlling Logical Flow
+
   * Conditionals
   * For Loops
   * For...Of Loops
   * While Loops
+
 * Organizing Code
-* Object Oriented JavaScript
+  * Functions
+
+  * Scoping
+  * Classes \(is there a way to do this without diving into OOP?\)
+* Object Oriented JavaScript?? \(Should we even dive into this?\)
+  * What is Object Oriented Programming?
+  * Extending Classes
+  * Inheriting Classes
 * The Document Object Model
-* Using Third-Party Modules
+  * Attaching JavaScript to HTML
+  * How JavaScript interprets HTML
+  * Using JavaScript to Modify HTML
+* Working with Text
+  * Template literals
+  * 
+* Using Third-Party Modules?
+* Promises?
+* Other Useful Things to Know
+  * Regex
+  * URL Encoding
 
 
 

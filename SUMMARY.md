@@ -1,8 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-* [What Is Programming?](chapter1.md)
-  * [History](chapter1/history.md)
+* [What Is Programming?](what-is-programming/README.md)
+  * [History](what-is-programming/history.md)
   * Core Concepts
   * The Code Landscape
 * What is JavaScript?

@@ -3,7 +3,7 @@
     "language": "en",
     "links": {
         "sidebar": {
-            "WATS @ SU": "http://webdev.seattleu.edu"
+            //"WATS @ SU": "http://webdev.seattleu.edu"
         }
     },
     "pluginsConfig": {

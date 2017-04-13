@@ -20,7 +20,7 @@ assert(x == 10);
 // The user will be able to evaluate `exposedVar`
 var exposedVar = 3;
 // ... or call `exposedFunction`
-function exposedFunction {
+function exposedFunction() {
     return 3;
 }
 {% endexercise %}

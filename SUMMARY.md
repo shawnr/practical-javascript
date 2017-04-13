@@ -34,10 +34,13 @@
   * While Loops
 
 * Organizing Code
+
   * Functions
 
   * Scoping
+
   * Classes \(is there a way to do this without diving into OOP?\)
+
 * Object Oriented JavaScript?? \(Should we even dive into this?\)
   * What is Object Oriented Programming?
   * Extending Classes

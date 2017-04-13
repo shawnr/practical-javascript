@@ -1,10 +1,27 @@
 {
-    "plugins": ["exercises"],
+    "plugins": ["exercises","quiz"],
     "language": "en",
     "links": {
         "sidebar": {
             "WATS @ SU": "http://webdev.seattleu.edu"
         }
     },
-    "pluginsConfig": {}
+    "pluginsConfig": {
+        "quiz": {
+            "labels": {
+                "check"             : "Check my answers",
+                "showExplanation"   : "Explain", 
+                "showCorrect"       : "Show all",   
+                "explanationHeader" : "Explanation"
+            },
+            "text": {
+                "noChosen"    : "Choose at least one answer",  
+                "incomplete"  : "Some correct answers are missing" 
+            },
+            "buttons": {
+                "showCorrect"       : true, 
+                "showExplanation"   : true 
+            }
+        }
+    }
 }

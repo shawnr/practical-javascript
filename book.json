@@ -1,7 +1,4 @@
 {
-    "gitbook": "2.x.x",
-    "title": "A Practical Introduction to Programming for Novices Using Javascript",
-    "description": "A practical guide for non-CS novices hoping to learn modern JavaScript (ES6).",
     "plugins": [],
     "language": "en",
     "links": {

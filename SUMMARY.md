@@ -16,11 +16,13 @@
   * Variables
 
 * Data Types
+
   * Numbers
   * Strings
   * Booleans
   * Arrays
   * Objects
+
 * Controlling Logical Flow
   * Conditionals
   * For Loops

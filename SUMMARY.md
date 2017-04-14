@@ -41,7 +41,10 @@
   * Template literals
 * Using Third-Party Modules?
 * Promises?
+* Events / Callbacks / etc.
 * Other Useful Things to Know
   * Regex
   * URL Encoding
+
+
 

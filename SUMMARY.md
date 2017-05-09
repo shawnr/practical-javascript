@@ -10,7 +10,7 @@
   * JavaScript on the Web
   * JavaScript in the Wild
   * Pros and Cons of JavaScript
-* Basic Syntax
+* [Basic Syntax](basic-syntax.md)
   * [Comments](comments.md)
   * Brackets and Line Endings
   * Variables

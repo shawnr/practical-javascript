@@ -14,9 +14,21 @@ There are several activities that tend to be lumped together as "programming":
 
 This is, of course, a gross simplification of what it means to "program". In fact, each of these things could be broken out into much longer lists, detailing all the different efforts, techniques, knowledge, and learning that goes into every step of the process. We have the notion of a Software Development Lifecycle that contextualizes these steps into an ongoing process of development, revision, improvement, deployment, and further development.
 
-<p style="text-align: center;">
+<center>
+
 ![Software Development Lifecycle](/images/Software_Development_Lifecycle_Diagram.png)
-</p>
+
+</center>
+
+In the diagram above, **require** refers to the process of deciding _what_ problem will be solved. The goals of the software, the **required functionalities**, are defined. The **design** phase is the process of deciding _how_ the software will be built: What technologies will be used to achieve the required functionalities, and how will everything be put together so the user can actually use the software?
+
+Once those decisions are made, the **implement** phase is when the code is written, media assets are created, and data is populated. Eventually everything is ready and verified for deployment, which puts the software in front of the user. Once implementation is complete, the process begins to **evolve** the software in order to improve its usefulness: better features might be added, the interface may be improved, and other changes may become necessary throughout the lifespan of the software.
+
+We see this process at play in many systems we use on a daily basis. You can probably note updates to software you use in your work or education that has changed in significant ways. The changes may have brought more features, or they may have brought more bugs, but the one thing that is consistent is that software is always changing.
+
+The process of creating software to run on computing devices is often called **programming**, but this is a shorthand. The actual process of creating software involves many, many tasks. One of the core tasks, of course, is **writing code**. For most developers, programming refers to that specific activity of writing code.
+
+As with every other aspect of the Software Development Lifecycle, writing code is an activity that combines many smaller activities. It is the process of writing the instructions for a computer to follow. But it is also the process of describing the relationships between parts of the software, for identifying metadata required to make use of media assets, and for describing data models required to make use of datasets.
 
 
 

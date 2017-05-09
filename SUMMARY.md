@@ -1,7 +1,7 @@
 # Summary
 
-* [Introduction](README.md)
-* [What Is Programming?](what-is-programming/README.md)
+1. [Introduction](README.md)
+2. [What Is Programming?](what-is-programming/README.md)
   * [History](what-is-programming/history.md)
   * [Core Concepts](what-is-programming/core-concepts.md)
   * The Code Landscape

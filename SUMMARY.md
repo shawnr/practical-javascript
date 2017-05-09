@@ -11,7 +11,7 @@
   * JavaScript in the Wild
   * Pros and Cons of JavaScript
 * Basic Syntax
-  * Comments
+  * [Comments](comments.md)
   * Brackets and Line Endings
   * Variables
 * Data Types
@@ -45,6 +45,4 @@
 * Other Useful Things to Know
   * Regex
   * URL Encoding
-
-
 

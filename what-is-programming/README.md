@@ -30,5 +30,6 @@ The process of creating software to run on computing devices is often called **p
 
 As with every other aspect of the Software Development Lifecycle, writing code is an activity that combines many smaller activities. It is the process of writing the instructions for a computer to follow. But it is also the process of describing the relationships between parts of the software, for identifying metadata required to make use of media assets, and for describing data models required to make use of datasets.
 
+Programming, coding, hacking&mdash;whatever you call it, the instructions we write for computers form the muscle of any software application. This is the core of what it means to create content and functionality for computing devices.
 
 

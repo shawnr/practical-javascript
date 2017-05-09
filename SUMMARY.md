@@ -3,8 +3,9 @@
 * [Introduction](README.md)
 * [What Is Programming?](what-is-programming/README.md)
   * [History](what-is-programming/history.md)
-  * Core Concepts
+  * [Core Concepts](what-is-programming/core-concepts.md)
   * The Code Landscape
+  * Section 1 Quiz
 * What is JavaScript?
   * History of JavaScript
   * JavaScript on the Web

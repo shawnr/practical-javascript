@@ -5,7 +5,7 @@
   * [History](what-is-programming/history.md)
   * [Core Concepts](what-is-programming/core-concepts.md)
   * The Code Landscape
-  * Section 1 Quiz
+  * [Section 1 Quiz](what-is-programming/section-1-quiz.md)
 * What is JavaScript?
   * History of JavaScript
   * JavaScript on the Web

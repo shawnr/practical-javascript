@@ -12,5 +12,11 @@ There are several activities that tend to be lumped together as "programming":
 4. We **make sure the software works** and fix the problems we find. Testing software requires a whole unique set of skills and approaches different from creating the software in the first place.
 5. We **deploy** our software somewhere. In software terms, "deployment" means packaging and delivering code, media assets, and data for usage by an end user. (An "end user" is a person who wants to use the software we've created.)
 
-This is, of course, a gross simplification of what it means to "program". In fact, each of these things could be broken out into much longer lists, detailing all the different efforts, techniques, knowledge, and learning that goes into every step of the process. We have the notion of a Software Development Lifecycle that contextualizes these steps into an ongoing process of development
+This is, of course, a gross simplification of what it means to "program". In fact, each of these things could be broken out into much longer lists, detailing all the different efforts, techniques, knowledge, and learning that goes into every step of the process. We have the notion of a Software Development Lifecycle that contextualizes these steps into an ongoing process of development, revision, improvement, deployment, and further development.
+
+<p style="text-align: center;">
+![Software Development Lifecycle](/images/Software_Development_Lifecycle_Diagram.png)
+</p>
+
+
 

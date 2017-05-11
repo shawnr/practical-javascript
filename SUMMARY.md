@@ -1,16 +1,16 @@
 # Summary
 
-1. [1 Introduction](README.md)
-2. [2 What Is Programming?](what-is-programming/README.md)
-  1. [2.1 History](what-is-programming/history.md)
+* [1 Introduction](README.md)
+* [2 What Is Programming?](what-is-programming/README.md)
+  * [2.1 History](what-is-programming/history.md)
   * [2.2 Core Concepts](what-is-programming/core-concepts.md)
-  * [2.3 The Code Landscape]()
+  * 2.3 The Code Landscape
   * [2.4 Section Quiz](what-is-programming/section-1-quiz.md)
-3. [3 What is JavaScript?]()
-  * [3.1 History of JavaScript]()
-  * [3.2 JavaScript on the Web]()
-  * [3.3 JavaScript in the Wild]()
-  * [3.4 Pros and Cons of JavaScript]()
+* [3 What is JavaScript?](3-what-is-javascript.md)
+  * 3.1 History of JavaScript
+  * 3.2 JavaScript on the Web
+  * 3.3 JavaScript in the Wild
+  * 3.4 Pros and Cons of JavaScript
 * [Basic Syntax](basic-syntax.md)
   * [Comments](comments.md)
   * Brackets and Line Endings

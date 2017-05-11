@@ -18,6 +18,10 @@ In the early 20th Century, calculation machines became more and more common. By 
 
 Computers like [ENIAC](https://en.wikipedia.org/wiki/ENIAC), pictured above, were used to perform complex calculations at speeds that had never before been achievable. These machines allowed scientists and engineers to do more than was previously possible.
 
+ENIAC was "programmed" by hard wiring specific circuits in the machine. Other computers of the time also used punch cards or magnetic tape to store their instructions. At this point, the people writing software were using very primitive interfaces (wires or holes in cards) to express their instructions.
+
+## Bigger Aspirations
+
 As soon as computational power began to be created, we started thinking about how we would use these new devices. [Vannevar Bush](https://en.wikipedia.org/wiki/Vannevar_Bush), head of the Office of Scientific Research and Development for the US Government through the 1940s, had come up with the idea of the Memex in the 1930s. In 1945 he published his influential essay ["As We May Think"](https://en.wikipedia.org/wiki/As_We_May_Think), which describes his thoughts about the future of computing, information, and media.
 
 <blockquote>

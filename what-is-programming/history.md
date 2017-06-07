@@ -15,6 +15,7 @@ Later in the 19th Century, Charles Babbage came up with the idea of the [Differe
 In the early 20th Century, calculation machines became more and more common. By the 1940s, electronic machines known as computers were being developed, and these machines could interpret arbitrary instructions to perform different calculations. 
 
 ![Betty Jean Jennings and Fran Bilas operating ENIAC](/images/ENIAC2.gif)
+Photo: Betty Jean Jennings and Fran Bilas operating ENIAC
 
 Computers like [ENIAC](https://en.wikipedia.org/wiki/ENIAC), pictured above, were used to perform complex calculations at speeds that had never before been achievable. These machines allowed scientists and engineers to do more than was previously possible.
 
@@ -54,5 +55,6 @@ Tim Berners-Lee was a researcher at CERN when he came up with the idea of the Wo
 The web quickly became successful, which meant that software became intimately involved in spreading information and conducting business for the first time. The web is a platform that can deliver all sorts of content, but it also provides a bi-directional communication like no other ubiquitous system we've ever seen. The web brought the global network into our homes and changed our lives significantly. 
 
 The impact of software on our day-to-day lives was made even more profound with the advent of smartphones in the mid-2000s. Computing power had advanced sufficiently to give everyone a pocket-size device that rivaled the supercomputers of a decade prior. For the first time powerful software could move around with us and leverage the freedom and expanse of the entire world to bring us new and exciting capabilities.
+
 
 

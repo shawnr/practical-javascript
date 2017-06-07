@@ -1,8 +1,8 @@
 #What is Programming?
 
-Programming is an umbrella term that we use to mean all of the activities related to creating software that runs on computer hardware. That's a very general description of what programming is, but it's tough to be much more specific and also accurate. The truth is that programming is different depending on what you're trying to do. In some cases, it's extremely difficult, uses obscure markings, and is almost incomprehensible to all but the most expert humans. In other cases, programming is straightforward sets of instructions that use almost-human language to describe tasks that make sense even to people with no special training.
+Programming is an umbrella term that we use to mean all of the activities related to creating software that runs on computer hardware. That's a very general description of what programming is, but it's tough to be much more specific and also accurate. The truth is that programming is different depending on what you're trying to do. In some cases, "programming" means writing code that is extremely difficult, uses obscure markings, and is almost incomprehensible to all but the most expert humans. In other cases, "programming" involves creating straightforward sets of instructions that use almost-human language to describe tasks that make sense even to people with no special training. Sometimes "programming" involves writing small scripts to connect discrete tools or applications in order to accomplish a set of goals. Other times "programming" means writing an entire application in a self-contained environment with well-defined boundaries.
 
-Mostly, programming falls somewhere between these two extremes. 
+Mostly, programming falls somewhere between these extremes. 
 
 There are several activities that tend to be lumped together as "programming":
 

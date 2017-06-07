@@ -14,11 +14,7 @@ There are several activities that tend to be lumped together as "programming":
 
 This is, of course, a gross simplification of what it means to "program". In fact, each of these things could be broken out into much longer lists, detailing all the different efforts, techniques, knowledge, and learning that goes into every step of the process. We have the notion of a Software Development Lifecycle that contextualizes these steps into an ongoing process of development, revision, improvement, deployment, and further development.
 
-<center>
-
 ![Software Development Lifecycle](./img/Software_Development_Lifecycle_Diagram.png)
-
-</center>
 
 In the diagram above, **require** refers to the process of deciding _what_ problem will be solved. The goals of the software, the **required functionalities**, are defined. The **design** phase is the process of deciding _how_ the software will be built: What technologies will be used to achieve the required functionalities, and how will everything be put together so the user can actually use the software?
 

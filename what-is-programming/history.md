@@ -46,4 +46,13 @@ As computers have become more and more ubiquitous, so has software. We now live 
 
 We have created platforms for all different kinds of software. From games and virtual reality experiences that require monumental computing power to smartphones and web-based systems that operate on minimal processing performance, software is everywhere.
 
-With the advent of the World Wide Web, software became intimately involved in spreading information and conducting business. The web is a platform that can deliver all sorts of content, and which provides a bi-directional communication like no other ubiquitous system we've ever seen. The web brought the global network into our homes and changed our lives significantly. 
+![Tim Berners-Lee's Computer at CERN](/images/tbl_next.jpg)
+Photo: [Tim Berners-Lee's Computer at CERN](https://upload.wikimedia.org/wikipedia/commons/1/11/Tim_Berners-Lee%27s_computer_at_CERN.jpg).
+
+Tim Berners-Lee was a researcher at CERN when he came up with the idea of the World Wide Web. He first built an internal information management system for his colleagues, but quickly decided to make the project open source and to encourage others to use it. The notion of the World Wide Web and HyperText Transport Protocol (HTTP) caught on, and websites proliferated all over the world.
+
+The web quickly became successful, which meant that software became intimately involved in spreading information and conducting business for the first time. The web is a platform that can deliver all sorts of content, but it also provides a bi-directional communication like no other ubiquitous system we've ever seen. The web brought the global network into our homes and changed our lives significantly. 
+
+The impact of software on our day-to-day lives was made even more profound with the advent of smartphones in the mid-2000s. Computing power had advanced sufficiently to give everyone a pocket-size device that rivaled the supercomputers of a decade prior. For the first time powerful software could move around with us and leverage the freedom and expanse of the entire world to bring us new and exciting capabilities.
+
+

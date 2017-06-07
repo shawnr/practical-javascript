@@ -34,4 +34,16 @@ In the essay, Bush describes a desk that can access all of the information in th
 
 Bush even imagines a method of linking documents and describing relationships between discrete pieces of information. He wants people to be able to define paths through information that can be shared with others in order to bring together unique realizations or understanding.
 
-That last part sounds a lot like our World Wide Web, and that is not by accident.
+That last part sounds a lot like our World Wide Web, and that is not by accident. Creators of technologies like Hypertext and the Web were inspired by Bush's writing and worked to bring their own versions of his ideas to fruition.
+
+Throughout the late 20th Century, computing hardware continued to develop at incredibly fast rates. Processing power grew exponentially, hardware size shrank considerably, and computers began to proliferate outside of dedicated server farms and research facilities.
+
+By the end of the millennium, computers had permeated every type of business and almost every corner of the globe. Most businesses were connected to international computer networks, and tools like the World Wide Web were quickly established thanks to the rise of home computing. 
+
+## The Modern Era
+
+As computers have become more and more ubiquitous, so has software. We now live in a world where in many places it's impossible to obtain healthcare, register for college, or pay our taxes without a computer. Of course, all of these functions that computers perform are thanks to the software that computers can run.
+
+We have created platforms for all different kinds of software. From games and virtual reality experiences that require monumental computing power to smartphones and web-based systems that operate on minimal processing performance, software is everywhere.
+
+With the advent of the World Wide Web, software became intimately involved in spreading information and conducting business. The web is a platform that can deliver all sorts of content, and which provides a bi-directional communication like no other ubiquitous system we've ever seen. The web brought the global network into our homes and changed our lives significantly. 

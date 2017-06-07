@@ -16,7 +16,7 @@ This is, of course, a gross simplification of what it means to "program". In fac
 
 <center>
 
-![Software Development Lifecycle](/images/Software_Development_Lifecycle_Diagram.png)
+![Software Development Lifecycle](../images/Software_Development_Lifecycle_Diagram.png)
 
 </center>
 

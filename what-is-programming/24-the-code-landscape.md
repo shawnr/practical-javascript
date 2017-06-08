@@ -68,6 +68,9 @@ Scientists and researchers collect and analyze data using software tools. They r
 
 ## Hardware
 
+There is a huge rise in the creation of additional hardware that uses computerized interfaces. The "Internet of Things" is a popular subject, and we have seen network connected versions of everything from thermostats to refrigerators. In automobiles we see dashboards that are powered by network-connected computers. Children's toys possess intense amounts of sensors and software-powered behaviors. Autopilot software for drones has become so reliable that we can now have flying robots film our outdoor adventures. All of this innovation and development makes use of a broad range of languages and technologies, but these are some common languages used in modern hardware:
+
 * C++
 * Java
 * Python
+* JavaScript

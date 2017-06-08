@@ -48,3 +48,9 @@ Dynamic languages allow developers to alter the type of a variable in mid-usage,
 
 There are many [ways to group programming languages](https://en.wikipedia.org/wiki/History_of_programming_languages), and the more we learn about programming languages then the easier it is to appreciate the differences between languages. Some differences, such as "functional programming" or "object oriented programming" (OOP) are difficult to grasp unless you know something about how languages work. For the sake of this historical introduction I'm going to skip over all of these very interesting and super useful languages and what makes them unique. Nonetheless, you may be curious to look into them more deeply.
 
+* [Scala (functional)](https://en.wikipedia.org/wiki/Scala_(programming_language))
+* [Clojure (functional)](https://en.wikipedia.org/wiki/Clojure)
+* [Haskell (strongly typed)](https://en.wikipedia.org/wiki/Haskell_(programming_language))
+* [R (statistical programming)](https://en.wikipedia.org/wiki/R_(programming_language))
+* [Lisp (lots of parentheses)](https://en.wikipedia.org/wiki/Lisp_(programming_language))
+

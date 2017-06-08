@@ -21,7 +21,7 @@ Writing Assembly code is so arduous that developers almost instantly wished for 
 
 Although compiled languages still thrive in the modern software ecosystem, there has been a distinct rise in the past few decades of "scripted" programming languages. These languages are "interpreted" or "compiled" at runtime, skipping the step of compilation and the creation of a binary file. This is handy for developers who want to see their code execute as quickly as possible during development, and thanks to the strength of modern computing hardware these languages are able to perform well for their tasks. Many websites are built using scripted languages (Facebook, Instagram, etc.), and many applications use embedded scripted language interpreters to allow users to enhance their work (such as Flash, or World of Warcraft). Scripted languages are some of the most popular in the world right now.
 
-* [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+* [Python](https://en.wikipedia.org/wiki/Python_%28programming_language%29)
 * [PHP](https://en.wikipedia.org/wiki/PHP)
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 * [Ruby](https://en.wikipedia.org/wiki/Ruby_(programming_language))

@@ -23,7 +23,7 @@ In order to create either algorithms or instructions, software developers make u
 ## Syntax
 In all programming languages, there is a definition of "[syntax](https://en.wikipedia.org/wiki/Syntax_%28programming_languages%29)". The syntax of a language determines the specific way lines of code must be written. Many languages require a semicolon (`;`) to end each line. Many languages use curly braces (`{` and `}`) to denote the contents of a function or loop.
 
-Each language has a different syntax, but they all enforce their syntax, often ruthlessly. In most programming languages, a "syntax error" will break the entire application. This is often a source of frustration for  
+Each language has a different syntax, but they all enforce their syntax, often ruthlessly. In most programming languages, a "syntax error" will break the entire application. This is often a source of frustration for new developers, but over time we get better at parsing our own code and seeing that we have missed a comma (or included an extra comma). It often seems frustrating from a human perspective to have a misplaced comma or semicolon break everything in our software (after all, in real life we can usually read past bad punctuation with little impact on our understanding). But our computing hardware has no notion of nuance or contextual interpretation (unless we've programmed it that way). It's impossible for our programming language interpreter to "figure out" what we meant, and, in the end, we don't want our interpreter to "guess" about too much. We want reliable execution of our code that is the same every time. That requires us to be as attentive to detail as the machine.
 
 ## Variables and Data Types
 

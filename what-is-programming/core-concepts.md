@@ -105,9 +105,93 @@ var myObject = {
 
 In order to access the values within the Object, we would reference the attributes by name: `myObject.name` equals `'Grace Hopper'`. `myObject.rank` equals `'Rear Admiral'`. It's interesting to note that the value of `myObject.favoriteTech` is an array. Object attributes may contain Arrays. Likewise, Arrays may contain items that are Objects.
 
-## Logical Flow Control 
+## Controlling Logical Flow 
+
+In order to define the instructions and algorithms of an application, it's important to control the way code executes--the "flow" of the program. We organize code into different sections so that we can make good use of the different pieces of logic we have created. As a user interacts with our software, it's important to move through the code in ways to support our desired outcomes.
+
+For example, if the user wishes to login, we must move the user to the login page/screen and then execute the login process for the user: take in their login credentials, process that, and provide a response based on our analysis of the information they have supplied. 
+
+In order to make this happen we primarily use three different kinds of structures: functions, conditionals, and loops.
+
+### Functions
+
+Most programming languages allow you to define **[functions](https://en.wikipedia.org/wiki/Subroutine)** (sometimes called "subroutines"). These are contained lines of code that are typically dedicated to just one purpose. Functions are an abstraction that is typically used to encapsulate some specific logic that can be called from multiple places within the software code. 
+
+For example, let's assume we are writing an application in JavaScript that requires us to take mixed-case strings and make them entirely uppercase. We can define a function like this:
+
+```js
+function makeUppercase(text){
+    return text.toUppercase();
+}
+```
+
+The function defined above is called `makeUppercase` and it expects to receive a value that it labels `text`. The function then returns the results of the `text.toUppercase()` function, which is a built-in function for strings in JavaScript (and part of the value of having data types). 
+
+To use this function we might write:
+
+```js
+var mixedText = "Hello, world!";
+var uppercaseText = makeUppercase(mixedText);
+console.log(uppercaseText); // Would print "HELLO, WORLD!" in the console.
+```
+
+This is a mundane example, but functions are used extensively in most types of programming languages and software projects. 
 
 ### Conditionals
 
+As we read above, Boolean data types are useful for managing logical flow. We use conditionals to evaluate Boolean and other variables and then execute code accordingly. In most languages conditionals are structured as `IF`, `THEN`, `ELSE` statements. These statements cause the programming language interpreter to evaluate our statements and then determine which statement is `true`. The statement that is `true` is the one that gets executed. 
+
+Here is an example (again, in JavaScript) from an imaginary web application:
+
+```js
+if (!user.logged_in){
+    // User is not yet logged in
+    // Redirect to login page
+    app.location.go('/login');
+} else if (user.role === 'staff') {
+    // User is logged in and their role is staff
+    // Redirect to admin homepage
+    app.location.go('/admin');
+} else {
+    // User is logged in, but is not staff
+    // Redirect to user homepage
+    app.location.go('/home')
+}
+```
+
+Conditional statements are able to be strung together. In the example above, we can see that the conditional check would progress from top to bottom, and the first condition that results in a `true` value would be executed. The first check determines whether the user is logged in, and if they are **not** logged in then it will redirect them to a login page. If the user **is** logged in, then it would check the user's role. If the role is `'staff'`, then the user is redirected to the admin dashboard. However, if the user is not a staff member, then they are redirected to their user homepage.
+
+This is just an imaginary example, but it's close to what we actually do in web apps to manage where users should go when they arrive on the site. Much of our efforts as software developers are put towards setting up the ability to write these conditionals so that we can determine what our app should do next. Conditionals are used to determine almost every decision our applications make.
+
 ### Loops
 
+We have reviewed the data structures Object and Array, which are used to store and relate complex information. When working with these structures, or just when executing functions in general, it's often useful to be able to **loop** through tasks. For example, if I have a large Array containing information about every book about a topic, then I might want to loop through those books and display information about each one for the user.
+
+In most languages we have two kinds of loops: **[for](https://en.wikipedia.org/wiki/For_loop)** and **[while](https://en.wikipedia.org/wiki/While_loop)**. The `for` loop is used to cycle through all of the data stored in a data structure (usually an Array). They are often used to output the results of some data.
+
+Example `for` loop:
+
+```js
+for (i=0; i<=myArray.length; i++){
+    // Do something with data
+    console.log(myArray[i]);
+}
+```
+
+The `for` loop above goes through the Array `myArray` and outputs the value of each item to the console. The syntax for this loop varies depending on language, and many languages have adopted an easier `foreach` loop syntax that essentially performs the same function.
+
+The `while` loop executes as long as some condition is true. An example would look like:
+
+```js
+var counter = 0;
+while(counter < 100){
+    // this code will execute until the value of counter is 100
+    counter = counter + 1;
+}
+```
+
+In the example above, the `while` loop continues until the counter reaches a certain number. In other cases, a `while` loop may be watching for another value to change within the system, such as when a process has finished and data can be updated. In general, `while` loops are used less often and are seen as being a little more risky because it's possible to create situations where the `while` loop might run forever (which breaks our applications).
+
+## Conclusion
+
+This is just a brief, general overview of some core concepts that tend to exist across programming languages. The rest of this book will go much deeper into the ways these concepts are expressed in JavaScript. 

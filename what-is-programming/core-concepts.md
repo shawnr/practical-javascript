@@ -18,4 +18,30 @@ It is useful to understand that as we write code we are doing different things a
 
 At other times, we are writing instructions that are designed to move the user through the application, present different features to the user, and move data between all of the components of the application. This kind of coding is similar to writing algorithms, but it has different constraints and criteria for success.
 
+In order to create either algorithms or instructions, software developers make use of a common set of concepts that exist across most programming languages. These concepts, which are built into the programming languages themselves, allow for data to be manipulated, logic to be described and enforced, and code to be interpreted by the computing hardware.
+
+## Syntax
+In all programming languages, there is a definition of "[syntax](https://en.wikipedia.org/wiki/Syntax_%28programming_languages%29)". The syntax of a language determines the specific way lines of code must be written. Many languages require a semicolon (`;`) to end each line. Many languages use curly braces (`{` and `}`) to denote the contents of a function or loop.
+
+Each language has a different syntax, but they all enforce their syntax, often ruthlessly. In most programming languages, a "syntax error" will break the entire application. This is often a source of frustration for  
+
+## Variables and Data Types
+
+### Strings
+
+### Integers
+
+### Decimals
+
+### Boolean
+
+### Objects
+
+### Arrays
+
+## Logical Flow Control 
+
+### Conditionals
+
+### Loops
 

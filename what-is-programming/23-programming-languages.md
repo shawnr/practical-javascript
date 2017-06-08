@@ -1,5 +1,4 @@
-#
-Programming Languages
+#Programming Languages
 
 Programming languages have developed alongside computing hardware in order to facilitate different approaches to writing software. Sometimes these languages were constrained by the capabilities of their target hardware. Other times, these languages were tailored to specific types of calculations or algorithms in order to more easily accomplish their users' goals. This book deals primarily with JavaScript, but the following list will help you gain an understanding of some of the many types of programming languages. Please note that this list is in no way exhaustive.
 

@@ -63,11 +63,47 @@ It's very useful to note that although these numbers are called "Decimal" in Jav
 
 ### Boolean
 
+Within software development, we often talk about the "binary" nature of computer hardware. All computer hardware is, ultimately, comprised of very tiny switches. Billions of switches are etched onto a chip, and all of our programming logic is reduced to an "on" or "off" signal for each switch. Turning these switches on and off allows different actions to be executed by the hardware.
+
+In Mathematics, [Boolean Algebra](https://en.wikipedia.org/wiki/Boolean_algebra) is the practice of using logical deduction to determine _true_ and _false_ values within a system. We often do this kind of work in our code, and in order to support these calculations, we have the **[Boolean](https://en.wikipedia.org/wiki/Boolean_data_type)** data type.
+
+For example, in a software application like Facebook, it's crucial to know whether the user is logged in or not. This might involve making several checks, and with each check a boolean value might be recorded. In JavaScript, that could look something like this:
+
+`user.loggedIn = true;`
+
+The two values for a boolean data type within JavaScript are `true` and `false`. We use boolean variables to control logical flow throughout applications in most programming languages.
+
 ## Data Structures
+
+In addition to variables, software developers make use of **[data structures](https://en.wikipedia.org/wiki/Data_structure)**. Data structures are ways of containing data that make it more convenient for the developer to work with that data. Data structures often make it more efficient for the computing hardware to handle the data being processed, so using the correct data structure for the task is a key factor in writing performant applications.
+
+Within JavaScript there are two data structures that are similar to structures in many other programming languages: objects and arrays.
+
+### Arrays
+
+**Arrays** are sometimes known as "lists" or "indexed arrays" in other programming languages. An Array contains an _indexed_ list of items. The items can be of any data type, and they can be referenced using their numerical index. For example, here is an Array assignment in JavaScript:
+
+`var myArray = ['hello', 'world', 42];`
+
+The example Array above has three items and they can be accessed using their numerical index. The value of `myArray[2]` is `42`. The value of `myArray[0]` is `'hello'`.
+
+Arrays are very useful for storing lists of values.
 
 ### Objects
 
-### Arrays
+**[Objects](https://www.w3.org/wiki/Objects_in_JavaScript)** are foundational in JavaScript, and they are very common in other languages. In other programming languages they are sometimes known as "hashes" or "dictionaries" due to the way they work. 
+
+An object is defined with specific _attributes_. These attributes are accessed by name. The [JavaScript Object Notation](http://www.json.org/) (JSON) is used across many platforms and languages because of its clean, simple syntax. Here is what a JavaScript Object definition looks like:
+
+```js
+var myObject = {
+    name: 'Grace Hopper',
+    rank: 'Rear Admiral',
+    favoriteTech: ['COBOL', 'compilers']
+};
+```
+
+In order to access the values within the Object, we would reference the attributes by name: `myObject.name` equals `'Grace Hopper'`. `myObject.rank` equals `'Rear Admiral'`. It's interesting to note that the value of `myObject.favoriteTech` is an array. Object attributes may contain Arrays. Likewise, Arrays may contain items that are Objects.
 
 ## Logical Flow Control 
 

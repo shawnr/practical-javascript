@@ -15,7 +15,7 @@ Later in the 19th Century, Charles Babbage came up with the idea of the [Differe
 In the early 20th Century, calculation machines became more and more common. By the 1940s, electronic machines known as computers were being developed, and these machines could interpret arbitrary instructions to perform different calculations. 
 
 ![Betty Jean Jennings and Fran Bilas operating ENIAC](/images/ENIAC2.gif)
-Photo: Betty Jean Jennings and Fran Bilas operating ENIAC
+<br>Photo: Betty Jean Jennings and Fran Bilas operating ENIAC
 
 Computers like [ENIAC](https://en.wikipedia.org/wiki/ENIAC), pictured above, were used to perform complex calculations at speeds that had never before been achievable. These machines allowed scientists and engineers to do more than was previously possible.
 
@@ -48,7 +48,7 @@ As computers have become more and more ubiquitous, so has software. We now live 
 We have created platforms for all different kinds of software. From games and virtual reality experiences that require monumental computing power to smartphones and web-based systems that operate on minimal processing performance, software is everywhere.
 
 ![Tim Berners-Lee's Computer at CERN](/images/tbl_next.jpg)
-Photo: [Tim Berners-Lee's Computer at CERN](https://upload.wikimedia.org/wikipedia/commons/1/11/Tim_Berners-Lee%27s_computer_at_CERN.jpg).
+<br>Photo: [Tim Berners-Lee's Computer at CERN](https://upload.wikimedia.org/wikipedia/commons/1/11/Tim_Berners-Lee%27s_computer_at_CERN.jpg).
 
 Tim Berners-Lee was a researcher at CERN when he came up with the idea of the World Wide Web. He first built an internal information management system for his colleagues, but quickly decided to make the project open source and to encourage others to use it. The notion of the World Wide Web and HyperText Transport Protocol (HTTP) caught on, and websites proliferated all over the world.
 

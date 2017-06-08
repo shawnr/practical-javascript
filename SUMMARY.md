@@ -5,7 +5,7 @@
   * [2.1 History](what-is-programming/history.md)
   * [2.2 Programming Languages](what-is-programming/23-programming-languages.md)
   * [2.3 Core Concepts](what-is-programming/core-concepts.md)
-  * 2.4 The Code Landscape
+  * [2.4 The Code Landscape](what-is-programming/24-the-code-landscape.md)
   * [2.5 Section Quiz](what-is-programming/section-1-quiz.md)
 * [3 What is JavaScript?](3-what-is-javascript.md)
   * 3.1 History of JavaScript

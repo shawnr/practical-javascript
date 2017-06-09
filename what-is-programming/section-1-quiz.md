@@ -113,7 +113,7 @@ Please enjoy this self-check quiz to help you identify key concepts, points, and
         <answer>Box</answer>
         <explanation>JavaScript uses Arrays and Objects as primary data structures.</explanation>
     </question>  
-    <question>
+    <question multiple>
         <p>Which programming languages are used in web development? (select all that apply)</p>
         <answer correct>PHP</answer>
         <answer correct>Python</answer>

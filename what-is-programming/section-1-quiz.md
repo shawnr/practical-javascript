@@ -17,34 +17,70 @@ Please enjoy this self-check quiz to help you identify key concepts, points, and
         <answer>Katherine Johnson</answer>
         <answer>Vannevar Bush</answer>
         <answer correct>Tim Berners-Lee</answer>
+        <explanation>Tim Berners-Lee first proposed the World Wide Web in 1991 while he was working as a researcher at CERN.</explanation>
     </question>
     <question>
-        <p>This is multiple dropdown quiz, in each dropdown select a correct number corresponding to the dropdown's order</p>
-        <answer>
-            <option correct>First</option>
-            <option>Second</option>
-            <option>Third</option>
-            <option>Fourth</option>
-        </answer>
-        <answer>
-            <option>First</option>
-            <option correct>Second</option>
-            <option>Third</option>
-            <option>Fourth</option>
-        </answer>
-        <answer>
-            <option>First</option>
-            <option>Second</option>
-            <option correct>Third</option>
-            <option>Fourth</option>
-        </answer>
-        <answer>
-            <option>First</option>
-            <option>Second</option>
-            <option>Third</option>
-            <option correct>Fourth</option>
-        </answer>
+        <p>What was the name Vannevar Bush gave the device he envisioned to allow us to browse vast repositories of information and media?</p>
+        <answer>The Browser</answer>
+        <answer correct>The Memex</answer>
+        <answer>Jacquard's Loom</answer>
+        <answer>Computer</answer>
+        <explanation>Vannevar Bush described the "Memex" as a desk that could browse through and display information.</explanation>
     </question>
+    <question>
+        <p>In a "typed" programming language, developers do not need to declare the data type of a variable.</p>
+        <answer>True</answer>
+        <answer correct>False</answer>
+        <explanation>In a "typed" programming language, developers must always specify the type of a variable when they declare it.</explanation>
+    </question>
+    <question multiple>
+        <p>Which of the following programming languages are compiled?</p>
+        <answer correct>C++</answer>
+        <answer correct>COBOL</answer>
+        <answer>Python</answer>
+        <answer>PHP</answer>
+        <explanation>C++ and COBOL both use compilers to generate binary files that can be executed by a computer.</explanation>
+    </question>
+    <question>
+        <p>The lowest-level programming language is called:</p>
+        <answer>Basic</answer>
+        <answer correct>Assembly</answer>
+        <answer>Binary</answer>
+        <answer>C</answer>
+        <explanation>Assembly is the lowest-level programming language.</explanation>
+    </question>
+    <question>
+        <p>What do we call a "self-contained sequence of actions to be performed" in a program?</p>
+        <answer>instructions</answer>
+        <answer>function</answer>
+        <answer correct>algorithm</answer>
+        <answer>proces</answer>
+        <explanation>An "algorithm" is a self-contained sequence of actions.</explanation>
+    </question>
+    <question>
+        <p>What do we call words that developers cannot use to name variables, functions, etc. in their code?</p>
+        <answer correct>reserved words</answer>
+        <answer>keywords</answer>
+        <answer>special words</answer>
+        <answer>singletons</answer>
+        <explanation>"Reserved words" are used by the programming language and cannot be used to name variables, functions, etc.</explanation>
+    </question>
+    <question>
+        <p>What text?</p>
+        <answer>text</answer>
+        <answer correct>text</answer>
+        <answer>text</answer>
+        <answer>text</answer>
+        <explanation>text</explanation>
+    </question>
+    <question>
+        <p>What text?</p>
+        <answer>text</answer>
+        <answer correct>text</answer>
+        <answer>text</answer>
+        <answer>text</answer>
+        <explanation>text</explanation>
+    </question>    
 </quiz>
 
 <div class="no-quiz">

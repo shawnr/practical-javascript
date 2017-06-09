@@ -2,7 +2,7 @@
 
 Please enjoy this self-check quiz to help you identify key concepts, points, and techniques discussed in this section.
 
-<quiz name="Gitbook Quiz">
+<quiz name="What is Programming? Section Quiz">
     <question multiple>
         <p>What is gitbook used for?</p>
         <answer correct>To read books</answer>

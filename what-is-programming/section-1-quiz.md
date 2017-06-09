@@ -3,17 +3,20 @@
 Please enjoy this self-check quiz to help you identify key concepts, points, and techniques discussed in this section.
 
 <quiz name="What is Programming? Section Quiz">
-    <question multiple>
-        <p>What is gitbook used for?</p>
-        <answer correct>To read books</answer>
-        <answer>To book hotel named git</answer>
-        <answer correct>To write and publish beautiful books</answer>
-        <explanation>GitBook.com lets you write, publish and manage your books online as a service.</explanation>
+    <question>
+        <p>The process of conceiving, creating, and improving software is called what?</p>
+        <answer>Software Design Pattern</answer>
+        <answer>Application Build Cycle</answer>
+        <answer correct>Software Development Life Cycle</answer>
+        <answer>Software Engineering Process</answer>
+        <explanation>The "Software Development Life Cycle" refers to the ongoing process of creating and improving software.</explanation>
     </question>
     <question>
-        <p>Is it quiz?</p>
-        <answer correct>Yes</answer>
-        <answer>No</answer>
+        <p>Who proposed the World Wide Web?</p>
+        <answer>Brendan Eich</answer>
+        <answer>Katherine Johnson</answer>
+        <answer>Vannevar Bush</answer>
+        <answer correct>Tim Berners-Lee</answer>
     </question>
     <question>
         <p>This is multiple dropdown quiz, in each dropdown select a correct number corresponding to the dropdown's order</p>

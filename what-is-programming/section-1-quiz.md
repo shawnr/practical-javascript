@@ -1,8 +1,8 @@
-# Section 1 Quiz
+# Section 1 Quiz: What is Programming?
 
 Please enjoy this self-check quiz to help you identify key concepts, points, and techniques discussed in this section.
 
-<quiz name="What is Programming? Section Quiz">
+<quiz name="">
     <question>
         <p>The process of conceiving, creating, and improving software is called what?</p>
         <answer>Software Design Pattern</answer>

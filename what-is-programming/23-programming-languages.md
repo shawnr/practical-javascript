@@ -1,6 +1,8 @@
 #Programming Languages
 
-Programming languages have developed alongside computing hardware in order to facilitate different approaches to writing software. Sometimes these languages were constrained by the capabilities of their target hardware. Other times, these languages were tailored to specific types of calculations or algorithms in order to more easily accomplish their users' goals. This book deals primarily with JavaScript, but the following list will help you gain an understanding of some of the many types of programming languages. Please note that this list is in no way exhaustive.
+Programming languages have developed alongside computing hardware in order to facilitate different approaches to writing software. What is a programming language, exactly? A programming language is a "notation for writing programs, which are specifications of a computation or algorithm" ([Wikipedia](https://en.wikipedia.org/wiki/Programming_language)). It is the _way_ we tell the computing hardware what we want it to do.
+
+Sometimes programming languages were constrained by the capabilities of their target hardware. Other times, these languages were tailored to specific types of calculations or algorithms in order to more easily accomplish their users' goals. This book deals primarily with JavaScript, but the following list will help you gain an understanding of some of the many types of programming languages. Please note that this list is in no way exhaustive.
 
 
 ## Assembly

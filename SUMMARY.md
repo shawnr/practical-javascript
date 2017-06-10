@@ -48,4 +48,5 @@
   * Regex
   * URL Encoding
 * Appendix A: Resources for Learning More About JavaScript
+* [Glossary](/GLOSSARY.md)
 

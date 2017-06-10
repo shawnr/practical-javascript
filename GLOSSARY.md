@@ -13,9 +13,6 @@ A file that can be run directly on the computing hardware without requiring any 
 ## interpreter
 An application used to convert source code in a given programming language into machine instructions that can be executed by the computing hardware.
 
-## programming language
-A notation for writing programs, which are specifications of a computation or algorithm.
-
 ## scripted
 A description of a programming language that uses a runtime interpreter to convert source code into an executable file.
 

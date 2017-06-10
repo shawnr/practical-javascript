@@ -14,7 +14,7 @@
   * [3.4 Pros and Cons of JavaScript](what-is-javascript/34-pros-and-cons-of-javascript.md)
 * [Basic Syntax](basic-syntax.md)
   * [Comments](comments.md)
-  * Brackets and Line Endings
+  * [Brackets and Line Endings](brackets-and-line-endings.md)
   * Variables
 * Data Types
   * Numbers

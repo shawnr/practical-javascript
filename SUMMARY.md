@@ -8,7 +8,7 @@
   * [2.4 The Code Landscape](what-is-programming/24-the-code-landscape.md)
   * [2.5 Section Quiz](what-is-programming/section-1-quiz.md)
 * [3 What is JavaScript?](what-is-javascript/README.md)
-  * 3.1 History of JavaScript
+  * [3.1 History of JavaScript](what-is-javascript/31-history-of-javascript.md)
   * 3.2 JavaScript on the Web
   * 3.3 JavaScript in the Wild
   * 3.4 Pros and Cons of JavaScript

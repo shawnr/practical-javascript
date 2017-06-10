@@ -7,7 +7,7 @@ An application used to convert source code in a given programming language into 
 ## dynamic
 A description of a programming language that infers or determines the datatypes of variables without requiring explicit declaration.
 
-## executable binary
+## executable file
 A file that can be run directly on the computing hardware without requiring any interpretation or compilation at runtime.
 
 ## interpreter

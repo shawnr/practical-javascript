@@ -2,7 +2,7 @@
 
 JavaScript is a **[programming language](https://en.wikipedia.org/wiki/Programming_language)**. It is defined by a standards organization called Ecma International, and that organization stewards the definition of the language and the efforts to keep it updated. In Ecma International standards, JavaScript is called ECMAScript, but in day-to-day usage the term JavaScript remains more popular. For our purposes in this book, the terms JavaScript and ECMAScript are synonymous.
 
-JavaScript is a **dynamic** and **scripted** language. The _dynamic_ aspect of the language means that variable datatypes are _inferred_ by the JavaScript interpreter. The _scripted_ aspect of the language refers to the fact that no binary files are created and stored (or "compiled" from the source code) in order to run JavaScript programs. There is never an "executable" created for a JavaScript application<sup>*</sup>. 
+JavaScript is a dynamic and scripted language. The dynamic aspect of the language means that variable datatypes are _inferred_ by the JavaScript interpreter. The scripted aspect of the language refers to the fact that _no binary files are created and stored_ (or "compiled" from the source code) in order to run JavaScript programs. There is never an "executable" created for a JavaScript application<sup>*</sup>. 
 
 JavaScript is also the official programming language supported in web browsers according to W3C specifications for how the World Wide Web should operate. There are no other programming languages that can be interpreted, by default, by all of the different web browsers. JavaScript is used across the web to bring websites to life and provide complex, engaging interactions to users. 
 

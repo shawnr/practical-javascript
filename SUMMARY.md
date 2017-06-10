@@ -31,7 +31,7 @@
   * Functions
   * Scoping
   * Classes \(is there a way to do this without diving into OOP?\)
-* Object Oriented JavaScript?? \(Should we even dive into this?\)
+* Object Oriented JavaScript
   * What is Object Oriented Programming?
   * Extending Classes
   * Inheriting Classes
@@ -39,7 +39,7 @@
   * Attaching JavaScript to HTML
   * How JavaScript interprets HTML
   * Using JavaScript to Modify HTML
-* Working with Text
+* Working with Templates
   * Template literals
 * Using Third-Party Modules?
 * Promises?
@@ -47,4 +47,5 @@
 * Other Useful Things to Know
   * Regex
   * URL Encoding
+* Appendix A: Resources for Learning More About JavaScript
 

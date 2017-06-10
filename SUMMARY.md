@@ -10,7 +10,7 @@
 * [3 What is JavaScript?](what-is-javascript/README.md)
   * [3.1 History of JavaScript](what-is-javascript/31-history-of-javascript.md)
   * [3.2 JavaScript on the Web](what-is-javascript/32-javascript-on-the-web.md)
-  * 3.3 JavaScript in the Wild
+  * [3.3 JavaScript in the Wild](what-is-javascript/33-javascript-in-the-wild.md)
   * 3.4 Pros and Cons of JavaScript
 * [Basic Syntax](basic-syntax.md)
   * [Comments](comments.md)

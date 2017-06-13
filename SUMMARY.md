@@ -34,7 +34,6 @@
 * Organizing Code
   * Functions
   * Scoping
-  * Classes \(is there a way to do this without diving into OOP?\)
 * Object Oriented JavaScript
   * What is Object Oriented Programming?
   * Extending Classes

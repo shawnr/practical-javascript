@@ -13,6 +13,7 @@
   * [3.3 JavaScript in the Wild](what-is-javascript/33-javascript-in-the-wild.md)
   * [3.4 Pros and Cons of JavaScript](what-is-javascript/34-pros-and-cons-of-javascript.md)
 * [Basic Syntax](basic-syntax.md)
+  * Adding JavaScript to an HTML File
   * [Comments](comments.md)
   * Operators
   * [Brackets and Line Endings](brackets-and-line-endings.md)
@@ -45,9 +46,6 @@
 * Handling Events
   * Adding Event Listeners
   * Responding to Events
-* Other Useful Things to Know
-  * Regex
-  * URL Encoding
 * Appendix A: Resources for Learning More About JavaScript
 * [Glossary](/GLOSSARY.md)
 

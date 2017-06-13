@@ -14,6 +14,7 @@
   * [3.4 Pros and Cons of JavaScript](what-is-javascript/34-pros-and-cons-of-javascript.md)
 * [Basic Syntax](basic-syntax.md)
   * [Comments](comments.md)
+  * Operators
   * [Brackets and Line Endings](brackets-and-line-endings.md)
   * Variables
 * Data Types
@@ -22,6 +23,9 @@
   * Booleans
   * Arrays
   * Objects
+* Working with Text
+  * String Basics
+  * Template Literals
 * Controlling Logical Flow
   * Conditionals
   * For Loops
@@ -35,15 +39,9 @@
   * What is Object Oriented Programming?
   * Extending Classes
   * Inheriting Classes
-* The Document Object Model
-  * Attaching JavaScript to HTML
-  * How JavaScript interprets HTML
-  * Using JavaScript to Modify HTML
-* Working with Templates
-  * Template literals
-* Using Third-Party Modules?
-* Promises?
-* Events / Callbacks / etc.
+* Handling Events
+  * Adding Event Listeners
+  * Responding to Events
 * Other Useful Things to Know
   * Regex
   * URL Encoding

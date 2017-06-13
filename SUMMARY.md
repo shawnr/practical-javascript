@@ -38,6 +38,10 @@
   * What is Object Oriented Programming?
   * Extending Classes
   * Inheriting Classes
+* The Document Object Model \(DOM\)
+  * How JavaScript Interacts with HTML
+  * Selecting Elements in the DOM
+  * Modifying Elements in the DOM
 * Handling Events
   * Adding Event Listeners
   * Responding to Events

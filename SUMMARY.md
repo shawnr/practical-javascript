@@ -12,11 +12,11 @@
   * [3.2 JavaScript on the Web](what-is-javascript/32-javascript-on-the-web.md)
   * [3.3 JavaScript in the Wild](what-is-javascript/33-javascript-in-the-wild.md)
   * [3.4 Quiz: What is JS? ](what-is-javascript/34-quiz-what-is-js.md)
-* [4 Basic Syntax](basic-syntax.md)
-  * [4.1 Adding JavaScript to an HTML File](41-adding-javascript-to-an-html-file.md)
-  * [4.2 Comments](comments.md)
+* [4 Basic Syntax](basic-syntax/README.md)
+  * [4.1 Adding JavaScript to an HTML File](basic-syntax/41-adding-javascript-to-an-html-file.md)
+  * [4.2 Comments](basic-syntax/comments.md)
   * 4.3 Operators
-  * [4.4 Brackets and Line Endings](brackets-and-line-endings.md)
+  * [4.4 Brackets and Line Endings](basic-syntax/brackets-and-line-endings.md)
   * 4.5 Variables
   * 4.6 Quiz: Basic Syntax
 * Data Types

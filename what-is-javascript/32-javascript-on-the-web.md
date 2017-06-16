@@ -24,6 +24,12 @@ With the advent of Node.js, server-side JavaScript has become more and more popu
 * [Express.js](http://expressjs.com/)
 * [Socket.io](http://socket.io/)
 
+JavaScript is also popular for creating some of the most hyped non-relational databases:
+
+* [MongoDB](https://en.wikipedia.org/wiki/MongoDB)
+* [CouchDB](https://en.wikipedia.org/wiki/CouchDB)
+
+
 ## Game and Animation
 
 JavaScript has replaced a lot of proprietary technologies that were used for doing game and animation programming. In the move to eliminate plugins (which are painful for both developers and users) and bring the web to a more standardized place, JavaScript has filled this niche. Here are some interesting JavaScript game and animation frameworks that are popular online today.

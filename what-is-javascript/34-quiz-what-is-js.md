@@ -18,66 +18,36 @@
         <explanation>Brendan Eich wrote the first version of JavaScript at Netscape.</explanation>
     </question>
     <question>
-        <p>What was the name Vannevar Bush gave the device he envisioned to allow us to browse vast repositories of information and media?</p>
-        <answer>The Browser</answer>
-        <answer correct>The Memex</answer>
-        <answer>Jacquard's Loom</answer>
-        <answer>Computer</answer>
-        <explanation>Vannevar Bush described the "Memex" as a desk that could browse through and display information.</explanation>
+        <p>Which of these is a non-browser-based JavaScript engine?</p>
+        <answer>CouchDB</answer>
+        <answer correct>Node.js</answer>
+        <answer>Backbone</answer>
+        <answer>React.js</answer>
+        <explanation>Node.js is one of the most popular non-browser-based JavaScript engines.</explanation>
     </question>
     <question>
-        <p>In a "typed" programming language, developers do not need to declare the data type of a variable.</p>
-        <answer>True</answer>
-        <answer correct>False</answer>
-        <explanation>In a "typed" programming language, developers must always specify the type of a variable when they declare it.</explanation>
+        <p>What is the name of the organization that creates the standard upon which JavaScript is based?</p>
+        <answer>World Wide Web Consortium</answer>
+        <answer correct>Ecma International</answer>
+        <answer>Mozilla</answer>
+        <answer>Electronic Freedom Foundation</answer>
+        <explanation>Ecma International is the organization that creates the standard upon which JavaScript is based.</explanation>
+    </question>
+    <question>
+        <p>What is the name of the standard upon which JavaScript is based?</p>
+        <answer>Web Script</answer>
+        <answer>JavaScript</answer>
+        <answer correct>ECMAScript</answer>
+        <answer>JScript</answer>
+        <explanation>The standard upon which JavaScript is based is ECMAScript.</explanation>
     </question>
     <question multiple>
-        <p>Which of the following programming languages are compiled?</p>
-        <answer correct>C++</answer>
-        <answer correct>COBOL</answer>
-        <answer>Python</answer>
-        <answer>PHP</answer>
-        <explanation>C++ and COBOL both use compilers to generate binary files that can be executed by a computer.</explanation>
-    </question>
-    <question>
-        <p>The lowest-level programming language is called:</p>
-        <answer>Basic</answer>
-        <answer correct>Assembly</answer>
-        <answer>Binary</answer>
-        <answer>C</answer>
-        <explanation>Assembly is the lowest-level programming language.</explanation>
-    </question>
-    <question>
-        <p>What do we call a "self-contained sequence of actions to be performed" in a program?</p>
-        <answer>instructions</answer>
-        <answer>function</answer>
-        <answer correct>algorithm</answer>
-        <answer>proces</answer>
-        <explanation>An "algorithm" is a self-contained sequence of actions.</explanation>
-    </question>
-    <question>
-        <p>What do we call words that developers cannot use to name variables, functions, etc. in their code?</p>
-        <answer correct>reserved words</answer>
-        <answer>keywords</answer>
-        <answer>special words</answer>
-        <answer>singletons</answer>
-        <explanation>"Reserved words" are used by the programming language and cannot be used to name variables, functions, etc.</explanation>
-    </question>
-    <question>
-        <p>What data type is commonly used to contain text in a programming language?</p>
-        <answer>Dictionary</answer>
-        <answer>Integer</answer>
-        <answer correct>String</answer>
-        <answer>Boolean</answer>
-        <explanation>Most programming languages have a notion of a "String" data type that is meant to contain text.</explanation>
-    </question>
-    <question multiple>
-        <p>What data types are commonly used with numbers?</p>
-        <answer>String</answer>
-        <answer correct>Integer</answer>
-        <answer>Boolean</answer>
-        <answer correct>Float</answer>
-        <explanation>Integers and Floats (or Decimals) are used in many programming languages to store numeric data.</explanation>
+        <p>Which two frameworks are JavaScript application frameworks?</p>
+        <answer>Django</answer>
+        <answer correct>Meteor.js</answer>
+        <answer>Rails</answer>
+        <answer correct>Express.js</answer>
+        <explanation>Express.js and Meteor.js are both JavaScript application frameworks.</explanation>
     </question>    
     <question>
         <p>What data type is used for storing `true` and `false` values?</p>

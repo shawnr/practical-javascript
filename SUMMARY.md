@@ -15,7 +15,7 @@
 * [4 Basic Syntax](basic-syntax/README.md)
   * [4.1 Adding JavaScript to an HTML File](basic-syntax/41-adding-javascript-to-an-html-file.md)
   * [4.2 Comments](basic-syntax/comments.md)
-  * 4.3 Operators
+  * [4.3 Operators](basic-syntax/43-operators.md)
   * [4.4 Brackets and Line Endings](basic-syntax/brackets-and-line-endings.md)
   * 4.5 Variables
   * 4.6 Quiz: Basic Syntax

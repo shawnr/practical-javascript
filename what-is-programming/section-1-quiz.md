@@ -1,4 +1,4 @@
-# Section 1 Quiz: What is Programming?
+# Quiz: What is Programming?
 
 Please enjoy this self-check quiz to help you identify key concepts, points, and techniques discussed in this section.
 

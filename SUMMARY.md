@@ -11,7 +11,6 @@
   * [3.1 History of JavaScript](what-is-javascript/31-history-of-javascript.md)
   * [3.2 JavaScript on the Web](what-is-javascript/32-javascript-on-the-web.md)
   * [3.3 JavaScript in the Wild](what-is-javascript/33-javascript-in-the-wild.md)
-  * [3.4 Pros and Cons of JavaScript](what-is-javascript/34-pros-and-cons-of-javascript.md)
 * [Basic Syntax](basic-syntax.md)
   * Adding JavaScript to an HTML File
   * [Comments](comments.md)

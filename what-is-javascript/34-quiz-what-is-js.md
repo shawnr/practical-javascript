@@ -50,45 +50,13 @@
         <explanation>Express.js and Meteor.js are both JavaScript application frameworks.</explanation>
     </question>    
     <question>
-        <p>What data type is used for storing `true` and `false` values?</p>
-        <answer>String</answer>
-        <answer correct>Boolean</answer>
-        <answer>Decimal</answer>
-        <answer>Integer</answer>
-        <explanation>The Boolean data type is used for storing `true` and `false` values.</explanation>
-    </question>  
-    <question multiple>
-        <p>What two kinds of loops are often found in programming languages?</p>
-        <answer>`recurring`</answer>
-        <answer correct>`for`</answer>
-        <answer>`continuous`</answer>
-        <answer correct>`while`</answer>
-        <explanation>The two most common types of loop are `for` and `while`.</explanation>
-    </question>  
-    <question>
-        <p>The `if`/`else` statement is an example of what kind of logical flow control concept?</p>
-        <answer>reactors</answer>
-        <answer correct>conditionals</answer>
-        <answer>directions</answer>
-        <answer>gates</answer>
-        <explanation>The `if`/`else` statement is an example of a conditional.</explanation>
-    </question>  
-    <question multiple>
-        <p>Two types of data structures found in JavaScript are:</p>
-        <answer correct>Array</answer>
-        <answer correct>Object</answer>
-        <answer>Collection</answer>
-        <answer>Box</answer>
-        <explanation>JavaScript uses Arrays and Objects as primary data structures.</explanation>
-    </question>  
-    <question multiple>
-        <p>Which programming languages are used in web development? (select all that apply)</p>
-        <answer correct>PHP</answer>
-        <answer correct>Python</answer>
-        <answer correct>Ruby</answer>
-        <answer correct>Java</answer>
-        <explanation>All of these programming languages are used to build websites.</explanation>
-    </question>  
+        <p>Which of the following is a very popular data visualization library?</p>
+        <answer>Pixi.js</answer>
+        <answer correct>D3.js</answer>
+        <answer>Backbone</answer>
+        <answer>CouchDB</answer>
+        <explanation>D3.js is a popular data visualization library used on many websites.</explanation>
+    </question>   
 </quiz>
 
 <div class="no-quiz">

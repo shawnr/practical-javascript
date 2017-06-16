@@ -17,7 +17,7 @@
   * [4.2 Comments](basic-syntax/comments.md)
   * [4.3 Operators](basic-syntax/43-operators.md)
   * [4.4 Brackets and Line Endings](basic-syntax/brackets-and-line-endings.md)
-  * 4.5 Variables
+  * [4.5 Variables](basic-syntax/45-variables.md)
   * 4.6 Quiz: Basic Syntax
 * Data Types
   * Numbers

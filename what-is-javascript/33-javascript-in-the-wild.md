@@ -2,6 +2,14 @@
 
 JavaScript has burst past the boundaries of web browsers and even web servers. It lives on operating systems and in devices all over the world. It is used for all sorts of tasks beyond just creating and serving web pages. As web technology becomes embedded throughout our world, and screens are increasingly powered by open web standards, JavaScript will always play a role in the software we create.
 
+## Non-Browser-Based JavaScript Engines
+
+In order to make JavaScript run everywhere, it's crucial to have a JavaScript engine that can run on your hardware. Several projects have been created to do just that: Allow JavaScript programs to execute like regular applications. These are some of the most popular non-browser-based JavaScript engines in use today.
+
+* [Node.js](http://nodejs.org)
+* [Rhino](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino)
+* [MynaJS](http://www.mynajs.org/)
+
 ## Scripting in Apps
 
 Many applications allow users to create scripts using JavaScript to automate features or tasks. The following applications all allow for this sort of scripting:

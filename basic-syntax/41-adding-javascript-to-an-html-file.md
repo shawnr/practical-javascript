@@ -66,7 +66,7 @@ For presentation purposes throughout this book, we will occasionally use example
 
 ### Blocking Out the Bad Old Days
 
-Once upon a **time**, there was a great debate about how to load scripts in HTML. By default, when the browser encounters a `<script>` tag with a `src` attribute it stops rendering the page and waits for that file to download. Unfortunately, this delays the processing of the page and makes users wait for
+Once upon a **time**, there was a great debate about how to load scripts in HTML. By default, when the browser encounters a <script> tag with a src attribute it stops rendering the page and waits for that file to download. Unfortunately, this delays the processing of the page and makes users wait for
 
 </div>
 

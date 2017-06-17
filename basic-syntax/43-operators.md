@@ -86,7 +86,7 @@ let z = x + y * 3 - (x - y/2);
 The value of `z` would be `10.990000000000002`. Following the order of operations, JavaScript would first figure out `y/2` (which is `1.57`). Then it would calculate `x - 1.57` to get `10.43`. Next it would figure out `y * 3`, which is `9.42`. Finally, it would work out `x + 9.42 - 10.43`. For some reason, thanks to the inaccuracy of Decimal data types in JS (again, we will cover this more later), the final result is `10.990000000000002`. Normally we would run another command to round that down to `10.99`.
 
 {% exercise %}
-Set x equal to three times seven.
+Set `x` equal to three times seven.
 
 {% initial %}
 var x =
@@ -100,7 +100,7 @@ assert(x == 21);
 {% endexercise %}
 
 {% exercise %}
-Set x equal to twelve minus eight.
+Set `x` equal to twelve minus eight.
 
 {% initial %}
 var x =
@@ -114,7 +114,7 @@ assert(x == 4);
 {% endexercise %}
 
 {% exercise %}
-Set x equal to seven to the twelfth power.
+Set `x` equal to seven to the twelfth power.
 
 {% initial %}
 var x =
@@ -128,7 +128,7 @@ assert(x == 7**12);
 {% endexercise %}
 
 {% exercise %}
-Add parentheses so the value of x equals 42.
+Add parentheses so the value of `x` equals `42`.
 
 {% initial %}
 var x = 6 + 2 * 3 * 4 - 2 * 3;

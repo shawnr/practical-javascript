@@ -6,7 +6,7 @@ These sorts of issues are often the most frustrating for new developers to deal 
 
 There are some ways to help grasp syntax more easily. It's always good to use a dedicated editor that includes a "linter". A linter is a tool that helps us see issues in the code we've written, especially from a stylistic and syntactical perspective. Linters are like grammar checkers for programming languages.
 
-Throughout this section, we will review the basics of how JavaScript gets into the web browser via HTML tags and how the fundamental building blocks of JavaScript work. We will review comments, operators, line endings, brackets, and variable declarations.
+Throughout this section, we will review the basics of how JavaScript gets into the web browser via HTML tags and how the fundamental building blocks of JavaScript work. We will review comments, operators, line endings, brackets, text case, and variable declarations.
 
 <div class="tip-box">
     <h3>Take heart!</h3>

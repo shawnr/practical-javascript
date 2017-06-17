@@ -38,10 +38,10 @@ Rewriting our example from above, we might see something like this:
    These details should be configured per deployment. Additional
    information can be found in the runbook.
 
-   apiDomain = Domain of the API endpoint.
-   apiPort = Port for the API endpoint.
-   apiVersion = Version of the API to use.
-   apiBasePath = The path for the API used throughout this app.
+   apiDomain   =  Domain of the API endpoint.
+   apiPort     =  Port for the API endpoint.
+   apiVersion  =  Version of the API to use.
+   apiBasePath =  The path for the API used throughout this app.
 */
 
 let apiDOMAIN = "api.example.com"; 
@@ -49,7 +49,34 @@ let apiPort = 8080;
 let apiVersion = "1.3"; 
 
 let apiBasePath = `http://${apiURL}:${apiPort}/${apiVersion}/`;
+```
 
+The multi-line comments are able to contain a much larger block of text, and we can use any simple text formatting we want to make the content of the comments more readable. Many developers will use some ASCII art to make their most important comments stand out.
+
+## Commenting Out Code
+
+Both styles of comment can be useful when trying to debug code. It's often necessary to remove a line of code when trying to track down problems with your program. However, we usually don't want to just delete the line and risk losing our work. In these cases, commenting out lines can be very helpful.
+
+Here is what it looks like to comment out a line using the one-line comment format:
+
+```js
+// let titleHeading = document.querySelector("#title");
+titleHeading.innerHTML = "Hello World!";
+```
+
+The first line of that code has been commented out. We could accomplish the same thing with multi-line comments (even though it's just one line):
+
+```js
+/* let titleHeading = document.querySelector("#title"); */
+titleHeading.innerHTML = "Hello World!";
+
+```
+
+But we could also use the multi-line comment to comment out both lines:
+
+```js
+/* let titleHeading = document.querySelector("#title");
+titleHeading.innerHTML = "Hello World!"; */
 ```
 
 {% exercise %}

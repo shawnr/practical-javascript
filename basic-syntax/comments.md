@@ -83,7 +83,7 @@ titleHeading.innerHTML = "Hello World!"; */
 In order to test some of the things we've read on this page, complete the exercises below. 
 
 {% exercise %}
-Mark the comment with one-line (`//`) syntax.
+Mark the comment with one-line (<code>//</code>) syntax.
 
 {% initial %}
 Comment me out or I'll cause an error!
@@ -97,7 +97,7 @@ assert(true);
 {% endexercise %}
 
 {% exercise %}
-Mark the comment with multi-line (`/*`) syntax.
+Mark the comment with multi-line (<code>/*</code>) syntax.
 
 {% initial %}
 Comment both of these lines out 

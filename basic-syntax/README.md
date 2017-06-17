@@ -7,21 +7,16 @@ These sorts of issues are often the most frustrating for new developers to deal 
 There are some ways to help grasp syntax more easily. It's always good to use a dedicated editor that includes a "linter". A linter is a tool that helps us see issues in the code we've written, especially from a stylistic and syntactical perspective. Linters are like grammar checkers for programming languages.
 
 {% exercise %}
-Define a variable `x` equal to 10.
+Create an alert box that says whatever you want.
 
 {% initial %}
-var x =
+alert('Hello World!');
 
 {% solution %}
-var x = 10;
+alert('Your Message Here');
 
 {% validation %}
-assert(x == 10);
+assert(true);
 
-{% context %}
-// This is context code available everywhere
-// The user will be able to evaluate `exposedVar`
-var exposedVar = 3;
-// ... or call `exposedFunction`
 
 {% endexercise %}

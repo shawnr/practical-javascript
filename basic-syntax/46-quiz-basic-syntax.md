@@ -57,12 +57,12 @@
         <explanation>The <code>++</code> and <code>--</code> operators are used to increment and decrement the value of a variable by <code>1</code>.</explanation>
     </question>    
     <question>
-        <p>Which of the following is a very popular data visualization library?</p>
-        <answer>Pixi.js</answer>
-        <answer correct>D3.js</answer>
-        <answer>Backbone</answer>
-        <answer>CouchDB</answer>
-        <explanation>D3.js is a popular data visualization library used on many websites.</explanation>
+        <p>Which command is used to define a "local" variable in JavaScript?</p>
+        <answer><code>var</code></answer>
+        <answer><code>const</code></answer>
+        <answer correct><code>let</code></answer>
+        <answer><code>local</code></answer>
+        <explanation>The <code>let</code> command is used to declare a local variable.</explanation>
     </question>   
 </quiz>
 

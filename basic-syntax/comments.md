@@ -111,3 +111,17 @@ or we'll cause an error! */
 assert(true);
 
 {% endexercise %}
+
+{% exercise %}
+Comment out the broken line below.
+
+{% initial %}
+let foo { bar };
+
+{% solution %}
+// let foo { bar };
+
+{% validation %}
+assert(true);
+
+{% endexercise %}

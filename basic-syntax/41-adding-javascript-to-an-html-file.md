@@ -70,5 +70,7 @@ For presentation purposes throughout this book, we will occasionally use example
 
 <p>To avoid blocking in the past, it was common for developers to put their script tags at the bottom of their HTML file, right before the closing <code>body</code> tag. That was an OK solution, but it put a whole set of important lines at the bottom of the HTML file, which made it a little more difficult to notice as a developer. It was also undesirable because there are situations when we want JavaScript to block the page load (for example, when delivering A/B content tests to end users) and in these cases we would end up with JavaScript in both the <code>head</code> of the document and the <code>body</code> of the document.</p>
 
+<p>The HTML5 specification solved this problem by introducing the <code>async</code> and <code>defer</code> attributes for the <code>script</code> tag. This allows us to keep all of our JavaScript <code>script</code> tags in one place (in the <code>head</code> of our HTML documents) and still avoid blocking the browser's rendering of the page.</p>
+
 </div>
 

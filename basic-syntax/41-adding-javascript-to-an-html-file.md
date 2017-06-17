@@ -36,7 +36,7 @@ The `index.html` file looks like this:
 ```html
 <html>
 <head>
-  <title>Hello World</title>
+  <title>External JS Example</title>
   <script src="main.js" defer></script>
 </head>
 <body>

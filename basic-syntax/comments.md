@@ -113,7 +113,7 @@ assert(true);
 {% endexercise %}
 
 {% exercise %}
-Comment out the broken line below.
+Comment out the broken line below using either form of commenting.
 
 {% initial %}
 let foo { bar };

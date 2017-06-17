@@ -10,10 +10,10 @@ There are some ways to help grasp syntax more easily. It's always good to use a 
 Create an alert box that says whatever you want.
 
 {% initial %}
-alert('Hello World!');
+window.alert('Hello World!');
 
 {% solution %}
-alert('Your Message Here');
+window.alert('Your Message Here');
 
 {% validation %}
 assert(true);

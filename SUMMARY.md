@@ -27,23 +27,23 @@
 * [Working with Text](working-with-text/README.md)
   * String Basics
   * Template Literals
-* Controlling Logical Flow
+* [Controlling Logical Flow](controlling-logical-flow/README.md)
   * Conditionals
   * For Loops
   * For...Of Loops
   * While Loops
-* Organizing Code
+* [Organizing Code](organizing-code/README.md)
   * Functions
   * Scoping
-* Object Oriented JavaScript
+* [Object Oriented JavaScript](object-oriented-javascript/README.md)
   * What is Object Oriented Programming?
   * Extending Classes
   * Inheriting Classes
-* The Document Object Model \(DOM\)
+* [The Document Object Model \(DOM\)](the-document-object-model/README.md)
   * How JavaScript Interacts with HTML
   * Selecting Elements in the DOM
   * Modifying Elements in the DOM
-* Handling Events
+* [Handling Events](handling-events/README.md)
   * Adding Event Listeners
   * Responding to Events
 * Appendix A: Resources for Learning More About JavaScript

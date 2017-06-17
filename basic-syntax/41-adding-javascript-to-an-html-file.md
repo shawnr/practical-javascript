@@ -65,7 +65,7 @@ For presentation purposes throughout this book, we will occasionally use example
 <div class="tip-box" markdown=1>
   <h3>Blocking Out the Bad Old Days</h3>
   <p>
-    Once upon a time, there was a great debate about how to load scripts in HTML. By default, when the browser encounters a 
+    Once upon a time, there was a great debate about how to load scripts in HTML. By default, when the browser encounters a `<script>` tag with a `src` attribute it stops rendering the page and waits for that file to download.
   </p>
 </div>
 

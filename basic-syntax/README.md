@@ -10,7 +10,7 @@ There are some ways to help grasp syntax more easily. It's always good to use a 
 Create an alert box that says whatever you want.
 
 {% initial %}
-window.alert('Hello World!');
+debugger;
 
 {% solution %}
 window.alert('Your Message Here');

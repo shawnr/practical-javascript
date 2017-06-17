@@ -18,34 +18,34 @@
   * [4.3 Operators](basic-syntax/43-operators.md)
   * [4.4 Variables](basic-syntax/45-variables.md)
   * [4.5 Quiz: Basic Syntax](basic-syntax/46-quiz-basic-syntax.md)
-* [Data Types](data-types/README.md)
-  * Numbers
-  * Strings
-  * Booleans
-  * Arrays
-  * Objects
-* [Working with Text](working-with-text/README.md)
-  * String Basics
-  * Template Literals
-* [Controlling Logical Flow](controlling-logical-flow/README.md)
-  * Conditionals
-  * For Loops
-  * For...Of Loops
-  * While Loops
-* [Organizing Code](organizing-code/README.md)
-  * Functions
-  * Scoping
-* [Object Oriented JavaScript](object-oriented-javascript/README.md)
-  * What is Object Oriented Programming?
-  * Extending Classes
-  * Inheriting Classes
-* [The Document Object Model \(DOM\)](the-document-object-model/README.md)
-  * How JavaScript Interacts with HTML
-  * Selecting Elements in the DOM
-  * Modifying Elements in the DOM
-* [Handling Events](handling-events/README.md)
-  * Adding Event Listeners
-  * Responding to Events
+* [5 Data Types](data-types/README.md)
+  * 5.1 Numbers
+  * 5.2 Strings
+  * 5.3 Booleans
+  * 5.4 Arrays
+  * 5.5 Objects
+* [6 Working with Text](working-with-text/README.md)
+  * 6.1 String Basics
+  * 6.2 Template Literals
+* [7 Controlling Logical Flow](controlling-logical-flow/README.md)
+  * 7.1 Conditionals
+  * 7.2 For Loops
+  * 7.3 For...Of Loops
+  * 7.4 While Loops
+* [8 Organizing Code](organizing-code/README.md)
+  * 8.1 Functions
+  * 8.2 Scoping
+* [9 Object Oriented JavaScript](object-oriented-javascript/README.md)
+  * 9.1 What is Object Oriented Programming?
+  * 9.2 Extending Classes
+  * 9.3 Inheriting Classes
+* [10 The Document Object Model \(DOM\)](the-document-object-model/README.md)
+  * 10.1 How JavaScript Interacts with HTML
+  * 10.2 Selecting Elements in the DOM
+  * 10.3 Modifying Elements in the DOM
+* [11 Handling Events](handling-events/README.md)
+  * 11.1 Adding Event Listeners
+  * 11.2 Responding to Events
 * Appendix A: Resources for Learning More About JavaScript
 * [Glossary](/GLOSSARY.md)
 

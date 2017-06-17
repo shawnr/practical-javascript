@@ -11,10 +11,8 @@ Inline JavaScript is written into the HTML of a document and contained in a `<sc
 Here is an example of inline JavaScript:
 
 ```html
-<!doctype html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
   <title>Hello World</title>
 </head>
 <body>

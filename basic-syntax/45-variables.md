@@ -77,17 +77,3 @@ var x;
 assert(x == undefined);
 
 {% endexercise %}
-
-{% exercise %}
-Define a variable `x` as a constant with the value "foo".
-
-{% initial %}
-
-
-{% solution %}
-const x = "foo";
-
-{% validation %}
-assert(!(x = "bar"));
-
-{% endexercise %}

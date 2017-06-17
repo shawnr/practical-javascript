@@ -62,11 +62,13 @@ Similarly to CSS, JavaScript is also something that can be applied to multiple p
 
 For presentation purposes throughout this book, we will occasionally use examples that feature inline JavaScript, but for the most part in the working world we prefer to use external JavaScript files.
 
-<p class="tip-box" markdown="1">
+<div class="tip-box">
 
-### Blocking Out the Bad Old Days
+<h3>Blocking Out the Bad Old Days</h3>
 
-Once upon a **time**, there was a great debate about how to load scripts in HTML. By default, when the browser encounters a <script> tag with a src attribute it stops rendering the page and waits for that file to download. Unfortunately, this delays the processing of the page and makes users wait for
+<p>Once upon a time, there was a great debate about how to load scripts in HTML. By default, when the browser encounters a <code><script></code> tag with a <code>src</code> attribute it stops rendering the page and waits for that file to download. This is a concept known as "blocking": All processing of the HTML is "blocked" until the linked JavaScript file is downloaded and executed. Unfortunately, this delays the processing of the page and increases the likelihood of user frustration. </p>
 
-</p>
+<p>To avoid blocking in the past, it was common for developers to put their script tags at the bottom of their HTML file, right before the closing <code><body></code> tag. That was an OK solution, but it put a whole set of important lines at the bottom of the HTML file, which made it a little more difficult to notice as a developer. It was also undesirable because there are situations when we want JavaScript to block the page load (for example, when delivering A/B content tests to end users) and in these cases we would end up with JavaScript in both the <code><head></code> of the document and the <code><body></code> of the document.</p>
+
+</div>
 

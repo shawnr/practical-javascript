@@ -33,7 +33,7 @@
         <explanation>The <code>async</code> and <code>defer</code> attributes allow the browser to continue rendering the page while external JavaScript files are loaded.</explanation>
     </question>
     <question>
-        <p>Which of these is a valid JavaScript comment</p>
+        <p>Which of these is a valid JavaScript comment?</p>
         <answer><code>&lt;!-- comment goes here --&gt;</code></answer>
         <answer correct><code>// comment goes here</code></answer>
         <answer><code>"""comment goes here"""</code></answer>

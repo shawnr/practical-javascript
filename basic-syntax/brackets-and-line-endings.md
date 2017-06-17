@@ -1,4 +1,6 @@
-#Brackets and Line Endings
+#Brackets, Line Endings, and Case Sensitivity
+
+
 
 
 {% exercise %}

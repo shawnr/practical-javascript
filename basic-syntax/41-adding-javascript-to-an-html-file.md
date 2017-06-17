@@ -52,4 +52,14 @@ The `main.js` file looks like this:
   heading.innerHTML = "Hello World!";
 ```
 
-Notice that the code in the HTML file is the same, except the `<script>` tag has been moved to the `<head>` of the document and we've added two attributes to it. First, we added a `src` attribute that indicates the file we want to load. This link can be either absolute or relative to the HTML file (in this example, it is a relative link). We have also added a `defer` attribute to the `<script>` tag. This tells the browser that it's OK to defer the execution of this script until it has finished rendering the HTML.
+Notice that the code in the HTML file is the same, except the `<script>` tag has been moved to the `<head>` of the document and we've added two attributes to it. First, we added a `src` attribute that indicates the file we want to load. This link can be either absolute or relative to the HTML file (in this example, it is a relative link). We have also added a `defer` attribute to the `<script>` tag. This tells the browser that it's OK to defer the execution of this script until it has finished rendering the HTML. We typically add either the `async` or `defer` attributes to `<script>` tags when loading external JavaScript files. The `async` attribute tells the browser it's OK to continue rendering the HTML and that it's OK to execute the script whenever the file has finished loading.
+
+In the `main.js` file we have the same code from the previous example. The only difference is that we now have a file that is fully dedicated to JavaScript, affording us a better experience editing the JS functionality on the page.
+
+In general, it's preferable to use external JavaScript when building websites and applications. When building with web technology, each component (HTML, CSS, and JS) tends to become large and complex. It takes a lot of HTML to structure a site and define content. It takes many lines of CSS to define visual styles for a site. And it can take a lot of JavaScript to build all of the functionality wanted for a project. When dealing with large, complex projects, it's helpful to focus on one component at a time. That is easier when each component is contained in dedicated files. (**Note:** For the moment I'm discounting and avoiding discussing technologies like [JSX](https://facebook.github.io/react/docs/jsx-in-depth.html) and how they might be changing this paradigm in the future.)
+
+Similarly to CSS, JavaScript is also something that can be applied to multiple pages within a site. The features we define with JavaScript can be written in a way that they can operate on any page of our site that contains compatible HTML. Being able to link multiple HTML files to the same JavaScript file is a crucial part of making efficient use of the code we write.
+
+For presentation purposes throughout this book, we will occasionally use examples that feature inline JavaScript, but for the most part in the working world we prefer to use external JavaScript files.
+
+

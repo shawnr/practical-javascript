@@ -12,7 +12,6 @@ Here is an example of inline JavaScript:
 
 ```html
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">

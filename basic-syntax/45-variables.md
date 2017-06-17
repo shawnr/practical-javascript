@@ -37,13 +37,18 @@ var foo,
     bar,
     baz;
     
-const perPage = 25;
-const maxPerPage = 100;
+const apiDOMAIN = "api.example.com"; 
+const apiPort = 8080; 
+const apiVersion = "1.3"; 
+
+const apiBasePath = `http://${apiURL}:${apiPort}/${apiVersion}/`;
 ```
 
 In the example above, we have declared three variables for use later: `foo`, `bar`, and `baz`. At the time they are declared, they are not initialized to any value. A variable that is declared without a value automatically has the value `undefined` in JavaScript.
 
-The other two variables we declare in this example are `perPage` and `maxPerPage`. These values 
+The other variables we declare are used to assemble the `apiBasePath` value. These values would likely be derived from inspecting some other aspect of the environment, and that information would be stored in constants so they cannot be altered during runtime. This insures that these values will not accidentally get overwritten with bad information.
+
+Try out the exercises below to practice with declaring and initializing variables.
 
 {% exercise %}
 Define a variable `x` equal to 10.
@@ -57,10 +62,32 @@ var x = 10;
 {% validation %}
 assert(x == 10);
 
-{% context %}
-// This is context code available everywhere
-// The user will be able to evaluate `exposedVar`
-var exposedVar = 3;
-// ... or call `exposedFunction`
+{% endexercise %}
+
+{% exercise %}
+Define a variable `x`, but do not initialize it.
+
+{% initial %}
+
+
+{% solution %}
+var x;
+
+{% validation %}
+assert(x == undefined);
+
+{% endexercise %}
+
+{% exercise %}
+Define a variable `x` as a constant with the value "foo".
+
+{% initial %}
+
+
+{% solution %}
+const x = "foo";
+
+{% validation %}
+assert(x = "bar");
 
 {% endexercise %}

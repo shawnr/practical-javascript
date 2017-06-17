@@ -88,6 +88,6 @@ Define a variable `x` as a constant with the value "foo".
 const x = "foo";
 
 {% validation %}
-assert(x = "bar");
+assert(!(x = "bar"));
 
 {% endexercise %}

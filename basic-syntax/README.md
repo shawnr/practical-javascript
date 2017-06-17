@@ -6,17 +6,14 @@ These sorts of issues are often the most frustrating for new developers to deal 
 
 There are some ways to help grasp syntax more easily. It's always good to use a dedicated editor that includes a "linter". A linter is a tool that helps us see issues in the code we've written, especially from a stylistic and syntactical perspective. Linters are like grammar checkers for programming languages.
 
-{% exercise %}
-Create an alert box that says whatever you want.
+Throughout this section, we will review the basics of how JavaScript gets into the web browser via HTML tags and how the fundamental building blocks of JavaScript work. We will review comments, operators, line endings, brackets, and variable declarations.
 
-{% initial %}
-debugger;
-
-{% solution %}
-window.alert('Your Message Here');
-
-{% validation %}
-assert(true);
-
-
-{% endexercise %}
+<div class="tip-box">
+    <h3>Take heart!</h3>
+    <p>
+        Learning a programming language for the first time can be incredibly difficult. It's a lot like learning a foreign language for the first time. Just like we become more aware of how grammar works by studying a foreign language, we will become more aware of how "coding" works by learning to program. Programming is a combination of problem solving and then _encoding_ the solution into something that a machine can interpret. 
+    </p>
+    <p>
+        We must allow ourselves the space to learn how to express our logic through code, and we cannot make the mistake of believing that any of this stuff _should_ be easy. This stuff is difficult. It is, in many ways, the culmination of thousands of years of human thought and intellectual development. Don't feel bad if it takes more than a week to learn how to do it.
+    </p>
+</div>

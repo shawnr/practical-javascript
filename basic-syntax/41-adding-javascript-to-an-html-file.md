@@ -62,9 +62,10 @@ Similarly to CSS, JavaScript is also something that can be applied to multiple p
 
 For presentation purposes throughout this book, we will occasionally use examples that feature inline JavaScript, but for the most part in the working world we prefer to use external JavaScript files.
 
-<div class="tip-box">
+<div class="tip-box" markdown=1>
   <h3>Blocking Out the Bad Old Days</h3>
-  <p>Once upon a time, 
+  <p>
+    Once upon a time, there was a great debate about how to load scripts in HTML. By default, when the browser encounters a 
   </p>
 </div>
 

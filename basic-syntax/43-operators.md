@@ -75,21 +75,43 @@ Each time `counter--` is run it would decrease the value of `counter` by `1`.
 
 
 {% exercise %}
-Define a variable `x` equal to 10.
+Set x equal to three times seven.
 
 {% initial %}
 var x =
 
 {% solution %}
-var x = 10;
+var x = 3 * 7;
 
 {% validation %}
-assert(x == 10);
+assert(x == 21);
 
-{% context %}
-// This is context code available everywhere
-// The user will be able to evaluate `exposedVar`
-var exposedVar = 3;
-// ... or call `exposedFunction`
+{% endexercise %}
+
+{% exercise %}
+Set x equal to twelve minus eight.
+
+{% initial %}
+var x =
+
+{% solution %}
+var x = 12 - 8;
+
+{% validation %}
+assert(x == 4);
+
+{% endexercise %}
+
+{% exercise %}
+Set x equal to seven to the twelfth power.
+
+{% initial %}
+var x =
+
+{% solution %}
+var x = 7**12;
+
+{% validation %}
+assert(x == 7**12);
 
 {% endexercise %}

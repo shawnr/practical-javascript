@@ -73,6 +73,17 @@ counter--; // Sets the value of "counter" to 99.
 
 Each time `counter--` is run it would decrease the value of `counter` by `1`. 
 
+## Grouping Operations
+
+Just like with normal arithmetic, we can group operations using parentheses. The normal [order of operations](https://en.wikipedia.org/wiki/Order_of_operations) is maintained in JavaScript, and parentheses affect computation just as they would in regular math. For example:
+
+```js
+let x = 12;
+let y = 3.14;
+
+let z = x + y * 3 - (x - y/2);
+```
+The value of `z` would be `10.990000000000002`. Following the order of operations, JavaScript would first figure out `y/2` (which is `1.57`). Then it would calculate `x - 1.57` to get `10.43`. Next it would figure out `y * 3`, which is `9.42`. Finally, it would work out `x + 9.42 - 10.43`. For some reason, thanks to the inaccuracy of Decimal data types in JS (again, we will cover this more later), the final result is `10.990000000000002`. Normally we would run another command to round that down to `10.99`.
 
 {% exercise %}
 Set x equal to three times seven.
@@ -113,5 +124,19 @@ var x = 7**12;
 
 {% validation %}
 assert(x == 7**12);
+
+{% endexercise %}
+
+{% exercise %}
+Add parentheses so the value of x equals 42.
+
+{% initial %}
+var x = 6 + 2 * 3 * 4 - 2 * 3;
+
+{% solution %}
+var x = (6 + 2 * 3) * 4 - (2 * 3);
+
+{% validation %}
+assert(x == 42);
 
 {% endexercise %}

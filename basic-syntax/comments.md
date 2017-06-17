@@ -79,22 +79,35 @@ But we could also use the multi-line comment to comment out both lines:
 titleHeading.innerHTML = "Hello World!"; */
 ```
 
+## Practice with Comments
+In order to test some of the things we've read on this page, complete the exercises below. 
+
 {% exercise %}
-Define a variable `x` equal to 10.
+Mark the comment with one-line (`//`) syntax.
 
 {% initial %}
-var x =
+Comment me out or I'll cause an error!
 
 {% solution %}
-var x = 10;
+// Comment me out or I'll cause an error!
 
 {% validation %}
-assert(x == 10);
+assert(true);
 
-{% context %}
-// This is context code available everywhere
-// The user will be able to evaluate `exposedVar`
-var exposedVar = 3;
-// ... or call `exposedFunction`
+{% endexercise %}
+
+{% exercise %}
+Mark the comment with multi-line (`/*`) syntax.
+
+{% initial %}
+Comment both of these lines out 
+or we'll cause an error!
+
+{% solution %}
+/* Comment both of these lines out 
+or we'll cause an error! */
+
+{% validation %}
+assert(true);
 
 {% endexercise %}

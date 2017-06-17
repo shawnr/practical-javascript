@@ -18,6 +18,14 @@
         <explanation>Brendan Eich wrote the first version of JavaScript at Netscape.</explanation>
     </question>
     <question>
+        <p>What programming language(s) can be interpreted directly in the web browser?</p>
+        <answer>Python</answer>
+        <answer correct>JavaScript</answer>
+        <answer>Ruby</answer>
+        <answer>Java</answer>
+        <explanation>JavaScript does not require variables to be declared with a Data Type, making it a "dynamic" language.</explanation>
+    </question>
+    <question>
         <p>Which of these is a non-browser-based JavaScript engine?</p>
         <answer>CouchDB</answer>
         <answer correct>Node.js</answer>

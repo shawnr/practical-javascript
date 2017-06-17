@@ -24,7 +24,7 @@
   * Booleans
   * Arrays
   * Objects
-* Working with Text
+* [Working with Text](working-with-text/README.md)
   * String Basics
   * Template Literals
 * Controlling Logical Flow

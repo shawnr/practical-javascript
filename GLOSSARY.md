@@ -16,6 +16,9 @@ A file that can be run directly on the computing hardware without requiring any 
 ## interpreter
 An application used to convert source code in a given programming language into machine instructions that can be executed by the computing hardware.
 
+## linter
+A tool used in a code editor to check syntax and style, usually in real-time. Most popular code editors support linting tools such as [JSHint](http://jshint.com/) and [ESLint](http://eslint.org/). Refer to the documentation in your chosen editor for more information about installing and using linters for whatever language you are writing.
+
 ## scripted
 A description of a programming language that uses a runtime interpreter to convert source code into an executable file.
 

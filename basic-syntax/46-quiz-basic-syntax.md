@@ -34,7 +34,7 @@
     </question>
     <question>
         <p>Which of these is a valid JavaScript comment</p>
-        <answer><code><!-- comment goes here --></code></answer>
+        <answer><code>{% raw %}<!-- comment goes here -->{% endraw %}</code></answer>
         <answer correct><code>// comment goes here</code></answer>
         <answer><code>"""comment goes here"""</code></answer>
         <answer><code>::comment goes here</code></answer>

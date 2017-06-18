@@ -70,16 +70,37 @@ We can find a full table showing how to escape characters on the MDN String page
 | \xXX	                 | the Latin-1 character |
 
 {% exercise %}
-Define a variable `x` equal to 10.
+Fix the String definition below so it works.
 
 {% initial %}
-var x =
+var x = "Courage is not the absence of fear, 
+    but rather the judgement that something 
+    else is more important than fear.";
 
 {% solution %}
-var x = 10;
+var x = "Courage is not the absence of fear, \
+    but rather the judgement that something \
+    else is more important than fear.";
+
 
 {% validation %}
-assert(x == 10);
+assert(typeof(x)==="string");
 
 {% endexercise %}
+
+{% exercise %}
+Fix the String so the text shows up properly.
+
+{% initial %}
+var x = "You will need a 3/8" socket for this job.";
+
+{% solution %}
+var x = "You will need a 3/8\" socket for this job.";
+
+{% validation %}
+assert(typeof(x)==="string");
+
+{% endexercise %}
+
+
 

@@ -20,7 +20,7 @@
   * [4.5 Quiz: Basic Syntax](basic-syntax/46-quiz-basic-syntax.md)
 * [5 Data Types and Structures](data-types/README.md)
   * [5.1 Numbers](data-types/51-numbers.md)
-  * 5.2 Strings
+  * [5.2 Strings](data-types/52-strings.md)
   * 5.3 Booleans
   * 5.4 Arrays
   * 5.5 Objects

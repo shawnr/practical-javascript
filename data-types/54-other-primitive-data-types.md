@@ -1,6 +1,10 @@
 # Other Primitive Data Types
 
-JavaScript also gives us a few Data Types that are used in more specific ways: Undefined, Null, and Symbols.
+JavaScript also gives us a few Data Types that are used in more specific ways: Boolean, Undefined, Null, and Symbols.
+
+## Boolean
+
+The Boolean Data Type has a value that is either `true` or `false`. These types of variables are helpful when controlling the logical flow of a program. We often use different logic to determine a `true` or `false` 
 
 ## Undefined
 

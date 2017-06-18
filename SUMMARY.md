@@ -21,7 +21,6 @@
 * [5 Data Types and Structures](data-types/README.md)
   * [5.1 Numbers](data-types/51-numbers.md)
   * [5.2 Strings](data-types/52-strings.md)
-  * [5.3 Booleans](data-types/53-booleans.md)
   * [5.4 Other Primitive Data Types](data-types/54-other-primitive-data-types.md)
   * [5.5 Objects](data-types/55-objects.md)
   * [5.6 Arrays](data-types/55-arrays.md)

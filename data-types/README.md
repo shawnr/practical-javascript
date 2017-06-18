@@ -12,6 +12,8 @@ In the example above, we have made four different value assignments to `myData`.
 
 ![Type checking in the JS console.](/images/types-in-console.png)
 
+Anytime in your code we can check the type of a value using the `typeof()` command. This allows us to make better decisions, prevent errors, and provide more functionality to our users. 
+
 ## Data Structures
 
 The primary Data Structure used in JavaScript is the Object. This is a structure that underlies virtually every aspect of JavaScript, and it's one that we use often in our regular programming work. Objects allow hierarchical relationships to be created between attributes and methods, which lets us set up conceptual frameworks to contain any idea we wish to work with in our code.

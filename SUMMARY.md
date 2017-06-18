@@ -19,11 +19,12 @@
   * [4.4 Variables](basic-syntax/45-variables.md)
   * [4.5 Quiz: Basic Syntax](basic-syntax/46-quiz-basic-syntax.md)
 * [5 Data Types and Structures](data-types/README.md)
-  * 5.1 Numbers
+  * [5.1 Numbers](data-types/51-numbers.md)
   * 5.2 Strings
   * 5.3 Booleans
   * 5.4 Arrays
   * 5.5 Objects
+  * 5.6 JSON
 * [6 Working with Text](working-with-text/README.md)
   * 6.1 String Basics
   * 6.2 Template Literals

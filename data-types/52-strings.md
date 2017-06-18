@@ -116,6 +116,20 @@ assert(typeof(x)==="string");
 
 {% endexercise %}
 
+{% exercise %}
+Fix the String so the text shows up properly.
+
+{% initial %}
+var x = 'In Seattle we don't use an u2602.';
+
+{% solution %}
+var x = 'In Seattle we don\'t use an \u2602.';
+
+{% validation %}
+assert(typeof(x)==="string");
+
+{% endexercise %}
+
 
 
 

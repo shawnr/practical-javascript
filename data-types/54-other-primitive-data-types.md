@@ -1,5 +1,11 @@
 # Other Primitive Data Types
 
+## `null`
+
+## `undefined`
+
+## Symbols
+
 {% exercise %}
 Define a variable `x` equal to 10.
 

@@ -22,9 +22,10 @@
   * [5.1 Numbers](data-types/51-numbers.md)
   * [5.2 Strings](data-types/52-strings.md)
   * [5.3 Booleans](data-types/53-booleans.md)
-  * 5.4 Arrays
-  * 5.5 Objects
-  * 5.6 JSON
+  * [5.4 Other Primitive Data Types](data-types/54-other-primitive-data-types.md)
+  * 5.5 Arrays
+  * [5.6 Objects](data-types/55-objects.md)
+  * 5.7 JSON
 * [6 Working with Text](working-with-text/README.md)
   * 6.1 String Basics
   * 6.2 Template Literals

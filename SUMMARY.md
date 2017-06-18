@@ -23,7 +23,7 @@
   * [5.2 Strings](data-types/52-strings.md)
   * [5.3 Booleans](data-types/53-booleans.md)
   * [5.4 Other Primitive Data Types](data-types/54-other-primitive-data-types.md)
-  * 5.5 Arrays
+  * [5.5 Arrays](data-types/55-arrays.md)
   * [5.6 Objects](data-types/55-objects.md)
   * 5.7 JSON
 * [6 Working with Text](working-with-text/README.md)

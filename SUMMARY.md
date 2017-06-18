@@ -28,7 +28,7 @@
   * [5.7 JSON](data-types/57-json.md)
 * [6 Working with Text](working-with-text/README.md)
   * [6.1 String Basics](working-with-text/61-string-basics.md)
-  * 6.2 Template Literals
+  * [6.2 Template Literals](working-with-text/62-template-literals.md)
 * [7 Controlling Logical Flow](controlling-logical-flow/README.md)
   * 7.1 Conditionals
   * 7.2 For Loops

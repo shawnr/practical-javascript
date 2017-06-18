@@ -23,30 +23,27 @@
   * [5.2 Strings](data-types/52-strings.md)
   * [5.4 Other Primitive Data Types](data-types/54-other-primitive-data-types.md)
   * [5.5 Objects](data-types/55-objects.md)
-  * [5.6 Arrays](data-types/55-arrays.md)
   * [5.7 JSON](data-types/57-json.md)
-* [6 Working with Text](working-with-text/README.md)
-  * [6.1 String Basics](working-with-text/61-string-basics.md)
-  * [6.2 Concatenation and Template Literals](working-with-text/62-template-literals.md)
-* [7 Controlling Logical Flow](controlling-logical-flow/README.md)
-  * 7.1 Conditionals
-  * 7.2 For Loops
-  * 7.3 For...Of Loops
-  * 7.4 While Loops
-* [8 Organizing Code](organizing-code/README.md)
-  * 8.1 Functions
-  * 8.2 Scoping
-* [9 Object Oriented JavaScript](object-oriented-javascript/README.md)
-  * 9.1 What is Object Oriented Programming?
-  * 9.2 Extending Classes
-  * 9.3 Inheriting Classes
-* [10 The Document Object Model \(DOM\)](the-document-object-model/README.md)
-  * 10.1 How JavaScript Interacts with HTML
-  * 10.2 Selecting Elements in the DOM
-  * 10.3 Modifying Elements in the DOM
-* [11 Handling Events](handling-events/README.md)
-  * 11.1 Adding Event Listeners
-  * 11.2 Responding to Events
+  * [5.6 Arrays](data-types/55-arrays.md)
+* [6 Controlling Logical Flow](controlling-logical-flow/README.md)
+  * 6.1 Conditionals
+  * 6.2 For Loops
+  * 6.3 For...Of Loops
+  * 6.4 While Loops
+* [7 Organizing Code](organizing-code/README.md)
+  * 7.1 Functions
+  * 7.2 Scoping
+* [8 Object Oriented JavaScript](object-oriented-javascript/README.md)
+  * 8.1 What is Object Oriented Programming?
+  * 8.2 Extending Classes
+  * 8.3 Inheriting Classes
+* [9 The Document Object Model \(DOM\)](the-document-object-model/README.md)
+  * 9.1 How JavaScript Interacts with HTML
+  * 9.2 Selecting Elements in the DOM
+  * 9.3 Modifying Elements in the DOM
+* [10 Handling Events](handling-events/README.md)
+  * 10.1 Adding Event Listeners
+  * 10.2 Responding to Events
 * Appendix A: Resources for Learning More About JavaScript
 * [Glossary](/GLOSSARY.md)
 

@@ -1,5 +1,7 @@
 # Objects
 
+
+
 {% exercise %}
 Define a variable `x` equal to 10.
 

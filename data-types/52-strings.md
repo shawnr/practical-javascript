@@ -67,7 +67,6 @@ We can find a full table showing how to escape characters on the MDN String page
 | \b	                | backspace |
 | \f	                | form feed |
 | \uXXXX	        | unicode codepoint |
-| \u{X} ... \u{XXXXXX}	| unicode codepoint |
 | \xXX	                 | the Latin-1 character |
 
 {% exercise %}

@@ -47,18 +47,6 @@ if (typeof(foo) === undefined) {
 ```
 Now, when we do the check against `undefined` it's `false` because `currentUser` has been defined as `null`. 
 
+It's common for developers to use `null` to represent missing data. Imagine an object that stores an address. We could picture that object with attributes for both "street address" and "street address line two". However, many people do not have an additional street address line to use in their addresses. In this case, the optional "street address line two" might be equal to `null` to represent that value is missing in a purposeful way.
 
-{% exercise %}
-Define a variable `x` equal to 10.
-
-{% initial %}
-var x =
-
-{% solution %}
-var x = 10;
-
-{% validation %}
-assert(x == 10);
-
-{% endexercise %}
 

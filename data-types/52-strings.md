@@ -102,5 +102,23 @@ assert(typeof(x)==="string");
 
 {% endexercise %}
 
+{% exercise %}
+Fix the String so the text shows up properly.
+
+{% initial %}
+var x = 'All's I know is, my gut says, "Maybe"';
+
+{% solution %}
+var x = 'All\'s I know is, my gut says, "Maybe"';
+
+{% validation %}
+assert(typeof(x)==="string");
+
+{% endexercise %}
+
+
+
+
+
 
 

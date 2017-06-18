@@ -55,11 +55,11 @@ There are two major data types used for working with numbers: **[Integers](https
 
 `var myInteger = 4;`
 
-**[Decimals](https://en.wikipedia.org/wiki/Single-precision_floating-point_format)** are numbers with decimal points. These are often required when doing calculations that might result in decimal remainders, when dealing with measurements, or in other situations where the value of a number may need to be more precise than a whole number. A decimal variable definition in JavaScript would look like this:
+**[Floating point numbers](https://en.wikipedia.org/wiki/Single-precision_floating-point_format)** are numbers with decimal points. These are often required when doing calculations that might result in decimal remainders, when dealing with measurements, or in other situations where the value of a number may need to be more precise than a whole number. A decimal variable definition in JavaScript would look like this:
 
 `var myDecimal = 3.14;`
 
-It's very useful to note that although these numbers are called "Decimal" in JavaScript, they are often known as "Floating point" numbers or "Floats" or "Singles". You can get an overview of the more technical details about how this data type works [on the Wikipedia page](https://en.wikipedia.org/wiki/Single-precision_floating-point_format).
+It's very useful to note that, as of recent versions of the ECMAScript standard, JavaScript has only one type for [Numbers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type).
 
 ### Boolean
 

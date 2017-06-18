@@ -18,7 +18,7 @@
   * [4.3 Operators](basic-syntax/43-operators.md)
   * [4.4 Variables](basic-syntax/45-variables.md)
   * [4.5 Quiz: Basic Syntax](basic-syntax/46-quiz-basic-syntax.md)
-* [5 Data Types](data-types/README.md)
+* [5 Data Types and Structures](data-types/README.md)
   * 5.1 Numbers
   * 5.2 Strings
   * 5.3 Booleans

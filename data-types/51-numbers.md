@@ -1,5 +1,31 @@
 # Numbers
 
+Most programming languages make a division between an integer and a decimal. JavaScript does not make any distinction between the two. JavaScript has only one numeric Data Type, called Number. If a variable is given a numeric value, then it will be of the type "number":
+
+```js
+let x = 12;
+if (typeof(x) === "number"){
+    // This code will execute because 12 is a value of the type "number".
+    console.log('x is a number!');
+}
+```
+
+We could change the value of `x` to `3.14` and the conditional above would still evaluate to `true` in the same way because as far as JavaScript is concerned there is no difference between a whole number and a number with a decimal point.
+
+It is possible to determine whether or not a Number is an integer using a tool provided by the `Number` object. consider the following code:
+
+```js
+let x = 12;
+if (Number.isSafeInteger(x)){
+    // This code will execute because x is currently set to an integer value.
+    console.log('x is an integer!');
+}
+x = 3.14; // Change x to a decimal number.
+if (Number.isSafeInteger(x)){
+    // This code will not execute because x is currently set to a decimal value.
+}
+```
+
 
 {% exercise %}
 Define a variable `x` equal to 10.

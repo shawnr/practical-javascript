@@ -4,7 +4,9 @@ JavaScript also gives us a few Data Types that are used in more specific ways: B
 
 ## Boolean
 
-The Boolean Data Type has a value that is either `true` or `false`. These types of variables are helpful when controlling the logical flow of a program. We often use different logic to determine a `true` or `false` 
+The Boolean Data Type has a value that is either `true` or `false`. These types of variables are helpful when controlling the logical flow of a program. We often use different logic to determine a `true` or `false` so that we can later have an easy check to determine the next commands the program should execute.
+
+Boolean values are generally checked within a conditional (an `if` statement) or to control the execution of a `while` loop. These will be used throughout our code.
 
 ## Undefined
 

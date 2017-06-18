@@ -1,5 +1,11 @@
 # String Basics
 
+## Split
+
+## Join
+
+## Text Manipulation
+
 {% exercise %}
 Define a variable `x` equal to 10.
 

@@ -52,7 +52,23 @@ var heart = "Here is a heart: \u2764"; // The backslash escapes the unicode char
 ```
 If we did not escape the [Unicode](https://unicode-table.com) value then our String would be "Here is a heart: u2764" instead of "Here is a heart: ❤".
 
- 
+We can find a full table showing how to escape characters on the MDN String page. Here it is for convenience:
+
+| Code	                | Output                |
+|-----------------------|---------------------|
+| \0	                | the NULL character |
+| \'	                | single quote |
+| \"	                | double quote |
+| \\	                | backslash |
+| \n	                | new line |
+| \r	                | carriage return |
+| \v	                | vertical tab |
+| \t	                | tab |
+| \b	                | backspace |
+| \f	                | form feed |
+| \uXXXX	        | unicode codepoint |
+| \u{X} ... \u{XXXXXX}	| unicode codepoint |
+| \xXX	                 | the Latin-1 character |
 
 {% exercise %}
 Define a variable `x` equal to 10.

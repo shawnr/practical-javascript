@@ -18,6 +18,17 @@ In the example above, a list called `sandwich` has been created with three items
  ```
 In this second example, `crazyList` contains items of differing Data Types. The first is a String, then a Number, then an Object, and then a Boolean. Arrays are flexible and useful for holding sets of things that need to go together.
 
+## Accessing Items in an Array
+JavaScript Arrays are "zero indexed" which means that they begin counting their items with the number `0`. To access any item in an Array, we can reference the position of the item using the number that corresponds to that item's position. Here is an example:
+
+```js
+var dogs = ['retriever', 'hound', 'mutt'];
+console.log(dogs[0]); // Prints 'retriever' to the console.
+console.log(dogs[1]); // Prints 'hound' to the console.
+console.log(dogs[2]); // Prints 'mutt' to the console.
+```
+As we can see in this example, a list with three items will fill positions `0`, `1`, and `2` in the Array. To access any of these positions, we can use the square bracket notation to reference a specific index within the Array: `dogs[1]` to reference `'hound'`, for example.
+
 ## Adding Items to an Array
 
 A list is much more useful when you can add new items to it. To accomplish this, Arrays have a `push()` command that can add an item to the end of the list:

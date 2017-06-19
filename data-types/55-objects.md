@@ -29,7 +29,7 @@ In the code above, we can see that `venue` is an object containing information a
 Objects allow us to create relationships and hierarchies between information, and they are very useful for doing so. In fact, the JavaScript Object Notation (JSON) format has become so popular that it is used across virtually every other programming language to create well-defined hierarchical data structures. We will explore more about JSON in a couple sections, but first we must discuss Arrays.
 
 {% exercise %}
-Define an object called `foo`.
+Define an Object called `foo`.
 
 {% initial %}
 var 

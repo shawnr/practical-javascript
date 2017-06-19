@@ -23,9 +23,9 @@
   * [5.2 Strings](data-types/52-strings.md)
   * [5.4 Other Primitive Data Types](data-types/54-other-primitive-data-types.md)
   * [5.5 Objects](data-types/55-objects.md)
-  * [5.8 JSON](data-types/57-json.md)
   * [5.7 Arrays](data-types/55-arrays.md)
-  * [5.8 Working with Text](data-types/58-working-with-text.md)
+  * [5.8 JSON](data-types/57-json.md)
+  * [5.9 Working with Text](data-types/58-working-with-text.md)
 * [6 Controlling Logical Flow](controlling-logical-flow/README.md)
   * 6.1 Conditionals
   * 6.2 For Loops

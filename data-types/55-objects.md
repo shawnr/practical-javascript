@@ -38,7 +38,7 @@ var
 var foo = {};
 
 {% validation %}
-assert(typeof(foo)==="object", "Incorrect: Your variable is not an object!);
+assert(typeof(foo)==="object", "Incorrect: Your variable is not an object!");
 
 {% endexercise %}
 

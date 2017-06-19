@@ -18,6 +18,14 @@ In the example above, a list called `sandwich` has been created with three items
  ```
 In this second example, `crazyList` contains items of differing Data Types. The first is a String, then a Number, then an Object, and then a Boolean. Arrays are flexible and useful for holding sets of things that need to go together.
 
+Arrays also come with some features that make it easy to work with them. One of the most useful is the `length` attribute. We can determine how many items are in an array by using this attribute like so:
+
+```js
+var flowers = ['rose', 'carnation', 'daffodil'];
+console.log(flowers.length) // Will output `3` to the console.
+```
+Accessing the length attribute on an Array is especially useful when presenting information about data to users (e.g. How many tags on this content item?, etc.) or when you're looping through Arrays using other methods (which we will discuss in the next section).
+
 ## Accessing Items in an Array
 JavaScript Arrays are "zero indexed" which means that they begin counting their items with the number `0`. To access any item in an Array, we can reference the position of the item using the number that corresponds to that item's position. Here is an example:
 
@@ -28,6 +36,8 @@ console.log(dogs[1]); // Prints 'hound' to the console.
 console.log(dogs[2]); // Prints 'mutt' to the console.
 ```
 As we can see in this example, a list with three items will fill positions `0`, `1`, and `2` in the Array. To access any of these positions, we can use the square bracket notation to reference a specific index within the Array: `dogs[1]` to reference `'hound'`, for example.
+
+It's also possible and common to loop over items in an Array, and there are some built-in tools that make it very convenient to do that in our code. We will dig deeper into that in the next section when we talk about loops more generally.
 
 ## Adding Items to an Array
 
@@ -48,6 +58,7 @@ To remove the item at the beginning of the Array, use the `shift()` command:
 ```js
 var fruits = ['apple', 'orange', 'banana']; 
 fruits.shift(); // Removes 'apple' from the list leaving ['orange', 'banana'].
+// `fruits` is now equal to ['orange', 'banana']
 ```
 
 To remove the item at the end of the Array, use the `pop()` command:
@@ -55,12 +66,49 @@ To remove the item at the end of the Array, use the `pop()` command:
 ```js
 var fruits = ['apple', 'orange', 'banana']; 
 fruits.pop(); // Removes 'banana' from the list leaving ['apple', 'orange'].
+// `fruits` is now equal to ['apple', 'orange']
 ```
 
 The two previous commands are simple and straightforward. The next way to remove items from an Array is a little more complex. 
 
-To remove one or more items from within an Array, use the `splice()` command. The `splice()` command takes two parameters: The position to begin removing, and how many items to remove after that position.
+To remove one or more items from within an Array, use the `splice()` command. The `splice()` command takes two parameters: The position to begin removing, and how many items to remove after that position. Of course, in order to get the most from this command we often need to first use another command, `indexOf()`. We can use `indexOf()` to find the position of an item in an Array. Here is an example of using both of these tools to remove several items from an Array:
 
+```js
+var colors = ['blue', 'red', 'green', 'yellow', 'black', 'white'];
+var position = colors.indexOf('yellow'); // The `position` variable will be set to `3` since that is the index for the item 'yellow' in this Array.
+colors.splice(position, 2); // This command removes 'yellow' plus the one item following 'yellow' (which is 'black').
+// `colors` is now equal to ['blue', 'red', 'green', 'white']
+```
+In this example we can see that the `colors` array consists of six items. We use `indexOf('yellow')` to determine the position of `'yellow'` in the Array. Then, we use that position value with the `splice(position, 2)` command to remove `'yellow'` and the item following it (which is `'black'`). The `2` in our `splice()` command indicates that two items should be removed from the Array.
+
+
+{% exercise %}
+Define an Array.
+
+{% initial %}
+var x =
+
+{% solution %}
+var x = 10;
+
+{% validation %}
+assert(x == 10);
+
+{% endexercise %}
+
+{% exercise %}
+Define a variable `x` equal to 10.
+
+{% initial %}
+var x =
+
+{% solution %}
+var x = 10;
+
+{% validation %}
+assert(x == 10);
+
+{% endexercise %}
 
 {% exercise %}
 Define a variable `x` equal to 10.

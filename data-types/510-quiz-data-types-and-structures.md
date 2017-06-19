@@ -56,37 +56,36 @@ Please enjoy this self-check quiz to review some of the concepts from this secti
         <explanation>An Object is a collection of related attributes.</explanation>
     </question>
     <question>
-        <p>What do we call words that developers cannot use to name variables, functions, etc. in their code?</p>
-        <answer correct>reserved words</answer>
-        <answer>keywords</answer>
-        <answer>special words</answer>
-        <answer>singletons</answer>
-        <explanation>"Reserved words" are used by the programming language and cannot be used to name variables, functions, etc.</explanation>
+        <p>Name the index of the item 'apple' in this Array: <code>['apple', 'orange', 'banana']</code></p>
+        <answer correct>0</answer>
+        <answer>1</answer>
+        <answer>2</answer>
+        <explanation>The item 'apple' is at the index 0 in the Array.</explanation>
     </question>
     <question>
-        <p>What data type is commonly used to contain text in a programming language?</p>
-        <answer>Dictionary</answer>
-        <answer>Integer</answer>
-        <answer correct>String</answer>
-        <answer>Boolean</answer>
-        <explanation>Most programming languages have a notion of a "String" data type that is meant to contain text.</explanation>
+        <p>What command is used to remove the last item in an Array?</p>
+        <answer correct><code>pop()</code></answer>
+        <answer><code>shift()</code></answer>
+        <answer><code>join()</code></answer>
+        <answer><code>splice()</code></answer>
+        <explanation>The <code>pop()</code> command is used to remove the last item in an Array.</explanation>
     </question>
-    <question multiple>
-        <p>What data types are commonly used with numbers?</p>
-        <answer>String</answer>
-        <answer correct>Integer</answer>
-        <answer>Boolean</answer>
-        <answer correct>Float</answer>
-        <explanation>Integers and Floats (or Decimals) are used in many programming languages to store numeric data.</explanation>
+    <question>
+        <p>What command is used to remove the first item in an Array?</p>
+        <answer><code>pop()</code></answer>
+        <answer correct><code>shift()</code></answer>
+        <answer><code>join()</code></answer>
+        <answer><code>splice()</code></answer>
+        <explanation>The <code>shift()</code> command is used to remove the first item in an Array.</explanation>
     </question>    
     <question>
-        <p>What data type is used for storing `true` and `false` values?</p>
-        <answer>String</answer>
-        <answer correct>Boolean</answer>
-        <answer>Decimal</answer>
-        <answer>Integer</answer>
-        <explanation>The Boolean data type is used for storing `true` and `false` values.</explanation>
-    </question>  
+        <p>What command is used to remove a group of items from within an Array?</p>
+        <answer><code>pop()</code></answer>
+        <answer><code>shift()</code></answer>
+        <answer><code>join()</code></answer>
+        <answer correct><code>splice()</code></answer>
+        <explanation>The <code>splice()</code> command is used to remove a group of items within an Array.</explanation>
+    </question>   
     <question multiple>
         <p>What two kinds of loops are often found in programming languages?</p>
         <answer>`recurring`</answer>

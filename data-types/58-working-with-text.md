@@ -32,13 +32,96 @@ There are many situations where using `join()` like this is a good approach. It 
 ```js
 var ogText = "Sometimes I worry about being a success in a mediocre world." // Quote is courtesy Lily Tomlin!
 var textArray = ogText.split(' ');
+// textArray equals ["Sometimes", "I", "worry", "about", "being", "a", "success", "in", "a", "mediocre", "world."]
 
 var shoppingText = "eggs,butter,milk,bread";
 var shoppingArray = shoppingText.split(',');
+// shoppingArray now equals ["eggs", "butter", "milk", "bread"]
 ```
+In the example above, we can see that we have two different strings which we can split apart on characters of our choosing. We could also use the `join()` command to join them again into a string. If we use the same character to join, then we would end up with the original string:
 
+```js
+var ogText = "Sometimes I worry about being a success in a mediocre world." // Quote is courtesy Lily Tomlin!
+var textArray = ogText.split(' ');
+
+var newText = textArray.join(' ');
+if (ogText === newText){
+    // This code will execute because `ogText` and `newText` are identical.
+    console.log('We have re-made the original text!');
+}
+```
+Being able to break apart strings and re-combine them is helpful in many situations. For example, we often do this sort of thing when analyzing file paths or URLs. It can be helpful for allowing users to enter data in different interfaces, too, where providing a comma-separated list is more convenient than typing each item of the Array individually.
+
+**BEWARE** Although these tools for breaking apart Strings and making them Arrays are useful, be wary of using them to replace proper Data Structures in your code or HTML interfaces.
 
 ## Template Literals
+Finally, we have a great tool in JavaScript that allows us to insert data values into text in a very convenient way. [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) are defined with the backtick character (```). We can work more easily Template Literals and avoid many of the issues we previously had with String concatenation. For example, consider our concatenation example updated to use Template Literals:
+
+```js
+var name = "Jane";
+var destination = "library";
+var distance = 1.2;
+
+var message = `Your trip: ${name} is going to the ${destination} which is ${distance} miles away.`;
+// `message` now contains the text: "Your trip: Jane is going to the library which is 1.2 miles away.";
+```
+We can see that the end result is the same, but getting there is much easier on the eyes. Template Literals allow us to drop variables into Strings by referencing them with expression tags (`${expression}`). This allows us to write code that is much more simple. Template Literals can also span multiple lines, so we can do things like this:
+
+```js
+var salutation = "Dearest";
+var name = "John";
+var numberOfDays = 15;
+var numberOfHours = 7;
+
+var message = `${salutation} ${name},
+    It's been ${numberOfHours} hours and ${numberOfDays} days
+    since you took your love away.
+    
+    Please return it soon`;
+
+console.log(message);
+```
+This code would output:
+
+```
+Dearest John,
+It's been 7 hours and 15 days
+since you took your love away.
+
+Please return it soon.
+```
+
+Template Literals make it much easier to work with large chunks of text. They can span multiple lines, and their formatting stays generally intact. But they can also be made a little more dynamic by adding JavaScript expressions in addition to just inserting values from variables. Here is an example:
+
+```js
+var itemName = "Widget";
+var price = 4;
+var tax = 0.05;
+var quantity = 3;
+
+var receipt = `RECEIPT OF PURCHASE
+    ${itemName} x ${quantity} @ ${price}
+    
+    Price: ${quantity * price}
+    Tax: ${price * tax}
+    ------------------------------------
+    Total: ${price + (price * tax)}`;
+
+console.log(receipt);
+```
+The code above would output the following text to the JavaScript console:
+
+```
+RECEIPT OF PURCHASE
+Widget x 3 @ 4
+Price: 12
+Tax: 0.2
+------------------------------------
+Total: 4.2
+```
+As we can see, it's possible to do operations within the expression tags. This makes Template Literals even more flexible and useful.
+    
+
 
 {% exercise %}
 Define a variable `x` equal to 10.

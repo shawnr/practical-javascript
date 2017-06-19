@@ -124,6 +124,36 @@ As we can see, it's possible to do operations within the expression tags. This m
 
 
 {% exercise %}
+Split the text `shoppingList` into an array on the commas.
+
+{% initial %}
+var textList = "bread,milk,butter,eggs";
+var shoppingList = 
+
+{% solution %}
+var textList = "bread,milk,butter,eggs";
+var shoppingList = textList.split(',');
+
+{% validation %}
+assert(shoppingList[0]==="bread", 'Incorrect.');
+
+{% endexercise %}
+
+{% exercise %}
+Define a variable `x` equal to 10.
+
+{% initial %}
+var x =
+
+{% solution %}
+var x = 10;
+
+{% validation %}
+assert(x == 10);
+
+{% endexercise %}
+
+{% exercise %}
 Define a variable `x` equal to 10.
 
 {% initial %}

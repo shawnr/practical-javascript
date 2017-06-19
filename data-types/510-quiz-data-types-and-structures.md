@@ -87,12 +87,12 @@ Please enjoy this self-check quiz to review some of the concepts from this secti
         <explanation>The <code>splice()</code> command is used to remove a group of items within an Array.</explanation>
     </question>   
     <question multiple>
-        <p>What two kinds of loops are often found in programming languages?</p>
-        <answer>`recurring`</answer>
-        <answer correct>`for`</answer>
-        <answer>`continuous`</answer>
-        <answer correct>`while`</answer>
-        <explanation>The two most common types of loop are `for` and `while`.</explanation>
+        <p>What programming languages support JSON as a data interchange format?</p>
+        <answer>JavaScript</answer>
+        <answer correct>Python</answer>
+        <answer>Ruby</answer>
+        <answer correct>PHP</answer>
+        <explanation>Almost all modern programming languages support JSON as a data interchange format.</explanation>
     </question>  
     <question>
         <p>The `if`/`else` statement is an example of what kind of logical flow control concept?</p>

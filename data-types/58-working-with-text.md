@@ -156,16 +156,30 @@ assert(typeof(filePath)==="string", 'Incorrect.');
 {% endexercise %}
 
 {% exercise %}
-Define a variable `x` equal to 10.
+Replace the expression tags in this template literal to insert the corresponding data.
 
 {% initial %}
-var x =
+var name = "Grace Hopper";
+var source = "Ships Ahoy Magazine";
+var date = "July 1986";
+
+var message = `"It's easier to ask forgiveness than it is to get permission."
+    Name, Source
+    Date`;
 
 {% solution %}
-var x = 10;
+var name = "Grace Hopper";
+var source = "Ships Ahoy Magazine";
+var date = "July 1986";
+
+var message = `"It's easier to ask forgiveness than it is to get permission."
+    ${name}, ${source}
+    ${date}`;
 
 {% validation %}
-assert(x == 10);
+assert(message === `"It's easier to ask forgiveness than it is to get permission."
+Grace Hopper, Ships Ahoy Magazine
+July 1986`);
 
 {% endexercise %}
 

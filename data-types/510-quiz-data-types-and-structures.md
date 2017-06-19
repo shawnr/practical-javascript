@@ -95,20 +95,20 @@ Please enjoy this self-check quiz to review some of the concepts from this secti
         <explanation>Almost all modern programming languages support JSON as a data interchange format.</explanation>
     </question>  
     <question>
-        <p>The `if`/`else` statement is an example of what kind of logical flow control concept?</p>
-        <answer>reactors</answer>
-        <answer correct>conditionals</answer>
-        <answer>directions</answer>
-        <answer>gates</answer>
-        <explanation>The `if`/`else` statement is an example of a conditional.</explanation>
-    </question>  
-    <question multiple>
-        <p>Two types of data structures found in JavaScript are:</p>
-        <answer correct>Array</answer>
-        <answer correct>Object</answer>
-        <answer>Collection</answer>
-        <answer>Box</answer>
-        <explanation>JavaScript uses Arrays and Objects as primary data structures.</explanation>
+        <p>What command is used to create a String from the items in an Array?</p>
+        <answer><code>pop()</code></answer>
+        <answer><code>shift()</code></answer>
+        <answer correct><code>join()</code></answer>
+        <answer><code>splice()</code></answer>
+        <explanation>The <code>join()</code> command is used to create a String from the items in an Array.</explanation>
+    </question> 
+    <question>
+        <p>The proper format for an expression within a Template Literal is:</p>
+        <answer><code><expression></code></answer>
+        <answer><code>[expression]</code></answer>
+        <answer><code>$expression</code></answer>
+        <answer correct><code>${expression}</code></answer>
+        <explanation>Template Literals use the <code>${expression}</code> format for expressions.</explanation>
     </question>  
     <question multiple>
         <p>Which programming languages are used in web development? (select all that apply)</p>

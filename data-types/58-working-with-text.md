@@ -179,7 +179,7 @@ var message = `"It's easier to ask forgiveness than it is to get permission."
 {% validation %}
 assert(message === `"It's easier to ask forgiveness than it is to get permission."
 Grace Hopper, Ships Ahoy Magazine
-July 1986`);
+July 1986`, 'Try again!');
 
 {% endexercise %}
 

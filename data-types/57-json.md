@@ -34,18 +34,3 @@ JSON data structures are written as "anonymous" Objects. That means there is no 
 
 We can see that JSON uses basically the same format as Object definitions in JavaScript. The curly braces (`{ }`) indicate Objects, and the square brackets (`[ ]`) indicate Arrays. Look, for example, at the `phoneNumber` Array: It contains two Objects. Each of the `phoneNumber` objects have two attributes: `type` and `number`. The user `John Smith` has two phone numbers; one of them is his home number and the other is his fax number. This is a common case where users have multiple phone numbers and wish to label each one accordingly. By using the structure of JSON we can easily understand how all this information is related, and we could use all of the information within an application.
 
-
-{% exercise %}
-Define a variable `x` equal to 10.
-
-{% initial %}
-var x =
-
-{% solution %}
-var x = 10;
-
-{% validation %}
-assert(x == 10);
-
-{% endexercise %}
-

@@ -83,44 +83,68 @@ In this example we can see that the `colors` array consists of six items. We use
 
 
 {% exercise %}
-Define an Array.
+Define an Array called `names` with a length of 4.
 
 {% initial %}
-var x =
+var names =
 
 {% solution %}
-var x = 10;
+var names = ['Ada', 'Katherine', 'Grace', 'Donna'];
 
 {% validation %}
-assert(x == 10);
+assert(names.length===4, 'Incorrect: Your Array is not the correct length.');
 
 {% endexercise %}
 
 {% exercise %}
-Define a variable `x` equal to 10.
+Remove the first item from this Array.
 
 {% initial %}
-var x =
+var vehicles = ['truck', 'bus', 'ship', 'airplane', 'rocket'];
 
 {% solution %}
-var x = 10;
+var vehicles = ['truck', 'bus', 'ship', 'airplane', 'rocket'];
+vehicles.shift();
 
 {% validation %}
-assert(x == 10);
+assert(vehicles===['bus', 'ship', 'airplane', 'rocket'], 'Incorrect: You removed the wrong item.');
 
 {% endexercise %}
 
 {% exercise %}
-Define a variable `x` equal to 10.
+Remove the last item from this Array.
 
 {% initial %}
-var x =
+var vehicles = ['truck', 'bus', 'ship', 'airplane', 'rocket'];
 
 {% solution %}
-var x = 10;
+var vehicles = ['truck', 'bus', 'ship', 'airplane', 'rocket'];
+vehicles.pop();
 
 {% validation %}
-assert(x == 10);
+assert(vehicles===['truck', 'bus', 'ship', 'airplane'], 'Incorrect: You removed the wrong item.');
 
 {% endexercise %}
+
+
+{% exercise %}
+Remove the the items 'bus' and 'ship' from this Array.
+
+{% initial %}
+var vehicles = ['truck', 'bus', 'ship', 'airplane', 'rocket'];
+
+{% solution %}
+var vehicles = ['truck', 'bus', 'ship', 'airplane', 'rocket'];
+var position = vehicles.indexOf('bus');
+vehicles.splice(position, 2);
+
+{% validation %}
+assert(vehicles===['truck', 'airplane', 'rocket'], 'Incorrect: You removed the wrong items.');
+
+{% endexercise %}
+
+
+
+
+
 

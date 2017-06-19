@@ -107,7 +107,7 @@ var vehicles = ['truck', 'bus', 'ship', 'airplane', 'rocket'];
 vehicles.shift();
 
 {% validation %}
-assert(vehicles===['bus', 'ship', 'airplane', 'rocket'], 'Incorrect: You removed the wrong item.');
+assert(vehicles[0]==='bus', 'Incorrect: You removed the wrong item.');
 
 {% endexercise %}
 
@@ -122,7 +122,7 @@ var vehicles = ['truck', 'bus', 'ship', 'airplane', 'rocket'];
 vehicles.pop();
 
 {% validation %}
-assert(vehicles===['truck', 'bus', 'ship', 'airplane'], 'Incorrect: You removed the wrong item.');
+assert(vehicles[vehicles.length-1]==='airplane', 'Incorrect: You removed the wrong item.');
 
 {% endexercise %}
 
@@ -139,7 +139,7 @@ var position = vehicles.indexOf('bus');
 vehicles.splice(position, 2);
 
 {% validation %}
-assert(vehicles===['truck', 'airplane', 'rocket'], 'Incorrect: You removed the wrong items.');
+assert(vehicles[1]==='airplane', 'Incorrect: You removed the wrong items.');
 
 {% endexercise %}
 

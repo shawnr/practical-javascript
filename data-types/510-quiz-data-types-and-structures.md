@@ -110,13 +110,13 @@ Please enjoy this self-check quiz to review some of the concepts from this secti
         <answer correct><code>${expression}</code></answer>
         <explanation>Template Literals use the <code>${expression}</code> format for expressions.</explanation>
     </question>  
-    <question multiple>
-        <p>Which programming languages are used in web development? (select all that apply)</p>
-        <answer correct>PHP</answer>
-        <answer correct>Python</answer>
-        <answer correct>Ruby</answer>
-        <answer correct>Java</answer>
-        <explanation>All of these programming languages are used to build websites.</explanation>
+    <question>
+        <p>If <code>var a = {};</code> and <code>var b = [];</code>, which statement is true?</p>
+        <answer><code>a</code> is a String and <code>b</code> is an Object.</answer>
+        <answer correct><code>a</code> is an Object and <code>b</code> is an Array.</answer>
+        <answer><code>a</code> is an Array and <code>b</code> is an Object.</answer>
+        <answer><code>a</code> is Undefined and <code>b</code> is also Undefined.</answer>
+        <explanation><code>a</code> is an empty Object and <code>b</code> is an empty Array.</explanation>
     </question>  
 </quiz>
 

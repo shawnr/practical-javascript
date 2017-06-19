@@ -26,34 +26,34 @@ Please enjoy this self-check quiz to review some of the concepts from this secti
         <explanation>The <code>split()</code> command allows us to break apart a String into an Array.</explanation>
     </question>
     <question>
-        <p>In a "typed" programming language, developers do not need to declare the data type of a variable.</p>
+        <p><code>null</code> and <code>undefined</code> mean the same thing.</p>
         <answer>True</answer>
         <answer correct>False</answer>
-        <explanation>In a "typed" programming language, developers must always specify the type of a variable when they declare it.</explanation>
+        <explanation><code>null</code> is typically used to indicate missing data, while <code>undefined</code> means that the value has not been initialized.</explanation>
     </question>
     <question multiple>
-        <p>Which of the following programming languages are compiled?</p>
-        <answer correct>C++</answer>
-        <answer correct>COBOL</answer>
-        <answer>Python</answer>
-        <answer>PHP</answer>
-        <explanation>C++ and COBOL both use compilers to generate binary files that can be executed by a computer.</explanation>
+        <p>What are the values possible for a Boolean Data Type?</p>
+        <answer correct>true</answer>
+        <answer correct>false</answer>
+        <answer>maybe</answer>
+        <answer>xor</answer>
+        <explanation>"True" and "false" are the only values a Boolean Data Type may have.</explanation>
     </question>
     <question>
-        <p>The lowest-level programming language is called:</p>
-        <answer>Basic</answer>
-        <answer correct>Assembly</answer>
-        <answer>Binary</answer>
-        <answer>C</answer>
-        <explanation>Assembly is the lowest-level programming language.</explanation>
+        <p>The process of marking certain characters (such as apostrophes) so they work within Strings is:</p>
+        <answer>enhancing</answer>
+        <answer correct>escaping</answer>
+        <answer>converting</answer>
+        <answer>encoding</answer>
+        <explanation>We "escape" certain characters to make them display properly in a String.</explanation>
     </question>
     <question>
-        <p>What do we call a "self-contained sequence of actions to be performed" in a program?</p>
-        <answer>instructions</answer>
-        <answer>function</answer>
-        <answer correct>algorithm</answer>
-        <answer>proces</answer>
-        <explanation>An "algorithm" is a self-contained sequence of actions.</explanation>
+        <p>Objects in JavaScript can be thought of as collections of related what?</p>
+        <answer>methods</answer>
+        <answer>functions</answer>
+        <answer correct>attributes</answer>
+        <answer>data</answer>
+        <explanation>An Object is a collection of related attributes.</explanation>
     </question>
     <question>
         <p>What do we call words that developers cannot use to name variables, functions, etc. in their code?</p>

@@ -124,7 +124,7 @@ As we can see, it's possible to do operations within the expression tags. This m
 
 
 {% exercise %}
-Split the text `shoppingList` into an array on the commas.
+Split the String `shoppingList` into an array on the commas.
 
 {% initial %}
 var textList = "bread,milk,butter,eggs";
@@ -140,16 +140,18 @@ assert(shoppingList[0]==="bread", 'Incorrect.');
 {% endexercise %}
 
 {% exercise %}
-Define a variable `x` equal to 10.
+Join the Array using a slash (`/`) as the joining character.
 
 {% initial %}
-var x =
+var pathArray = ['Projects','web','resources','js','main.js'];
+var filePath = 
 
 {% solution %}
-var x = 10;
+var pathArray = ['Projects','web','resources','js','main.js'];
+var filePath = pathArray.join('/');
 
 {% validation %}
-assert(x == 10);
+assert(typeof(filePath)==="string", 'Incorrect.');
 
 {% endexercise %}
 

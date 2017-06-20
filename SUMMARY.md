@@ -30,7 +30,7 @@
 * [6 Controlling Logical Flow](controlling-logical-flow/README.md)
   * 6.1 Conditionals
   * 6.2 For Loops
-  * 6.3 For...Of Loops
+  * [6.3 Looping Arrays](controlling-logical-flow/63-forof-loops.md)
   * 6.4 While Loops
 * [7 Organizing Code](organizing-code/README.md)
   * 7.1 Functions

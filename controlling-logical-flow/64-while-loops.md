@@ -39,6 +39,7 @@ var x = 0;
 {% solution %}
 var x = 0;
 while (x < 43) {
+    console.log(`The value of x is: ${x}`);
     x++;
 }
 {% validation %}

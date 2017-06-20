@@ -42,7 +42,7 @@ for (let message of messages) {
 }
 
 {% validation %}
-assert(true, "Incorrect.");
+assert(true, "Did you see the alerts?");
 
 {% endexercise %}
 

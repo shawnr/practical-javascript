@@ -206,4 +206,59 @@ assert(status, "Incorrect. Please be sure to set the status variable to 'success
 
 {% endexercise %}
 
+{% exercise %}
+Write a conditional to check if `x` OR `y` are true. If so, set `status` to "success".
+
+{% initial %}
+var x = true;
+var y = false;
+var status;
+
+{% solution %}
+var x = 12;
+var y = 42;
+var status;
+
+if (x || y) {
+    status = "success";
+}
+
+{% validation %}
+assert(status, "Incorrect. Please be sure to set the status variable to 'success'.");
+
+{% endexercise %}
+
+{% exercise %}
+Write a conditional to check if `x` AND `y` are true. If so, set `status` to "success". If not, set `status` to "failure".
+
+{% initial %}
+var x = true;
+var y = false;
+var status;
+
+{% solution %}
+var x = 12;
+var y = 42;
+var status;
+
+if (x && y) {
+    status = "success";
+} else {
+    status = "failure";
+}
+
+{% validation %}
+assert(status, "Incorrect. Please be sure to set the status variable accordingly.");
+
+{% endexercise %}
+
+
+
+
+
+
+
+
+
+
 

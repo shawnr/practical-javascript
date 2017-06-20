@@ -102,7 +102,7 @@ Sometimes when we want to check especially complex conditionals, it's useful to 
 operator | description | example
 ---------|-------------|---------
 `&&` | **AND**: Returns `true` if BOTH operands equal `true`. | `x == 12 && y == 42`
-`{% raw %}||{% endraw %}` | **OR**: Returns `true` if EITHER operand equals `true`. | `x > 3 || y < 31`
+<code>{% raw %}||{% endraw %}</code> | **OR**: Returns `true` if EITHER operand equals `true`. | `x > 3 || y < 31`
 `!` | **NOT**: Returns the opposite of whatever the operand evaluates to be. That is `false` if the operand equals `true`, or `true` if the operand equals `false`. | `!foo`
 
 These three logical operators round out our ability to check conditions between operands. `AND` and `OR` are especially useful for making compound assertions. We can use them in a conditional like this:

@@ -4,10 +4,30 @@ The most common use for a loop in JavaScript is to loop over values in an Array.
 
 As we read in the `for` loop section, we can loop through Arrays in a very "manual" way by using a standard `for` loop. However, Arrays (and other iterable objects in JavaScript) can also be accessed using [the `for ... of` syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for...of_statement).
 
-Let's look at an example:
+Let's look at the example we saw on the `for` loop page:
 
 ```js
-var simpsons 
+var simpsons = ['Homer', 'Marge', 'Bart', 'Lisa', 'Maggie'];
+
+for (let i=0; i<simpsons.length; i++){
+    console.log(simpsons[i]);
+}
+```
+The above code shows the old way of accessing items in an Array. Here is the new (and preferred) approach:
+
+```js
+var simpsons = ['Homer', 'Marge', 'Bart', 'Lisa', 'Maggie'];
+
+for (let familyMember of simpsons){
+    console.log(familyMember);
+}
+```
+As we can see, using the `for ... of` syntax allows us to eliminate the need for a counter. Every item in the Array comes through and is accessible within the loop using the named variable we specify at the beginning of the loop (in this case, that variable is named `familyMember`).
+
+The syntax to declare this kind of loop is more simple than the standard `for` loop syntax. We only have to define a name for each item in the Array to take on as it moves through the loop. Everything else is handled for us by JavaScript, which knows how many items are in the Array and can figure out how many times to execute the loop.
+
+This pattern exists in many other programming languages, so getting used to the way this works is helpful even outside of JavaScript. Many templating languages, for example, have a `foreach` or similar kind of loop that can be executed.
+
 
 {% exercise %}
 Define an Object called `foo` with a `name` attribute equal to "Bob".

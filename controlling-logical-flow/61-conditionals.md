@@ -94,8 +94,10 @@ operator | description | example
 `<` | Less Than: Returns true if the left operand is less than the right operand. | `y < 1337`
 `<=` | Less Than or Equal To: Returns true if the left operand is less than or equal to the right operand. | `bar <= 42`
 
-Using these comparison operators
+Using these comparison operators we can compare the values of any two variables.
+
 ## Logical Operators
+Sometimes when we want to check especially complex conditionals, it's useful to utilize [logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Logical_operators) to make compound assertions.
 
 {% exercise %}
 Define an Object called `foo` with a `name` attribute equal to "Bob".

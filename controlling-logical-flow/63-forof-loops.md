@@ -33,18 +33,18 @@ This pattern exists in many other programming languages, so getting used to the 
 Write a `for ... of` loop to add all the numbers in the `transactions` Array.
 
 {% initial %}
-var transactions = [23.55, 44.21, 7, 89.32];
+var transactions = [23, 44, 7, 89];
 var total = 0;
 
 {% solution %}
-var transactions = [23.55, 44.21, 7, 89.32];
+var transactions = [23, 44, 7, 89];
 var total = 0;
 for (let amount of transactions) {
     total = total + amount;
 }
 
 {% validation %}
-assert(true, "Did you see the alerts?");
+assert(total==163, "Check your syntax and math!");
 
 {% endexercise %}
 

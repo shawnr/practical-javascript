@@ -85,19 +85,104 @@ In order to make assertions that conditional statements can check, we must use a
 
 operator | description | example 
 ---------|-------------|--------
-`==` | Equal: Returns true if the operands on either side of the operator are equal. | `x == y`
-`!=` | Not Equal: Returns true if the operands on either side of the operator are *not* equal. | `x != y`
-`===` | Strict Equal: Returns true if the operands are equal and of the same type. | `x === 2`
-`!==` | Strict Not Equal: Returns true if the operands are of the same type but not equal, or are of different type. | `x !== 'text'`
-`>` | Greater Than: Returns true if the left operand is greater than the right operand. | `x > 42`
-`>=`| Greater Than or Equal To: Returns true if the left operand is greater than or equal to the right operand. | `foo >= 32`
-`<` | Less Than: Returns true if the left operand is less than the right operand. | `y < 1337`
-`<=` | Less Than or Equal To: Returns true if the left operand is less than or equal to the right operand. | `bar <= 42`
+`==` | **Equal**: Returns `true` if the operands on either side of the operator are equal. | `x == y`
+`!=` | **Not Equal**: Returns `true` if the operands on either side of the operator are *not* equal. | `x != y`
+`===` | **Strict Equal**: Returns `true` if the operands are equal and of the same type. | `x === 2`
+`!==` | **Strict Not Equal**: Returns `true` if the operands are of the same type but not equal, or are of different type. | `x !== 'text'`
+`>` | **Greater Than**: Returns `true` if the left operand is greater than the right operand. | `x > 42`
+`>=`| **Greater Than or Equal To**: Returns `true` if the left operand is greater than or equal to the right operand. | `foo >= 32`
+`<` | **Less Than**: Returns `true` if the left operand is less than the right operand. | `y < 1337`
+`<=` | **Less Than or Equal To**: Returns `true` if the left operand is less than or equal to the right operand. | `bar <= 42`
 
 Using these comparison operators we can compare the values of any two variables.
 
 ## Logical Operators
-Sometimes when we want to check especially complex conditionals, it's useful to utilize [logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Logical_operators) to make compound assertions.
+Sometimes when we want to check especially complex conditionals, it's useful to utilize [logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Logical_operators) to make compound assertions. There are three main logical operators:
+
+operator | description | example
+---------|-------------|---------
+`&&` | **AND**: Returns `true` if BOTH operands equal `true`. | `x == 12 && y == 42`
+`||` | **OR**: Returns `true` if EITHER operand equals `true`. | `x > 3 || y < 31`
+`!` | **NOT**: Returns the opposite of whatever the operand evaluates to be. That is `false` if the operand equals `true`, or `true` if the operand equals `false`. | `!foo`
+
+These three logical operators round out our ability to check conditions between operands. `AND` and `OR` are especially useful for making compound assertions. We can use them in a conditional like this:
+
+```js
+var x = 12;
+var y = 42;
+
+if (x==12 && y==42){
+    // This code would execute because both `x==12` and `y==42` are `true`.
+    console.log('This is true!');
+}
+
+if (x==144 && y==42){
+    // This code would not execute because one side of the assertion is `false`.
+    // The `AND` operator requires both sides to evaluate to `true`.
+    console.log('This is true!');
+}
+
+if (x==36 || y==42) {
+    // This code would execute because although `x==36` is `false`, the other side of the assertion is true.
+    // This happens because of the `OR` operator.
+    console.log('One of these is true!');
+}
+```
+
+Although it can be tricky if we string together several `AND` or `OR` clauses in an assertion, these example keep things simple. It's often best when writing code to keep things simple and break out complex logic into multiple conditionals.
+
+It can sometimes be tougher to understand the `NOT` operator because it equals `true` when the value is `false`. This can be a bit of a head trip. Here is an example using `NOT`:
+
+```js
+var loggedIn = false;
+
+if (!loggedIn) {
+    // Since `loggedIn` is `false`, this code will execute.
+    console.log('This user is not logged in!');
+}
+```
+
+## Truthiness and Falsiness
+Just like with Data Types, JavaScript is more than happy to attempt to arrive at a `true` or `false` value based on whatever we give it. Sometimes this can be very convenient. In JavaScript we have a notion of ["truthy"](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) and ["falsy"](https://developer.mozilla.org/en-US/docs/Glossary/Falsy).
+
+The following values all evaluate to `true` in a conditional:
+
+```js
+if (true)
+if (12)
+if ("some text")
+if ({})
+if ([])
+if (3.14)
+```
+
+Likewise, the following values all evaluate to `false` in a conditional:
+
+```js
+if (false)
+if (null)
+if (undefined)
+if (0)
+if (NaN)
+if ('')
+if ("")
+```
+
+Using the principles of truthy and falsy, we could write a conditional like this:
+
+```
+var x;
+
+if(x) {
+    // This code would execute if `x` has any value assigned other than `null` or `undefined`.
+    // Since `x` is currently equal to `undefined`, this code will NOT execute.
+} else {
+    // This code will execute.
+    console.log('X exists, but it has no value.');
+}
+```
+
+Of course, when possible it's good to check explicitly against an expected value. If we expect `x` to be `undefined` then we should check for that (`if (x===undefined)`). But sometimes that is not possible. Given the dynamic typing of JavaScript and the complex nature of programs, we might find a situation where we are not sure if a value might be `undefined` or `null`, but we want to catch that condition regardless. Or, we might consider `0`, and `false` to be equivalent for some purpose in our code. In this case, it is helpful to be able to perform truthy and falsy checks. 
 
 {% exercise %}
 Define an Object called `foo` with a `name` attribute equal to "Bob".

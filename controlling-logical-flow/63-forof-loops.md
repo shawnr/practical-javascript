@@ -30,15 +30,17 @@ This pattern exists in many other programming languages, so getting used to the 
 
 
 {% exercise %}
-Write a `for ... of` loop to alert each of the messages in the messages variable.
+Write a `for ... of` loop to add all the numbers in the `transactions` Array.
 
 {% initial %}
-var messages = ['Success! We did it.', 'Failure! It was sad.', 'Ambiguous! Not sure how that went.'];
+var transactions = [23.55, 44.21, 7, 89.32];
+var total = 0;
 
 {% solution %}
-var messages = ['Success! We did it.', 'Failure! It was sad.', 'Ambiguous! Not sure how that went.'];
-for (let message of messages) {
-    alert(message);
+var transactions = [23.55, 44.21, 7, 89.32];
+var total = 0;
+for (let amount of transactions) {
+    total = total + amount;
 }
 
 {% validation %}

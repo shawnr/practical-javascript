@@ -13,11 +13,11 @@ This seems like an easy question, and on one level it is: The user's login state
 Let's imagine the user is not currently logged in. What next? We might move the user to a login page so they can login. Now we would encounter even more branching logic:
 
 * Does the user have an account?
-** If so, did the user provide the required credentials to login?
-*** If yes, then did the user verify their email?
-**** If they *did* verify their email, then we can finally move them into the app.
-**** If they did *not yet* verify their email, then we need to move into the email verification logic.
-** If the credentials are bad, redirect the user to an account recovery screen.
+    * If so, did the user provide the required credentials to login?
+        * If yes, then did the user verify their email?
+            * If they *did* verify their email, then we can finally move them into the app.
+            * If they did *not yet* verify their email, then we need to move into the email verification logic.
+    * If the credentials are bad, redirect the user to an account recovery screen.
 
 But all of that is assuming the user has an account. What if that's not the case? If the user has not yet created an account, then we know we must go through the account registration *and* the email verification process before allowing the user to access the website. 
 
@@ -32,8 +32,8 @@ We typically use a loop to process sets of data. Within the loop we might even n
 * Got data. Begin processing.
 * Process output of an item.
 * Is there another item?
-** If so, process the next item.
-** If not, stop looping and move on to next section of code.
+    * If so, process the next item.
+    * If not, stop looping and move on to next section of code.
 
 This kind of processing is very common and used in large and small ways. Within a loop to present content items there might be smaller loops to, perhaps, display each tag associated with the content, or to list each author on the content.
 

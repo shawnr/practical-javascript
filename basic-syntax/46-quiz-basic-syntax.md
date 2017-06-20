@@ -1,5 +1,7 @@
 # Quiz: Basic Syntax
 
+Try this self-check quiz to test your knowledge!
+
 <quiz name="">
     <question>
         <p>What characters are used to denote a line ending in JavaScript?</p>

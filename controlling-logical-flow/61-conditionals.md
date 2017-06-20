@@ -204,7 +204,7 @@ if (x==y) {
 }
 
 {% validation %}
-assert(status, "Incorrect. Please be sure to set the status variable to 'success'.");
+assert(status, "Incorrect. Please be sure to set the status variable accordingly.");
 
 {% endexercise %}
 
@@ -226,7 +226,7 @@ if (x || y) {
 }
 
 {% validation %}
-assert(status, "Incorrect. Please be sure to set the status variable to 'success'.");
+assert(status, "Incorrect. Please be sure to set the status variable accordingly.");
 
 {% endexercise %}
 

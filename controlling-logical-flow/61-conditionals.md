@@ -45,7 +45,6 @@ if (foo > bar ) {
 In the example above, the `else if` clause provides a second assertion that is checked. If the first assertion is `true`, then the second assertion will never be checked. But if the first assertion is `false`, then the second assertion will be checked. If the second assertion is `true`, then that code executes. If the second assertion is also `false`, then the `else` clause will be executed.
 
 Of course, it is possible to nest conditionals to create even more complex conditionals:
-
 ```js
 var foo = 12;
 var bar = 42;

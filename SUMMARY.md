@@ -28,7 +28,7 @@
   * [5.9 Working with Text](data-types/58-working-with-text.md)
   * [5.10 Quiz: Data Types and Structures](data-types/510-quiz-data-types-and-structures.md)
 * [6 Controlling Logical Flow](controlling-logical-flow/README.md)
-  * 6.1 Conditionals
+  * [6.1 Conditionals](controlling-logical-flow/61-conditionals.md)
   * 6.2 For Loops
   * [6.3 Looping Arrays](controlling-logical-flow/63-forof-loops.md)
   * 6.4 While Loops

@@ -84,6 +84,7 @@ As you can see in the example above, we can nest conditionals in all kinds of wa
 In order to make assertions that conditional statements can check, we must use a few more operators. We are often making comparisons between values, so the [comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Comparison_operators) are important. We can see comparison operators at work in the examples above, but there are more than those. Here is a chart of commonly used comparison operators:
 
 operator | description | example 
+---------|-------------|--------
 `==` | Equal: Returns true if the operands on either side of the operator are equal. | `x == y`
 `!=` | Not Equal: Returns true if the operands on either side of the operator are *not* equal. | `x != y`
 `===` | Strict Equal: Returns true if the operands are equal and of the same type. | `x === 2`
@@ -93,7 +94,7 @@ operator | description | example
 `<` | Less Than: Returns true if the left operand is less than the right operand. | `y < 1337`
 `<=` | Less Than or Equal To: Returns true if the left operand is less than or equal to the right operand. | `bar <= 42`
 
-
+Using these comparison operators
 ## Logical Operators
 
 {% exercise %}

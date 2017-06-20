@@ -36,37 +36,11 @@ Try this self-check quiz to test your knowledge!
         <explanation>The <code>for ... of</code> loop is preferred for iterating through an Array.</explanation>
     </question>
     <question>
-        <p>Which of these is a valid JavaScript comment?</p>
-        <answer><code>&lt;!-- comment goes here --&gt;</code></answer>
-        <answer correct><code>// comment goes here</code></answer>
-        <answer><code>"""comment goes here"""</code></answer>
-        <answer><code>::comment goes here</code></answer>
-        <explanation>A one-line comment in JavaScript begins with <code>//</code>.</explanation>
-    </question>
-    <question>
-        <p>Which operator gives you the remainder from dividing two operands?</p>
-        <answer><code>++</code></answer>
-        <answer correct><code>%</code></answer>
-        <answer><code>**</code></answer>
-        <answer><code>//</code></answer>
-        <explanation>The <code>%</code> operator denotes the remainder operation.</explanation>
-    </question>
-    <question multiple>
-        <p>Which two operators are used to increment and decrement values by <code>1</code> in JavaScript?</p>
-        <answer correct><code>++</code></answer>
-        <answer correct><code>--</code></answer>
-        <answer><code>&+</code></answer>
-        <answer><code>&-</code></answer>
-        <explanation>The <code>++</code> and <code>--</code> operators are used to increment and decrement the value of a variable by <code>1</code>.</explanation>
-    </question>    
-    <question>
-        <p>Which command is used to define a "local" variable in JavaScript?</p>
-        <answer><code>var</code></answer>
-        <answer><code>const</code></answer>
-        <answer correct><code>let</code></answer>
-        <answer><code>local</code></answer>
-        <explanation>The <code>let</code> command is used to declare a local variable.</explanation>
-    </question>   
+        <p>True or False: Conditionals can be nested?</p>
+        <answer correct>true</answer>
+        <answer>false</answer>
+        <explanation>True: Conditionals can be nested.</explanation>
+    </question>  
 </quiz>
 
 <div class="no-quiz">

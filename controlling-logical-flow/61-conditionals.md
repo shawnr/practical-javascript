@@ -185,17 +185,24 @@ if(x) {
 Of course, when possible it's good to check explicitly against an expected value. If we expect `x` to be `undefined` then we should check for that (`if (x===undefined)`). But sometimes that is not possible. Given the dynamic typing of JavaScript and the complex nature of programs, we might find a situation where we are not sure if a value might be `undefined` or `null`, but we want to catch that condition regardless. Or, we might consider `0`, and `false` to be equivalent for some purpose in our code. In this case, it is helpful to be able to perform truthy and falsy checks. 
 
 {% exercise %}
-Define an Object called `foo` with a `name` attribute equal to "Bob".
+Write a conditional to check if `x` and `y` are equal. If so, set `status` to "success".
 
 {% initial %}
-var 
+var x = 12;
+var y = 42;
+var status;
 
 {% solution %}
-var foo = {};
-foo.name = "Bob";
+var x = 12;
+var y = 42;
+var status;
+
+if (x==y) {
+    status = "success";
+}
 
 {% validation %}
-assert(foo.name==="Bob", "Incorrect.");
+assert(status, "Incorrect. Please be sure to set the status variable to 'success'.");
 
 {% endexercise %}
 

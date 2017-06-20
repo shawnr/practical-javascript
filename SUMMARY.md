@@ -32,7 +32,7 @@
   * [6.2 For Loops](controlling-logical-flow/62-for-loops.md)
   * [6.3 While Loops](controlling-logical-flow/64-while-loops.md)
   * [6.4 Looping Arrays](controlling-logical-flow/63-forof-loops.md)
-  * 6.5 Quiz: Controlling Local Flow
+  * [6.5 Quiz: Controlling Local Flow](controlling-logical-flow/65-quiz-controlling-local-flow.md)
 * [7 Organizing Code](organizing-code/README.md)
   * 7.1 Functions
   * 7.2 Scoping

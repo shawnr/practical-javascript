@@ -36,13 +36,12 @@ Notice that in this example we are actually using the `i` variable (which is the
 
 
 {% exercise %}
-Define an a `for` loop that would double `foo` 12 times.
+Define an a `for` loop that would double (multiply times two) `foo` 12 times.
 
 {% initial %}
 var foo = 2;
 for ( ){
-    foo = foo * foo;
-    console.log(`Foo equals ${foo}.`);
+    
 }
 
 {% solution %}

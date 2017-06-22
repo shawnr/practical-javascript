@@ -19,3 +19,13 @@ This also allows us to group logic in such a way that we can better account for 
 As mentioned before, functions help us eliminate duplication within our code and make it more clear what blocks of code actually do. This has a huge impact on both long-term maintenance and building enhancements. If the API provider for ecommerce transactions changes their API, then we only need to change the functions that handle the transactions, and we can easily identify where that code lives based on names and grouping. Without proper organization, code becomes like "spaghetti": We can't tell where one feature starts or ends, and we can't change one part without affecting all the stuff jumbled around it. We seek to make our code more like a well-organized shelving unit: Parts that go together live together, and we can easily access one part of our code without jostling around everything else.
 
 By using functions to help us organize code, we make all of our development tasks easier and we increase the reliability of our application for our end users. 
+
+<div class="tip-box">
+
+<h3>Writing DRY Code</h3>
+
+<p>A popular axiom among developers is to "Keep it DRY," or to "Write DRY code." In these sayings, developers are referring to the acronym D-R-Y, which stands for <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">"Don't Repeat Yourself"</a>. The label stems from the book <a href="https://en.wikipedia.org/wiki/The_Pragmatic_Programmer"><i>The Pragmatic Programmer</i></a> (1999) by Andy Hunt and Dave Thomas, in which they write,  "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system." This directive gets at the problem of creating confusing, redundant code or data systems that become ambiguous and where logic is tangled together.</p>
+
+<p>Ideally, we could change any one part of our programs without having to change every other part. This is the core of the DRY principle. This is also related to the "separation of concerns" that we discuss occasionally. Each feature of a program should be as self-contained as possible, and we should strive to build clean points of integration to allow our different pieces to work together effectively.</p>
+
+</div>

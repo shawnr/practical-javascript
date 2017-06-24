@@ -30,6 +30,9 @@ let words = getWords("I've always been more interested in the Future than the Pa
 
 if (Array.isArray(words)){
     console.log(`words is an Array with length ${words.length}.`);
+    for (word of words){
+        console.log(word);
+    }
 }
 ```
 

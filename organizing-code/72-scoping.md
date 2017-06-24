@@ -1,1 +1,1 @@
-# Scope
+# Scope and Scoping

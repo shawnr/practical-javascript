@@ -34,7 +34,7 @@
   * [6.4 Looping Arrays](controlling-logical-flow/63-forof-loops.md)
   * [6.5 Quiz: Controlling Local Flow](controlling-logical-flow/65-quiz-controlling-local-flow.md)
 * [7 Organizing Code](organizing-code/README.md)
-  * 7.1 Functions
+  * [7.1 Functions](organizing-code/71-functions.md)
   * 7.2 Scoping
 * [8 Object Oriented JavaScript](object-oriented-javascript/README.md)
   * 8.1 What is Object Oriented Programming?

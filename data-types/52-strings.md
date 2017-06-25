@@ -12,14 +12,14 @@ Each of the variables above has been assigned a value that is of the type "strin
 Strings may contain any amount of text desired, and sometimes it may be necessary to break a String value across multiple lines. There are two ways to do this. The first way uses the `+` sign to _concatenate_ each line:
 
 ```js
-var longText = "This text is " +
+let longText = "This text is " +
     "very long and contains " +
     "many different characters.";
 ```
 The other way to define long String values is to use the backslash character at the end of the line to indicate that the string will continue on the next line:
 
 ```js
-var longText = "This text is \
+let longText = "This text is \
     very long and contains \
     many different characters.";
 ```

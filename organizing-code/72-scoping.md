@@ -82,23 +82,50 @@ It's useful to be able to make local variables with `let` because we often need 
 
 
 {% exercise %}
-Define an a `for` loop that would double (multiply times two) `foo` 12 times.
+Add only `let` or `var` commands to make `noise` equal to "chirp".
 
 {% initial %}
-var foo = 2;
-for ( ){
-    
+function tweet(){
+    sound = "chirp";
+    return sound;
 }
+noise = tweet();
 
 {% solution %}
-var foo = 2;
-for (let i=0; i<12; i++){
-    foo = foo * 2;
-    console.log(`Foo equals ${foo}.`);
+function tweet(){
+    var sound = "chirp";
+    return sound;
 }
+var noise = tweet();
 
 {% validation %}
-assert(foo==8192, "Incorrect.");
+assert(noise == "chirp", "Incorrect.");
 
 {% endexercise %}
+
+{% exercise %}
+Add only `let` or `var` commands to make `noise` equal to "squawk".
+
+{% initial %}
+sound = "squawk";
+function tweet(){
+    sound = "chirp";
+    return sound;
+}
+noise = tweet();
+
+{% solution %}
+sound = "squawk";
+function tweet(){
+    sound = "chirp";
+    return sound;
+}
+noise = tweet();
+
+{% validation %}
+assert(sound == "squawk", "Incorrect.");
+
+{% endexercise %}
+
+
 

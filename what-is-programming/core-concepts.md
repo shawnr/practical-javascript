@@ -53,11 +53,11 @@ Strings can contain a huge variety of characters (including numbers), but if the
 
 There are two major data types used for working with numbers: **[Integers](https://en.wikipedia.org/wiki/Integer_%28computer_science%29)** are whole numbers such as `1`, `42`, or `1337`. These are often used as counters or index numbers. This is what it looks like in JavaScript to define an integer:
 
-`var myInteger = 4;`
+`let myInteger = 4;`
 
 **[Floating point numbers](https://en.wikipedia.org/wiki/Single-precision_floating-point_format)** are numbers with decimal points. These are often required when doing calculations that might result in decimal remainders, when dealing with measurements, or in other situations where the value of a number may need to be more precise than a whole number. A decimal variable definition in JavaScript would look like this:
 
-`var myDecimal = 3.14;`
+`let myDecimal = 3.14;`
 
 It's very useful to note that, as of recent versions of the ECMAScript standard, JavaScript has only one type for [Numbers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Number_type).
 
@@ -83,7 +83,7 @@ Within JavaScript there are two data structures that are similar to structures i
 
 **Arrays** are sometimes known as "lists" or "indexed arrays" in other programming languages. An Array contains an _indexed_ list of items. The items can be of any data type, and they can be referenced using their numerical index. For example, here is an Array assignment in JavaScript:
 
-`var myArray = ['hello', 'world', 42];`
+`let myArray = ['hello', 'world', 42];`
 
 The example Array above has three items and they can be accessed using their numerical index. The value of `myArray[2]` is `42`. The value of `myArray[0]` is `'hello'`.
 
@@ -96,7 +96,7 @@ Arrays are very useful for storing lists of values.
 An object is defined with specific _attributes_. These attributes are accessed by name. The [JavaScript Object Notation](http://www.json.org/) (JSON) is used across many platforms and languages because of its clean, simple syntax. Here is what a JavaScript Object definition looks like:
 
 ```js
-var myObject = {
+let myObject = {
     name: 'Grace Hopper',
     rank: 'Rear Admiral',
     favoriteTech: ['COBOL', 'compilers']
@@ -130,8 +130,8 @@ The function defined above is called `makeUppercase` and it expects to receive a
 To use this function we might write:
 
 ```js
-var mixedText = "Hello, world!";
-var uppercaseText = makeUppercase(mixedText);
+let mixedText = "Hello, world!";
+let uppercaseText = makeUppercase(mixedText);
 console.log(uppercaseText); // Would print "HELLO, WORLD!" in the console.
 ```
 

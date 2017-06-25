@@ -28,9 +28,9 @@ let longText = "This text is \
 Although we can choose to use either single or double quotes to indicate a String, there are some things to consider when choosing between the two. A String defined with single quotes may contain double quotes without breaking the String. And a String defined with double quotes may contain a single quote (or apostrophe) without breaking the String. Sometimes it makes sense to selectively choose one or the other based on what the content of the String will be. Take a look at this example code:
 
 ```js
-var a = "Today's Featured Video"; // The single quote can be used as an apostrophe because the String is defined with double quotes.
+let a = "Today's Featured Video"; // The single quote can be used as an apostrophe because the String is defined with double quotes.
 
-var b = 'The important critic said, "I love this app!"'; // The double quotes can be used because the single quotes are used to define the String.
+let b = 'The important critic said, "I love this app!"'; // The double quotes can be used because the single quotes are used to define the String.
 ```
 In the example above, we can see that using single or double quotes can be advantageous for certain types of content. However, it's not the nicest style to switch between single and double quotes like this, and there are some characters that remain problematic within Strings regardless of which style of quote you choose.
 

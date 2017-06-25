@@ -3,7 +3,7 @@
 The other common kind of loop in programming languages is [the `while` loop](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code#while_and_do_..._while). These loops are defined with an opening assertion, and they execute as long as the condition remains true. Here is an example:
 
 ```js
-var i = 0;
+let i = 0;
 while (i < 12) {
     console.log(`This is loop iteration number ${i}`);
     i++;
@@ -34,10 +34,10 @@ In this example, we set up an infinite loop, but once a status is received and c
 Define a `while` loop that will add 1 to a number until it equals 42.
 
 {% initial %}
-var x = 0;
+let x = 0;
 
 {% solution %}
-var x = 0;
+let x = 0;
 while (x < 43) {
     console.log(`The value of x is: ${x}`);
     x++;

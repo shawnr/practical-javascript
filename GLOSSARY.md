@@ -16,6 +16,9 @@ A file that can be run directly on the computing hardware without requiring any 
 ## global
 A global object is available at every scope and at every line of code. In JavaScript, the `Window` object is an example of a global object. Variables may be declared at a global or local scope level.
 
+## hoisting
+A feature of JavaScript where variables and functions may be referenced before they are declared without error. (See [this article on MDN](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting) for additional details.)
+
 ## interpreter
 An application used to convert source code in a given programming language into machine instructions that can be executed by the computing hardware.
 

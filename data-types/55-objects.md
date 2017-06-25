@@ -3,7 +3,7 @@
 Just about everything in JavaScript is an Object at its base level. An Object is a Data Type (if we create an object and run `typeof()` on it, we can see that it returns `"object"`), but it is also a Data Structure. The structure of an Object allows attributes to be related. Each attribute of an Object has its own Data Type and can be used just like any standalone variable of that Data Type. Consider the following code:
 
 ```js
-var foo = {}; // This is common syntax for "initializing" an empty Object.
+let foo = {}; // This is common syntax for "initializing" an empty Object.
 
 foo.name = "Foo Object"; // In this case foo.name is a String.
 foo.counter = 0; // In this case, foo.counter is a Number.
@@ -15,7 +15,7 @@ It's also useful to note the basic syntax of creating and using Objects. Curly b
 Attributes can be set to any kind of Object, any Data Type, or even Functions (which are actually just Objects, too). Consider the following code:
 
 ```js
-var venue = {}; // initialize the empty object `venue`
+let venue = {}; // initialize the empty object `venue`
 venue.name = "The JS Palace";
 venue.description = "The best place to work on your JavaScript code!";
 venue.address = {}; // initialize another empty object called `venue.address`
@@ -32,10 +32,10 @@ Objects allow us to create relationships and hierarchies between information, an
 Define an Object called `foo`.
 
 {% initial %}
-var 
+let 
 
 {% solution %}
-var foo = {};
+let foo = {};
 
 {% validation %}
 assert(typeof(foo)==="object", "Incorrect: Your variable is not an object!");
@@ -46,10 +46,10 @@ assert(typeof(foo)==="object", "Incorrect: Your variable is not an object!");
 Define an Object called `foo` with a `name` attribute equal to "Bob".
 
 {% initial %}
-var 
+let 
 
 {% solution %}
-var foo = {};
+let foo = {};
 foo.name = "Bob";
 
 {% validation %}

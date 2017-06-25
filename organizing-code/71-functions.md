@@ -183,7 +183,7 @@ var greeting = sayHello();
 
 {% solution %}
 function sayHello(salutation="Hello"){
-    return `${salutatoin}, world!`;
+    return `${salutation}, world!`;
 }
 var greeting = sayHello();
 

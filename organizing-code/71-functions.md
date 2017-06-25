@@ -156,7 +156,7 @@ We could even be building up a much more complex Object or Array of values that 
 Using functions to process information and return data is a powerful tool for building complex programs. Try out some of the examples below.
 
 {% exercise %}
-Define an a function that would capitalize a string.
+Define a function that would capitalize a string.
 
 {% initial %}
 // Function goes here
@@ -173,4 +173,25 @@ var myText = capitalizeText("grace");
 assert(myText==="Grace", "Incorrect.");
 
 {% endexercise %}
+
+{% exercise %}
+Define a function that utilizes default parameters to produce the default message "Hello, world!"
+
+{% initial %}
+// Function goes here
+var greeting = sayHello();
+
+{% solution %}
+function sayHello(salutation="Hello"){
+    return `${salutatoin}, world!`;
+}
+var greeting = sayHello();
+
+
+{% validation %}
+assert(greeting==="Hello, world!", "Incorrect. Please make sure text of your greeting is correct.");
+
+{% endexercise %}
+
+
 

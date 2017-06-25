@@ -123,28 +123,54 @@ let shoppingList = makeTextList('bread','milk','lunch meat');
 console.log(shoppingList);
 // "bread,milk,lunch meat"
 ```
+When using arguments in a function, keep in mind that the `arguments` object is not a standard Array, but we can use the `Array.from()` function to transform the `arguments` object into a standard Array. There are many more great ways to use arguments, but they are a bit beyond where we are right now. 
 
 ## Returning Data From Functions
+Once we've completed some calculation or processing in a function, we often want to send some data back to the main logic of our program. To do this, we use the `return` statement.
 
+In each example above we've seen how we can return data to whatever command called the function. Once that data has been returned, it can then be used by subsequent instructions. This is a very common pattern for using functions in code. Here is an example:
+
+```js
+function calculateTax(amount = 9.42, tax = 0.065){
+    return amount * (1 + tax);
+}
+
+let subtotal = 12.57;
+let total = calculateTax(subtotal);
+```
+In this example, we have a simple function that calculates tax. We can use this function whenever we need it, and it helps us generate the value for the `total` variable. The `total` variable might be used in many places: in a template to render it for the user, stored in a database, emailed to an email receipt, etc. 
+
+In the case above, the `return` statement is returning the results of the calculation directly. It would be possible to store those results and return the variable where they were stored like this:
+
+```js
+function calculateTax(amount = 9.42, tax = 0.065){
+    let taxedAmount = amount * (1 + tax);
+    return taxedAmount;
+}
+
+let subtotal = 12.57;
+let total = calculateTax(subtotal);
+```
+We could even be building up a much more complex Object or Array of values that could be returned and stored in the `total` variable. Sometimes this is needed when we have to track additional metadata (such as what tax rate was applied, or what time the transaction was processed). 
+
+Using functions to process information and return data is a powerful tool for building complex programs. Try out some of the examples below.
 
 {% exercise %}
-Define an a `for` loop that would double (multiply times two) `foo` 12 times.
+Define an a function that would capitalize a string.
 
 {% initial %}
-var foo = 2;
-for ( ){
-    
-}
+// Function goes here
+var myText = capitalizeText("grace");
 
 {% solution %}
-var foo = 2;
-for (let i=0; i<12; i++){
-    foo = foo * 2;
-    console.log(`Foo equals ${foo}.`);
+function capitalizeText(text){
+    return text.toUppercase();
 }
+var myText = capitalizeText("grace");
+
 
 {% validation %}
-assert(foo==8192, "Incorrect.");
+assert(myText==="Grace", "Incorrect.");
 
 {% endexercise %}
 

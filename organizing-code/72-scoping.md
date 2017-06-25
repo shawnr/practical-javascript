@@ -22,6 +22,17 @@ In the example above, the scope of this script includes all of the globally avai
 
 There are, however, situations where variables or functions may not be known to all scopes. Sometimes we want to make variables exclusive to certain parts of our code. Each time we declare a variable, we must make a choice about whether we want that variable to be "global" or "local". 
 
+<div class="tip-box">
+
+<h3>Hoisting in JavaScript</h3>
+
+<p>A somewhat unique feature in JavaScript is the notion of hoisting.</p>
+
+</div>
+
+
+
+
 
 {% exercise %}
 Define an a `for` loop that would double (multiply times two) `foo` 12 times.

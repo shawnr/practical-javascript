@@ -64,10 +64,10 @@ Try out the exercises below to practice with declaring and initializing variable
 Define a variable `x` equal to 10.
 
 {% initial %}
-var x =
+let x =
 
 {% solution %}
-var x = 10;
+let x = 10;
 
 {% validation %}
 assert(x == 10);
@@ -81,7 +81,7 @@ Define a variable `x`, but do not initialize it.
 
 
 {% solution %}
-var x;
+let x;
 
 {% validation %}
 assert(x == undefined);

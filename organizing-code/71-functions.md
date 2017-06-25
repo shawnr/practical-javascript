@@ -164,7 +164,7 @@ var myText = capitalizeText("grace");
 
 {% solution %}
 function capitalizeText(text){
-    return text.toUppercase();
+    return text.toUpperCase();
 }
 var myText = capitalizeText("grace");
 

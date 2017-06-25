@@ -170,7 +170,7 @@ var myText = capitalizeText("grace");
 
 
 {% validation %}
-assert(myText==="Grace", "Incorrect.");
+assert(myText=="Grace", "Incorrect.");
 
 {% endexercise %}
 

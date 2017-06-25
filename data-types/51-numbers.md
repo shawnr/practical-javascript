@@ -31,10 +31,10 @@ The `Number.isSafeInteger()` function can be used to determine if a number is an
 Define a variable `x` equal to an integer.
 
 {% initial %}
-var x =
+let x =
 
 {% solution %}
-var x = 10;
+let x = 10;
 
 {% validation %}
 assert(Number.isSafeInteger(x));
@@ -45,10 +45,10 @@ assert(Number.isSafeInteger(x));
 Define a variable `x` equal to a decimal.
 
 {% initial %}
-var x =
+let x =
 
 {% solution %}
-var x = 3.14;
+let x = 3.14;
 
 {% validation %}
 assert(!Number.isSafeInteger(x));

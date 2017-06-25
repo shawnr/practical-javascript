@@ -13,6 +13,9 @@ The governing body that stewards the ECMAScript standard, upon which JavaScript 
 ## executable file
 A file that can be run directly on the computing hardware without requiring any interpretation or compilation at runtime.
 
+## global
+A global object is available at every scope and at every line of code. In JavaScript, the `Window` object is an example of a global object. Variables may be declared at a global or local scope level.
+
 ## interpreter
 An application used to convert source code in a given programming language into machine instructions that can be executed by the computing hardware.
 
@@ -21,6 +24,12 @@ JavaScript objects that implement the [Iterator Protocol](https://developer.mozi
 
 ## linter
 A tool used in a code editor to check syntax and style, usually in real-time. Most popular code editors support linting tools such as [JSHint](http://jshint.com/) and [ESLint](http://eslint.org/). Refer to the documentation in your chosen editor for more information about installing and using linters for whatever language you are writing.
+
+## local
+Local objects are only known within the scope where they are defined. This is typically limited to a code block between two curly braces. Local objects are often used within functions, loops, and conditionals for  specific tasks, and they may be named with generic names that are re-used in other local scope contexts.
+
+## scope
+The context of the code, including all known object, function, and variable references, as it is executed by the interpreter.
 
 ## scripted
 A description of a programming language that uses a runtime interpreter to convert source code into an executable file.

@@ -3,9 +3,9 @@
 In most programming languages, the Data Type for what we would normally consider "text" is the String. Strings can contain any text (including numbers and symbols) that can be typed. Here are some examples:
 
 ```js
-var x = 'Hello World!';
-var y = "Hello World!";
-var z = "中文 español deutsch English हिन्दी العربية português বাংলা русский 日本語 ਪੰਜਾਬੀ 한국어 தமிழ் עברית";
+let x = 'Hello World!';
+let y = "Hello World!";
+let z = "中文 español deutsch English हिन्दी العربية português বাংলা русский 日本語 ਪੰਜਾਬੀ 한국어 தமிழ் עברית";
 ```
 Each of the variables above has been assigned a value that is of the type "string". We can use either single quotes (`'`) or double quotes (`"`), but the quotes around our string must match. 
 

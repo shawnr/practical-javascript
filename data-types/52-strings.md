@@ -39,16 +39,16 @@ Remember that backslash (`\`) we used to indicate a multi-line string? What if w
 In order to solve this problem, we can **escape** characters in a String. Escaping is done by prefixing the character with a backslash (`\`). Here is an example:
 
 ```js
-var a = 'Today\'s Featured Video'; // The apostrophe has been escaped using a backslash character.
+let a = 'Today\'s Featured Video'; // The apostrophe has been escaped using a backslash character.
 
-var b = "The important critic said, \"I love this app!\""; // The double quotes have now been escaped with a backslash.
+let b = "The important critic said, \"I love this app!\""; // The double quotes have now been escaped with a backslash.
 ```
 In the example above we can see that using the backslash allows us to choose which quotes we prefer regardless of the content of our String.
 
 Another set of important characters to escape are [Unicode](https://en.wikipedia.org/wiki/Unicode) characters. If we wanted to insert a ❤ character in a String, then we would use the following code:
 
 ```js
-var heart = "Here is a heart: \u2764"; // The backslash escapes the unicode character.
+let heart = "Here is a heart: \u2764"; // The backslash escapes the unicode character.
 ```
 If we did not escape the [Unicode](https://unicode-table.com) value then our String would be "Here is a heart: u2764" instead of "Here is a heart: ❤".
 
@@ -73,12 +73,12 @@ We can find a full table showing how to escape characters on the MDN String page
 Fix the String definition below so it works.
 
 {% initial %}
-var x = "Courage is not the absence of fear, 
+let x = "Courage is not the absence of fear, 
     but rather the judgement that something 
     else is more important than fear.";
 
 {% solution %}
-var x = "Courage is not the absence of fear, \
+let x = "Courage is not the absence of fear, \
     but rather the judgement that something \
     else is more important than fear.";
 
@@ -92,10 +92,10 @@ assert(typeof(x)==="string");
 Fix the String so the text shows up properly.
 
 {% initial %}
-var x = "You will need a 3/8" socket for this job.";
+let x = "You will need a 3/8" socket for this job.";
 
 {% solution %}
-var x = "You will need a 3/8\" socket for this job.";
+let x = "You will need a 3/8\" socket for this job.";
 
 {% validation %}
 assert(typeof(x)==="string");
@@ -106,10 +106,10 @@ assert(typeof(x)==="string");
 Fix the String so the text shows up properly.
 
 {% initial %}
-var x = 'All's I know is, my gut says, "Maybe"';
+let x = 'All's I know is, my gut says, "Maybe"';
 
 {% solution %}
-var x = 'All\'s I know is, my gut says, "Maybe"';
+let x = 'All\'s I know is, my gut says, "Maybe"';
 
 {% validation %}
 assert(typeof(x)==="string");
@@ -120,10 +120,10 @@ assert(typeof(x)==="string");
 Fix the String so the text shows up properly.
 
 {% initial %}
-var x = 'In Seattle we don't use an u2602.';
+let x = 'In Seattle we don't use an u2602.';
 
 {% solution %}
-var x = 'In Seattle we don\'t use an \u2602.';
+let x = 'In Seattle we don\'t use an \u2602.';
 
 {% validation %}
 assert(typeof(x)==="string");

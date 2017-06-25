@@ -26,13 +26,14 @@ There are, however, situations where variables or functions may not be known to 
 In ECMAScript 6 (the latest standard for JavaScript), there are two types of variables: Global and local. Global variables in JavaScript are declared with the `var` command:
 
 ```js
-var myNum = 0;
 function echoNum(){
     myNum = 42
     console.log(`myNum: ${myNum}`);
 }
 
 echoNum();
+var foo = myNum;
+console.log(`foo: ${foo}`);
 ```
 In the code above, `myNum` is declared as a global variable, and it can be used within the `echoNum()` function
 

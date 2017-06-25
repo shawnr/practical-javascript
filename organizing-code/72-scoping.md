@@ -20,7 +20,7 @@ console.log(`Quote: ${quote}`);
 ```
 In the example above, the scope of this script includes all of the globally available objects available in JavaScript (objects like `Number` and `Object` and `for` and `if`, to name a few). The scope also includes three code objects that we have defined: `foo`, `bar`, and `baz()`. Although `foo` is a String, `bar` is a Number, and `baz()` is a Function, each of them is "known" to the JavaScript interpreter as it executes these lines. When we set `quote` equal to `baz()`, the interpreter understands which function we are calling because everything is accessible within the same scope.
 
-There are, however, situations where variables or functions may not be known to all scopes. Sometimes
+There are, however, situations where variables or functions may not be known to all scopes. Sometimes we want to make variables exclusive to certain parts of our code. Each time we declare a variable, we must make a choice about whether we want tha variable to be "global" or "local".
 
 
 {% exercise %}

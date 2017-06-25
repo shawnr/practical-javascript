@@ -15,6 +15,16 @@ Here is an example of declaring a variable using `var`:
 var foo = "some value";
 ```
 
+<div class="tip-box">
+
+<h3>The Old Way: <code>var</code></h3>
+
+<p>Due to the way that scope worked in JavaScript prior to ECMAScript 6, <code>var</code> was the old way of making local variables. Unfortunately, the <code>var</code> command does not actually make a variable local in the way most developers expect, and it has been replaced with the <code>let</code> command. The <code>var</code> command still works as it always has, but modern JavaScript should avoid using it as much as possible.</p>
+
+</div>
+
+
+
 ## `let`
 Most of the time in JavaScript, we want to control the "scope" of our variables. Scope is a term that we will dig into much more deeply later in this book, but for now it's worthwhile to understand that the `let` command allows us to create a "local" variable, which can only be used within its own code block. Here is an example:
 

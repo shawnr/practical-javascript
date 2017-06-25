@@ -7,7 +7,7 @@ As we read in the `for` loop section, we can loop through Arrays in a very "manu
 Let's look at the example we saw on the `for` loop page:
 
 ```js
-var simpsons = ['Homer', 'Marge', 'Bart', 'Lisa', 'Maggie'];
+let simpsons = ['Homer', 'Marge', 'Bart', 'Lisa', 'Maggie'];
 
 for (let i=0; i<simpsons.length; i++){
     console.log(simpsons[i]);
@@ -16,7 +16,7 @@ for (let i=0; i<simpsons.length; i++){
 The above code shows the old way of accessing items in an Array. Here is the new (and preferred) approach:
 
 ```js
-var simpsons = ['Homer', 'Marge', 'Bart', 'Lisa', 'Maggie'];
+let simpsons = ['Homer', 'Marge', 'Bart', 'Lisa', 'Maggie'];
 
 for (let familyMember of simpsons){
     console.log(familyMember);
@@ -33,12 +33,12 @@ This pattern exists in many other programming languages, so getting used to the 
 Write a `for ... of` loop to add all the numbers in the `transactions` Array.
 
 {% initial %}
-var transactions = [23, 44, 7, 89];
-var total = 0;
+let transactions = [23, 44, 7, 89];
+let total = 0;
 
 {% solution %}
-var transactions = [23, 44, 7, 89];
-var total = 0;
+let transactions = [23, 44, 7, 89];
+let total = 0;
 for (let amount of transactions) {
     total = total + amount;
 }

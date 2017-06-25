@@ -14,8 +14,8 @@ if (true) {
 This is a simple statement that checks if an assertion is true. In this case, since the assertion is simply `true` it will always execute the code. But we can do more with conditionals. Here is a more complex example:
 
 ```js
-var foo = 12;
-var bar = 42;
+let foo = 12;
+let bar = 42;
 
 if (foo > bar ) {
     // In this example, this `foo` is less than `bar`, so this code will not execute.
@@ -28,8 +28,8 @@ if (foo > bar ) {
 The `else` clause is used to provide instructions for what to do if the initial assertion is not `true`. For very complex conditionals, it's possible to provide multiple assertions that can be checked:
 
 ```js
-var foo = 12;
-var bar = 12;
+let foo = 12;
+let bar = 12;
 
 if (foo > bar ) {
     // If `foo` is greater than `bar`, then this code executes.
@@ -46,9 +46,9 @@ In the example above, the `else if` clause provides a second assertion that is c
 
 Of course, it is possible to nest conditionals to create even more complex conditionals:
 ```js
-var foo = 12;
-var bar = 42;
-var baz = 7;
+let foo = 12;
+let bar = 42;
+let baz = 7;
 
 if (foo > bar ) {
     console.log('Foo is bigger than bar.');
@@ -107,8 +107,8 @@ operator | description | example
 These three logical operators round out our ability to check conditions between operands. `AND` and `OR` are especially useful for making compound assertions. We can use them in a conditional like this:
 
 ```js
-var x = 12;
-var y = 42;
+let x = 12;
+let y = 42;
 
 if (x==12 && y==42){
     // This code would execute because both `x==12` and `y==42` are `true`.
@@ -133,7 +133,7 @@ Although it can be tricky if we string together several `AND` or `OR` clauses in
 It can sometimes be tougher to understand the `NOT` operator because it equals `true` when the value is `false`. This can be a bit of a head trip. Here is an example using `NOT`:
 
 ```js
-var loggedIn = false;
+let loggedIn = false;
 
 if (!loggedIn) {
     // Since `loggedIn` is `false`, this code will execute.
@@ -170,7 +170,7 @@ if ("")
 Using the principles of truthy and falsy, we could write a conditional like this:
 
 ```
-var x;
+let x;
 
 if(x) {
     // This code would execute if `x` has any value assigned other than `null` or `undefined`.
@@ -187,14 +187,14 @@ Of course, when possible it's good to check explicitly against an expected value
 Write a conditional to check if `x` and `y` are equal. If so, set `status` to "success". If not, set `status` to "failure".
 
 {% initial %}
-var x = 12;
-var y = 42;
-var status;
+let x = 12;
+let y = 42;
+let status;
 
 {% solution %}
-var x = 12;
-var y = 42;
-var status;
+let x = 12;
+let y = 42;
+let status;
 
 if (x==y) {
     status = "success";
@@ -211,14 +211,14 @@ assert(status=="failure", "Incorrect. Please be sure to set the status variable 
 Write a conditional to check if `x` OR `y` are true. If so, set `status` to "success".
 
 {% initial %}
-var x = true;
-var y = false;
-var status;
+let x = true;
+let y = false;
+let status;
 
 {% solution %}
-var x = 12;
-var y = 42;
-var status;
+let x = 12;
+let y = 42;
+let status;
 
 if (x || y) {
     status = "success";
@@ -233,14 +233,14 @@ assert(status, "Incorrect. Please be sure to set the status variable accordingly
 Write a conditional to check if `x` AND `y` are true. If so, set `status` to "success". If not, set `status` to "failure".
 
 {% initial %}
-var x = true;
-var y = false;
-var status;
+let x = true;
+let y = false;
+let status;
 
 {% solution %}
-var x = 12;
-var y = 42;
-var status;
+let x = 12;
+let y = 42;
+let status;
 
 if (x && y) {
     status = "success";

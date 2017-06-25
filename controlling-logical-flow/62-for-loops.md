@@ -17,7 +17,7 @@ The `for` loop structure is not too complex, but it does require a specific synt
 Here is another example of how a `for` loop can function:
 
 ```js
-var simpsons = ['Homer', 'Marge', 'Bart', 'Lisa', 'Maggie'];
+let simpsons = ['Homer', 'Marge', 'Bart', 'Lisa', 'Maggie'];
 
 for (let i=0; i<simpsons.length; i++){
     console.log(simpsons[i]);
@@ -39,13 +39,13 @@ Notice that in this example we are actually using the `i` variable (which is the
 Define an a `for` loop that would double (multiply times two) `foo` 12 times.
 
 {% initial %}
-var foo = 2;
+let foo = 2;
 for ( ){
     
 }
 
 {% solution %}
-var foo = 2;
+let foo = 2;
 for (let i=0; i<12; i++){
     foo = foo * 2;
     console.log(`Foo equals ${foo}.`);

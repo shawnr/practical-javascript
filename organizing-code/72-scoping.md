@@ -53,9 +53,20 @@ In most of our coding tasks, we attempt to keep our variables and functions loca
 function echoNum(){
     let myNum = 42;
     console.log(`myNum can be referenced inside the function: ${myNum}`);
+    if (myNum === 42){
+        console.log(`myNum can be referenced in this conditional: ${myNum}`);
+        let foo = "Even more local.";
+        console.log(`foo has been declared and scoped to exist only within this conditional: ${foo}`);
+    }
+    console.log(`foo cannot be referenced outside of the conditional where it is declared: ${foo}`);
 }
 console.log(`myNum CANNOT be referenced outside the function: ${myNum}`);
 ```
+In this example, we see that `myNum` is declared inside of `echoNum()`, but it is declared with the `let` command. This means that `myNum` only exists inside of `echoNum()` and any code blocks contained within `echoNum()`. The conditional inside of `echoNum()` is another code block (indicated by the curly braces), and it can reference `myNum`. Within the conditional codeblock the variable `foo` is declared. This variable only exists within the conditional statement. It cannot be referenced outside of the conditional at all.
+
+This example shows several ways in which `let` restricts the availability of local variables. Local variables are available inside their own scope (code block) and any "child" scopes (code blocks). 
+
+It's useful to be able to make local variables with `let` because we often need to make quick variables that perform similar tasks within different code blocks. For example, we may wish to use variables to control a loop (e.g. `counter`, `index`, `item`) or to help with a conditional (e.g. `isSaved`, `isDirty`) and not have those values persist outside of their specific code block. We could use these variable names in multiple contexts, so keeping them local to each one is crucial.
 
 <div class="tip-box">
 

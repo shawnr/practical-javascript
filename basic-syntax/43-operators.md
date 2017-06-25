@@ -89,10 +89,10 @@ The value of `z` would be `10.990000000000002`. Following the order of operation
 Set `x` equal to three times seven.
 
 {% initial %}
-var x =
+let x =
 
 {% solution %}
-var x = 3 * 7;
+let x = 3 * 7;
 
 {% validation %}
 assert(x == 21);
@@ -103,10 +103,10 @@ assert(x == 21);
 Set `x` equal to twelve minus eight.
 
 {% initial %}
-var x =
+let x =
 
 {% solution %}
-var x = 12 - 8;
+let x = 12 - 8;
 
 {% validation %}
 assert(x == 4);
@@ -117,10 +117,10 @@ assert(x == 4);
 Set `x` equal to seven to the twelfth power.
 
 {% initial %}
-var x =
+let x =
 
 {% solution %}
-var x = 7**12;
+let x = 7**12;
 
 {% validation %}
 assert(x == 7**12);
@@ -131,10 +131,10 @@ assert(x == 7**12);
 Add parentheses so the value of `x` equals `42`.
 
 {% initial %}
-var x = 6 + 2 * 3 * 4 - 2 * 3;
+let x = 6 + 2 * 3 * 4 - 2 * 3;
 
 {% solution %}
-var x = (6 + 2 * 3) * 4 - (2 * 3);
+let x = (6 + 2 * 3) * 4 - (2 * 3);
 
 {% validation %}
 assert(x == 42);

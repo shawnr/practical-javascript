@@ -37,8 +37,13 @@ console.log(`foo: ${foo}`);
 ```
 In the code above, `myNum` is declared as a global variable within the `echoNum()` function. This means that we can reference `myNum` from outside the function where it is declared (and assign its value to `foo`).
 
-The `var` command is the usual way of declaring a variable in a JavaScript program. There is a distinction between variables that are truly global (declared with no `var`, `let`, or `const` command) and variables declared with `var`, but we won't be getting into that at this point. In most cases, `var` effectively creates a variable that is usable by all parts of your program.
+The `var` command is the usual way of declaring a variable in a JavaScript program. There is a distinction between variables that are truly global (declared with no `var`, `let`, or `const` command) and variables declared with `var`, but we won't be getting into that at this point. In most cases, `var` effectively creates a variable that is usable by all parts of your program. 
 
+Variables declared with the `var` command should be treated as global variables, which means their usage should be limited. In general we try to declare as few global variables as possible. This is for a few reasons, but primary among them are these three: 
+
+1. Global variables take up a name that cannot be used anywhere else in our code. Having global variables with generic names like `counter` or `item` would be difficult to accommodate, since we often want to use those words in different contexts and not have our data or operations get mixed up.
+2. The larger the scope becomes for any given piece of code, the longer it takes to interpret. By controlling how many code objects we load into our scope we can make our code execute more quickly.
+3. The more objects we have floating around in our global scope, the more chance there is for error. Operations can get mixed up. Data can get mangled. Generally "bad craziness" might ensue.
 
 ## Local Variables: `let`
 

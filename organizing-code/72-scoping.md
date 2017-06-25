@@ -35,7 +35,10 @@ echoNum();
 var foo = myNum;
 console.log(`foo: ${foo}`);
 ```
-In the code above, `myNum` is declared as a global variable, and it can be used within the `echoNum()` function
+In the code above, `myNum` is declared as a global variable within the `echoNum()` function. This means that we can reference `myNum` from outside the function where it is declared (and assign its value to `foo`).
+
+The `var` command is the usual way of declaring a variable in a JavaScript program. There is a distinction between variables that are truly global (declared with no `var`, `let`, or `const` command) and variables declared with `var`, but we won't be getting into that at this point. In most cases, `var` effectively creates a variable that is usable by all parts of your program.
+
 
 ## Local Variables: `let`
 

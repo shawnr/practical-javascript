@@ -13,12 +13,12 @@ Boolean values are generally checked within a conditional (an `if` statement) or
 [Undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined) is the type for any value that has been declared but not initialized to a value. When we write something like this, the type of the variable `foo` is `undefined`:
 
 ```js
-var foo;
+let foo;
 ```
 The following example indicates how this could be used in code:
 
 ```js
-var foo;
+let foo;
 if (typeof(foo) === undefined) {
     // Code here would execute because foo is undefined.
 }
@@ -34,7 +34,7 @@ But imagine the case where we have some variable where there _could_ be a value 
 Here's an example of using `null` in code. Imagine we are writing a system trying to manage a `currentUser` object:
 
 ```js
-var currentUser;
+let currentUser;
 if (typeof(foo) === undefined) {
     // This code executes because foo has not been assigned a value.
 }

@@ -47,6 +47,16 @@ Variables declared with the `var` command should be treated as global variables,
 
 ## Local Variables: `let`
 
+In most of our coding tasks, we attempt to keep our variables and functions local to small pieces of code. The `let` command allows us to declare a variable that only exists in the code block where it is declared and any code blocks contained within. Here's an example:
+
+```js
+function echoNum(){
+    let myNum = 42;
+    console.log(`myNum can be referenced inside the function: ${myNum}`);
+}
+console.log(`myNum CANNOT be referenced outside the function: ${myNum}`);
+```
+
 <div class="tip-box">
 
 <h3>Hoisting in JavaScript</h3>

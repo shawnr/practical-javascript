@@ -41,6 +41,39 @@ Try this self-check quiz to test your knowledge!
         <answer>false</answer>
         <explanation>True: Default Parameters are possible as of ECMAScript 6.</explanation>
     </question>  
+    
+    
+    
+    <question>
+        <p>What command is used to declare a local variable in JavaScript?</p>
+        <answer><code>var</code></answer>
+        <answer><code>local</code></answer>
+        <answer correct><code>let</code></answer>
+        <answer><code>loc</code></answer>
+        <explanation>The command <code>let</code> is used to declare a local variable in JS.</explanation>
+    </question>
+    <question multiple>
+        <p>What is scope?</p>
+        <answer correct>parameters</answer>
+        <answer>setters</answer>
+        <answer correct>arguments</answer>
+        <answer>getters</answer>
+        <explanation>The parentheses in the declaration of the Function can contain parameters and/or arguments.</explanation>
+    </question>
+    <question>
+        <p>True or False: JavaScript parameters can have default values specified in the Function declaration?</p>
+        <answer correct>true</answer>
+        <answer>false</answer>
+        <explanation>True: Default Parameters are possible as of ECMAScript 6.</explanation>
+    </question>
+    <question>
+        <p>What command sends data back to the code that called the Function?</p>
+        <answer><code>respond</code></answer>
+        <answer ><code>dispatch</code></answer>
+        <answer><code>update</code></answer>
+        <answer correct><code>return</code></answer>
+        <explanation>The <code>return</code> command sends data back to the code that called the Function.</explanation>
+    </question>
 </quiz>
 
 <div class="no-quiz">

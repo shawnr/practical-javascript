@@ -36,6 +36,7 @@
 * [7 Organizing Code](organizing-code/README.md)
   * [7.1 Functions](organizing-code/71-functions.md)
   * [7.2 Scoping](organizing-code/72-scoping.md)
+  * [7.3 Quiz: Organizing Code](organizing-code/73-quiz-organizing-code.md)
 * [8 Object Oriented JavaScript](object-oriented-javascript/README.md)
   * 8.1 What is Object Oriented Programming?
   * 8.2 Extending Classes

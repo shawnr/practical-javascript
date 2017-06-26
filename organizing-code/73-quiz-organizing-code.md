@@ -3,43 +3,43 @@
 Try this self-check quiz to test your knowledge!
 
 <quiz name="">
+    <question multiple>
+        <p>Why would we organize code using Functions?</p>
+        <answer correct>To improve readability of code by grouping functionality into discrete code blocks.</answer>
+        <answer correct>To make maintenance easier by containing and isolating logic.</answer>
+        <answer correct>To improve debugging by creating authoritative code blocks that handle one specific feature.</answer>
+        <answer correct>To facilitate more complex algorithms.</answer>
+        <explanation>All of the above are reasons for organizing code using Functions.</explanation>
+    </question>
     <question>
-        <p>?</p>
-        <answer correct><code>||</code></answer>
-        <answer><code>&&</code></answer>
-        <answer><code>!==</code></answer>
-        <answer><code><=</code></answer>
-        <explanation>The <code>||</code> symbol indicates "OR" in a conditional.</explanation>
+        <p>What command is used to declare a Function in JavaScript?</p>
+        <answer><code>def</code></answer>
+        <answer correct><code>function</code></answer>
+        <answer><code>fnc</code></answer>
+        <answer><code>subroutine</code></answer>
+        <explanation>The command <code>function</code> is used to declare a Function in JS.</explanation>
     </question>
     <question multiple>
-        <p>Which are valid comparison operators in a conditional assertion?</p>
-        <answer correct><code>==</code></answer>
-        <answer correct><code>===</code></answer>
-        <answer correct><code>!=</code></answer>
-        <answer><code>@@</code></answer>
-        <explanation><code>==</code>, <code>===</code>, and <code>!=</code> are valid comparison operators.</explanation>
-    </question>
-    <question multiple>
-        <p>What are the three parts of a standard <code>for</code> loop declaration?</p>
-        <answer correct>Initializer</answer>
-        <answer>Formatter</answer>
-        <answer correct>Exit Condition</answer>
-        <answer correct>Final Expression</answer>
-        <explanation>The three parts of a <code>for</code> loop declaration are: Initializer, Exit Condition, Final Expression.</explanation>
+        <p>What two kinds of objects can go between the parentheses of a Function declaration?</p>
+        <answer correct>parameters</answer>
+        <answer>setters</answer>
+        <answer correct>arguments</answer>
+        <answer>getters</answer>
+        <explanation>The parentheses in the declaration of the Function can contain parameters and/or arguments.</explanation>
     </question>
     <question>
-        <p>What is the preferred way to loop through an Array?</p>
-        <answer><code>for</code> loop</answer>
-        <answer ><code>while</code> loop</answer>
-        <answer><code>list</code> loop</answer>
-        <answer correct><code>for ... of</code> loop</answer>
-        <explanation>The <code>for ... of</code> loop is preferred for iterating through an Array.</explanation>
+        <p>What command sends data back to the code that called the Function?</p>
+        <answer><code>respond</code></answer>
+        <answer ><code>dispatch</code></answer>
+        <answer><code>update</code></answer>
+        <answer correct><code>return</code></answer>
+        <explanation>The <code>return</code> command sends data back to the code that called the Function.</explanation>
     </question>
     <question>
-        <p>True or False: Conditionals can be nested?</p>
+        <p>True or False: JavaScript parameters can have default values specified in the Function declaration?</p>
         <answer correct>true</answer>
         <answer>false</answer>
-        <explanation>True: Conditionals can be nested.</explanation>
+        <explanation>True: Default Parameters are possible as of ECMAScript 6.</explanation>
     </question>  
 </quiz>
 

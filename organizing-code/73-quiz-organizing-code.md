@@ -41,9 +41,6 @@ Try this self-check quiz to test your knowledge!
         <answer>false</answer>
         <explanation>True: Default Parameters are possible as of ECMAScript 6.</explanation>
     </question>  
-    
-    
-    
     <question>
         <p>What command is used to declare a local variable in JavaScript?</p>
         <answer><code>var</code></answer>

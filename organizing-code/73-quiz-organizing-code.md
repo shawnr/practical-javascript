@@ -4,7 +4,7 @@ Try this self-check quiz to test your knowledge!
 
 <quiz name="">
     <question>
-        <p>Which operator indicates "OR" in a conditional?</p>
+        <p>?</p>
         <answer correct><code>||</code></answer>
         <answer><code>&&</code></answer>
         <answer><code>!==</code></answer>

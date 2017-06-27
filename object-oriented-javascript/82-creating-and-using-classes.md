@@ -89,6 +89,32 @@ console.log(myCar.description); // Outputs "1981 AMC Pacer with 10500 miles" to 
 ```
 The `get` command allows for accessing the `description()` method as if it is a property. The method is called each time we access `Car.description` like a normal property. We now have a dynamic property that updates every time it is called. The more we `drive()`, the more that is reflected in the `description`.
 
+Now that we can create well-featured Class objects, we can move on to exploring how leverage the concept of inheritance. But first, more exercises.
+
+{% exercise %}
+Define a Class called `Book` that sets `title` and `author` properties. 
+
+{% initial %}
+// Write Book Class here.
+
+// Do not change this line.
+let book1 = Book('Slaughterhouse Five', 'Kurt Vonnegut Jr.');
+
+{% solution %}
+class Book {
+    constructor(title, author){
+        this.title = title;
+        this.author = author;
+    }
+}
+let book1 = Book('Slaughterhouse Five', 'Kurt Vonnegut Jr.');
+
+{% validation %}
+assert((book.title=='Slaughterhouse Five' && book.author=='Kurt Vonnegut Jr.'), "Incorrect.");
+
+{% endexercise %}
+
+
 
 
 

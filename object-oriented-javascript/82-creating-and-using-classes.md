@@ -83,9 +83,11 @@ class Car {
 }
 let myCar = new Car('AMC', 'Pacer', '1981', 123456, 10000);
 myCar.drive(250); // Outputs `Vroom! We drove 250 miles.` to the JS console.
-console.log(myCar.mileage); // Outputs '10250' to the JS console.
+console.log(myCar.description); // Outputs "1981 AMC Pacer with 10250 miles" to the JS console.
+myCar.drive(250); // Outputs `Vroom! We drove 250 miles.` to the JS console.
+console.log(myCar.description); // Outputs "1981 AMC Pacer with 10500 miles" to the JS console.
 ```
-
+The `get` command allows for accessing the `description()` method as if it is a property. The method is called each time we access `Car.description` like a normal property. We now have a dynamic property that updates every time it is called. The more we `drive()`, the more that is reflected in the `description`.
 
 
 

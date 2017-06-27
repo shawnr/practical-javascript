@@ -67,6 +67,7 @@ class Dog extends Animal {
         console.log(`${this.name} walks.`);
     }
 }
+
 ```
 In this example we start, again, with a base class called `Animal`. The `Animal` class takes in a `name` parameter, but nothing else. Two more classes are created by extending the `Animal` class: `Bird` and `Dog`.
 

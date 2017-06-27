@@ -28,6 +28,47 @@ In the code above, we can see that `venue` is an object containing information a
 
 Objects allow us to create relationships and hierarchies between information, and they are very useful for doing so. In fact, the JavaScript Object Notation (JSON) format has become so popular that it is used across virtually every other programming language to create well-defined hierarchical data structures. We will explore more about JSON in a couple sections, but first we must discuss Arrays.
 
+## Referencing Values in Objects
+Throughout our code we will need to reference values in Objects. This can be accomplished in two ways: "dot-notation" and "keys". These two methods can be used interchangeably, and each is valuable for specific purposes. It's important to keep in mind these two methods of accessing the values of an Object in order to get the most from this Data Structure.
+
+Here is some example code to review:
+
+```js
+let clubMembers = {
+    grace: {
+        name: "Grace Hopper",
+        email: "grace@example.com"
+    },
+    guido: {
+        name: "Guido van Rossum",
+        email: "guido@example.com"
+    },
+    brendan: {
+        name: "Brendan Eich",
+        email: "brendan@example.com"
+    }
+}
+```
+In the code above, we have an Object defined that uses the usernames of club members for the primary index. This means that we could access these values in two ways:
+
+```js
+console.log(clubMembers.grace.name); // Outputs "Grace Hopper" to the console.
+
+console.log(clubMembers['grace'].name); // Outputs "Grace Hopper" to the console.
+```
+The two `console.log` statements above have the same results: They print the `name` property from the object contained in the `grace` property of the `clubMembers` object. The first method of referring to the value is "dot notation" and it is often used when we know exactly which property we need to access in an Object. The second method uses a reference to a "key", which can be useful when we want to use a variable to supply that name. Consider this example:
+
+```js
+let username = "guido";
+
+console.log(clubMembers[username].name); // Outputs "Guido van Rossum" to the console.
+
+console.log(clubMembers['guido'].name); // Outputs "Guido van Rossum" to the console.
+
+console.log(clubMembers.guido.name); // Outputs "Guido van Rossum" to the console.
+```
+In this example, you can see that the variable `username` has a value assigned to it. The value is the String, `"guido"`. This matches the "key" for the Object defined at `clubMembers.guido`. 
+
 {% exercise %}
 Define an Object called `foo`.
 

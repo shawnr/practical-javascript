@@ -64,12 +64,48 @@ class Animal {
 The base class for `Animal` has only one property: `name`. If we wish to make a class to represent a `Dog` then we could inherit from the `Animal` class and extend its functionality:
 
 ```js
-class Dog extends Animal {
-  speak(){
-    console.log('Woof!');
-  }
+class Animal {
+    constructor(name){
+        this.name = name;
+    }
 }
+class Dog extends Animal {
+    speak(){
+        console.log(`${this.name} says, 'Woof!'`);
+    }
+}
+let d = new Dog('Fido');
+d.speak() // Outputs `Fido says, 'Woof!'` to the JS console.
 ```
-
+In this example, we can see that the class `Dog` has been created by _extending_ the class `Animal`. The `Dog` class does not need to re-declare the `constructor()` method because it has _inherited_ this method. But the `Dog` class can _add_ to the definition of the class. In this case, the `Dog` class extends the `Animal` class by adding a `speak()` method.
 
 ## Polymorphism
+Although building on the foundations of other Class objects in a hierarchical way is a powerful tool for modeling complex relationships and/or objects, we require one more ability in order to truly make efficient use of the Class objects we have defined. Polymorphism is the ability to _change_ the things that have been inherited from one class to another. Here is an example:
+
+```js
+class Animal {
+  constructor(name){
+    this.name = name;
+  }
+  speak(){
+    console.log(`${this.name} makes a sound.`);
+  }
+}
+let a = new Animal('Corvo');
+a.speak(); // Outputs `Corvo makes a sound.` to the JS console.
+
+class Cat extends Animal {
+  speak(){
+    console.log(`${this.name} meows.`);
+  }
+}
+let k = new Cat('Fluffy');
+k.speak(); // Outputs `Fluffy meows.` to the JS console.
+```
+In the example code above, the `Cat` class extends the `Animal` class. This time, the `Animal` class provides a `speak()` method, but it is very generic ("makes a sound"). The `Cat` class extends `Animal` and overrides the `speak()` method to provide a more cat-like response. This is polymorphism at work: the same method used with these two related Class objects will produce a different result. 
+
+It's important to notice that in spite of the complexity of the hierarchical relationships and the "mutation" or "change" of the `speak()` method, the interface of the `Animal` and `Cat` classes remains consistent and understandable for the developer. As long as a developer knows that they can instantiate an instance of either class and then call the `speak()` method they can make use of these Class objects. Changing what the `Cat` says does not require the developer to learn a new process or method.
+
+We will investigate more of how Class objects are created and used in JavaScript on the following pages.
+
+**Note:** Examples on this page were drawn largely from the Mozilla Developers Network page, ["Classes"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes).

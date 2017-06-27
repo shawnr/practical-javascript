@@ -92,13 +92,13 @@ The `get` command allows for accessing the `description()` method as if it is a 
 Now that we can create well-featured Class objects, we can move on to exploring how leverage the concept of inheritance. But first, more exercises.
 
 {% exercise %}
-Define a Class called `Book` that sets `title` and `author` properties. 
+Define a Class called `Book` with `title` and `author` properties that can be set by the developer when instantiating the Class. 
 
 {% initial %}
 // Write Book Class here.
 
 // Do not change this line.
-let book1 = Book('Slaughterhouse Five', 'Kurt Vonnegut Jr.');
+let book1 = new Book('Slaughterhouse Five', 'Kurt Vonnegut Jr.');
 
 {% solution %}
 class Book {
@@ -107,7 +107,7 @@ class Book {
         this.author = author;
     }
 }
-let book1 = Book('Slaughterhouse Five', 'Kurt Vonnegut Jr.');
+let book1 = new Book('Slaughterhouse Five', 'Kurt Vonnegut Jr.');
 
 {% validation %}
 assert((book.title=='Slaughterhouse Five' && book.author=='Kurt Vonnegut Jr.'), "Incorrect.");
@@ -115,8 +115,43 @@ assert((book.title=='Slaughterhouse Five' && book.author=='Kurt Vonnegut Jr.'), 
 {% endexercise %}
 
 
+{% exercise %}
+Define a Class called `Book` with `title`, `author`, `numReviews`, and `totalScore` properties. Create a method called `review` that accepts a number representing a review score. The `review` method must increment the `numReviews` property and add the review score to the `totalScore` property. Also, add a dynamic property called `rating` that calculates the average of the reviews (`totalScore` divided by `numReviews`).
 
+{% initial %}
+// Write Book Class here.
 
+// Do not change this line.
+let book1 = new Book('Slaughterhouse Five', 'Kurt Vonnegut Jr.');
+book1.review(4);
+book1.review(2);
+console.log(book.rating);
+
+{% solution %}
+class Book {
+    constructor(title, author){
+        this.title = title;
+        this.author = author;
+        this.numReviews = 0;
+        this.totalScore = 0;
+    }
+    get rating(){
+        return this.totalScore / this.numReviews;
+    }
+    review(score){
+        this.numReviews++;
+        this.totalScore = this.totalScore + score;
+    }
+}
+let book1 = new Book('Slaughterhouse Five', 'Kurt Vonnegut Jr.');
+book1.review(4);
+book1.review(2);
+console.log(book1.rating);
+
+{% validation %}
+assert((book.title=='Slaughterhouse Five' && book.author=='Kurt Vonnegut Jr.'), "Incorrect.");
+
+{% endexercise %}
 
 
 

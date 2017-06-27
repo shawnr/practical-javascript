@@ -67,7 +67,13 @@ class Dog extends Animal {
         console.log(`${this.name} walks.`);
     }
 }
+let tweetie = new Bird('Tweetie Pie', 'yellow');
+tweetie.speak(); // Outputs `Tweetie Pie chirps.` to the JS console.
+tweetie.move(); // Outputs `Tweetie Pie begins to move.` and `Tweetie Pie takes flight!` to the JS console.
 
+let rolf = new Dog('Rolf');
+rolf.speak(); // Outputs `Rolf barks.` to the JS console.
+rolf.move(); // Outputs `Rolf begins to move.` and `Rolf walks.` to the JS console.
 ```
 In this example we start, again, with a base class called `Animal`. The `Animal` class takes in a `name` parameter, but nothing else. Two more classes are created by extending the `Animal` class: `Bird` and `Dog`.
 

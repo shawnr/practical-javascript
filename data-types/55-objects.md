@@ -28,8 +28,8 @@ In the code above, we can see that `venue` is an object containing information a
 
 Objects allow us to create relationships and hierarchies between information, and they are very useful for doing so. In fact, the JavaScript Object Notation (JSON) format has become so popular that it is used across virtually every other programming language to create well-defined hierarchical data structures. We will explore more about JSON in a couple sections, but first we must discuss Arrays.
 
-## Referencing Values in Objects
-Throughout our code we will need to reference values in Objects. This can be accomplished in two ways: "dot-notation" and "keys". These two methods can be used interchangeably, and each is valuable for specific purposes. It's important to keep in mind these two methods of accessing the values of an Object in order to get the most from this Data Structure.
+## Referencing Properties of Objects
+Throughout our code we will need to [reference properties of Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors). This can be accomplished in two ways: "dot-notation" and "keys". These two methods can be used interchangeably, and each is valuable for specific purposes. It's important to keep in mind these two methods of accessing the values of an Object in order to get the most from this Data Structure.
 
 Here is some example code to review:
 

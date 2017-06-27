@@ -45,8 +45,8 @@ In this example we can see that a function called `calculateTax()`has been creat
 We often define Class objects that have very complex code inside them. They might perform communication with remote systems, calculations beyond our limited Math skills, or other functions that require precision and many steps. By abstracting the complexity of these features way to simple interfaces we are able to define conceptual tools in our code that are easy and intuitive to use.
 
 ## Encapsulation
-
+Encapsulation is the idea that not all parts of a Class object should 
 
 ## Inheritance
 
-## Pol
+## Polymorphism

@@ -67,7 +67,9 @@ console.log(clubMembers['guido'].name); // Outputs "Guido van Rossum" to the con
 
 console.log(clubMembers.guido.name); // Outputs "Guido van Rossum" to the console.
 ```
-In this example, you can see that the variable `username` has a value assigned to it. The value is the String, `"guido"`. This matches the "key" for the Object defined at `clubMembers.guido`. 
+In this example, you can see that the variable `username` has a value assigned to it. The value is the String, `"guido"`. This matches the "key" for the Object defined at `clubMembers.guido`. So we can access the `name` property of the Object stored at `clubMembers.guido` using either of the three syntax methods above.
+
+The dot notation method is very clean when we know what property we need to access. But when we're using variables (such as when looping through Arrays or when correlating data from another variable or source), it's often necessary to use the "key" notation to use an expression to reference the value stored in a given property (or at a given "key").
 
 {% exercise %}
 Define an Object called `foo`.
@@ -97,5 +99,32 @@ foo.name = "Bob";
 assert(foo.name==="Bob", "Incorrect.");
 
 {% endexercise %}
+
+{% exercise %}
+Set `baz` equal to the attribute `bar` in the Object `foo` without using dot notation.
+
+{% initial %}
+let key = 'bar',
+let foo = {
+    bar: 42
+}
+
+let baz = 
+
+{% solution %}
+let key = 'bar',
+let foo = {
+    bar: 42
+}
+
+let baz = foo[key];
+
+{% validation %}
+assert(baz==42, "Incorrect. Double-check your reference.");
+
+{% endexercise %}
+
+
+
 
 

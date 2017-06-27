@@ -109,9 +109,17 @@ Please enjoy this self-check quiz to review some of the concepts from this secti
         <answer><code>$expression</code></answer>
         <answer correct><code>${expression}</code></answer>
         <explanation>Template Literals use the <code>${expression}</code> format for expressions.</explanation>
+    </question> 
+    <question multiple>
+        <p>Given <code>let key="foo";</code> and <code>let myObject = {foo: 42};</code>, which of the following are <code>true</code>?</p>
+        <answer correct><code>myObject.foo == 42</code></answer>
+        <answer><code>myObject(foo) == 42</code></answer>
+        <answer correct><code>myObject[key] == 42</code></answer>
+        <answer correct><code>myObject['foo'] == 42</code></answer>
+        <explanation>The value may be referenced via dot notation or a key.</explanation>
     </question>  
     <question>
-        <p>If <code>var a = {};</code> and <code>var b = [];</code>, which statement is true?</p>
+        <p>If <code>let a = {};</code> and <code>let b = [];</code>, which statement is true?</p>
         <answer><code>a</code> is a String and <code>b</code> is an Object.</answer>
         <answer correct><code>a</code> is an Object and <code>b</code> is an Array.</answer>
         <answer><code>a</code> is an Array and <code>b</code> is an Object.</answer>

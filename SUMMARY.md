@@ -39,8 +39,9 @@
   * [7.3 Quiz: Organizing Code](organizing-code/73-quiz-organizing-code.md)
 * [8 Object Oriented JavaScript](object-oriented-javascript/README.md)
   * [8.1 What is Object Oriented Programming?](object-oriented-javascript/81-what-is-object-oriented-programming.md)
-  * 8.2 Extending Classes
-  * 8.3 Inheriting Classes
+  * [8.2 Creating and Using Classes](object-oriented-javascript/82-creating-and-using-classes.md)
+  * [8.3 Extending Classes](object-oriented-javascript/82-extending-classes.md)
+  * [8.4 Inheriting Classes](object-oriented-javascript/84-inheriting-classes.md)
 * [9 The Document Object Model \(DOM\)](the-document-object-model/README.md)
   * 9.1 How JavaScript Interacts with HTML
   * 9.2 Selecting Elements in the DOM

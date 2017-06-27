@@ -45,8 +45,31 @@ In this example we can see that a function called `calculateTax()`has been creat
 We often define Class objects that have very complex code inside them. They might perform communication with remote systems, calculations beyond our limited Math skills, or other functions that require precision and many steps. By abstracting the complexity of these features way to simple interfaces we are able to define conceptual tools in our code that are easy and intuitive to use.
 
 ## Encapsulation
-Encapsulation is the idea that not all parts of a Class object should 
+Encapsulation is the idea that not all parts of a Class object should be available for public manipulation. By "hiding" or making certain data or functions unavailable outside of the Class object, we can make sure that those components are not altered by some unforeseen outside force. We do not want to accidentally change a value or execute a function that might cause our entire system to throw an error. Where possible, it is better to allow as few publicly available properties and methods as possible because it presents a cleaner interface to the Class object.
+
+Encapsulation is supported in JavaScript through the `prototype` mechanism, but it is not easily achieved with strong enforcement and low effort. Instead, most developers have adopted the convention of prefixing any "private" property or method of a Class object with an underscore (`_`). This at least conveys to developers which properties and methods are not intended for direct use. When we encounter properties or methods named with an underscore, it's best to avoid using them directly. Thre should be a "public" property or method that provides an equivalent result. 
 
 ## Inheritance
+Class objects are often hierarchical. This matches the way we have organized and categorized objects in the real world. For example, we can organize living things into "Plants" and "Animals", the Kingdoms of biological taxonomy. Within each of these Kingdoms are many sub-groupings of life forms that traverse organizational hierarchies like Phylum, Family, Genus, and Species. It is not unusual for Class objects in a system to incorporate a similar hierarchy.
+
+For example, imagine a general Class object for `Animal`:
+
+```js
+class Animal {
+  constructor(name){
+    this.name = name;
+  }
+}
+```
+The base class for `Animal` has only one property: `name`. If we wish to make a class to represent a `Dog` then we could inherit from the `Animal` class and extend its functionality:
+
+```js
+class Dog extends Animal {
+  speak(){
+    console.log('Woof!');
+  }
+}
+```
+
 
 ## Polymorphism

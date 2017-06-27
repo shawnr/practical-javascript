@@ -110,7 +110,7 @@ class Book {
 let book1 = new Book('Slaughterhouse Five', 'Kurt Vonnegut Jr.');
 
 {% validation %}
-assert((book.title=='Slaughterhouse Five' && book.author=='Kurt Vonnegut Jr.'), "Incorrect.");
+assert((book1.title=='Slaughterhouse Five' && book1.author=='Kurt Vonnegut Jr.'), "Incorrect.");
 
 {% endexercise %}
 
@@ -149,7 +149,7 @@ book1.review(2);
 console.log(book1.rating);
 
 {% validation %}
-assert((book.title=='Slaughterhouse Five' && book.author=='Kurt Vonnegut Jr.'), "Incorrect.");
+assert((book1.title=='Slaughterhouse Five' && book1.rating==3), "Incorrect.");
 
 {% endexercise %}
 

@@ -108,4 +108,4 @@ It's important to notice that in spite of the complexity of the hierarchical rel
 
 We will investigate more of how Class objects are created and used in JavaScript on the following pages.
 
-**Note:** Examples on this page were drawn largely from the Mozilla Developers Network page, ["Classes"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes).
+**Note:** Animal examples on this page were drawn largely from the Mozilla Developers Network page, ["Classes"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes).

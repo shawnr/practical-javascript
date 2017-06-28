@@ -80,6 +80,52 @@ In this example we start, again, with a base class called `Animal`. The `Animal`
 
 Using the ability to extend and alter existing Classes, we can accomplish a lot without having to rewrite code or re-design our data and code structures from scratch. Many third-party modules use these concepts to provide powerful tools that, like the cars we drive every day, can be effectively used without being fully understood. This empowers us as developers to accomplish more and to stand on the shoulders of developers who have come before us.
 
+{% exercise %}
+Extend the `User` class to create an Admin user that uses the `super()` command to add a property called `is_staff` and a method called `checkPermissions()` that will check to verify that `is_staff` equals `true` and will return `true` or `false` accordingly.
+
+{% initial %}
+// User Class
+class User {
+    constructor(name, email){
+        this.name = name;
+        this.email = email;
+    }
+}
+// Write Admin Class here.
+
+// Do not change these lines.
+let admin1 = new Admin('Jane Doe', 'jane@example.com');
+let verified = admin1.checkPermissions();
+
+{% solution %}
+// User Class
+class User {
+    constructor(name, email){
+        this.name = name;
+        this.email = email;
+    }
+}
+// Write Admin Class here.
+class Admin extends User {
+    constructor(name, email){
+        super(name, email);
+        this.is_staff = true;
+    }
+    checkPermissions(){
+        return this.is_staff;
+    }
+}
+// Do not change these lines.
+let admin1 = new Admin('Jane Doe', 'jane@example.com');
+let verified = admin1.checkPermissions();
+
+{% validation %}
+assert((admin1.name=='Jane Doe' && verified==true), "Incorrect.");
+
+{% endexercise %}
+
+
+
 
 
 

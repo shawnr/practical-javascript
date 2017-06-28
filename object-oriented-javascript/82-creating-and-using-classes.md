@@ -89,7 +89,18 @@ console.log(myCar.description); // Outputs "1981 AMC Pacer with 10500 miles" to 
 ```
 The `get` command allows for accessing the `description()` method as if it is a property. The method is called each time we access `Car.description` like a normal property. We now have a dynamic property that updates every time it is called. The more we `drive()`, the more that is reflected in the `description`.
 
-Now that we can create well-featured Class objects, we can move on to exploring how leverage the concept of inheritance. But first, more exercises.
+Now that we can create well-featured Class objects, we can move on to exploring how leverage the concept of inheritance. 
+
+<div class="tip-box">
+
+<h3>What is <code>this</code>?</h3>
+
+<p>The keyword <code>this</code> in JavaScript can be tricky to track in all contexts. It usually refers to the current code block (Function, Class, etc.). In the case of a Class object definition, the <code>this</code> keyword refers to the Class itself. That's why we refer to <code>this.property</code> inside methods when accessing Class properties.</p>
+
+</div>
+
+
+
 
 {% exercise %}
 Define a Class called `Book` with `title` and `author` properties that can be set by the developer when instantiating the Class. 

@@ -36,40 +36,20 @@ Try this self-check quiz to test your knowledge!
         <explanation>The <code>constructor()</code> method is called to initialize an instance of a Class.</explanation>
     </question>
     <question>
-        <p>True or False: JavaScript parameters can have default values specified in the Function declaration?</p>
-        <answer correct>true</answer>
-        <answer>false</answer>
-        <explanation>True: Default Parameters are possible as of ECMAScript 6.</explanation>
-    </question>  
-    <question>
-        <p>What command is used to declare a local variable in JavaScript?</p>
-        <answer><code>var</code></answer>
-        <answer><code>local</code></answer>
-        <answer correct><code>let</code></answer>
-        <answer><code>loc</code></answer>
-        <explanation>The command <code>let</code> is used to declare a local variable in JS.</explanation>
-    </question>
-    <question multiple>
-        <p>What is do we call the context of the code (including all known object references) as it is executed by the interpreter?</p>
-        <answer>context</answer>
-        <answer>library</answer>
-        <answer correct>scope</answer>
-        <answer>platform</answer>
-        <explanation>The word "scope" indicates the context of the code as it is executed.</explanation>
+        <p>The <code>get</code> command creates what kind of property on a Class?</p>
+        <answer correct>dynamic</answer>
+        <answer>writeable</answer>
+        <answer>readable</answer>
+        <answer>safe</answer>
+        <explanation>The <code>get</code> command creates a dynamic property on a Class.</explanation>
     </question>
     <question>
-        <p>True or False: Variables declared with <code>let</code> can be used outside of the code block where they are declared?</p>
-        <answer>true</answer>
-        <answer correct>false</answer>
-        <explanation>False: Variables declared with <code>let</code> do not exist outside of the code block where they are declared (although they <i>can</i> be used in child code blocks of the block where they are declared).</explanation>
-    </question>
-    <question>
-        <p>How are code blocks identified?</p>
-        <answer correct><code>{ }</code></answer>
-        <answer ><code>( )</code></answer>
-        <answer><code>[ ]</code></answer>
-        <answer><code>< ></code></answer>
-        <explanation>The curly braces (<code>{ }</code>) indicate a code block in JavaScript.</explanation>
+        <p>Which command is used to bring in the existing functionality of a given method from the parent Class so that additional functionality can be added around it?</p>
+        <answer><code>break()</code></answer>
+        <answer><code>swing()</code></answer>
+        <answer correct><code>super()</code></answer>
+        <answer><code>include()</code></answer>
+        <explanation>The <code>super()</code> command is used to bring in existing functionality of a method from the parent Class.</explanation>
     </question>
 </quiz>
 

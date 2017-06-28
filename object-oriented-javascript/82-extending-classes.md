@@ -75,7 +75,12 @@ let rolf = new Dog('Rolf');
 rolf.speak(); // Outputs `Rolf barks.` to the JS console.
 rolf.move(); // Outputs `Rolf begins to move.` and `Rolf walks.` to the JS console.
 ```
-In this example we start, again, with a base class called `Animal`. The `Animal` class takes in a `name` parameter, but nothing else. Two more classes are created by extending the `Animal` class: `Bird` and `Dog`.
+
+In this example we start, again, with a base class called `Animal`. The `Animal` class takes in a `name` parameter, but nothing else. Two more classes are created by extending the `Animal` class: `Bird` and `Dog`. Each of these classes uses `super()` to preserve some of the functionality of specific methods. Each one uses `super()` in the `constructor()` method to preserve the assignment of the `name` property on the Class. They also use the `super()` command in the `move()` method, which preserves the first line of the JS console output.
+
+Using the ability to extend and alter existing Classes, we can accomplish a lot without having to rewrite code or re-design our data and code structures from scratch. Many third-party modules use these concepts to provide powerful tools that, like the cars we drive every day, can be effectively used without being fully understood. This empowers us as developers to accomplish more and to stand on the shoulders of developers who have come before us.
+
+
 
 
 

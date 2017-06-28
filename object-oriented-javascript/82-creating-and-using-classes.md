@@ -95,7 +95,7 @@ Now that we can create well-featured Class objects, we can move on to exploring 
 
 <h3>What is <code>this</code>?</h3>
 
-<p>The keyword <code>this</code> in JavaScript can be tricky to track in all contexts. It usually refers to the current code block (Function, Class, etc.). In the case of a Class object definition, the <code>this</code> keyword refers to the Class itself. That's why we refer to <code>this.property</code> inside methods when accessing Class properties.</p>
+<p>The keyword <code>this</code> in JavaScript can be tricky to track in all contexts. It usually refers to the current code block (Function, Class, etc.). In the case of a Class object definition, the <code>this</code> keyword refers to the Class itself. That's why we refer to <code>this.property</code> inside methods when accessing Class properties. (<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this">See this article for more about <code>this</code></a>)</p>
 
 </div>
 

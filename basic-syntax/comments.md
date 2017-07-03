@@ -79,6 +79,21 @@ But we could also use the multi-line comment to comment out both lines:
 titleHeading.innerHTML = "Hello World!"; */
 ```
 
+<div class="tip-box">
+
+<h3>TODO: Make the Most of Comments</h3>
+
+<p>In any program, comments are probably used for a few specific reasons. One is to document what the code is doing in plain language that can be more quickly understood by collaborators. Another is to sketch out ideas in "pseudocode" so we can better understand what tasks we need the code to accomplish. We often use different commenting conventions to allow for comments to be understood by machines, usually in order to generate "automatic documentation". Some of the popular packages that can make comments into usable documentation include <a href="http://warpspire.com/kss/">KSS</a> and <a href="https://github.com/dtao/autodoc">Autodoc</a> and <a href="https://en.wikipedia.org/wiki/Comparison_of_documentation_generators">a lot more</a>.</p>
+
+<p>One of the most common ways to use comments is to track tasks yet to be completed with the phrase "TODO". This is done so that small tasks can be tracked in place. A developer can run a "find in files" search from their IDE or text editor to see all of the TODO notes across their code. By writing TODOs directly into the code, it's easy to see where functionality may be missing or temporary. When the next wave of improvements is made to the code, hopefully some of the TODOs will be completed.</p>
+
+<p>When making notes like this in our code, it's critical to update the status of TODO notes. One of the worst things in a developer's day is to come across a TODO that is actually already implemented. In order to figure that out, we must review the code in detail, and it can be exceptionally confusing. We must be sure to note when our TODOs become TODONE, and we should remove those comments and replace them with more useful comments that help another developer understand the code more quickly.</p>
+
+</div>
+
+
+
+
 ## Practice with Comments
 In order to test some of the things we've read on this page, complete the exercises below. 
 

@@ -46,6 +46,7 @@
   * [9.1 How JavaScript Interacts with HTML](the-document-object-model/91-how-javascript-interacts-with-html.md)
   * 9.2 Selecting Elements in the DOM
   * 9.3 Modifying Elements in the DOM
+  * 9.4 HTML Data Attributes
 * [10 Handling Events](handling-events/README.md)
   * 10.1 Adding Event Listeners
   * 10.2 Responding to Events

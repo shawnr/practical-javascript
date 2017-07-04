@@ -45,7 +45,7 @@ let x = 2;
 let x = 2;
 for (let i=0; i<12; i++){
     x = x * 2;
-    console.log(`Foo equals ${x}.`);
+    console.log("X equals: " + x);
 }
 
 {% validation %}

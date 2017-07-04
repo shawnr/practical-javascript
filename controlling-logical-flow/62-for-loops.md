@@ -41,11 +41,7 @@ Define a `for` loop that would double (multiply times two) `x` 12 times.
 let x = 2;
 
 {% solution %}
-let x = 2;
-for (let i=0; i<12; i++){
-x = x * 2;
-console.log("X equals: " + x);
-}
+
 
 {% validation %}
 assert(x==8192, "Incorrect.");

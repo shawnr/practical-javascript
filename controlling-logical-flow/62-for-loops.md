@@ -40,9 +40,6 @@ Define an a `for` loop that would double (multiply times two) `foo` 12 times.
 
 {% initial %}
 let foo = 2;
-for ( ){
-    
-}
 
 {% solution %}
 let foo = 2;

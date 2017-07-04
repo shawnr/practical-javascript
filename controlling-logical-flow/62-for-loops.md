@@ -53,3 +53,20 @@ assert(foo==8192, "Incorrect.");
 
 {% endexercise %}
 
+{% exercise %}
+Define a `while` loop that will add 1 to a number until it equals 42.
+
+{% initial %}
+let x = 0;
+
+{% solution %}
+let x = 0;
+while (x < 43) {
+console.log(`The value of x is: ${x}`);
+x++;
+}
+{% validation %}
+assert(x===43, "Incorrect.");
+
+{% endexercise %}
+

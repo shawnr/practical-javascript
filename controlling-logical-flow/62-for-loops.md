@@ -36,7 +36,7 @@ Notice that in this example we are actually using the `i` variable (which is the
 
 
 {% exercise %}
-Define an a `for` loop that would double (multiply times two) `foo` 12 times.
+Define a `for` loop that would double (multiply times two) `foo` 12 times.
 
 {% initial %}
 let foo = 2;
@@ -54,7 +54,7 @@ assert(foo==8192, "Incorrect.");
 {% endexercise %}
 
 {% exercise %}
-Define an a `for` loop that would double (multiply times two) `foo` 12 times.
+Define a `for` loop that would double (multiply times two) `foo` 12 times.
 
 {% initial %}
 let foo = 2;

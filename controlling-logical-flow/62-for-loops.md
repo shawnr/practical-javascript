@@ -36,20 +36,20 @@ Notice that in this example we are actually using the `i` variable (which is the
 
 
 {% exercise %}
-Define a `for` loop that would double (multiply times two) `foo` 12 times.
+Define a `for` loop that would double (multiply times two) `x` 12 times.
 
 {% initial %}
-let foo = 2;
+let x = 2;
 
 {% solution %}
-let foo = 2;
+let x = 2;
 for (let i=0; i<12; i++){
-    foo = foo * 2;
-    console.log(`Foo equals ${foo}.`);
+    x = x * 2;
+    console.log(`Foo equals ${x}.`);
 }
 
 {% validation %}
-assert(foo==8192, "Incorrect.");
+assert(x==8192, "Incorrect.");
 
 {% endexercise %}
 

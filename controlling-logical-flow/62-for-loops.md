@@ -25,7 +25,13 @@ for (let i=0; i<simpsons.length; i++){
 ```
 Notice that in this example we are actually using the `i` variable (which is the counter for the `for` loop) as the index for which name we want to output. This code would output each of the names to the JavaScript console in the web browser.
 
+<div class="tip-box">
 
+<h3>Looping Arrays in the Old Days</h3>
+
+<p>It used to be necessary to use the standard form of the <code>for</code> loop through Arrays. To do this, we would use the <code>Array.length</code> property to set the exit condition for the loop. This method still works, and it's used in some examples on this page. But pay attention to the more modern way of looping arrays over the next couple of sections of the book.</p>
+
+</div>
 
 
 {% exercise %}

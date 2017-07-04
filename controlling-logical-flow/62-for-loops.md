@@ -54,19 +54,20 @@ assert(foo==8192, "Incorrect.");
 {% endexercise %}
 
 {% exercise %}
-Define a `while` loop that will add 1 to a number until it equals 42.
+Define an a `for` loop that would double (multiply times two) `foo` 12 times.
 
 {% initial %}
-let x = 0;
+let foo = 2;
 
 {% solution %}
-let x = 0;
-while (x < 43) {
-console.log(`The value of x is: ${x}`);
-x++;
+let foo = 2;
+for (let i=0; i<12; i++){
+    foo = foo * 2;
+    console.log(`Foo equals ${foo}.`);
 }
+
 {% validation %}
-assert(x===43, "Incorrect.");
+assert(foo==8192, "Incorrect.");
 
 {% endexercise %}
 

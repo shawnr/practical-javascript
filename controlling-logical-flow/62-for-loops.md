@@ -62,8 +62,8 @@ let foo = 2;
 {% solution %}
 let foo = 2;
 for (let i=0; i<12; i++){
-    foo = foo * 2;
-    console.log(`Foo equals ${foo}.`);
+foo = foo * 2;
+console.log(`Foo equals ${foo}.`);
 }
 
 {% validation %}

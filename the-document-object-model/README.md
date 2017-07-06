@@ -3,4 +3,8 @@ The [Document Object Model (DOM)](https://en.wikipedia.org/wiki/Document_Object_
 
 The DOM defines the way that browsers understand the structure of HTML documents. It is a tree-like hierarchy that starts with a `document` node, then has one `html` node, and then branches out to `head` and `body` nodes. Here is an illustration of what the DOM generally "looks" like in diagram form:
 
+![The Document Object Model (DOM) by Birger Eriksson](/images/dom-model.png)
 
+The Document Object Model (DOM) by [Birger Eriksson](https://en.wikipedia.org/wiki/File:DOM-model.svg)
+
+In JavaScript, we can use different commands to traverse the DOM's tree hierarchy in order to access any information contained within the HTML document. This makes it possible to read and interpret information, to grab sections of a document and alter them, to add elements to the document, or to remove them. 

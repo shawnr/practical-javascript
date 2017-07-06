@@ -43,10 +43,9 @@
   * [8.3 Extending Classes](object-oriented-javascript/82-extending-classes.md)
   * [8.4 Quiz: Object Oriented JavaScript](object-oriented-javascript/84-quiz-object-oriented-javascript.md)
 * [9 The Document Object Model \(DOM\)](the-document-object-model/README.md)
-  * [9.1 How JavaScript Interacts with HTML](the-document-object-model/91-how-javascript-interacts-with-html.md)
-  * 9.2 Selecting Elements in the DOM
-  * 9.3 Modifying Elements in the DOM
-  * 9.4 HTML Data Attributes
+  * 9.1 Selecting Elements in the DOM
+  * [9.2 Modifying Elements in the DOM](the-document-object-model/93-modifying-elements-in-the-dom.md)
+  * 9.3 HTML Data Attributes
 * [10 Handling Events](handling-events/README.md)
   * 10.1 Adding Event Listeners
   * 10.2 Responding to Events

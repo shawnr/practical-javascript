@@ -5,6 +5,6 @@ The DOM defines the way that browsers understand the structure of HTML documents
 
 ![The Document Object Model (DOM) by Birger Eriksson](/images/dom-model.png)
 
-The Document Object Model (DOM) by [Birger Eriksson](https://en.wikipedia.org/wiki/File:DOM-model.svg)
+<caption>_The Document Object Model (DOM) by [Birger Eriksson](https://en.wikipedia.org/wiki/File:DOM-model.svg)_</caption>
 
 In JavaScript, we can use different commands to traverse the DOM's tree hierarchy in order to access any information contained within the HTML document. This makes it possible to read and interpret information, to grab sections of a document and alter them, to add elements to the document, or to remove them. 

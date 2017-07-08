@@ -153,7 +153,12 @@ let total = calculateTax(subtotal);
 ```
 We could even be building up a much more complex Object or Array of values that could be returned and stored in the `total` variable. Sometimes this is needed when we have to track additional metadata (such as what tax rate was applied, or what time the transaction was processed). 
 
-Using functions to process information and return data is a powerful tool for building complex programs. Try out some of the examples below.
+Using functions to process information and return data is a powerful tool for building complex programs. 
+
+## Exercises
+Please try working these exercises to practice some of the skills we've learned in this section.
+
+
 
 {% exercise %}
 Define a function that would capitalize a string.

@@ -45,7 +45,7 @@
 * [9 The Document Object Model \(DOM\)](the-document-object-model/README.md)
   * [9.1 Selecting Elements in the DOM](the-document-object-model/91-selecting-elements-in-the-dom.md)
   * [9.2 Modifying Elements in the DOM](the-document-object-model/93-modifying-elements-in-the-dom.md)
-  * 9.3 HTML Data Attributes
+  * [9.3 HTML Data Attributes](the-document-object-model/93-html-data-attributes.md)
 * [10 Handling Events](handling-events/README.md)
   * 10.1 Adding Event Listeners
   * 10.2 Responding to Events

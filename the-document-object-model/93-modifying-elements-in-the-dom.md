@@ -60,6 +60,7 @@ function addContact(contactObj){
     contactList.appendChild(newContactLI);
 }    
 ``` 
+In this example we can see a couple different approaches to creating new DOM elements and adding them to the DOM. First, we use a template literal that contains all the HTML markup populated with our data from `contactObj`, which is passed into this function as a parameter. After we have made the `contactContent` template literal, we then create the `newContactLI` object using the [`document.createElement()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) method. This 
 
 ## Removing Elements from the DOM
 

@@ -58,7 +58,8 @@ In the example above, we have declared three variables for use later: `foo`, `ba
 
 The other variables we declare are used to assemble the `apiBasePath` value. These values would likely be derived from inspecting some other aspect of the environment, and that information would be stored in constants so they cannot be altered during runtime. This insures that these values will not accidentally get overwritten with bad information.
 
-Try out the exercises below to practice with declaring and initializing variables.
+## Exercises
+Please try working these exercises to practice some of the skills we've learned in this section.
 
 {% exercise %}
 Define a variable `x` equal to 10.

@@ -33,6 +33,10 @@ Notice that in this example we are actually using the `i` variable (which is the
 
 </div>
 
+## Exercises
+Please try working these exercises to practice some of the skills we've learned in this section.
+
+
 
 {% exercise %}
 Define a `for` loop that would double (multiply times two) `x` 12 times.

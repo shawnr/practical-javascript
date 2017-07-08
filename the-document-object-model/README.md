@@ -31,10 +31,12 @@ Using the DOM standard tools, JavaScript programs can also alter the CSS attribu
 
 As an example, we can consider the following snippets of JavaScript, CSS, and HTML.
 
+**html**
 ```html
 <button class="btn save">Save Item</button>
 ```
 
+**css**
 ``` css
 .save {
     background: blue;
@@ -48,6 +50,7 @@ As an example, we can consider the following snippets of JavaScript, CSS, and HT
 }
 ```
 
+**js**
 ```js
 let saveButtons = document.querySelectorAll('.btn .save');
 saveButtons.forEach(function(button){

@@ -24,6 +24,7 @@ As an example, we can consider the following snippets of JavaScript, CSS, and HT
     content: 'Save Item';
 }
 .saved {
+    background: blue;
     color: yellow;
     content: 'Saved!';
 }
@@ -34,8 +35,16 @@ let saveButtons = document.querySelectorAll('.btn .save');
 saveButtons.forEach(function(button){
     button.addEventListener('click', function(event){
         event.target.setAttribute('class', 'btn saved');
+        event.target.setAttribute('disabled', true);
     });
 });
 ```
 
-We will dive deeper into how each part of this code works over the course of the next few sections, but for now it's useful to see that we have all three parts of our web technology trifecta at play: HTML, CSS, and JavaScript.
+We will dive deeper into how each part of this code works over the course of the next few sections of this book, but for now it's useful to see that we have all three parts of our web technology trifecta at play: HTML, CSS, and JavaScript.
+
+
+
+
+
+
+

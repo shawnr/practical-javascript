@@ -74,7 +74,7 @@ The code in this example does the exact same thing as the code in the previous e
 
 <div class="tip-box">
 
-<h3>The Perils of Fragile Naming</h3>
+<h3>The Perils of Rigid Naming</h3>
 
 <p>Part of the strength of CSS is that we can write selectors that are general enough to be very useful, but specific enough to perform the tasks we need. There has been a lot of thought put into how we can select elements within a DOM, and that thought has been expressed as the CSS Selector Syntax. For example, we can easily write selectors to select every other row in a table, every fifth item in a list, or diagonal elements in a grid. The CSS Selector language is very powerful, and without it, we become very rigid in how we name and structure elements.</p>
 

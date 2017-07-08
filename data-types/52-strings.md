@@ -69,6 +69,12 @@ We can find a full table showing how to escape characters on the MDN String page
 | \uXXXX	        | unicode codepoint |
 | \xXX	                 | the Latin-1 character |
 
+
+
+## Exercises
+Please try working these exercises to practice some of the skills we've learned in this section.
+
+
 {% exercise %}
 Fix the String definition below so it works.
 

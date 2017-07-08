@@ -3,7 +3,7 @@
 In order to work with the content of an HTML file, it's important to be able to retrieve specific elements and work with them in JavaScript. Most of the commands we can use to work with elements of the DOM are methods of the `document` object. The `document` object contains all sorts of properties that can tell us about the HTML, and it provides methods that can be used to perform actions on the HTML. The set of methods we will focus on for this section are those concerned with selecting elements out of the DOM.
 
 ## Query Selectors
-In modern ECMAScript, the `document` object provides two key methods to find and retrieve elements from the DOM: `document.querySelector()` and `document.querySelectorAll()`. These two methods allow us to select DOM elements using CSS selectors. Here is an example of some HTML and JS that works together:
+In modern ECMAScript, the `document` object provides two key methods to find and retrieve elements from the DOM: [`document.querySelector()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) and [`document.querySelectorAll()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll). These two methods allow us to select DOM elements using CSS selectors. Here is an example of some HTML and JS that works together:
 
 **html**
 ```

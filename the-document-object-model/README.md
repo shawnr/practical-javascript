@@ -40,7 +40,11 @@ saveButtons.forEach(function(button){
 });
 ```
 
-We will dive deeper into how each part of this code works over the course of the next few sections of this book, but for now it's useful to see that we have all three parts of our web technology trifecta at play: HTML, CSS, and JavaScript.
+We will dive deeper into how each part of this code works over the course of the next few sections of this book, but for now it's useful to see that we have all three parts of our web technology trifecta at play: HTML, CSS, and JavaScript. The HTML specifies the content of the document, and it describes that content using HTML tags to define specific elements, their attributes, and other characteristics such as `href`, `class`, or `id`. The CSS configures the visual presentation of specific HTML elements, using the CSS Selector syntax to match elements, and then describing visual attributes of those elements such as `background` or `color`.
+
+JavaScript is the interactive glue that binds together each of these components and allows instructions to be executed in response to a user's interaction with the document. In the case above, we can see a `<button>` element defined in HTML. It has the `class` attribute, which contains `"btn save"`. We can imagine that this is a button on a content website, perhaps, where users may wish to save the content they find. (Think of the "Watch Later" button on YouTube, or the "favorite" button on so many sites.) This button is initially styled according to the classes defined on the HTML element using the `class` attribute. However, this can be changed via JavaScript, which is able to select all of those buttons out of the document and add an "event listener" (which we will discuss in the next section) to respond to the user's click on the button. When the user clicks the button, the event listener executes a set of instructions that alter the classes applied to the button and disable the button from being clicked again.
+
+We will explore more about how each of these steps work in the JavaScript code, but for now it's useful to admire how the DOM provides the mechanism for each of these discrete technologies to operate in conjunction to give us a working web page. This allows a separation of concerns (content structuring, visual presentation, interactive instructions/logic) that makes it more convenient to build these deceptively complex media objects.
 
 
 

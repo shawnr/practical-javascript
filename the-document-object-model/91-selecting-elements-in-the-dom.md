@@ -72,11 +72,20 @@ for (action of profileActions){
 ```
 The code in this example does the exact same thing as the code in the previous example. In cases where we control the HTML entirely ourselves, it is not too bad to write code using these legacy selectors. We can use very specific Class and ID names to identify the HTML elements we need to work with. It can be a bit clunky to work with the older style selectors, but we can get the job done.
 
-Part of the strength of CSS is that we can write selectors that are general enough to be very useful, but specific enough to perform the tasks we need. There has been a lot of thought put into how we can select elements within a DOM, and that thought has been expressed as the CSS Selector Syntax. For example, we can easily write selectors to select every other row in a table, every fifth item in a list, or diagonal elements in a grid. The CSS Selector language is very powerful, and without it, we become very rigid in how we name and structure elements.
+<div class="tip-box">
 
-When we rely entirely on explicit ID or Class names, our code becomes more fragile. There is more chance of conflict when developers change the names of IDs or Classes to suit the needs of either visual styling or interactivity.
+<h3>Minding Style</h3>
 
+<p>Part of the strength of CSS is that we can write selectors that are general enough to be very useful, but specific enough to perform the tasks we need. There has been a lot of thought put into how we can select elements within a DOM, and that thought has been expressed as the CSS Selector Syntax. For example, we can easily write selectors to select every other row in a table, every fifth item in a list, or diagonal elements in a grid. The CSS Selector language is very powerful, and without it, we become very rigid in how we name and structure elements.</p>
 
+<p>When we rely entirely on explicit ID or Class names, our code becomes more fragile. There is more chance of conflict when developers change the names of IDs or Classes to suit the needs of either visual styling or interactivity. It becomes tempting to come up with complex naming schemes to differentiate between "functional" names and "design" names: classes that are found and used by JS versus classes found and used by CSS. For many years, developers struggled to have easier ways to select elements in the DOM.</p>
+
+<p>From that struggle was born great tools like jQuery, which became the dominant JavaScript toolset for many years. Now that these features have become part of the standard JavaScript library, it's less necessary to always use a third-party module to make things more convenient. We can now leverage the full power of CSS Selectors from within JavaScript, and the world is a better place.</p>
+
+</div>
+
+## Exercises
+Please try working these exercises to practice some of the skills we've learned in this section.
 
 {% exercise %}
 Define a problem.

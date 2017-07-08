@@ -48,7 +48,7 @@
   * [9.3 HTML Data Attributes](the-document-object-model/93-html-data-attributes.md)
   * [9.4 Quiz: The DOM](the-document-object-model/94-quiz-the-dom.md)
 * [10 Handling Events](handling-events/README.md)
-  * 10.1 Adding Event Listeners
+  * [10.1 Adding Event Listeners](handling-events/101-adding-event-listeners.md)
   * 10.2 Responding to Events
 * Appendix A: Resources for Learning More About JavaScript
 * [Glossary](/GLOSSARY.md)

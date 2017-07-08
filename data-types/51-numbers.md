@@ -27,6 +27,11 @@ if (Number.isSafeInteger(x)){
 ```
 The `Number.isSafeInteger()` function can be used to determine if a number is an integer or not. If it is an integer, the function will return `true`. If it is not an integer, then it will return `false`. In the cases where differentiation between types of numbers matters, this is a helpful tool.
 
+
+## Exercises
+Please try working these exercises to practice some of the skills we've learned in this section.
+
+
 {% exercise %}
 Define a variable `x` equal to an integer.
 

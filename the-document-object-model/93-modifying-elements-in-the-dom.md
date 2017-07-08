@@ -62,7 +62,9 @@ function addContact(contactObj){
 ``` 
 In this example we can see a couple different approaches to creating new DOM elements and adding them to the DOM. First, we use a template literal that contains all the HTML markup populated with our data from `contactObj`, which is passed into this function as a parameter. After we have made the `contactContent` template literal, we then create the `newContactLI` object using the [`document.createElement()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) method. This method creates a new DOM element, which in this case is called `newContactLI`, but it does _not_ add that element to the DOM (we do that later in the example). 
 
-Once we've created the `newContactLI` object, we set `newContactLI.innerHTML` equal to `contactContent`. This populates the `newContactLI` object with our template literal. Now that we have our new list item all populated with content, we can add it to the contact list in the DOM. The new list item is not visible in our browser until we append it to some element in the DOM, so this step is absolutely necessary.
+Once we've created the `newContactLI` object, we set `newContactLI.innerHTML` equal to `contactContent`. This populates the `newContactLI` object with our template literal. The `innerHTML` attribute on any DOM element contains all of the HTML within that element. In this case, our new list item contains no HTML. It's the equivalent of: `<li></li>`. Once we set the element's `innerHTML` value to our `contactContent` template literal, the `innerHTML` is populated directly.
+
+Now that we have our new list item all populated with content, we can add it to the contact list in the DOM. The new list item is not visible in our browser until we append it to some element in the DOM, so this step is absolutely necessary.
 
 To append the new list item to the contact list, we must first select the unordered list containing the contacts (with the ID `#contact-list`). We do that and call it `contactList` in our code. Next, we use the [`appendChild()`](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) method of DOM elements to append the new contact list item to the contact list.
 
@@ -71,6 +73,7 @@ Although we often get by using just a few of the features of DOM elements, it's 
 The trickiest part of creating new DOM elements is making decisions about the best way to build up the HTML involved. It's entirely possible to create elements and set all of their attributes using specific JavaScript commands. However, it's often much quicker and easier to maintain to populate large HTML structures using template literals and then drop that HTML into a container element. There's no single correct way to approach this task, so experiment with all the ways of adding elements into the DOM to get a feeling for what works.
 
 ## Removing Elements from the DOM
+Removing elements from the DOM is also possible using a variety of techniques. As with adding elements to the DOM, there is no single correct approach, and we will develop preferences for what works in different situations.
 
 ## Modifying the Content of Elements
 

@@ -9,6 +9,11 @@ The DOM defines the way that browsers understand the structure of HTML documents
 
 In JavaScript, we can use different commands to traverse the DOM's tree hierarchy in order to access any information contained within the HTML document. This makes it possible to read and interpret information, to grab sections of a document and alter them, to add elements to the document, or to remove them. It is not uncommon for a JavaScript program to spend considerable time reading data from a document's elements and their attributes, writing new elements into the document, or modifying the class name or textual content of elements. 
 
+## DOM Hierarchy
+As we can see in the image above, the DOM is a hierarchical structure that involves branching. It lists each HTML element (defined by an HTML tag) and relates them as either a parent, child, and/or sibling. We often talk about "traversing" or "walking" the DOM, which refers to moving along the branches of this tree. Often we need to gather up all of the children of a particular HTML element, such as when we want to access all the items in a particular list. 
+
+## Putting It All Together
+
 Using the DOM standard tools, JavaScript programs can also alter the CSS attributes of a given element. This means that JavaScript can be used in conjunction with HTML and CSS to create very dynamic visual representations of HTML content. Elements can be made to move, take on different styles, perform various functions, and much more. 
 
 As an example, we can consider the following snippets of JavaScript, CSS, and HTML.

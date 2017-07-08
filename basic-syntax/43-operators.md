@@ -85,6 +85,10 @@ let z = x + y * 3 - (x - y/2);
 ```
 The value of `z` would be `10.990000000000002`. Following the order of operations, JavaScript would first figure out `y/2` (which is `1.57`). Then it would calculate `x - 1.57` to get `10.43`. Next it would figure out `y * 3`, which is `9.42`. Finally, it would work out `x + 9.42 - 10.43`. For some reason, thanks to the inaccuracy of Decimal data types in JS (again, we will cover this more later), the final result is `10.990000000000002`. Normally we would run another command to round that down to `10.99`.
 
+## Exercises
+Please try working these exercises to practice some of the skills we've learned in this section.
+
+
 {% exercise %}
 Set `x` equal to three times seven.
 

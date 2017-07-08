@@ -30,6 +30,9 @@ while (true) {
 ```
 In this example, we set up an infinite loop, but once a status is received and checked, it can stop execution using the `break` command. The `break` command can be used to stop any loop from executing and return to the execution of code outside the loop. (Please note: This is still probably not the best structure for a program, but it works by way of example.)
 
+## Exercises
+Please try working these exercises to practice some of the skills we've learned in this section.
+
 {% exercise %}
 Define a `while` loop that will add 1 to a number until it equals 42.
 

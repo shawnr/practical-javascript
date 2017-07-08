@@ -66,7 +66,9 @@ Once we've created the `newContactLI` object, we set `newContactLI.innerHTML` eq
 
 To append the new list item to the contact list, we must first select the unordered list containing the contacts (with the ID `#contact-list`). We do that and call it `contactList` in our code. Next, we use the [`appendChild()`](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) method of DOM elements to append the new contact list item to the contact list.
 
-Although we often get by using just a few of the features of DOM elements, it's worthwhile to explore [the full set of properties and methods available on DOM element objects](https://developer.mozilla.org/en-US/docs/Web/API/element). This includes properties like `scrollHeight` and `className`, which can be used when processing different types of interaction. 
+Although we often get by using just a few of the features of DOM elements, it's worthwhile to explore [the full set of properties and methods available on DOM element objects](https://developer.mozilla.org/en-US/docs/Web/API/element). This includes properties like `scrollHeight` and `className`, which can be used when processing different types of interaction. There are also additional methods that can accommodate our computing needs such as `insertBefore()`, which inserts a new DOM element object _before_ the selected object. 
+
+The trickiest part of creating new DOM elements is making decisions about the best way to build up the HTML involved. It's entirely possible to create elements and set all of their attributes using specific JavaScript commands. However, it's often much quicker and easier to maintain to populate large HTML structures using template literals and then drop that HTML into a container element. There's no single correct way to approach this task, so experiment with all the ways of adding elements into the DOM to get a feeling for what works.
 
 ## Removing Elements from the DOM
 

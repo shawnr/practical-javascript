@@ -71,6 +71,10 @@ In this example, you can see that the variable `username` has a value assigned t
 
 The dot notation method is very clean when we know what property we need to access. But when we're using variables (such as when looping through Arrays or when correlating data from another variable or source), it's often necessary to use the "key" notation to use an expression to reference the value stored in a given property (or at a given "key").
 
+## Exercises
+Please try working these exercises to practice some of the skills we've learned in this section.
+
+
 {% exercise %}
 Define an Object called `foo`.
 

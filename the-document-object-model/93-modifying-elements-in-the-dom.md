@@ -5,11 +5,69 @@ Our pages should engage the user at all times in ways that are meaningful, predi
 
 Of course, making broad statements about how things _should_ happen on a web page is one thing. Building those features is often another matter entirely. Let's take a look at how we can begin that task.
 
-## Adding and Removing Elements from the DOM
+For this page, refer to the following HTML markup for a contact list:
+
+```html
+<ul id="contact-list">
+    <li class="contact">
+        <p class="name">Grace Hopper</p>
+        <p class="phone">555-1234</p>
+        <p class="email"><a href="mailto:grace@example.com">grace@example.com</a></p>
+        <p class="address">123 Fake St.</p>
+        <p class="city">Anytown</p>
+        <p class="state">XZ</p>
+    </li>
+    <li class="contact">
+        <p class="name">Bill Joy</p>
+        <p class="phone">555-8754</p>
+        <p class="email"><a href="mailto:bill@example.com">bill@example.com</a></p>
+        <p class="address">42 Nowhere Ct.</p>
+        <p class="city">Somewhere</p>
+        <p class="state">ZY</p>
+    </li>
+    <li class="contact">
+        <p class="name">Katherine Johnson</p>
+        <p class="phone">555-3323</p>
+        <p class="email"><a href="mailto:k8@example.com">k8@example.com</a></p>
+        <p class="address">555 Secret Place</p>
+        <p class="city">Nowhere</p>
+        <p class="state">DV</p>
+    </li>
+</ul>
+```
+
+## Adding Elements to the DOM
+It's often necessary to add elements into the DOM. We can do this using a few different techniques. Often it's best to combine some techniques in order to maximize efficiency. Here is an example where we add a `contact` object to the list in the HTML example above.
+
+```js
+function addContact(contactObj){
+    // Set up a template literal to populate the data into an HTML structure.
+    let contactContent =   `<p class="name">${contactObj.name}</p>
+                            <p class="phone">${contactObj.phone}</p>
+                            <p class="email"><a href="mailto:${contactObj.email}">${contactObj.email}</a></p>
+                            <p class="address">${contactObj.address}</p>
+                            <p class="city">${contactObj.city}</p>
+                            <p class="state">${contactObj.state}</p>`;
+    
+    // Make a new list item (`li`) to contain the contact content.
+    let newContactLI = document.createElement('li');
+    newContactLi.innerHTML = contactContent;
+    
+    // Select the `ul` containing all the contacts.
+    let contactList = document.querySelector('#contact-list');
+    
+    // Append the new list item.
+    contactList.appendChild(newContactLI);
+}    
+``` 
+
+## Removing Elements from the DOM
 
 ## Modifying the Content of Elements
 
-## Modifying Element Attributes
+## Modifying Element Styles
+
+## Modifying Other Element Attributes
 
 
 ## Exercises

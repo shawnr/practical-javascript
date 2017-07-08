@@ -28,6 +28,9 @@ The syntax to declare this kind of loop is more simple than the standard `for` l
 
 This pattern exists in many other programming languages, so getting used to the way this works is helpful even outside of JavaScript. Many templating languages, for example, have a `foreach` or similar kind of loop that can be executed.
 
+## Exercises
+Please try working these exercises to practice some of the skills we've learned in this section.
+
 
 {% exercise %}
 Write a `for ... of` loop to add all the numbers in the `transactions` Array.

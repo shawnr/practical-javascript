@@ -60,7 +60,13 @@ function addContact(contactObj){
     contactList.appendChild(newContactLI);
 }    
 ``` 
-In this example we can see a couple different approaches to creating new DOM elements and adding them to the DOM. First, we use a template literal that contains all the HTML markup populated with our data from `contactObj`, which is passed into this function as a parameter. After we have made the `contactContent` template literal, we then create the `newContactLI` object using the [`document.createElement()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) method. This 
+In this example we can see a couple different approaches to creating new DOM elements and adding them to the DOM. First, we use a template literal that contains all the HTML markup populated with our data from `contactObj`, which is passed into this function as a parameter. After we have made the `contactContent` template literal, we then create the `newContactLI` object using the [`document.createElement()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) method. This method creates a new DOM element, which in this case is called `newContactLI`, but it does _not_ add that element to the DOM (we do that later in the example). 
+
+Once we've created the `newContactLI` object, we set `newContactLI.innerHTML` equal to `contactContent`. This populates the `newContactLI` object with our template literal. Now that we have our new list item all populated with content, we can add it to the contact list in the DOM. The new list item is not visible in our browser until we append it to some element in the DOM, so this step is absolutely necessary.
+
+To append the new list item to the contact list, we must first select the unordered list containing the contacts (with the ID `#contact-list`). We do that and call it `contactList` in our code. Next, we use the [`appendChild()`](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) method of DOM elements to append the new contact list item to the contact list.
+
+Although we often get by using just a few of the features of DOM elements, it's worthwhile to explore [the full set of properties and methods available on DOM element objects](https://developer.mozilla.org/en-US/docs/Web/API/element). This includes properties like `scrollHeight` and `className`, which can be used when processing different types of interaction. 
 
 ## Removing Elements from the DOM
 

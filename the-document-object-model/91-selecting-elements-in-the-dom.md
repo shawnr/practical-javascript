@@ -38,9 +38,9 @@ These two commands can leverage the full power of [CSS Selectors](https://develo
 ## Old Style Selectors
 As with so many older features of JavaScript, old style DOM selectors are still functional and we still run across them in code. They can be used to select based on more fundamental properties of elements, which can sometimes be convenient. These commands are still provided as methods on the `document` object. They are:
 
-* `document.getElementById()` &ndash; Fetches the one element with the given ID (note: do not supply a "`#`" when using this method).
-* `document.getElementsByClassName()` &ndash; Fetches an Array-like set of elements that match the given Class name (note: do not supply a "`.`" when using this method).
-* `document.getElementsByTagName()` &ndash; Fetches an Array-like set of elements that match the given HTML Tag name.
+* [`document.getElementById()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) &ndash; Fetches the one element with the given ID (note: do not supply a "`#`" when using this method).
+* [`document.getElementsByClassName()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName) &ndash; Fetches an Array-like set of elements that match the given Class name (note: do not supply a "`.`" when using this method).
+* [`document.getElementsByTagName()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName) &ndash; Fetches an Array-like set of elements that match the given HTML Tag name.
 
 These can be used like we would expect, given the descriptions above. Here is an example:
 

@@ -33,11 +33,50 @@ for (action of profileActions){
 
 As we can see in this example, we have HTML for a user profile page. There is a section for the profile, and that section contains several other elements. In the JavaScript, we can see how the `document.querySelector()` method can be used to select one element at a time (the _first_ matching element). This is handy in many cases, but we can also use `document.querySelectorAll()` to select _all_ of the elements matching our CSS selector. We can see that the `profileActions` variable is populated with a `document.querySelectorAll()` command, so it is equal to the entire set of results matching the CSS selector query. If we loop through those results using a standard `for ... of` loop, we can see that each element has been retrieved.
 
-
-
-
+These two commands can leverage the full power of [CSS Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors). This means that we can use very complex syntax to define specific, dynamic, and highly customized queries. We can use everything we know about selecting elements for visual styling with CSS in order to enhance our pages. This is powerful stuff.
 
 ## Old Style Selectors
+As with so many older features of JavaScript, old style DOM selectors are still functional and we still run across them in code. They can be used to select based on more fundamental properties of elements, which can sometimes be convenient. These commands are still provided as methods on the `document` object. They are:
+
+* `document.getElementById()` &ndash; Fetches the one element with the given ID (note: do not supply a "`#`" when using this method).
+* `document.getElementsByClassName()` &ndash; Fetches an Array-like set of elements that match the given Class name (note: do not supply a "`.`" when using this method).
+* `document.getElementsByTagName()` &ndash; Fetches an Array-like set of elements that match the given HTML Tag name.
+
+These can be used like we would expect, given the descriptions above. Here is an example:
+
+**html**
+```
+<section id="profile">
+    <p class="image-wrapper"><img src="user.jpg" alt="User Profile Image"></p>
+    <p class="bio">Some information about the user.</p>
+    <ul id="profile-actions">
+        <li><a href="#edit">Edit</a></li>
+        <li><a href="#settings">Settings</a></li>
+    </ul>
+</section>
+```
+
+**js**
+```
+// Select the first matching element
+let profileSection = document.getElementById('profile');
+let profileBio = document.getElementsByClassName('bio');
+// Note how the index must be used below due to the results of `getElementsByClassName()`
+profileBio[0].innerHTML = 'Updated text about the user.' // Updates content of user bio.
+
+// Note that the selector below would match all `li` elements in the entire page.
+let profileActions = document.getElementsByTagName('li');
+for (action of profileActions){
+    console.log(action.innerHTML); // Outputs link tag for each action item.
+});
+```
+The code in this example does the exact same thing as the code in the previous example. In cases where we control the HTML entirely ourselves, it is not too bad to write code using these legacy selectors. We can use very specific Class and ID names to identify the HTML elements we need to work with. It can be a bit clunky to work with the older style selectors, but we can get the job done.
+
+Part of the strength of CSS is that we can write selectors that are general enough to be very useful, but specific enough to perform the tasks we need. There has been a lot of thought put into how we can select elements within a DOM, and that thought has been expressed as the CSS Selector Syntax. For example, we can easily write selectors to select every other row in a table, every fifth item in a list, or diagonal elements in a grid. The CSS Selector language is very powerful, and without it, we become very rigid in how we name and structure elements.
+
+When we rely entirely on explicit ID or Class names, our code becomes more fragile. There is more chance of conflict when developers change the names of IDs or Classes to suit the needs of either visual styling or interactivity.
+
+
 
 {% exercise %}
 Define a problem.

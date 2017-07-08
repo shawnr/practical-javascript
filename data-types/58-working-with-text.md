@@ -122,6 +122,9 @@ Total: 4.2
 As we can see, it's possible to do operations within the expression tags. This makes Template Literals even more flexible and useful.
     
 
+## Exercises
+Please try working these exercises to practice some of the skills we've learned in this section.
+
 
 {% exercise %}
 Split the String `shoppingList` into an array on the commas.

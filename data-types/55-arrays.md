@@ -81,6 +81,9 @@ colors.splice(position, 2); // This command removes 'yellow' plus the one item f
 ```
 In this example we can see that the `colors` array consists of six items. We use `indexOf('yellow')` to determine the position of `'yellow'` in the Array. Then, we use that position value with the `splice(position, 2)` command to remove `'yellow'` and the item following it (which is `'black'`). The `2` in our `splice()` command indicates that two items should be removed from the Array.
 
+## Exercises
+Please try working these exercises to practice some of the skills we've learned in this section.
+
 
 {% exercise %}
 Define an Array called `names` with a length of 4.

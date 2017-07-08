@@ -10,7 +10,20 @@ The DOM defines the way that browsers understand the structure of HTML documents
 In JavaScript, we can use different commands to traverse the DOM's tree hierarchy in order to access any information contained within the HTML document. This makes it possible to read and interpret information, to grab sections of a document and alter them, to add elements to the document, or to remove them. It is not uncommon for a JavaScript program to spend considerable time reading data from a document's elements and their attributes, writing new elements into the document, or modifying the class name or textual content of elements. 
 
 ## DOM Hierarchy
-As we can see in the image above, the DOM is a hierarchical structure that involves branching. It lists each HTML element (defined by an HTML tag) and relates them as either a parent, child, and/or sibling. We often talk about "traversing" or "walking" the DOM, which refers to moving along the branches of this tree. Often we need to gather up all of the children of a particular HTML element, such as when we want to access all the items in a particular list. 
+As we can see in the image above, the DOM is a hierarchical structure that involves branching. It lists each HTML element (defined by an HTML tag) and relates them as either a parent, child, and/or sibling. We often talk about "traversing" or "walking" the DOM, which refers to moving along the branches of this tree. Often we need to gather up all of the children of a particular HTML element, such as when we want to access all the items in a particular list. Or we want to know the parent element of a button or link so we can provide some responsiveness for the user.
+
+More often, we need to add elements to the document, which requires understanding if we are appending, prepending, inserting as a child, or adding as a sibling, etc. It's critical to understand the DOM hierarchy of a given document clearly in order to effectively use JavaScript to modify the document.
+
+Of course, DOM, hierarchy is just one way we have of selecting elements. We often rely on `id` or `class` attributes to select DOM elements based on CSS select queries. This provides us with easy ways to get at the pieces of the document we need, and it allows us to create groupings of elements outside of the normal DOM hierarchy relationships. All of the techniques for traversing and selecting DOM elements are critical for success in writing interactive web pages.
+
+<div class="tip-box">
+
+<h3>Minding Style</h3>
+
+<p>It's easier to understand DOM hierarchy if we have a solid habit of properly indenting our HTML code. Although web browsers don't care about indentation, it is a handy visual guide for us developers who need to easily understand the organization of our DOM elements. Some developers believe that it doesn't matter how they indent their code since HTML Inspector tools available in every web browser do a great job of cleaning up and revealing the DOM hierarchy. That is true, and those tools are incredibly valuable, but it's always a good idea to keep your code properly indented and reasonably organized. Doing so will not only make your code easier to read during development, but it will help you be more aware of how the DOM of your document will be organized.</p>
+
+</div>
+
 
 ## Putting It All Together
 

@@ -1,5 +1,7 @@
 # Resources for Learning More
 
+As the author of this book, I recommend our [Web Development Certificate](http://webdev.seattleu.edu) program at Seattle University. We specialize in frontend development with a modern approach, and our program is designed to support mid-career change. 
+
 There are many resources online for learning more about JavaScript. Here are some links to useful sites. None of these sites are affiliated with this book.
 
 ## References

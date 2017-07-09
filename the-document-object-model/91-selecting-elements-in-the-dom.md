@@ -120,15 +120,28 @@ Please try working these exercises to practice some of the skills we've learned 
 ```
 
 {% exercise %}
-Define a problem.
+Select the <code>search-results</code> list and make it available in a variable called <code>resultsList</code>. Use <code>document.querySelector()</code>.
 
 {% initial %}
-// initial code 
+// Set `resultsList` equal to the DOM element for the search-results list. 
 
 {% solution %}
 // solution code
+let resultsList = document.querySelector('#search-results');
 
 {% validation %}
-assert(true, "Incorrect.");
+assert(resultsList, "Incorrect.");
+
+{% context %}
+class MockDoc {
+    querySelector(q){
+        if (q == "#search-results"){
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+var document = new MockDoc();
 
 {% endexercise %}

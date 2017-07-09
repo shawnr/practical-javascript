@@ -72,19 +72,79 @@ In this example, the text input called `username` has been disabled. The JavaScr
 Between `setAttribute()` and `removeAttribute()` we have solid tools for modifying more than the textual content of a DOM element. These are powerful methods that can help in many cases.
 
 ## Exercises
-Please try working these exercises to practice some of the skills we've learned in this section.
+Please try working these exercises to practice some of the skills we've learned in this section.The exercises in this section all assume the following HTML. Please write JavaScript as if it is attached to this HTML snippet:
 
+```html
+<button class="btn save">Save Item</button>
+```
 
 {% exercise %}
-Define a problem.
+Given the HTML above, write JavaScript to change the text on the button to read "Saved!" and change the class attribute to be "btn saved".
 
 {% initial %}
-// initial code 
+// Select the button from the DOM using document.querySelector(). 
+
+// Change the innerHTML of the button
+
+// Change the class attribute
+
+
 
 {% solution %}
-// solution code
+// Set `resultsList` equal to the DOM element for the search-results list. 
+let resultsList = document.querySelector('#search-results');
+
+// Create a new list item called `newLI`
+let newLI = document.createElement('li');
+
+// Set innerHTML of new list item to match HTML structure with new data specified above.
+newLI.innerHTML = `
+    <p class="title">Children of Dune <span class="format">Television</span></p>
+        <p class="year">2003</p>
+        <ul class="actions">
+            <li><a href="#save">Save</a></li>
+            <li><a href="#share">Share</a></li>
+            <li><a href="#report">Report</a></li>
+        </ul>`;
+// Append `newLI` to the `resultsList` as a new child element.
+resultsList.appendChild(newLI);
 
 {% validation %}
-assert(true, "Incorrect.");
+assert(resultsList.children.length==1, "Incorrect.");
+
+{% context %}
+class MockDoc {
+    querySelector(q){
+        if ((q == "button") ||
+            (q == "button.save") ||
+            (q == ".save") ||
+            (q == ".btn.save") ||
+            (q == "button.btn") ||
+            (q == "button.btn.save")){
+            return new MockElem("button");
+        } else {
+            return null;
+        }
+    }
+    createElement(type){
+        if (type == "button") {
+            return new MockElem("BUTTON");
+        } else {
+            return null;
+        }
+    }
+}
+class MockElem {
+    constructor(type){
+        this.children = [];
+        this.innerHTML = '';
+        this.style = {};
+        this.tagName = type;
+    }
+    appendChild(obj){
+        this.children.push(obj);
+    }
+}
+var document = new MockDoc();
 
 {% endexercise %}

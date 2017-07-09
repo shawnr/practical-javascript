@@ -165,7 +165,7 @@ class MockDoc {
         if ((q == ".result") ||
             (q == "#search-results .result") ||
             (q == "li.result") ||
-            (q == "#search-results li.result"){
+            (q == "#search-results li.result")){
             return true;
         } else {
             return false;

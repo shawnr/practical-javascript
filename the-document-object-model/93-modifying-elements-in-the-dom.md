@@ -1,11 +1,7 @@
 # Modifying Elements
-Now that we've explored how to select and retrieve elements from the DOM, we will move on to how to modify these elements. Modifying elements in the DOM, or adding/removing elements to/from the DOM, is crucial to creating a responsive experience for users. Users expect that if they interact with a page it will change: links will light up, buttons will click down, text will change, notifications will come and go, and their actions will have an effect.
+In addition to adding and removing elements from the DOM, it's important to be able to alter elements to reflect changes, updates, and other system status.
 
-Our pages should engage the user at all times in ways that are meaningful, predictable, and regular. If a user clicks "save" there should be suitable feedback to let the user know that the item has been saved. This helps the user understand what has happened and it matches what the user anticipated would happen. The next time the user clicks "save" the same interaction should unfold. This shows regularity in the interface. 
-
-Of course, making broad statements about how things _should_ happen on a web page is one thing. Building those features is often another matter entirely. Let's take a look at how we can begin that task.
-
-For the following examples, refer to the following HTML markup for a contact list:
+For the following examples, refer to this HTML markup for a contact list:
 
 ```html
 <ul id="contact-list">
@@ -35,62 +31,6 @@ For the following examples, refer to the following HTML markup for a contact lis
     </li>
 </ul>
 ```
-
-## Adding Elements to the DOM
-It's often necessary to add elements into the DOM. We can do this using a few different techniques. Often it's best to combine some techniques in order to maximize efficiency. Here is an example where we add a `contact` object to the list in the HTML example above.
-
-```js
-function addContact(contactObj){
-    // Set up a template literal to populate the data into an HTML structure.
-    let contactContent =   `<p class="name">${contactObj.name}</p>
-                            <p class="phone">${contactObj.phone}</p>
-                            <p class="email"><a href="mailto:${contactObj.email}">${contactObj.email}</a></p>
-                            <p class="address">${contactObj.address}</p>
-                            <p class="city">${contactObj.city}</p>
-                            <p class="state">${contactObj.state}</p>`;
-    
-    // Make a new list item (`li`) to contain the contact content.
-    let newContactLI = document.createElement('li');
-    newContactLi.innerHTML = contactContent;
-    
-    // Select the `ul` containing all the contacts.
-    let contactList = document.querySelector('#contact-list');
-    
-    // Append the new list item.
-    contactList.appendChild(newContactLI);
-}    
-``` 
-In this example we can see a couple different approaches to creating new DOM elements and adding them to the DOM. First, we use a template literal that contains all the HTML markup populated with our data from `contactObj`, which is passed into this function as a parameter. After we have made the `contactContent` template literal, we then create the `newContactLI` object using the [`document.createElement()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) method. This method creates a new DOM element, which in this case is called `newContactLI`, but it does _not_ add that element to the DOM (we do that later in the example). 
-
-Once we've created the `newContactLI` object, we set `newContactLI.innerHTML` equal to `contactContent`. This populates the `newContactLI` object with our template literal. The `innerHTML` attribute on any DOM element contains all of the HTML within that element. In this case, our new list item contains no HTML. It's the equivalent of: `<li></li>`. Once we set the element's `innerHTML` value to our `contactContent` template literal, the `innerHTML` is populated directly.
-
-Now that we have our new list item all populated with content, we can add it to the contact list in the DOM. The new list item is not visible in our browser until we append it to some element in the DOM, so this step is absolutely necessary.
-
-To append the new list item to the contact list, we must first select the unordered list containing the contacts (with the ID `#contact-list`). We do that and call it `contactList` in our code. Next, we use the [`appendChild()`](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) method of DOM elements to append the new contact list item to the contact list.
-
-Although we often get by using just a few of the features of DOM elements, it's worthwhile to explore [the full set of properties and methods available on DOM element objects](https://developer.mozilla.org/en-US/docs/Web/API/element). This includes properties like `scrollHeight` and `className`, which can be used when processing different types of interaction. There are also additional methods that can accommodate our computing needs such as `insertBefore()`, which inserts a new DOM element object _before_ the selected object. 
-
-The trickiest part of creating new DOM elements is making decisions about the best way to build up the HTML involved. It's entirely possible to create elements and set all of their attributes using specific JavaScript commands. However, it's often much quicker and easier to maintain to populate large HTML structures using template literals and then drop that HTML into a container element. There's no single correct way to approach this task, so experiment with all the ways of adding elements into the DOM to get a feeling for what works.
-
-## Removing Elements from the DOM
-Removing elements from the DOM is also possible using a variety of techniques. As with adding elements to the DOM, there is no single correct approach, and we will develop preferences for what works in different situations. A simple way of removing elements from the DOM is to select their parent element and then set the `innerHTML` value to an empty string (`''`). Here's an example of removing all of the list items from the `#contacts-list` element using `innerHTML`:
-
-```js
-// Select the unordered list containing contacts.
-let contactsList = document.querySelector('#contacts-list');
-
-// Remove all list items (and their content) using the `innerHTML` property.
-contactsList.innerHTML = '';
-```
-
-By setting the `innerHTML` of the `contactsList` object to `''`, we have removed all of the list items, too. This is easy and clean, but it is also a fairly blunt way of removing a DOM element. We often need a more precise or limited way of removing elements from the DOM. For that, we can use the [`remove()`](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/remove) method of each DOM element object. Here is an example:
-
-```js
-let firstContactItem = document.querySelector('.contact');
-firstContactItem.remove()
-```
-
-This example selects the first contact item with the `.contact` class and removes it from the DOM. It uses the `remove()` method to accomplish this goal. Although this example is a bit glib, it illustrates how easy it is to remove an element from the DOM once we've selected it. We often have the case where we have a specific element object to work with, and in the next section we will explore more about how to respond to events that are triggered by individual DOM elements. 
 
 ## Modifying the Content of Elements
 

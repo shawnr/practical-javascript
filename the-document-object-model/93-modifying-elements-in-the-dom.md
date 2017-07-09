@@ -33,6 +33,9 @@ For the following examples, refer to this HTML markup for a contact list:
 ```
 
 ## Modifying the Content of Elements
+The content of elements is generally accessed through the `innerHTML` property. This property can be used to 
+
+## Modifying Element Attributes
 
 ## Modifying Element Styles
 

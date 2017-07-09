@@ -8,6 +8,6 @@
 .tip-box h3 {
     margin: 1rem 0 0 0;
 }
-.exercise .editor {
-    min-height: 300px;
+.page-inner .exercise div.editor.ace_editor {
+    min-height: 300px !important;
 }

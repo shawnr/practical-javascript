@@ -148,8 +148,6 @@ Once you've finished populating the Append the new list item as a new child at t
 // Append `newLI` to the `resultsList`
 
 
-console.log('end of code');
-
 {% solution %}
 // Set `resultsList` equal to the DOM element for the search-results list. 
 let resultsList = document.querySelector('#search-results');

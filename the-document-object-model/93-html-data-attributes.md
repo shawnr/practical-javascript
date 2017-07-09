@@ -56,7 +56,7 @@ let saveSuccess = saveItem(saveButton.dataset.id);
 
 
 {% validation %}
-assert(saveButton.dataset.saved==true), "Incorrect.");
+assert(saveButton.dataset.saved==true, "Incorrect.");
 
 {% context %}
 

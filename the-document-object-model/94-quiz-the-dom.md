@@ -4,36 +4,36 @@ Try this self-check quiz to test your knowledge!
 
 <quiz name="">
     <question>
-        <p>What do we mean by "abstraction"?</p>
-        <answer correct>Organizing code into functions, subroutines, and class/method definitions to better contain and isolate functionality and to mask the complexity of the code with an elegant interface.</answer>
-        <answer>Replacing characters with encoded characters.</answer>
-        <answer>Breaking code into small parts and spreading them everywhere.</answer>
-        <answer>Writing code about complex poetry subjects..</answer>
-        <explanation>Abstraction is the process of containing complex instructions and making them accessible through an elegant interface.</explanation>
+        <p>The Document Object Model (DOM) is a hierarchy that most closely resembles what object?</p>
+        <answer>a tower</answer>
+        <answer>a spiderweb</answer>
+        <answer correct>a tree</answer>
+        <answer>a tournament bracket</answer>
+        <explanation>The DOM uses a tree-like hierarchy to relate all of its nodes.</explanation>
     </question>
     <question>
-        <p>Inheriting features from another Class uses what command in JavaScript?</p>
-        <answer><code>inherits</code></answer>
-        <answer correct><code>extends</code></answer>
-        <answer><code>overrides</code></answer>
-        <answer><code>compares</code></answer>
-        <explanation>The command <code>extends</code> is used to inherit from another Class.</explanation>
+        <p>Every node in the DOM represents what?</p>
+        <answer>a link</answer>
+        <answer>a section</answer>
+        <answer>a view</answer>
+        <answer correct>an HTML element</answer>
+        <explanation>Every node in the DOM represents and HTML element.</explanation>
+    </question>
+    <question multiple>
+        <p>What three relationships between nodes are key to the DOM hierarchy?</p>
+        <answer correct>parent</answer>
+        <answer correct>child</answer>
+        <answer correct>sibling</answer>
+        <answer>cousin</answer>
+        <explanation>The three relationships between nodes in the DOM are: parent, child, and sibling.</explanation>
     </question>
     <question>
-        <p>What term describes the concept of altering the functionality of inherited Class methods?</p>
-        <answer>parameterization</answer>
-        <answer>adjustment</answer>
-        <answer correct>polymorphism</answer>
-        <answer>structuring</answer>
-        <explanation>Polymorphism describes the concept of altering the functionality of inherited Class methods.</explanation>
-    </question>
-    <question>
-        <p>What is the method that initializes a Class called in JavaScript?</p>
-        <answer><code>init()</code></answer>
-        <answer ><code>build()</code></answer>
-        <answer><code>create()</code></answer>
-        <answer correct><code>constructor()</code></answer>
-        <explanation>The <code>constructor()</code> method is called to initialize an instance of a Class.</explanation>
+        <p>Which method selects the first matching element in the document?</p>
+        <answer><code>document.querySelectorAll()</code></answer>
+        <answer ><code>document.getElementsByClass()</code></answer>
+        <answer correct><code>document.querySelector()</code></answer>
+        <answer><code>document.getElementsByTagName()</code></answer>
+        <explanation>The <code>document.querySelector()</code> method returns the first matching DOM element.</explanation>
     </question>
     <question>
         <p>The <code>get</code> command creates what kind of property on a Class?</p>

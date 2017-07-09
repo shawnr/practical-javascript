@@ -141,7 +141,11 @@ Once you've finished populating the Append the new list item as a new child at t
 {% initial %}
 // Set `resultsList` equal to the DOM element for the search-results list. 
 
-// Create a new list item
+// Create a new list item called `newLI`
+
+// Set innerHTML of new list item to match HTML structure with new data specified above.
+
+// Append `newLI` to the `resultsList`
 
 {% solution %}
 // solution code

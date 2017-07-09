@@ -145,3 +145,32 @@ class MockDoc {
 var document = new MockDoc();
 
 {% endexercise %}
+
+{% exercise %}
+Use <code>document.querySelectorAll()</code> to select each of the result list items. Make this available as the variable `resultItems`.
+
+{% initial %}
+// Set `resultItems` equal to the DOM elements for each item in the search results list. 
+
+{% solution %}
+// solution code
+let resultItems = document.querySelectorAll('#search-results .result');
+
+{% validation %}
+assert(resultItems, "Incorrect. Check your CSS selector.");
+
+{% context %}
+class MockDoc {
+    querySelectorAll(q){
+        if ((q == ".result") ||
+            (q == "#search-results .result") ||
+            (q == "li.result")){
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+var document = new MockDoc();
+
+{% endexercise %}

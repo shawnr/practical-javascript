@@ -39,6 +39,36 @@ In this example we can see that the JavaScript code selects the image and then u
 
 The `setAttribute()` method takes two parameters: the name of the attribute, and the new value. You can set as many attributes as you need, but it requires a separate instruction for each one.
 
+Here is another example that demonstrates creating a new DOM element and adding attributes to it.
+
+```js
+let myForm = document.querySelector('#myform');
+
+let newInput = document.createElement('input');
+newInput.setAttribute('name', 'username');
+newInput.setAttribute('value', '');
+newInput.setAttribute('placeholder', 'Enter Your Username');
+newInput.setAttribute('type', 'text');
+
+myForm.appendChild(newInput);
+```
+In this example, a new text input is created for a form. The `name`, `value`, `placeholder`, and `type` attributes are set using `setAttribute()`. The input is appended to the `form` element with the ID `#myform`.
+
+It is also possible to remove an attribute altogether with the [`removeAttribute()`](https://developer.mozilla.org/en-US/docs/Web/API/Element/removeAttribute) method. Consider this HTML and JavaScript example:
+
+**html**
+```html
+<input name="username" type="text" value="myusername" disabled="true">
+```
+
+**js**
+```js
+let usernameInput = document.querySelector('input[name="username"]');
+usernameInput.removeAttribute('disabled');
+```
+
+In this example, the text input called `username` has been disabled. The JavaScript selects that text input and removes the `disabled` attribute, which would allow a user to edit this field. This is a common use case for providing safe access to data. Form fields use a lot of attributes to control behavior, so these methods are especially useful for working with form field DOM elements.
+
 ## Modifying Element Styles
 
 

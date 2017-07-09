@@ -6,7 +6,7 @@ Our pages should engage the user at all times in ways that are meaningful, predi
 
 Of course, making broad statements about how things _should_ happen on a web page is one thing. Building those features is often another matter entirely. Let's take a look at how we can begin that task.
 
-For the following examples, refer to the following HTML markup for a contact list:
+For the following examples, refer to this HTML markup for a contact list:
 
 ```html
 <ul id="contact-list">

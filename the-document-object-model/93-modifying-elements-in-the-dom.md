@@ -83,6 +83,7 @@ Given the HTML above, write JavaScript to change the text on the button to read 
 
 {% initial %}
 // Select the button from the DOM using document.querySelector(). 
+let saveButton = 
 
 // Change the innerHTML of the button
 
@@ -92,25 +93,16 @@ Given the HTML above, write JavaScript to change the text on the button to read 
 
 {% solution %}
 // Set `resultsList` equal to the DOM element for the search-results list. 
-let resultsList = document.querySelector('#search-results');
+let saveButton = document.querySelector('button');
 
-// Create a new list item called `newLI`
-let newLI = document.createElement('li');
+// Change the innerHTML of the button
+saveButton.innerHTML = "Saved!";
 
-// Set innerHTML of new list item to match HTML structure with new data specified above.
-newLI.innerHTML = `
-    <p class="title">Children of Dune <span class="format">Television</span></p>
-        <p class="year">2003</p>
-        <ul class="actions">
-            <li><a href="#save">Save</a></li>
-            <li><a href="#share">Share</a></li>
-            <li><a href="#report">Report</a></li>
-        </ul>`;
-// Append `newLI` to the `resultsList` as a new child element.
-resultsList.appendChild(newLI);
+// Change the class attribute
+saveButton.setAttribute('class', 'btn saved');
 
 {% validation %}
-assert(resultsList.children.length==1, "Incorrect.");
+assert((saveButton.innerHTML=="Saved!")&&(saveButton.class=="btn saved")), "Incorrect.");
 
 {% context %}
 class MockDoc {

@@ -46,6 +46,16 @@ saveButton.style.color = "yellow";
 ```
 These two lines of JavaScript would alter the background and text color of the button. We could set these style properties to any valid CSS value and they would override the existing style in the browser.
 
+<div class="tip-box">
+
+<h3>JS Mapping of CSS Properties</h3>
+
+<p>JavaScript objects have attributes. Those attributes cannot be named with dashes. However, some CSS properties (<code>font-face</code>, <code>background-color</code>, <code>border-size</code>, etc.) have dashes in their names. So how do we reference these properties as part of the <code>element.style</code> object?</p>
+
+<p>There is a mapping between CSS Property names and the names they are given as attributes of the <code>element.style</code> object. For the most part, the dashes are removed and the name is written in "camelCase", which is common in JavaScript. So <code>font-face</code> becomes <code>element.style.fontFace</code> and <code>background-color</code> becomes <code>element.style.backgroundColor</code>. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference">A full chart of property name conversions can be found here.</a></p>
+
+</div>
+
 
 
 ## Setting Styles in Bulk: `element.style.cssText`

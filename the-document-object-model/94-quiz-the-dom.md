@@ -109,12 +109,6 @@ Try this self-check quiz to test your knowledge!
         <explanation>Data stored in HTML data attributes is available in the <code>element.dataset</code> object.</explanation>
     </question>
 
-
-
-
-
-
-
 </quiz>
 
 <div class="no-quiz">

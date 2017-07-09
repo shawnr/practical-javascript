@@ -164,7 +164,8 @@ class MockDoc {
     querySelectorAll(q){
         if ((q == ".result") ||
             (q == "#search-results .result") ||
-            (q == "li.result")){
+            (q == "li.result") ||
+            (q == "#search-results li.result"){
             return true;
         } else {
             return false;

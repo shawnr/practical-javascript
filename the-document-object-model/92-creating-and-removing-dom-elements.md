@@ -154,10 +154,27 @@ assert(resultsList, "Incorrect.");
 class MockDoc {
     querySelector(q){
         if (q == "#search-results"){
-            return true;
+            return new MockElem();
         } else {
-            return false;
+            return null;
         }
+    }
+    createElement(type){
+        if (type == "li") {
+            return new MockElem();
+        } else {
+            return null;
+        }
+    }
+}
+class MockElem {
+    constructor(){
+        this.children = [];
+        this.innerHTML = '';
+        this.style = {};
+    }
+    appendChild(obj){
+        this.children.push(obj);
     }
 }
 var document = new MockDoc();

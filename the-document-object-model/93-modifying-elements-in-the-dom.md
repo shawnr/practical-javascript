@@ -144,6 +144,9 @@ class MockElem {
     appendChild(obj){
         this.children.push(obj);
     }
+    setAttribute(attr, value){
+        this[attr] = value;
+    }
 }
 var document = new MockDoc();
 

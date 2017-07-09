@@ -121,9 +121,6 @@ let saveButton =
 // Alter the styles per the directions. Use either `.style` or `.style.cssText`
 
 
-
-
-
 {% solution %}
 // Set `saveButton` equal to the DOM element for the save button. 
 let saveButton = document.querySelector('button');

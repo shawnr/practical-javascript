@@ -35,7 +35,9 @@ if (image.getAttribute('src') == 'placeholder.jpg'){
     image.setAttribute('src', 'new.jpg');
 }
 ```
-In this example we can see that the JavaScript code selects the image and then uses `getAttribute()` to retrieve the `src` attribute value. It checks that value and, if the values match, it replaces the `src` attribute value with a new filename using `setAttribute()`.
+In this example we can see that the JavaScript code selects the image and then uses `getAttribute()` to retrieve the `src` attribute value. The `getAttribute()` method takes just one parameter: the name of the attribute. It checks that value and, if the values match, it replaces the `src` attribute value with a new filename using `setAttribute()`.
+
+The `setAttribute()` method takes two parameters: the name of the attribute, and the new value.
 
 ## Modifying Element Styles
 

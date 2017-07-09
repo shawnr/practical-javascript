@@ -174,7 +174,7 @@ assert(resultsList.children.length==1, "Incorrect.");
 class MockDoc {
     querySelector(q){
         if (q == "#search-results"){
-            return new MockElem();
+            return new MockElem("UL");
         } else {
             return null;
         }

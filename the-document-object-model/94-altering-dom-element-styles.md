@@ -129,7 +129,7 @@ let saveButton =
 let saveButton = document.querySelector('button');
 
 // Alter the styles per the directions. Use either `.style` or `.style.cssText`
-saveButton.style
+saveButton.style.cssText = 
 
 {% validation %}
 assert((saveButton.innerHTML=="Saved!")&&(saveButton.class=="btn saved")), "Incorrect.");
@@ -163,10 +163,7 @@ class MockElem {
         this.style = {};
         this.tagName = type;
         
-        this.style.cssText = function(text){
-            this.handleCSSText(text);
-        };
-            
+        this.style.cssText = '';            
     }
     appendChild(obj){
         this.children.push(obj);

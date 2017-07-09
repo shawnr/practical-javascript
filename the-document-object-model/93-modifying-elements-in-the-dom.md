@@ -72,7 +72,7 @@ In this example, the text input called `username` has been disabled. The JavaScr
 Between `setAttribute()` and `removeAttribute()` we have solid tools for modifying more than the textual content of a DOM element. These are powerful methods that can help in many cases.
 
 ## Exercises
-Please try working these exercises to practice some of the skills we've learned in this section.The exercises in this section all assume the following HTML. Please write JavaScript as if it is attached to this HTML snippet:
+Please try working these exercises to practice some of the skills we've learned in this section. The exercises in this section all assume the following HTML. Please write JavaScript as if it is attached to this HTML snippet:
 
 ```html
 <button class="btn save">Save Item</button>

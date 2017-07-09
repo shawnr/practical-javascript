@@ -36,20 +36,20 @@ Try this self-check quiz to test your knowledge!
         <explanation>The <code>document.querySelector()</code> method returns the first matching DOM element.</explanation>
     </question>
     <question>
-        <p>The <code>get</code> command creates what kind of property on a Class?</p>
-        <answer correct>dynamic</answer>
-        <answer>writeable</answer>
-        <answer>readable</answer>
-        <answer>safe</answer>
-        <explanation>The <code>get</code> command creates a dynamic property on a Class.</explanation>
+        <p>Which command creates a new button?</p>
+        <answer><code>let button = document.new('button');</code></answer>
+        <answer><code>let button = document.createElement('<button>');</code></answer>
+        <answer correct><code>let button = document.createElement('button');</code></answer>
+        <answer><code>let button = document.makeElement('{button}');</code></answer>
+        <explanation>The <code>let button = document.createElement('button');</code> command creates a new button.</explanation>
     </question>
     <question>
-        <p>Which command is used to bring in the existing functionality of a given method from the parent Class so that additional functionality can be added around it?</p>
-        <answer><code>break()</code></answer>
-        <answer><code>swing()</code></answer>
-        <answer correct><code>super()</code></answer>
-        <answer><code>include()</code></answer>
-        <explanation>The <code>super()</code> command is used to bring in existing functionality of a method from the parent Class.</explanation>
+        <p>Which command adds the <code><button></code> we just created to the DOM?</p>
+        <answer correct><code>document.body.appendChild(button);</code></answer>
+        <answer><code>document.insert(button);</code></answer>
+        <answer><code>window.appendChild(button);</code></answer>
+        <answer><code>document.insertBefore(button);</code></answer>
+        <explanation>The <code>document.body.appendChild(button);</code> command appends the button to the <code>body</code> of the document.</explanation>
     </question>
 </quiz>
 

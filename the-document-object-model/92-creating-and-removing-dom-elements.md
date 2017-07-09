@@ -136,7 +136,7 @@ Select the <code>search-results</code> list and make it available in a variable 
     <li>Format: Television</li>
     <li>Year: 2003</li>
 </ul><br>
-Once you've finished populating the Append the new list item as a new child at the end of the `resultsList`.
+Once you've finished populating the Append the new list item as a new child at the end of the <code>resultsList</code>.
 
 {% initial %}
 // Set `resultsList` equal to the DOM element for the search-results list. 

@@ -186,6 +186,5 @@ class MockElem {
     }
 }
 var document = new MockDoc();
-debugger;
 
 {% endexercise %}

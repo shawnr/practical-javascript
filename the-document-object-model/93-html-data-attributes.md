@@ -23,38 +23,50 @@ Every DOM element we select in JavaScript has an `element.dataset` object attach
 Please try working these exercises to practice some of the skills we've learned in this section.The exercises in this section all assume the following HTML. Please write JavaScript as if it is attached to this HTML snippet:
 
 ```html
-<button class="btn save">Save Item</button>
+<button class="btn save" data-id="12234" data-saved="false">Save Item</button>
 ```
 
 {% exercise %}
 Given the HTML above, write JavaScript to change the styles. Create style properties for the following:<br>
-<code>
-background: green;
-padding: 0.2rem;
-color: white;
-border: solid 1px yellow;
-border-radius: 4px;
-</code>
+
 
 {% initial %}
 // Select the button from the DOM using document.querySelector(). 
 let saveButton = 
 
-// Alter the styles per the directions. Use either `.style` or `.style.cssText`
+// Alter the `data-saved` attribute to be 'true'.
+
+// Use the provided `saveItem()` function to save the item.
+// This function requires the item ID.
+
+let saveSuccess = saveItem('Item ID goes here.');
 
 
 {% solution %}
-// Set `saveButton` equal to the DOM element for the save button. 
+// Select the button from the DOM using document.querySelector(). 
 let saveButton = document.querySelector('button');
 
-// Alter the styles per the directions. Use either `.style` or `.style.cssText`
-saveButton.style.cssText = "background: green;padding: 0.2rem;color: white;border: solid 1px yellow;border-radius: 4px;";
+// Alter the `data-saved` attribute to be `true`.
+saveButton.dataset.saved = true;
+
+// Use the provided `saveItem()` function to save the item.
+// This function requires the item ID.
+
+let saveSuccess = saveItem(saveButton.dataset.id);
 
 
 {% validation %}
-assert((saveButton.style.color)||(saveButton.style.cssText!='')), "Incorrect.");
+assert((saveButton.dataset.saved==true)||(saveSuccess)), "Incorrect.");
 
 {% context %}
+
+function saveItem(id){
+    if (id=="12234"){
+        return true;
+    } else {
+        return false;
+    }
+}
 class MockDoc {
     querySelector(q){
         if ((q == "button") ||
@@ -83,6 +95,8 @@ class MockElem {
         this.style = {};
         this.tagName = type;
         this.dataset = {};
+        this.dataset.saved = false;
+        this.dataset.id = '12234';
         
         this.style.cssText = '';            
     }

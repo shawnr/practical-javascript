@@ -98,19 +98,100 @@ In this example we can see that the element style is restricted to styles explic
 Understanding which set of styles we want to work with, defined or computed, is important to getting the most out of our efforts. Regardless of which values we need, we can easily find them, work with them, and alter them using JavaScript.
 
 ## Exercises
-Please try working these exercises to practice some of the skills we've learned in this section.
+Please try working these exercises to practice some of the skills we've learned in this section. The exercises in this section all assume the following HTML. Please write JavaScript as if it is attached to this HTML snippet:
 
+```html
+<button class="btn save">Save Item</button>
+```
 
 {% exercise %}
-Define a problem.
+Given the HTML above, write JavaScript to change the styles. Create style properties for the following:<br>
+<code>
+background: green;
+padding: 0.2rem;
+color: white;
+border: solid 1px yellow;
+border-radius: 4px;
+</code>
 
 {% initial %}
-// initial code 
+// Select the button from the DOM using document.querySelector(). 
+let saveButton = 
+
+// Alter the styles per the directions. Use either `.style` or `.style.cssText`
+
+
+
+
 
 {% solution %}
-// solution code
+// Set `saveButton` equal to the DOM element for the save button. 
+let saveButton = document.querySelector('button');
+
+// Alter the styles per the directions. Use either `.style` or `.style.cssText`
+saveButton.style
 
 {% validation %}
-assert(true, "Incorrect.");
+assert((saveButton.innerHTML=="Saved!")&&(saveButton.class=="btn saved")), "Incorrect.");
+
+{% context %}
+class MockDoc {
+    querySelector(q){
+        if ((q == "button") ||
+            (q == "button.save") ||
+            (q == ".save") ||
+            (q == ".btn.save") ||
+            (q == "button.btn") ||
+            (q == "button.btn.save")){
+            return new MockElem("button");
+        } else {
+            return null;
+        }
+    }
+    createElement(type){
+        if (type == "button") {
+            return new MockElem("BUTTON");
+        } else {
+            return null;
+        }
+    }
+}
+class MockElem {
+    constructor(type){
+        this.children = [];
+        this.innerHTML = '';
+        this.style = {};
+        this.tagName = type;
+        
+        this.style.cssText = function(text){
+            
+    }
+    appendChild(obj){
+        this.children.push(obj);
+    }
+    handleCSSText(text){
+        let textArr = text.split(';');
+        let safetyCheck = function(str){
+            let safeArr = str.split('-');
+            if (safeArr.length < 2){
+                return str.toLowerCase();
+            } else {
+                let safeStr = safeArr[0];
+                for (let i=1; i<safeArr.length; i++){
+                    safeStr += safeArr[i].charAt(0).toUpperCase() + safeArr[i].slice(1);
+                }
+                return safeStr;
+            }
+        }
+        for (let prop of textArr){
+            let propArr = prop.split(':');
+            let propSafe = 
+        }
+    }
+    setAttribute(attr, value){
+        this[attr] = value;
+    }
+}
+var document = new MockDoc();
 
 {% endexercise %}

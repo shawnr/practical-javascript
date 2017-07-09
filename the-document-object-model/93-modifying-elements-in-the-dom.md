@@ -5,7 +5,7 @@ For the following examples, refer to this HTML markup for a contact list:
 
 ```html
 <ul id="contact-list">
-    <li class="contact">
+    <li id="grace" class="contact">
         <p class="name">Grace Hopper</p>
         <p class="phone">555-1234</p>
         <p class="email"><a href="mailto:grace@example.com">grace@example.com</a></p>
@@ -13,7 +13,7 @@ For the following examples, refer to this HTML markup for a contact list:
         <p class="city">Anytown</p>
         <p class="state">XZ</p>
     </li>
-    <li class="contact">
+    <li id="bill" class="contact">
         <p class="name">Bill Joy</p>
         <p class="phone">555-8754</p>
         <p class="email"><a href="mailto:bill@example.com">bill@example.com</a></p>
@@ -21,7 +21,7 @@ For the following examples, refer to this HTML markup for a contact list:
         <p class="city">Somewhere</p>
         <p class="state">ZY</p>
     </li>
-    <li class="contact">
+    <li id="k8" class="contact">
         <p class="name">Katherine Johnson</p>
         <p class="phone">555-3323</p>
         <p class="email"><a href="mailto:k8@example.com">k8@example.com</a></p>

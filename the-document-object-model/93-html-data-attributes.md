@@ -20,19 +20,79 @@ In this example, we've used data attributes to store the `contentID` and the `ti
 Every DOM element we select in JavaScript has an `element.dataset` object attached to it. We can make full use of this object to manage our data needs and make sure that our code can access that information when we need to. At this point, we have only been manually selecting elements in the DOM, but in the next section we will put everything together to respond to user interactions with the DOM using "event handlers". These HTML data attributes are even more handy when we are actually working with events initiated by our users.
 
 ## Exercises
-Please try working these exercises to practice some of the skills we've learned in this section.
+Please try working these exercises to practice some of the skills we've learned in this section.The exercises in this section all assume the following HTML. Please write JavaScript as if it is attached to this HTML snippet:
 
+```html
+<button class="btn save">Save Item</button>
+```
 
 {% exercise %}
-Define a problem.
+Given the HTML above, write JavaScript to change the styles. Create style properties for the following:<br>
+<code>
+background: green;
+padding: 0.2rem;
+color: white;
+border: solid 1px yellow;
+border-radius: 4px;
+</code>
 
 {% initial %}
-// initial code 
+// Select the button from the DOM using document.querySelector(). 
+let saveButton = 
+
+// Alter the styles per the directions. Use either `.style` or `.style.cssText`
+
 
 {% solution %}
-// solution code
+// Set `saveButton` equal to the DOM element for the save button. 
+let saveButton = document.querySelector('button');
+
+// Alter the styles per the directions. Use either `.style` or `.style.cssText`
+saveButton.style.cssText = "background: green;padding: 0.2rem;color: white;border: solid 1px yellow;border-radius: 4px;";
+
 
 {% validation %}
-assert(true, "Incorrect.");
+assert((saveButton.style.color)||(saveButton.style.cssText!='')), "Incorrect.");
+
+{% context %}
+class MockDoc {
+    querySelector(q){
+        if ((q == "button") ||
+            (q == "button.save") ||
+            (q == ".save") ||
+            (q == ".btn.save") ||
+            (q == "button.btn") ||
+            (q == "button.btn.save")){
+            return new MockElem("button");
+        } else {
+            return null;
+        }
+    }
+    createElement(type){
+        if (type == "button") {
+            return new MockElem("BUTTON");
+        } else {
+            return null;
+        }
+    }
+}
+class MockElem {
+    constructor(type){
+        this.children = [];
+        this.innerHTML = '';
+        this.style = {};
+        this.tagName = type;
+        this.dataset = {};
+        
+        this.style.cssText = '';            
+    }
+    appendChild(obj){
+        this.children.push(obj);
+    }
+    setAttribute(attr, value){
+        this[attr] = value;
+    }
+}
+var document = new MockDoc();
 
 {% endexercise %}

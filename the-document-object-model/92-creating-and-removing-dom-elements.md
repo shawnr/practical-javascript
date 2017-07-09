@@ -161,17 +161,18 @@ class MockDoc {
     }
     createElement(type){
         if (type == "li") {
-            return new MockElem();
+            return new MockElem(type);
         } else {
             return null;
         }
     }
 }
 class MockElem {
-    constructor(){
+    constructor(type){
         this.children = [];
         this.innerHTML = '';
         this.style = {};
+        this.tag = type;
     }
     appendChild(obj){
         this.children.push(obj);

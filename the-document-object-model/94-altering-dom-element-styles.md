@@ -132,7 +132,7 @@ saveButton.style.border = "solid 1px yellow";
 saveButton.style.borderRadius = "4px";
 
 {% validation %}
-assert((saveButton.style.color)||(saveButton.style.cssText!='')), "Incorrect.");
+assert(saveButton.style.color, "Incorrect.");
 
 {% context %}
 class MockDoc {

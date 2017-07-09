@@ -95,19 +95,72 @@ This example selects the first contact item with the `.contact` class and remove
 
 
 ## Exercises
-Please try working these exercises to practice some of the skills we've learned in this section.
+Please try working these exercises to practice some of the skills we've learned in this section. The exercises in this section all assume the following HTML. Please write JavaScript as if it is attached to this HTML snippet:
 
+```html
+<ul id="search-results">
+    <li class="result book">
+        <p class="title">Dune <span class="format">Book</span></p>
+        <p class="year">1965</p>
+        <ul class="actions">
+            <li><a href="#save">Save</a></li>
+            <li><a href="#share">Share</a></li>
+            <li><a href="#report">Report</a></li>
+        </ul>
+    </li>
+    <li class="result movie">
+        <p class="title">Dune <span class="format">Movie</span></p>
+        <p class="year">1984</p>
+        <ul class="actions">
+            <li><a href="#save">Save</a></li>
+            <li><a href="#share">Share</a></li>
+            <li><a href="#report">Report</a></li>
+        </ul>
+    </li>
+    <li class="result tv">
+        <p class="title">Dune <span class="format">Television</span></p>
+        <p class="year">2000</p>
+        <ul class="actions">
+            <li><a href="#save">Save</a></li>
+            <li><a href="#share">Share</a></li>
+            <li><a href="#report">Report</a></li>
+        </ul>
+    </li>
+</ul>
+```
 
 {% exercise %}
-Define a problem.
+Select the <code>search-results</code> list and make it available in a variable called <code>resultsList</code>. Use <code>document.querySelector()</code>. Create a new list item with the following info:<br>
+<ul>
+    <li>Title: Children of Dune</li>
+    <li>Format: Television</li>
+    <li>Year: 2003</li>
+</ul><br>
+Once you've finished populating the Append the new list item as a new child at the end of the `resultsList`.
 
 {% initial %}
-// initial code 
+// Set `resultsList` equal to the DOM element for the search-results list. 
+
+// Create a new list item
 
 {% solution %}
 // solution code
+let resultsList = document.querySelector('#search-results');
 
 {% validation %}
-assert(true, "Incorrect.");
+assert(resultsList, "Incorrect.");
+
+{% context %}
+class MockDoc {
+    querySelector(q){
+        if (q == "#search-results"){
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+var document = new MockDoc();
+debugger;
 
 {% endexercise %}

@@ -80,13 +80,13 @@ Try this self-check quiz to test your knowledge!
     </question>
 
     <question>
-        <p>What does the d?</p>
-        <answer>Computed styles </answer>
+        <p>What does the <code>window.getComputedStyle()</code> method return?</p>
+        <answer correct>A <code><style></code> object with all of the CSS properties affecting the visual display of the DOM element (including those inherited from parent elements).</answer>
+        <answer>A <code><properties></code> object with some of the CSS properties affecting the visual display of the DOM element.</answer>
+        <answer>An Array of the CSS properties affecting the visual display of the DOM element based on CSS files.</answer>
+        <answer>A <code><style></code> object with only the CSS properties defined explicitly for the DOM element.</answer>
         <answer>text</answer>
-        <answer>text</answer>
-        <answer>text</answer>
-        <answer>text</answer>
-        <explanation>text</explanation>
+        <explanation>The <code>window.getComputedStyle()</code> method returns a <code><style></code> object with all of the CSS properties affecting the visual display of the DOM element (including those inherited from parent elements).</explanation>
     </question>
     
     <question multiple>

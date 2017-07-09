@@ -125,8 +125,8 @@ let saveButton =
 // Set `saveButton` equal to the DOM element for the save button. 
 let saveButton = document.querySelector('button');
 
-// Alter the styles per the directions. Use either `.style` or `.style.cssText`
-saveButton.style.cssText = "background: green;padding: 0.2rem;color: white;border: solid 1px yellow;border-radius: 4px;";
+saveButton.style.cssText = "background: green;padding: 0.2rem;color: " +
+    + "white;border: solid 1px yellow;border-radius: 4px;";
 
 
 {% validation %}

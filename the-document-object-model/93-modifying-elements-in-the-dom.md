@@ -73,13 +73,28 @@ Although we often get by using just a few of the features of DOM elements, it's 
 The trickiest part of creating new DOM elements is making decisions about the best way to build up the HTML involved. It's entirely possible to create elements and set all of their attributes using specific JavaScript commands. However, it's often much quicker and easier to maintain to populate large HTML structures using template literals and then drop that HTML into a container element. There's no single correct way to approach this task, so experiment with all the ways of adding elements into the DOM to get a feeling for what works.
 
 ## Removing Elements from the DOM
-Removing elements from the DOM is also possible using a variety of techniques. As with adding elements to the DOM, there is no single correct approach, and we will develop preferences for what works in different situations.
+Removing elements from the DOM is also possible using a variety of techniques. As with adding elements to the DOM, there is no single correct approach, and we will develop preferences for what works in different situations. A simple way of removing elements from the DOM is to select their parent element and then set the `innerHTML` value to an empty string (`''`). Here's an example of removing all of the list items from the `#contacts-list` element using `innerHTML`:
+
+```js
+// Select the unordered list containing contacts.
+let contactsList = document.querySelector('#contacts-list');
+
+// Remove all list items (and their content) using the `innerHTML` property.
+contactsList.innerHTML = '';
+```
+
+By setting the `innerHTML` of the `contactsList` object to `''`, we have removed all of the list items, too. This is easy and clean, but it is also a fairly blunt way of removing a DOM element. We often need a more precise or limited way of removing elements from the DOM. For that, we can use the [`remove()`](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/remove) method of each DOM element object. Here is an example:
+
+```js
+let firstContactItem = document.querySelector('.contact');
+firstContactItem.remove()
+```
+
+This example selects the first contact item with the `.contact` class and removes it from the DOM. It uses the `remove()` method to accomplish this goal. Although this example is a bit glib, it illustrates how easy it is to remove an element from the DOM once we've selected it. We often have the case where we have a specific element object to work with, and in the next section we will explore more about how to respond to 
 
 ## Modifying the Content of Elements
 
 ## Modifying Element Styles
-
-## Modifying Other Element Attributes
 
 
 ## Exercises

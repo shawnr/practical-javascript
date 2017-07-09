@@ -44,6 +44,7 @@ We could also change the values dynamically using JavaScript:
 saveButton.style.background = "red";
 saveButton.style.color = "yellow";
 ```
+
 These two lines of JavaScript would alter the background and text color of the button. We could set these style properties to any valid CSS value and they would override the existing style in the browser.
 
 <div class="tip-box">

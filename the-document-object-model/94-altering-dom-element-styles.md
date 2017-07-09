@@ -15,6 +15,6 @@ Define a problem.
 // solution code
 
 {% validation %}
-assert(true), "Incorrect.");
+assert(true, "Incorrect.");
 
 {% endexercise %}

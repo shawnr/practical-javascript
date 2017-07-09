@@ -183,7 +183,7 @@ class MockDoc {
     }
     createElement(type){
         if (type == "li") {
-            return new MockElem(type);
+            return new MockElem("LI");
         } else {
             return null;
         }

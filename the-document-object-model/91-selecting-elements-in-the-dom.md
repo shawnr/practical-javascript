@@ -85,7 +85,39 @@ The code in this example does the exact same thing as the code in the previous e
 </div>
 
 ## Exercises
-Please try working these exercises to practice some of the skills we've learned in this section.
+Please try working these exercises to practice some of the skills we've learned in this section. The exercises in this section all assume the following HTML. Please write JavaScript as if it is attached to this HTML snippet:
+
+```html
+<ul id="search-results">
+    <li class="result book">
+        <p class="title">Dune <span class="format">Book</span></p>
+        <p class="year">1965</p>
+        <ul class="actions">
+            <li><a href="#save">Save</a></li>
+            <li><a href="#share">Share</a></li>
+            <li><a href="#report">Report</a></li>
+        </ul>
+    </li>
+    <li class="result movie">
+        <p class="title">Dune <span class="format">Movie</span></p>
+        <p class="year">1984</p>
+        <ul class="actions">
+            <li><a href="#save">Save</a></li>
+            <li><a href="#share">Share</a></li>
+            <li><a href="#report">Report</a></li>
+        </ul>
+    </li>
+    <li class="result tv">
+        <p class="title">Dune <span class="format">Television</span></p>
+        <p class="year">2000</p>
+        <ul class="actions">
+            <li><a href="#save">Save</a></li>
+            <li><a href="#share">Share</a></li>
+            <li><a href="#report">Report</a></li>
+        </ul>
+    </li>
+</ul>
+```
 
 {% exercise %}
 Define a problem.

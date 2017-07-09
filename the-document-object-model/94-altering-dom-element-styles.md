@@ -73,9 +73,28 @@ Sometimes DOM elements are affected by styles not directly applied to them. Many
 
 We can use [the `window.getComputedStyle()` method](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle) to retrieve the computed styles that are applied to a specific DOM element. This method returns a `style` object very much like the `element.style` object we worked with previously. We can review the values of these properties and use them to make decisions about changes based on the exact styles the user sees applied to that element. Here is an example:
 
-```js
-
+**html**
+```html
+<body style="font-weight: bold;">
+    <p style="color: green;">Page content.</p>
+</body>
 ```
+
+**js**
+```js
+let paragraph = document.querySelector('p');
+let computedStyle = window.getComputedStyle(paragraph);
+
+console.log('Element style for font-weight: ' + paragraph.style.fontWeight); // prints empty string ("")
+console.log('Computed style for font-weight: ' + computedStyle.fontWeight); // prints "bold"
+
+console.log('Element style for color: ' + paragraph.style.color); // prints "green"
+console.log('Computed style for color: ' + computedStyle.color); // prints "rgb(0,255,0)"
+```
+
+In this example we can see that the element style is restricted to styles explicitly applied to the element, and the properties use the same definition we specified in our stylesheets or HTML. However, the computed style returns the actual style being applied, even if it was inherited from a parent element. The computed style also converts synonyms and shortcuts (such as "green") to their computed value (in this case, `rgb(0,255,0)`).
+
+Understanding which set of styles we want to work with, defined or computed, is important to getting the most out of our efforts. Regardless of which values we need, we can easily find them, work with them, and alter them using JavaScript.
 
 ## Exercises
 Please try working these exercises to practice some of the skills we've learned in this section.

@@ -51,6 +51,70 @@ Try this self-check quiz to test your knowledge!
         <answer><code>document.insertBefore(button);</code></answer>
         <explanation>The <code>document.body.appendChild(button);</code> command appends the button to the <code>body</code> of the document.</explanation>
     </question>
+    <question multiple>
+        <p>What can we accomplish by modifying a DOM element's <code>innerHTML</code> attribute?</p>
+        <answer correct>Add child elements and content.</answer>
+        <answer correct>Alter text content.</answer>
+        <answer correct>Clear existing content.</answer>
+        <answer>Modify parent element content.</answer>
+        <answer>Add event listeners.</answer>
+        <explanation>We cannot modify parent element content or add event listeners with <code>innerHTML</code>.</explanation>
+    </question>
+    <question>
+        <p>What method allows us to add an attribute to a DOM element?</p>
+        <answer><code>element.getAttribute()</code></answer>
+        <answer><code>element.createAttribute()</code></answer>
+        <answer correct><code>element.setAttribute()</code></answer>
+        <answer><code>element.makeAttribute()</code></answer>
+        <explanation>The <code>element.setAttribute()</code> method is used to create a new attribute on a DOM element (and also to alter an existing attribute).</explanation>
+    </question>
+
+    <question multiple>
+        <p>Which are valid CSS property names in JavaScript?</p>
+        <answer correct><code>fontFamily</code></answer>
+        <answer><code>background-position</code></answer>
+        <answer correct><code>marginTop</code></answer>
+        <answer><code>font-weight</code></answer>
+        <answer correct><code>background</code></answer>
+        <explanation>Dashes are not allowed in JavaScript object attribute names, so they must be converted to camelCase.</explanation>
+    </question>
+
+    <question>
+        <p>What does the d?</p>
+        <answer>Computed styles </answer>
+        <answer>text</answer>
+        <answer>text</answer>
+        <answer>text</answer>
+        <answer>text</answer>
+        <explanation>text</explanation>
+    </question>
+    
+    <question multiple>
+        <p>What can we accomplish by modifying a DOM element's <code>innerHTML</code> attribute?</p>
+        <answer>text</answer>
+        <answer>text</answer>
+        <answer>text</answer>
+        <answer>text</answer>
+        <answer>text</answer>
+        <explanation>text</explanation>
+    </question>
+
+    <question multiple>
+        <p>What can we accomplish by modifying a DOM element's <code>innerHTML</code> attribute?</p>
+        <answer>text</answer>
+        <answer>text</answer>
+        <answer>text</answer>
+        <answer>text</answer>
+        <answer>text</answer>
+        <explanation>text</explanation>
+    </question>
+
+
+
+
+
+
+
 </quiz>
 
 <div class="no-quiz">

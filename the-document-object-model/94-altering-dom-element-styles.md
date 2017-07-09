@@ -46,6 +46,8 @@ saveButton.style.color = "yellow";
 ```
 These two lines of JavaScript would alter the background and text color of the button. We could set these style properties to any valid CSS value and they would override the existing style in the browser.
 
+
+
 ## Setting Styles in Bulk: `element.style.cssText`
 As we can see in the example above, the `element.style` attribute of a DOM element object is very useful for working with styles. But if we want to alter or read several styles all at once it can be a bit tedious to type it all out in separate lines of code. Fortunately, there is a [`cssText` attribute](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style) on the `element.style` object that allows for writing styles in one big chunk of text. Consider this example:
 
@@ -59,7 +61,11 @@ Using the `cssText` attribute allows us to set many style properties with a more
 ## Reading Computed Styles
 Sometimes DOM elements are affected by styles not directly applied to them. Many CSS properties are inherited from parent elements, and it's very common to use CSS inheritance to our advantage as web developers and interface designers. Keeping things like font families and sizes consistent is core to providing a robust, pleasing interaction for users. But sometimes we need to know the "computed styles" of a DOM element.
 
-We can use [the `window.getComputedStyle()` method](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle) to retrieve the computed styles that are applied to a specific DOM element. This method returns a `style` object very much like the `element.style` object we worked with previously.
+We can use [the `window.getComputedStyle()` method](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle) to retrieve the computed styles that are applied to a specific DOM element. This method returns a `style` object very much like the `element.style` object we worked with previously. We can review the values of these properties and use them to make decisions about changes based on the exact styles the user sees applied to that element. Here is an example:
+
+```js
+
+```
 
 ## Exercises
 Please try working these exercises to practice some of the skills we've learned in this section.

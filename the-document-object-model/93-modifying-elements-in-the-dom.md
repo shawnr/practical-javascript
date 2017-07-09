@@ -69,9 +69,6 @@ usernameInput.removeAttribute('disabled');
 
 In this example, the text input called `username` has been disabled. The JavaScript selects that text input and removes the `disabled` attribute, which would allow a user to edit this field. This is a common use case for providing safe access to data. Form fields use a lot of attributes to control behavior, so these methods are especially useful for working with form field DOM elements.
 
-## Modifying Element Styles
-
-
 ## Exercises
 Please try working these exercises to practice some of the skills we've learned in this section.
 

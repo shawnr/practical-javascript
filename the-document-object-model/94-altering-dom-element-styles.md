@@ -3,7 +3,7 @@ Another task we perform often in our JavaScript programs is altering the visual 
 
 ## The `.style` Attribute
 
-Each DOM element has a `.style` attribute, which is a JavaScript object. The `.style` object has attributes that can be used to read or set style properties for the DOM element. Any time we have selected a DOM element we can read or set the values of all CSS properties by referencing the property name. Here is an example:
+Each DOM element has a [`.style` attribute](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style), which is a JavaScript object. The `.style` object has attributes that can be used to read or set style properties for the DOM element. Any time we have selected a DOM element we can read or set the values of all CSS properties by referencing the property name. Here is an example:
 
 **html**
 ```html
@@ -47,14 +47,19 @@ saveButton.style.color = "yellow";
 These two lines of JavaScript would alter the background and text color of the button. We could set these style properties to any valid CSS value and they would override the existing style in the browser.
 
 ## Setting Styles in Bulk: `csstext`
-As we can see in the example above, the `.style` attribute of a DOM element object is very useful for working with styles. But if we want to alter or read several styles all at once it can be a bit tedious to type it all out in separate lines of code. Fortunately, there is a `cssText` attribute on the `.style` object that allows for writing styles in one big chunk of text. Consider this example:
+As we can see in the example above, the `.style` attribute of a DOM element object is very useful for working with styles. But if we want to alter or read several styles all at once it can be a bit tedious to type it all out in separate lines of code. Fortunately, there is a [`cssText` attribute](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style) on the `.style` object that allows for writing styles in one big chunk of text. Consider this example:
 
 ```js
 let newItem = document.createElement('li');
 newItem.style.cssText = "background:green; color: white; font-family: sans-serif; border: 1px solid blue;";
 ```
 
-Using the `cssText` property allows us to set many style properties with a more-or-less normal definition. It must all be compressed into a string, but we could use a template literal to allow for a more eye pleasing presentation in the code (and easier dynamic population of any values we've calculated for styles).
+Using the `cssText` attribute allows us to set many style properties with a more-or-less normal definition. It must all be compressed into a string, but we could use a template literal to allow for a more eye pleasing presentation in the code (and easier dynamic population of any values we've calculated for styles).
+
+## Reading Computed Styles
+Sometimes DOM elements are affected by styles not directly applied to them. Many CSS properties are inherited from parent elements, and it's very common to use CSS inheritance to our advantage as web developers and interface designers. Keeping things like font families and sizes consistent is core to providing a robust, pleasing interaction for users. But sometimes we need to know the "computed styles" of a DOM element.
+
+We can use [the `window.getComputedStyle()` method](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle) to retrieve the computed styles that are applied to a specific DOM element.
 
 ## Exercises
 Please try working these exercises to practice some of the skills we've learned in this section.

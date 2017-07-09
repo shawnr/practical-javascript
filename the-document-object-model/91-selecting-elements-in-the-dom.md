@@ -152,6 +152,13 @@ Use <code>document.querySelectorAll()</code> to select each of the result list i
 {% initial %}
 // Set `resultItems` equal to the DOM elements for each item in the search results list. 
 
+
+
+
+
+
+console.log('end of exercise code.');
+
 {% solution %}
 // solution code
 let resultItems = document.querySelectorAll('#search-results .result');

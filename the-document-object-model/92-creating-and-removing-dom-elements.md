@@ -151,11 +151,26 @@ Once you've finished populating the Append the new list item as a new child at t
 console.log('end of code');
 
 {% solution %}
-// solution code
+// Set `resultsList` equal to the DOM element for the search-results list. 
 let resultsList = document.querySelector('#search-results');
 
+// Create a new list item called `newLI`
+let newLI = document.createElement('li');
+
+// Set innerHTML of new list item to match HTML structure with new data specified above.
+newLI.innerHTML = `
+    <p class="title">Children of Dune <span class="format">Television</span></p>
+        <p class="year">2003</p>
+        <ul class="actions">
+            <li><a href="#save">Save</a></li>
+            <li><a href="#share">Share</a></li>
+            <li><a href="#report">Report</a></li>
+        </ul>`;
+// Append `newLI` to the `resultsList` as a new child element.
+resultsList.appendChild(newLI);
+
 {% validation %}
-assert(resultsList, "Incorrect.");
+assert(resultsList.children.length==1, "Incorrect.");
 
 {% context %}
 class MockDoc {

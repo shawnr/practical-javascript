@@ -129,10 +129,11 @@ let saveButton =
 let saveButton = document.querySelector('button');
 
 // Alter the styles per the directions. Use either `.style` or `.style.cssText`
-saveButton.style.cssText = 
+saveButton.style.cssText = "background: green;padding: 0.2rem;color: white;border: solid 1px yellow;border-radius: 4px;";
+
 
 {% validation %}
-assert((saveButton.innerHTML=="Saved!")&&(saveButton.class=="btn saved")), "Incorrect.");
+assert((saveButton.style.color)||(saveButton.style.cssText!='')), "Incorrect.");
 
 {% context %}
 class MockDoc {

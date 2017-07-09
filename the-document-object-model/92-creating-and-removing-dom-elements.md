@@ -172,7 +172,7 @@ class MockElem {
         this.children = [];
         this.innerHTML = '';
         this.style = {};
-        this.tag = type;
+        this.tagName = type.toUpperCase();
     }
     appendChild(obj){
         this.children.push(obj);

@@ -102,7 +102,7 @@ saveButton.innerHTML = "Saved!";
 saveButton.setAttribute('class', 'btn saved');
 
 {% validation %}
-assert(saveButton.innerHTML=="Saved!"), "Incorrect.");
+assert(saveButton.innerHTML=="Saved!", "Incorrect.");
 
 {% context %}
 class MockDoc {

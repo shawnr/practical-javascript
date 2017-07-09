@@ -89,24 +89,24 @@ Try this self-check quiz to test your knowledge!
         <explanation>The <code>window.getComputedStyle()</code> method returns a <code><style></code> object with all of the CSS properties affecting the visual display of the DOM element (including those inherited from parent elements).</explanation>
     </question>
     
-    <question multiple>
-        <p>What can we accomplish by modifying a DOM element's <code>innerHTML</code> attribute?</p>
-        <answer>text</answer>
-        <answer>text</answer>
-        <answer>text</answer>
-        <answer>text</answer>
-        <answer>text</answer>
-        <explanation>text</explanation>
+    <question>
+        <p>What prefix indicates that an HTML attribute is intended to store information for computing?</p>
+        <answer><code>info-</code></answer>
+        <answer><code>db-</code></answer>
+        <answer correct><code>data-</code></answer>
+        <answer><code>query-</code></answer>
+        <answer><code>param-</code></answer>
+        <explanation>The <code>data-</code> prefix indicates that an HTML attribute is intended to store information for computing.</explanation>
     </question>
 
-    <question multiple>
-        <p>What can we accomplish by modifying a DOM element's <code>innerHTML</code> attribute?</p>
-        <answer>text</answer>
-        <answer>text</answer>
-        <answer>text</answer>
-        <answer>text</answer>
-        <answer>text</answer>
-        <explanation>text</explanation>
+    <question>
+        <p>How can we access the data attributes of an HTML element from within JavaScript?</p>
+        <answer><code>element.getData()</code></answer>
+        <answer correct><code>element.dataset</code></answer>
+        <answer><code>element.getAttribute()</code></answer>
+        <answer><code>element.db</code></answer>
+        <answer><code>element.fetchData()</code></answer>
+        <explanation>Data stored in HTML data attributes is available in the <code>element.dataset</code> object.</explanation>
     </question>
 
 

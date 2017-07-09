@@ -164,6 +164,8 @@ class MockElem {
         this.tagName = type;
         
         this.style.cssText = function(text){
+            this.handleCSSText(text);
+        };
             
     }
     appendChild(obj){
@@ -185,7 +187,8 @@ class MockElem {
         }
         for (let prop of textArr){
             let propArr = prop.split(':');
-            let propSafe = 
+            let propSafe = safetyCheck(propArr[0]);
+            this[propSafe] = propArr[1];
         }
     }
     setAttribute(attr, value){

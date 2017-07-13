@@ -186,6 +186,7 @@ function capitalizeText(text){
 
 myText = "association of code writers";
 processedText = capitalizeText(myText);
+console.log(processedText);
 ```
 <quiz name="">
     <question>

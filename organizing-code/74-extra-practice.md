@@ -175,6 +175,8 @@ function capitalizeText(text){
             let slicedWord = word.slice(1); // Get the rest of the word after the first letter.
             let newWord = newFirstLetter + slicedWord; // Put the word back together.
             newWordArray.push(newWord); // Add the newWord to the newWordArray of capitalized words.
+        } else {
+            newWordArray.push(word); // If we hit a stopWord, just put that word back in the list without altering.
         }
     }
     

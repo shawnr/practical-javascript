@@ -181,7 +181,7 @@ function capitalizeText(text){
     }
     
     var newText = newWordArray.join(' ');
-    return newText // Return the string.
+    return newText; // Return the string.
 }
 
 myText = "association of code writers";

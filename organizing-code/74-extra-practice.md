@@ -207,6 +207,14 @@ console.log(processedText);
         <explanation>The constant variable <code>stopWords</code> is initialized as an Object.</explanation>
     </question>
     <question>
+        <p>When <code>newWordArray</code> is declared, how is it initialized (what value is it made equal to)?</p>
+        <answer><code>null</code></answer>
+        <answer correct>empty Array</answer>
+        <answer><code>0</code></answer>
+        <answer>empty Object</answer>
+        <explanation>The variable <code>newWordArray</code> is declared and initialized in the same line. It is initialized to an empty Array.</explanation>
+    </question>
+    <question>
         <p>Why can we use <code>stopWords</code> inside the conditional within the <code>capitalizeText</code> function?</p>
         <answer>Because variables declared with <code>let</code> are global.</answer>
         <answer correct>Because variables declared with <code>let</code> are accessible to the scope in which they are declared and any children scopes.</answer>
@@ -256,15 +264,6 @@ console.log(processedText);
         <answer><code>stopWords.["of"]</code></answer>
         <explanation>The variable <code>stopWords[word]</code> is evaluates equal to <code>stopWords.of</code> or <code>stopWords["of"]</code>.</explanation>
     </question>
-    <question>
-        <p>What Data Type is the <code>boxArea</code> variable?</p>
-        <answer>Number</answer>
-        <answer>Array</answer>
-        <answer correct>String</answer>
-        <answer>Boolean</answer>
-        <explanation>The variable <code>boxArea</code> is a String.</explanation>
-    </question>
-
 </quiz>
 
 

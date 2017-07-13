@@ -91,7 +91,7 @@ let boxArea = calculateArea(boxLength, boxHeight);
         <answer><code>boxLength</code></answer>
         <answer><code>boxArea</code></answer>
         <answer correct><code>calculateArea</code></answer>
-        <explanation>The name of the function is <code>multiplyNumbers</code>.</explanation>
+        <explanation>The name of the function is <code>calculateArea</code>.</explanation>
     </question>
     <question multiple>
         <p>What are the names of the parameters this function accepts?</p>

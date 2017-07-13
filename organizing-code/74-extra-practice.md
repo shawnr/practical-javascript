@@ -224,20 +224,36 @@ processedText = capitalizeText(myText);
         <explanation>The variables <code>newFirstLetter</code>, <code>slicedWord</code>, and <code>newWord</code> are only accessible within the "true" clause of the conditional. <code>word</code> is accessible in the <code>for ... of</code> loop (and, therefore, in all clauses of the conditional). <code>newWordArray</code> is available throughout the entire function, and <code>stopWords</code> is available throughout the entire script.</explanation>
     </question>
     <question>
-        <p>What Data Type is the <code>units</code> parameter?</p>
-        <answer>Number</answer>
-        <answer>Array</answer>
-        <answer correct>String</answer>
-        <answer>Boolean</answer>
-        <explanation>The parameter <code>units</code> is a String.</explanation>
+        <p>Consider this block of code:<br><br>
+            <code>
+            for (word of wordArray){
+                if (!stopWords[word]){
+            </code>
+            <br><br>
+            In this case, what does <code>word</code> equal?
+        </p>
+        <answer correct>The value of each index in the Array as the loop moves through them.</answer>
+        <answer>The value of the entire Array.</answer>
+        <answer>The index (number) of each item in the Array.</answer>
+        <answer>"42"?</answer>
+        <explanation>The <code>word</code> variable contains the value of each index in the Array as the loop moves through them.</explanation>
     </question>
-    <question>
-        <p>What is <code>boxArea</code> equal to?</p>
-        <answer><code>60</code></answer>
-        <answer><code>17 sq ft</code></answer>
-        <answer correct><code>"60 sq ft"</code></answer>
-        <answer><code>undefined</code></answer>
-        <explanation>The variable <code>boxArea</code> is equal to <code>"60 sq ft"</code>.</explanation>
+    <question multiple>
+        <p>
+            Consider this block of code:<br><br>
+            <code>
+            for (word of wordArray){
+                if (!stopWords[word]){
+            </code>
+            <br><br>
+            If we are looping through the <code>wordArray</code> and the value of <code>word</code> is <code>"of"</code>,
+            what is the value of <code>stopWords[word]</code>?
+        </p>
+        <answer correct><code>stopWords.of</code></answer>
+        <answer><code>stopWords.word</code></answer>
+        <answer correct><code>stopWords["of"]</code></answer>
+        <answer><code>stopWords.["of"]</code></answer>
+        <explanation>The variable <code>stopWords[word]</code> is evaluates equal to <code>stopWords.of</code> or <code>stopWords["of"]</code>.</explanation>
     </question>
     <question>
         <p>What Data Type is the <code>boxArea</code> variable?</p>

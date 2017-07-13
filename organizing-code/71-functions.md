@@ -175,11 +175,11 @@ var myText = capitalizeText("grace");
 function capitalizeText(text){
     return text.toUpperCase();
 }
-var myText = capitalizeText("grace");
+var myText = capitalizeText("http");
 
 
 {% validation %}
-assert(myText=="Grace", "Incorrect.");
+assert(myText=="HTTP", "Incorrect.");
 
 {% endexercise %}
 

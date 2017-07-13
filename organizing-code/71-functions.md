@@ -161,9 +161,13 @@ Please try working these exercises to practice some of the skills we've learned 
 
 
 {% exercise %}
-Define a function that would capitalize a string.
+Define a function that would uppercase a String. You can use the <code>String.toUpperCase()</code> to capitalize a String. An example is shown in the starter code. Package that example into a function that will take a parameter called <code>text</code> and return the uppercase version of it.
 
 {% initial %}
+// Example of using `String.toUppercase()`
+let example = "abcd";
+console.log("Uppercased result: " + example.toUpperCase());
+
 // Function goes here
 var myText = capitalizeText("grace");
 

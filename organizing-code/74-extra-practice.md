@@ -102,36 +102,44 @@ let boxArea = calculateArea(boxLength, boxHeight);
         <explanation>In this function declaration, <code>length</code>, <code>width</code>, and <code>units</code> are the parameters we can use with this function.</explanation>
     </question>
     <question>
-        <p>The <code>firstNumber</code> and <code>secondNumber</code> parameters have values assigned in the function declaration. What do we call this specific type of parameter?</p>
-        <answer>assigned parameters</answer>
-        <answer>declared parameters</answer>
-        <answer correct>default parameters</answer>
-        <answer>arguments</answer>
-        <explanation>Parameters that have a default value specified in the function declaration are called "default parameters".</explanation>
+        <p>What is the expected Data Type for the <code>length</code> and <code>width</code> parameters?</p>
+        <answer correct>Number</answer>
+        <answer>Array</answer>
+        <answer>String</answer>
+        <answer>Boolean</answer>
+        <explanation>The <code>length</code> and <code>width</code> parameters are expected to be Numbers so they can be multiplied together to calculate the <code>area</code>.</explanation>
     </question>
     <question>
-        <p>What is <code>foo</code> equal to?</p>
+        <p>What is <code>area</code> equal to?</p>
         <answer><code>42</code></answer>
-        <answer correct><code>36</code></answer>
-        <answer><code>15</code></answer>
-        <answer><code>undefined</code></answer>
-        <explanation>The variable <code>foo</code> is equal to <code>36</code>.</explanation>
-    </question>
-    <question>
-        <p>What is <code>bar</code> equal to?</p>
-        <answer><code>55</code></answer>
-        <answer><code>19</code></answer>
+        <answer><code>17</code></answer>
         <answer correct><code>60</code></answer>
         <answer><code>undefined</code></answer>
-        <explanation>The variable <code>bar</code> is equal to <code>60</code>.</explanation>
+        <explanation>The variable <code>area</code> is equal to <code>60</code>.</explanation>
     </question>
     <question>
-        <p>What is <code>baz</code> equal to?</p>
-        <answer><code>6</code></answer>
-        <answer><code>5</code></answer>
-        <answer><code>42</code></answer>
-        <answer correct><code>undefined</code></answer>
-        <explanation>The variable <code>baz</code> is equal to <code>undefined</code> because we cannot multiply two Strings.</explanation>
+        <p>What Data Type is the <code>units</code> parameter?</p>
+        <answer>Number</answer>
+        <answer>Array</answer>
+        <answer correct>String</answer>
+        <answer>Boolean</answer>
+        <explanation>The parameter <code>units</code> is a String.</explanation>
+    </question>
+    <question>
+        <p>What is <code>boxArea</code> equal to?</p>
+        <answer><code>60</code></answer>
+        <answer><code>17 sq ft</code></answer>
+        <answer correct><code>"60 sq ft"</code></answer>
+        <answer><code>undefined</code></answer>
+        <explanation>The variable <code>boxArea</code> is equal to <code>"60 sq ft"</code>.</explanation>
+    </question>
+    <question>
+        <p>What Data Type is the <code>boxArea</code> variable?</p>
+        <answer>Number</answer>
+        <answer>Array</answer>
+        <answer correct>String</answer>
+        <answer>Boolean</answer>
+        <explanation>The variable <code>boxArea</code> is a String.</explanation>
     </question>
 
 </quiz>

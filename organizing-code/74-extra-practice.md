@@ -151,7 +151,7 @@ let boxArea = calculateArea(boxLength, boxHeight);
 let myText,
     processedText;
     
-let stopWords = { // stopWords is an Object defining words that should not be capitalized.
+const stopWords = { // stopWords is an Object defining words that should not be capitalized.
     'of': true,
     'the': true,
     'a': true,
@@ -189,37 +189,39 @@ processedText = capitalizeText(myText);
 ```
 <quiz name="">
     <question>
-        <p>What is the name of the function?</p>
-        <answer><code>function</code></answer>
-        <answer><code>boxLength</code></answer>
-        <answer><code>boxArea</code></answer>
-        <answer correct><code>calculateArea</code></answer>
-        <explanation>The name of the function is <code>calculateArea</code>.</explanation>
+        <p>The first line of the code above does what?</p>
+        <answer>Initializes <code>myText</code> and <code>processedText</code>.</answer>
+        <answer>Defines <code>myText</code> and <code>processedText</code>.</answer>
+        <answer correct>Declares <code>myText</code> and <code>processedText</code>.</answer>
+        <answer>Establishes <code>myText</code> and <code>processedText</code>.</answer>
+        <explanation>The first line of the code above <i>declares</i> <code>myText</code> and <code>processedText</code> without initializing them to any value.</explanation>
+    </question>
+    <question>
+        <p>What Data Type is <code>stopWords</code>?</p>
+        <answer>String</answer>
+        <answer>Number</answer>
+        <answer correct>Object</answer>
+        <answer>Array</answer>
+        <answer>Boolean</answer>
+        <explanation>The constant variable <code>stopWords</code> is initialized as an Object.</explanation>
+    </question>
+    <question>
+        <p>Why can we use <code>stopWords</code> inside the conditional within the <code>capitalizeText</code> function?</p>
+        <answer>Because variables declared with <code>let</code> are global.</answer>
+        <answer correct>Because variables declared with <code>let</code> are accessible to the scope in which they are declared and any children scopes.</answer>
+        <answer>Because code is magic.</answer>
+        <answer>Because special rules of <code>scope</code> apply to conditionals.</answer>
+        <explanation>We can access <code>stopWords</code> within the function because variables declared with <code>let</code> are accessible to the scope in which they are declared and any children scopes. The function, and the loop and conditional within, are all structures that create "child scopes" (and these scopes would all contain <code>stopWords</code>).</explanation>
     </question>
     <question multiple>
-        <p>What are the names of the parameters this function accepts?</p>
-        <answer>boxLength</answer>
-        <answer correct>length</answer>
-        <answer correct>width</answer>
-        <answer correct>units</answer>
-        <answer>boxHeight</answer>
-        <explanation>In this function declaration, <code>length</code>, <code>width</code>, and <code>units</code> are the parameters we can use with this function.</explanation>
-    </question>
-    <question>
-        <p>What is the expected Data Type for the <code>length</code> and <code>width</code> parameters?</p>
-        <answer correct>Number</answer>
-        <answer>Array</answer>
-        <answer>String</answer>
-        <answer>Boolean</answer>
-        <explanation>The <code>length</code> and <code>width</code> parameters are expected to be Numbers so they can be multiplied together to calculate the <code>area</code>.</explanation>
-    </question>
-    <question>
-        <p>What is <code>area</code> equal to?</p>
-        <answer><code>42</code></answer>
-        <answer><code>17</code></answer>
-        <answer correct><code>60</code></answer>
-        <answer><code>undefined</code></answer>
-        <explanation>The variable <code>area</code> is equal to <code>60</code>.</explanation>
+        <p>What variables defined within the scope of the condition inside <code>capitalizeText()</code> are ONLY accessible WITHIN the "success" or "true" clause of the conditional? (Only the top part of the statement between the first set of braces.)</p>
+        <answer><code>word</code></answer>
+        <answer correct><code>newFirstLetter</code></answer>
+        <answer correct><code>slicedWord</code></answer>
+        <answer correct><code>newWord</code></answer>
+        <answer><code>newWordArray</code></answer>
+        <answer><code>stopWords</code></answer>
+        <explanation>The variables <code>newFirstLetter</code>, <code>slicedWord</code>, and <code>newWord</code> are only accessible within the "true" clause of the conditional. <code>word</code> is accessible in the <code>for ... of</code> loop (and, therefore, in all clauses of the conditional). <code>newWordArray</code> is available throughout the entire function, and <code>stopWords</code> is available throughout the entire script.</explanation>
     </question>
     <question>
         <p>What Data Type is the <code>units</code> parameter?</p>

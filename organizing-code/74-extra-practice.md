@@ -3,7 +3,7 @@
 Remember: Learning to program takes practice! It helps to see concepts over and over, and it's always good to try things more than once. We learn much more the second time we do something. Use the exercises and additional self-checks below to practice.
 
 
-## 1. Function Syntax
+## 1. Multiplying Two Numbers
 Review the code, then answer the questions below.
 
 ```js
@@ -71,7 +71,7 @@ let baz = multiplyNumbers("two","three");
 
 </quiz>
 
-## 2. Function Syntax
+## 2. Calculating Area of a Box
 ```js
 function calculateArea(length, width, units="sq ft"){
     let area = length * width;

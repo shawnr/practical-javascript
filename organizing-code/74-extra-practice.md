@@ -2,75 +2,73 @@
 
 Remember: Learning to program takes practice! It helps to see concepts over and over, and it's always good to try things more than once. We learn much more the second time we do something. Use the exercises and additional self-checks below to practice.
 
+
+# Function Syntax
+Review the code, then answer the questions below.
+
+```js
+function multiplyNumbers(firstNumber=2, secondNumber=4){
+    let product = firstNumber * secondNumber;
+    return product;
+}
+
+let foo = multiplyNumbers(3,12);
+
+let bar = multiplyNumbers(15,4);
+
+let baz = multiplyNumbers("two","three");
+
+```
 <quiz name="">
-    <question multiple>
-        <p>Why would we organize code using Functions?</p>
-        <answer correct>To improve readability of code by grouping functionality into discrete code blocks.</answer>
-        <answer correct>To make maintenance easier by containing and isolating logic.</answer>
-        <answer correct>To improve debugging by creating authoritative code blocks that handle one specific feature.</answer>
-        <answer correct>To facilitate more complex algorithms.</answer>
-        <explanation>All of the above are reasons for organizing code using Functions.</explanation>
+    <question>
+        <p>What is the name of the function?</p>
+        <answer><code>function</code></answer>
+        <answer correct><code>multiplyNumbers</code></answer>
+        <answer><code>foo</code></answer>
+        <answer><code>bar</code></answer>
+        <explanation>The name of the function is <code>multiplyNumbers</code>.</explanation>
     </question>
     <question>
-        <p>What command is used to declare a Function in JavaScript?</p>
-        <answer><code>def</code></answer>
-        <answer correct><code>function</code></answer>
-        <answer><code>fnc</code></answer>
-        <answer><code>subroutine</code></answer>
-        <explanation>The command <code>function</code> is used to declare a Function in JS.</explanation>
-    </question>
-    <question multiple>
-        <p>What two kinds of objects can go between the parentheses of a Function declaration?</p>
+        <p>What do we call <code>firstNumber</code> and <code>secondNumber</code>?</p>
+        <answer>variables</answer>
         <answer correct>parameters</answer>
-        <answer>setters</answer>
-        <answer correct>arguments</answer>
-        <answer>getters</answer>
-        <explanation>The parentheses in the declaration of the Function can contain parameters and/or arguments.</explanation>
+        <answer>attributes</answer>
+        <answer>indices</answer>
+        <explanation>In this function declaration, <code>firstNumber</code> and <code>secondNumber</code> are the <i>parameters</i> that this function accepts.</explanation>
     </question>
     <question>
-        <p>What command sends data back to the code that called the Function?</p>
-        <answer><code>respond</code></answer>
-        <answer ><code>dispatch</code></answer>
-        <answer><code>update</code></answer>
-        <answer correct><code>return</code></answer>
-        <explanation>The <code>return</code> command sends data back to the code that called the Function.</explanation>
+        <p>The <code>firstNumber</code> and <code>secondNumber</code> parameters have values assigned in the function declaration. What do we call this specific type of parameter?</p>
+        <answer>assigned parameters</answer>
+        <answer>declared parameters</answer>
+        <answer correct>default parameters</answer>
+        <answer>arguments</answer>
+        <explanation>Parameters that have a default value specified in the function declaration are called "default parameters".</explanation>
     </question>
     <question>
-        <p>True or False: JavaScript parameters can have default values specified in the Function declaration?</p>
-        <answer correct>true</answer>
-        <answer>false</answer>
-        <explanation>True: Default Parameters are possible as of ECMAScript 6.</explanation>
-    </question>  
-    <question>
-        <p>What command is used to declare a local variable in JavaScript?</p>
-        <answer><code>var</code></answer>
-        <answer><code>local</code></answer>
-        <answer correct><code>let</code></answer>
-        <answer><code>loc</code></answer>
-        <explanation>The command <code>let</code> is used to declare a local variable in JS.</explanation>
-    </question>
-    <question multiple>
-        <p>What is do we call the context of the code (including all known object references) as it is executed by the interpreter?</p>
-        <answer>context</answer>
-        <answer>library</answer>
-        <answer correct>scope</answer>
-        <answer>platform</answer>
-        <explanation>The word "scope" indicates the context of the code as it is executed.</explanation>
+        <p>What is <code>foo</code> equal to?</p>
+        <answer><code>42</code></answer>
+        <answer correct><code>36</code></answer>
+        <answer><code>15</code></answer>
+        <answer><code>undefined</code></answer>
+        <explanation>The variable <code>foo</code> is equal to <code>36</code>.</explanation>
     </question>
     <question>
-        <p>True or False: Variables declared with <code>let</code> can be used outside of the code block where they are declared?</p>
-        <answer>true</answer>
-        <answer correct>false</answer>
-        <explanation>False: Variables declared with <code>let</code> do not exist outside of the code block where they are declared (although they <i>can</i> be used in child code blocks of the block where they are declared).</explanation>
+        <p>What is <code>bar</code> equal to?</p>
+        <answer><code>55</code></answer>
+        <answer><code>19</code></answer>
+        <answer correct><code>60</code></answer>
+        <answer><code>undefined</code></answer>
+        <explanation>The variable <code>bar</code> is equal to <code>60</code>.</explanation>
     </question>
     <question>
-        <p>How are code blocks identified?</p>
-        <answer correct><code>{ }</code></answer>
-        <answer ><code>( )</code></answer>
-        <answer><code>[ ]</code></answer>
-        <answer><code>< ></code></answer>
-        <explanation>The curly braces (<code>{ }</code>) indicate a code block in JavaScript.</explanation>
+        <p>What is <code>baz</code> equal to?</p>
+        <answer><code>6</code></answer>
+        <answer><code>5</code></answer>
+        <answer><code>42</code></answer>
+        <answer correct><code>undefined</code></answer>
+        <explanation>The variable <code>baz</code> is equal to <code>undefined</code> because we cannot multiply two Strings.</explanation>
     </question>
+
 </quiz>
 
 <div class="no-quiz">

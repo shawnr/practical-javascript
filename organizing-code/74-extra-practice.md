@@ -167,23 +167,23 @@ function capitalizeText(text){
     // capitalized all words, it returns a new String with capitalized text.
     
     let wordArray = text.split(' '); // Split on space characters.
+    let newWordArray = []; // Initialize an Array to store results.
+    
     for (word of wordArray){
         if (!stopWords[word]){ // Check to make sure word is not in stopwords list.
-            word[0].toUpperCase(); // Access characters in Word using Array index property of Strings.
+            let newFirstLetter = word[0].toUpperCase(); // Change first letter in `word` to uppercase.
+            let slicedWord = word.slice(1); // Get the rest of the word after the first letter.
+            let newWord = newFirstLetter + slicedWord; // Put the word back together.
+            newWordArray.push(newWord); // Add the newWord to the newWordArray of capitalized words.
         }
     }
     
-    var newText = wordArray.join(' ');
+    var newText = newWordArray.join(' ');
     return newText // Return the string.
 }
 
 myText = "association of code writers";
 processedText = capitalizeText(myText);
-
-console.log('newText = ' + newText);
-console.log('word = ' + word);
-
-
 ```
 <quiz name="">
     <question>

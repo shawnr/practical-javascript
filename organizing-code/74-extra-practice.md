@@ -145,7 +145,7 @@ let boxArea = calculateArea(boxLength, boxHeight);
 
 </quiz>
 
-## 2. Scoping Variables
+## 3. Scoping Variables
 ```js
 
 let myText,

@@ -169,7 +169,7 @@ let example = "abcd";
 console.log("Uppercased result: " + example.toUpperCase());
 
 // Function goes here
-var myText = capitalizeText("grace");
+var myText = capitalizeText("http");
 
 {% solution %}
 function capitalizeText(text){

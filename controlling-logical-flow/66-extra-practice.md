@@ -2,58 +2,65 @@
 
 Remember: Learning to program takes practice! It helps to see concepts over and over, and it's always good to try things more than once. We learn much more the second time we do something. Use the exercises and additional self-checks below to practice.
 
-```js
-todo
+## 1. Looping and Conditionals
 
+```js
+let maxNum = 20;
+
+for (let i=1; i<=maxNum; i++) {
+    if (maxNum % 2 === 0) {
+        console.log(`${maxNum} is even.`;
+    } else {
+        console.log(`${maxNum} is odd.`);
+    }
+}
 ```
 <quiz name="">
     <question>
-        <p>What is the name of the function?</p>
-        <answer><code>function</code></answer>
-        <answer correct><code>multiplyNumbers</code></answer>
-        <answer><code>foo</code></answer>
-        <answer><code>bar</code></answer>
-        <explanation>The name of the function is <code>multiplyNumbers</code>.</explanation>
-    </question>
-    <question>
-        <p>What do we call <code>firstNumber</code> and <code>secondNumber</code>?</p>
-        <answer>variables</answer>
-        <answer correct>parameters</answer>
-        <answer>attributes</answer>
-        <answer>indices</answer>
-        <explanation>In this function declaration, <code>firstNumber</code> and <code>secondNumber</code> are the <i>parameters</i> that this function accepts.</explanation>
-    </question>
-    <question>
-        <p>The <code>firstNumber</code> and <code>secondNumber</code> parameters have values assigned in the function declaration. What do we call this specific type of parameter?</p>
-        <answer>assigned parameters</answer>
-        <answer>declared parameters</answer>
-        <answer correct>default parameters</answer>
-        <answer>arguments</answer>
-        <explanation>Parameters that have a default value specified in the function declaration are called "default parameters".</explanation>
-    </question>
-    <question>
-        <p>What is <code>foo</code> equal to?</p>
-        <answer><code>42</code></answer>
-        <answer correct><code>36</code></answer>
-        <answer><code>15</code></answer>
+        <p>What is the name of the counter variable in this <code>for</code> loop?</p>
+        <answer><code>maxNum</code></answer>
+        <answer correct><code>i</code></answer>
+        <answer><code>console</code></answer>
         <answer><code>undefined</code></answer>
-        <explanation>The variable <code>foo</code> is equal to <code>36</code>.</explanation>
+        <explanation>The name of the counter variable is <code>i</code>.</explanation>
     </question>
     <question>
-        <p>What is <code>bar</code> equal to?</p>
-        <answer><code>55</code></answer>
-        <answer><code>19</code></answer>
-        <answer correct><code>60</code></answer>
-        <answer><code>undefined</code></answer>
-        <explanation>The variable <code>bar</code> is equal to <code>60</code>.</explanation>
+        <p>How many times will this loop execute?</p>
+        <answer>1</answer>
+        <answer>19</answer>
+        <answer correct>20</answer>
+        <answer>21</answer>
+        <explanation>This loop will execute 20 times.</explanation>
     </question>
     <question>
-        <p>What is <code>baz</code> equal to?</p>
-        <answer><code>6</code></answer>
-        <answer><code>5</code></answer>
-        <answer><code>42</code></answer>
-        <answer correct><code>undefined</code></answer>
-        <explanation>The variable <code>baz</code> is equal to <code>undefined</code> because we cannot multiply two Strings.</explanation>
+        <p>What is the starting value of <code>i</code>?</p>
+        <answer>0</answer>
+        <answer correct>1</answer>
+        <answer>20</answer>
+        <answer>undefined</answer>
+        <explanation>The starting value of <code>i</code> is 1.</explanation>
+    </question>
+    <question>
+        <p>What is the conditional statement checking for?</p>
+        <answer correct>That the remainder of <code>i</code> divided by <code>2</code> is <code>0</code>.</answer>
+        <answer>That the remainder of <code>maxNum</code> divided by <code>2</code> is <code>0</code>.</answer>
+        <answer>That <code>i</code> divided by <code>2</code> is <code>0</code>.</answer>
+        <answer>That <code>i</code> divided by <code>2</code> is even.</answer>
+        <explanation>The conditional is checking that the remainder of <code>i</code> divided by <code>2</code> is <code>0</code>.</explanation>
+    </question>
+    <question>
+        <p>What happens to <code>i</code> on each loop?</p>
+        <answer>It is decreased by one.</answer>
+        <answer correct>It is increased by one.</answer>
+        <answer>It is multiplied by 2.</answer>
+        <answer>It is multiplied by 10%.</answer>
+        <explanation>The variable <code>i</code> is increased by one on each iteration of the loop.</explanation>
+    </question>
+    <question>
+        <p>What would the loop output when <code>i</code> equals <code>7</code>?</p>
+        <answer><code>"7 is even."</code></answer>
+        <answer correct><code>"7 is odd."</code></answer>
+        <explanation>When <code>i</code> is equal to <code>7</code>, the console log would be <code>"7 is odd."</code>.</explanation>
     </question>
 
 </quiz>

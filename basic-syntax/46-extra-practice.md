@@ -15,7 +15,7 @@ let bar = x % foo;
 
 /* let z = 42; */
 
-let baz = z;
+let baz = z + bar;
 
 ```
 <quiz name="">
@@ -36,38 +36,21 @@ let baz = z;
         <explanation>In this example, <code>x</code> and <code>y</code> are variables.</explanation>
     </question>
     <question>
-        <p>The <code>firstNumber</code> and <code>secondNumber</code> parameters have values assigned in the function declaration. What do we call this specific type of parameter?</p>
-        <answer>assigned parameters</answer>
-        <answer>declared parameters</answer>
-        <answer correct>default parameters</answer>
-        <answer>arguments</answer>
-        <explanation>Parameters that have a default value specified in the function declaration are called "default parameters".</explanation>
+        <p>At the end of this script, what is <code>x</code> equal to?</p>
+        <answer correct>16</answer>
+        <answer>12</answer>
+        <answer>42</answer>
+        <answer>80</answer>
+        <explanation>At the end of this code, <code>x</code> is equal to 16.</explanation>
     </question>
     <question>
-        <p>What is <code>foo</code> equal to?</p>
-        <answer><code>42</code></answer>
-        <answer correct><code>36</code></answer>
-        <answer><code>15</code></answer>
-        <answer><code>undefined</code></answer>
-        <explanation>The variable <code>foo</code> is equal to <code>36</code>.</explanation>
+        <p>At the end of this code, what is <code>baz</code> equal to?</p>
+        <answer correct><code>1</code></answer>
+        <answer><code>12</code></answer>
+        <answer><code>36</code></answer>
+        <answer><code>0</code></answer>
+        <explanation>The variable <code>baz</code> is equal to <code>1</code>.</explanation>
     </question>
-    <question>
-        <p>What is <code>bar</code> equal to?</p>
-        <answer><code>55</code></answer>
-        <answer><code>19</code></answer>
-        <answer correct><code>60</code></answer>
-        <answer><code>undefined</code></answer>
-        <explanation>The variable <code>bar</code> is equal to <code>60</code>.</explanation>
-    </question>
-    <question>
-        <p>What is <code>baz</code> equal to?</p>
-        <answer><code>6</code></answer>
-        <answer><code>5</code></answer>
-        <answer><code>42</code></answer>
-        <answer correct><code>undefined</code></answer>
-        <explanation>The variable <code>baz</code> is equal to <code>undefined</code> because we cannot multiply two Strings.</explanation>
-    </question>
-
 </quiz>
 
 

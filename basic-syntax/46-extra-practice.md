@@ -29,8 +29,8 @@ let baz = z + bar;
     </question>
     <question>
         <p>What do we call <code>x</code> and <code>y</code>?</p>
-        <answer correct>variables</answer>
         <answer>parameters</answer>
+        <answer correct>variables</answer>
         <answer>attributes</answer>
         <answer>indices</answer>
         <explanation>In this example, <code>x</code> and <code>y</code> are variables.</explanation>
@@ -45,10 +45,10 @@ let baz = z + bar;
     </question>
     <question>
         <p>At the end of this code, what is <code>baz</code> equal to?</p>
-        <answer correct><code>1</code></answer>
         <answer><code>12</code></answer>
         <answer><code>36</code></answer>
         <answer><code>0</code></answer>
+        <answer correct><code>1</code></answer>
         <explanation>The variable <code>baz</code> is equal to <code>1</code>.</explanation>
     </question>
     <question>

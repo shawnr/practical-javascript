@@ -70,7 +70,6 @@ for (let i=1; i<=maxNum; i++) {
     </question>
 
 
-
 </quiz>
 
 

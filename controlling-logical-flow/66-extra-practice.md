@@ -9,9 +9,9 @@ let maxNum = 20;
 
 for (let i=1; i<=maxNum; i++) {
     if (i % 2 === 0) {
-        console.log(`${maxNum} is even.`;
+        console.log(`${i} is even.`;
     } else {
-        console.log(`${maxNum} is odd.`);
+        console.log(`${i} is odd.`);
     }
 }
 ```
@@ -63,9 +63,9 @@ for (let i=1; i<=maxNum; i++) {
         <explanation>When <code>i</code> is equal to <code>7</code>, the console log would be <code>"7 is odd."</code>.</explanation>
     </question>
     <question>
-        <p>What would the loop output when <code>i</code> equals <code>7</code>?</p>
-        <answer><code>"7 is even."</code></answer>
-        <answer correct><code>"7 is odd."</code></answer>
+        <p>What would the loop output when the condition <code>(i % 2 === 0)</code> equals <code>false</code>?</p>
+        <answer><code>"${i} is even."</code></answer>
+        <answer correct><code>"${i} is odd."</code></answer>
         <explanation>When <code>i</code> is equal to <code>7</code>, the console log would be <code>"7 is odd."</code>.</explanation>
     </question>
 

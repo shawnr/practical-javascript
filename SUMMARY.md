@@ -28,12 +28,14 @@
   * [5.8 JSON](data-types/57-json.md)
   * [5.9 Working with Text](data-types/58-working-with-text.md)
   * [5.10 Quiz: Data Types and Structures](data-types/510-quiz-data-types-and-structures.md)
+  * 5.11 Extra Practice
 * [6 Controlling Logical Flow](controlling-logical-flow/README.md)
   * [6.1 Conditionals](controlling-logical-flow/61-conditionals.md)
   * [6.2 For Loops](controlling-logical-flow/62-for-loops.md)
   * [6.3 While Loops](controlling-logical-flow/64-while-loops.md)
   * [6.4 Looping Arrays](controlling-logical-flow/63-forof-loops.md)
   * [6.5 Quiz: Controlling Local Flow](controlling-logical-flow/65-quiz-controlling-local-flow.md)
+  * 6.6 Extra Practice
 * [7 Organizing Code](organizing-code/README.md)
   * [7.1 Functions](organizing-code/71-functions.md)
   * [7.2 Scoping](organizing-code/72-scoping.md)

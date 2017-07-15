@@ -51,6 +51,14 @@ let baz = z + bar;
         <answer><code>0</code></answer>
         <explanation>The variable <code>baz</code> is equal to <code>1</code>.</explanation>
     </question>
+    <question>
+        <p>At the end of this code, why doesn't <code>z</code> equal 42?</p>
+        <answer>It just doesn't.</answer>
+        <answer correct>The statement setting <code>z</code> to that value has been commented out.</answer>
+        <answer><code>z</code> is a constant and cannot be updated.</answer>
+        <explanation>The variable <code>z</code> is not equal to <code>42</code> because the line setting that value has been commented out.</explanation>
+    </question>
+
 </quiz>
 
 

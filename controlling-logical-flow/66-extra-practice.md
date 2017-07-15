@@ -64,9 +64,9 @@ for (let i=1; i<=maxNum; i++) {
     </question>
     <question>
         <p>What would the loop output when the condition <code>(i % 2 === 0)</code> equals <code>false</code>?</p>
-        <answer><code>"${i} is even."</code></answer>
-        <answer correct><code>"${i} is odd."</code></answer>
-        <explanation>When <code>i</code> is equal to <code>7</code>, the console log would be <code>"7 is odd."</code>.</explanation>
+        <answer><code>`${i} is even.`</code></answer>
+        <answer correct><code>`${i} is odd.`</code></answer>
+        <explanation>When <code>(i % 2 === 0)</code> equals <code>false</code>, the console log would be <code>`${i} is odd.`</code>.</explanation>
     </question>
 
 

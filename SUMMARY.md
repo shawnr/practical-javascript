@@ -60,6 +60,7 @@
   * [10.2 Responding to Events](handling-events/102-responding-to-events.md)
   * [10.3 Detecting Document Load Events](handling-events/103-detecting-document-load-events.md)
   * [10.4 Quiz: Handling Events](handling-events/104-quiz-handling-events.md)
+  * [10.5 Extra Practice](handling-events/105-extra-practice.md)
 * [Appendix A: Resources for Learning More About JavaScript](appendix-a-resources-for-learning-more-about-javascript.md)
 * Appendix B: Debugging Tips
 * [Glossary](/GLOSSARY.md)

@@ -54,6 +54,7 @@
   * [9.4 Altering DOM Element Styles](the-document-object-model/94-altering-dom-element-styles.md)
   * [9.5 Using HTML Data Attributes](the-document-object-model/93-html-data-attributes.md)
   * [9.6 Quiz: The DOM](the-document-object-model/94-quiz-the-dom.md)
+  * [9.7 Extra Practice](the-document-object-model/97-extra-practice.md)
 * [10 Handling Events](handling-events/README.md)
   * [10.1 Adding Event Listeners](handling-events/101-adding-event-listeners.md)
   * [10.2 Responding to Events](handling-events/102-responding-to-events.md)

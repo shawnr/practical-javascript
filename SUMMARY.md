@@ -62,6 +62,6 @@
   * [10.4 Quiz: Handling Events](handling-events/104-quiz-handling-events.md)
   * [10.5 Extra Practice](handling-events/105-extra-practice.md)
 * [Appendix A: Resources for Learning More About JavaScript](appendix-a-resources-for-learning-more-about-javascript.md)
-* Appendix B: Debugging Tips
+* [Appendix B: Debugging Tips](appendix-b-debugging-tips.md)
 * [Glossary](/GLOSSARY.md)
 

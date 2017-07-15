@@ -8,7 +8,7 @@ Remember: Learning to program takes practice! It helps to see concepts over and 
 let maxNum = 20;
 
 for (let i=1; i<=maxNum; i++) {
-    if (maxNum % 2 === 0) {
+    if (i % 2 === 0) {
         console.log(`${maxNum} is even.`;
     } else {
         console.log(`${maxNum} is odd.`);
@@ -62,6 +62,14 @@ for (let i=1; i<=maxNum; i++) {
         <answer correct><code>"7 is odd."</code></answer>
         <explanation>When <code>i</code> is equal to <code>7</code>, the console log would be <code>"7 is odd."</code>.</explanation>
     </question>
+    <question>
+        <p>What would the loop output when <code>i</code> equals <code>7</code>?</p>
+        <answer><code>"7 is even."</code></answer>
+        <answer correct><code>"7 is odd."</code></answer>
+        <explanation>When <code>i</code> is equal to <code>7</code>, the console log would be <code>"7 is odd."</code>.</explanation>
+    </question>
+
+
 
 </quiz>
 

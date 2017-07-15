@@ -28,7 +28,7 @@
   * [5.8 JSON](data-types/57-json.md)
   * [5.9 Working with Text](data-types/58-working-with-text.md)
   * [5.10 Quiz: Data Types and Structures](data-types/510-quiz-data-types-and-structures.md)
-  * 5.11 Extra Practice
+  * [5.11 Extra Practice](data-types/511-extra-practice.md)
 * [6 Controlling Logical Flow](controlling-logical-flow/README.md)
   * [6.1 Conditionals](controlling-logical-flow/61-conditionals.md)
   * [6.2 For Loops](controlling-logical-flow/62-for-loops.md)

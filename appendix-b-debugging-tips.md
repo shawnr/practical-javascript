@@ -75,6 +75,8 @@ Exactly how this works will vary just a little bit from browser to browser. Belo
 
 ```js
 
+```
+
 
 ## Additional Resources
 The amazing developers and community of people who make and use different tools to help with development and debugging also create a lot of educational resources. Check out these resources for more information about how to debug code.

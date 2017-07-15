@@ -46,6 +46,7 @@
   * [8.2 Creating and Using Classes](object-oriented-javascript/82-creating-and-using-classes.md)
   * [8.3 Extending Classes](object-oriented-javascript/82-extending-classes.md)
   * [8.4 Quiz: Object Oriented JavaScript](object-oriented-javascript/84-quiz-object-oriented-javascript.md)
+  * [8.5 Extra Practice](object-oriented-javascript/85-extra-practice.md)
 * [9 The Document Object Model \(DOM\)](the-document-object-model/README.md)
   * [9.1 Selecting Elements in the DOM](the-document-object-model/91-selecting-elements-in-the-dom.md)
   * [9.2 Creating and Removing DOM Elements](the-document-object-model/92-creating-and-removing-dom-elements.md)

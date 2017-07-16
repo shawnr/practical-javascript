@@ -40,7 +40,7 @@ A description of a programming language that uses a runtime interpreter to conve
 ## source code
 The code a developer types in a given programming language using some form of text editor. This code is typically either compiled into an executable file, or it is interpreted at runtime by an interpreter.
 
-## typed
+## typed language
 A description of a programming language that requires developers to explicitly declare the datatype of each variable they use.
 
 

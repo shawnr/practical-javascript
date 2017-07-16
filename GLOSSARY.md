@@ -40,7 +40,7 @@ A piece of data related to a Class or object. Objects are made up of data proper
 ## scope
 The context of the code, including all known object, function, and variable references, as it is executed by the interpreter.
 
-## scripted
+## scripted language
 A description of a programming language that uses a runtime interpreter to convert source code into an executable file.
 
 ## source code

@@ -74,9 +74,41 @@ When `console.log()` is not enough, we can use the JavaScript Debugger, which ex
 Exactly how this works will vary just a little bit from browser to browser. Below I've linked to suitable tutorials covering the developer tools in all of the major browsers. But by way of an example, consider this:
 
 ```js
+function capitalizeEachWord(text) {
+    let wordArray = text.split(' ');
+    let newWordArray = [];
+    for (word of wordArray){
+        let firstLetter = word[0].toUpperCase()
+        let wordRemainder = word.slice(1);
+        let newWord = firstLetter + wordRemainder;
+        newWordArray.push(newWord);
+        debugger;
+    }
+    
+    return newWordArray.join(' ');
+}
 
+let myText = capitalizeEachWord("capitalize this text");
+
+console.log(myText);
 ```
+That code snippet has a `debugger` command in the `for` loop within the `capitalizeEachWord()` function. This will freeze the execution of the code like this:
 
+![Debugger Stopped at Breakpoint](/images/debugger-stopped.png)
+<br>**Debugger Stopped at Breakpoint**
+
+In the image above we can see that the debugger has stopped at the line with the `debugger` command. This has caused the JavaScript debugger in Chrome Devtools to show us the current values of the variables in use around this line of code. We can take a closer look at these values in the "scope" panel:
+
+![Debugger Scope Panel](/images/debugger-scope.png)
+<br>**Debugger Scope Panel**
+
+In the "scope" panel we can see the values of the variables available at the moment that the `debugger` line has been executed. We could alter these values using the JavaScript console and we can use the big "play" button at the top of the debugger window to continue executing code. Since our `debugger` command is in a `for` loop, it will pause the program each time it executes. In this way, we can watch the values change on each iteration of the `for` loop.
+
+<div class="tip-box">
+    <h2>Learn Your Dev Tools</h2>
+    <p>Although we can use the <code>debugger</code> command in pretty much any browser, there is always a danger that we could forget to remove that line from our code after we've figured out the problem. This is fairly common, and, as a result, developers tend not to use the `debugger` command to set a breakpoint.</p>
+    <p>Every major browser provides developer tools of some kind, and these all allow you to set breakpoints by clicking on the line number in the code view within the developer tools. Setting breakpoints using the interface in our browser's developer tools is safer because we avoid making any changes directly to our code. It allows us to quickly set and remove breakpoints as we try to find and fix bugs. Consult the resources listed below for more information about how to get the most from our debugging tools.</p>
+</div>
 
 ## Additional Resources
 The amazing developers and community of people who make and use different tools to help with development and debugging also create a lot of educational resources. Check out these resources for more information about how to debug code.

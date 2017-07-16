@@ -4,7 +4,7 @@ A description of a programming language that uses a "compiler" to create an exec
 ## compiler
 An application used to convert source code in a given programming language into an executable file that can be run by computing hardware. (See also: compiled.)
 
-## dynamic
+## dynamic language
 A description of a programming language that infers or determines the datatypes of variables without requiring explicit declaration.
 
 ## Ecma International

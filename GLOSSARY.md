@@ -1,4 +1,4 @@
-## compiled
+## compiled language
 A description of a programming language that uses a "compiler" to create an executable file.
 
 ## compiler

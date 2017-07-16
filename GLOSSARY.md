@@ -31,6 +31,12 @@ A tool used in a code editor to check syntax and style, usually in real-time. Mo
 ## local
 Local objects are only known within the scope where they are defined. This is typically limited to a code block between two curly braces. Local objects are often used within functions, loops, and conditionals for  specific tasks, and they may be named with generic names that are re-used in other local scope contexts.
 
+## method
+A function related to a Class object. Class objects are made up of data properties and methods that perform some behavior or action. The methods are the "verbs" of the Class.
+
+## property
+A piece of data related to a Class object. Class objects are made up of data properties, which contain information describing the object, and methods, which perform some behavior or action. The properties are the "adjectives" of the Class.
+
 ## scope
 The context of the code, including all known object, function, and variable references, as it is executed by the interpreter.
 

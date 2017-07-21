@@ -100,14 +100,6 @@ button.addEventListener('click', myAction);
 assert((myTest===true && triggerCheck===true), "Incorrect.");
 
 {% context %}
-
-function saveItem(id){
-    if (id=="12234"){
-        return true;
-    } else {
-        return false;
-    }
-}
 class MockDoc {
     querySelector(q){
         if (q == "button"){
@@ -133,6 +125,68 @@ class MockElem {
     }
     addEventListener(trigger, func){
         if (trigger === 'click') {
+            triggerCheck = true;
+        }        
+        func();
+    }
+}
+var triggerCheck = false;
+var document = new MockDoc();
+
+
+
+{% endexercise %}
+
+{% exercise %}
+Add a <code>submit</code> event listener to the <code>form</code> element.
+
+{% initial %}
+let myTest = false;
+function myAction(event){
+    myTest = true;
+}
+let form = document.querySelector('form');
+// add event listener that executes `myAction()`
+
+{% solution %}
+// solution code
+let myTest = false;
+function myAction(event){
+    myTest = true;
+}
+let form = document.querySelector('form');
+form.addEventListener('submit', myAction);
+
+{% validation %}
+assert((myTest===true && triggerCheck===true), "Incorrect.");
+
+{% context %}
+
+class MockDoc {
+    querySelector(q){
+        if (q == "form"){
+            return new MockElem("form");
+        } else {
+            return null;
+        }
+    }
+    createElement(type){
+        if (type == "form") {
+            return new MockElem("FORM");
+        } else {
+            return null;
+        }
+    }
+}
+class MockElem {
+    constructor(type){
+        this.children = [];
+        this.innerHTML = '';
+        this.style = {};
+        this.tagName = type;
+    }
+    addEventListener(trigger, func){
+        if (trigger === 'submit') {
             triggerCheck = true;
         }        
         func();

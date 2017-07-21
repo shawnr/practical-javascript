@@ -47,6 +47,22 @@ function changeColor(event){
 button.addEventListener('click', changeColor);
 ```
 
+<button id="color-changer">Click me to change color.</button>
+<script>
+let button = document.querySelector('#color-changer');
+
+function changeColor(event){
+    if(event.target.style.backgroundColor === "blue"){
+        event.target.style.backgroundColor = "red";
+    } else {
+        event.target.style.backgroundColor = "blue";
+    }
+}
+
+button.addEventListener('click', changeColor);
+
+</script>
+
 
 ## Exercises
 Please try working these exercises to practice some of the skills we've learned in this section.

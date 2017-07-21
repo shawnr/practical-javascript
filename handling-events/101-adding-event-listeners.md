@@ -66,20 +66,36 @@ button.addEventListener('click', changeColor);
 </script>
 
 
-In this example we use the same method to apply the event listener to the button as we did to apply the event listener to the form. 
+In this example we use the same method to apply the event listener to the button as we did to apply the event listener to the form. We must first select the element to which we want to attach a listener. Then, we define the function that will be executed when the listener is triggered (when it detects the event signal). Finally, we attach the listener to the DOM element using the `addEventListener()` method. 
+
+This process is repeated often throughout a complex web app. Event listeners are, literally, the things that make our interfaces move. When properly applied, they can give us a compelling user experience impossible without the logic of JavaScript.
+
+There are many more intricacies to successfully handling events, but we will get to those on the next pages.
 
 ## Exercises
 Please try working these exercises to practice some of the skills we've learned in this section.
 
 
 {% exercise %}
-Define a problem.
+Add a <code>click</code> event listener to the <code>button</code> element.
 
 {% initial %}
-// initial code 
+let myTest = false;
+function myAction(event){
+    myTest = true;
+}
+let button = document.querySelector('button');
+// add event listener that executes `myAction()`
 
 {% solution %}
 // solution code
+let myTest = false;
+function myAction(event){
+    myTest = true;
+}
+let button = document.querySelector('button');
+// add event listener that executes `myAction()`
+button.addEventListener('click', myAction);
 
 {% validation %}
 assert(true), "Incorrect.");

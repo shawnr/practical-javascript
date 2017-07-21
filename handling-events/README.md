@@ -10,9 +10,18 @@ In each of these cases, we can use built-in features of JavaScript to respond to
 
 We can use [the built-in events](https://developer.mozilla.org/en-US/docs/Web/Events) emitted by user interactions to effectively build interface elements, but we can also define our own events and use those to build even more complex systems that respond to changes in both user behavior and data. We could define an event, for example, that would update the interface with new data whenever a value in the system changes. Or we might define an event that would kick off a larger process, such as publishing a new content item.
 
+<div class="tip-box">
 
-There is a whole world of thought about [event-driven system architecture](https://en.wikipedia.org/wiki/Event-driven_architecture), and many of those concepts are applicable to JavaScript. Events allow us to practice "loose coupling", which describes the practice of building systems that work together but which share few dependencies. For example, a content management system might have one component that is concerned with content authoring and managing editorial approval. That system might be complex and dynamic, but at some point it would trigger a "publish article" event. The publishing system need not know anything about the business logic of reviewing and approving content or the product needs of the content outside of the publishing formats. The publishing system could be an independent process that picks up the data at the right time and packages it for publishing in whatever formats are configured. Once the publishing operation is completed, the publishing system could emit a "article published successfully" event and the content management system could listen for that event in order to trigger the next step in the process.
+<h2>Event-Driven Systems</h2>
 
-In this example, the content management system and the publish system could be said to be "loosely coupled" -- meaning that they have a small dependency on one another, but generally do their job autonomously. The event signals are sent and received by each individual component of the system, and each component is able to listen for and respond to relevant events.
+<p>There is a whole world of thought about <a href="https://en.wikipedia.org/wiki/Event-driven_architecture">event-driven system architecture</a>, and many of those concepts are applicable to JavaScript. Events allow us to practice "loose coupling", which describes the practice of building systems that work together but which share few dependencies.</p> 
+
+<p>For example, a content management system might have one component that is concerned with content authoring and managing editorial approval. That system might be complex and dynamic, but at some point it would trigger a "publish article" event. The publishing system need not know anything about the business logic of reviewing and approving content or the product needs of the content outside of the publishing formats. The publishing system could be an independent process that picks up the data at the right time and packages it for publishing in whatever formats are configured. Once the publishing operation is completed, the publishing system could emit a "article published successfully" event and the content management system could listen for that event in order to trigger the next step in the process.</p>
+
+<p>In this example, the content management system and the publish system could be said to be "loosely coupled" -- meaning that they have a small dependency on one another, but generally do their job autonomously. The event signals are sent and received by each individual component of the system, and each component is able to listen for and respond to relevant events.</p>
+
+<p>Event-driven systems are all over the place. They are popular in games, in asynchronous communications utilities, and other systems that manage complex processes where system changes might come from many different sources.</p>
+
+</div>
 
 

@@ -3,20 +3,28 @@
 Remember: Learning to program takes practice! It helps to see concepts over and over, and it's always good to try things more than once. We learn much more the second time we do something. Use the exercises and additional self-checks below to practice.
 
 
-## 1. TODO
-Review the code, then answer the questions below.
+## 1. Selecting DOM Elements
+Review the HTML code, then answer the questions below.
 
-```js
-TODO
+```html
+<div id="content">
+    <ul id="subnav">
+        <li class="menu-item"><a href="#">Home</a></li>
+        <li class="menu-item active"><a href="#">Archive</a></li>
+        <li class="menu-item"><a href="#">About Us</a></li>
+    </ul>
+    <h1 class="page-title">Archive of Posts</h1>
+    <p>Use this archive listing to find old posts.</p>
+</div>  
 ```
 <quiz name="">
-    <question>
-        <p>What is the name of the Class?</p>
-        <answer><code>class</code></answer>
-        <answer><code>constructor</code></answer>
-        <answer correct><code>Road</code></answer>
-        <answer><code>road</code></answer>
-        <explanation>The name of the Class is <code>Road</code>.</explanation>
+    <question multiple>
+        <p>What line(s) of code would select the <code>H1</code> title of this page?</p>
+        <answer correct><code>let pageTitle = document.querySelector('.page-title');</code></answer>
+        <answer><code>let pageTitle = document.getElementById('#page-title');</code></answer>
+        <answer correct><code>let pageTitle = document.querySelector('h1');</code></answer>
+        <answer correct><code>let pageTitle = document.getElementByTagName('h1');</code></answer>
+        <explanation>There are several ways to select elements from the DOM and each can be used according to the context and needs of the program.</explanation>
     </question>
     <question>
         <p>The <code>cityRoad</code> variable is a(n) ________ of the <code>Road</code> class.</p>

@@ -94,7 +94,6 @@ function myAction(event){
     myTest = true;
 }
 let button = document.querySelector('button');
-// add event listener that executes `myAction()`
 button.addEventListener('click', myAction);
 
 {% validation %}

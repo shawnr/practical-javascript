@@ -57,7 +57,7 @@ Review the HTML code, then answer the questions below.
         <answer correct>A new menu item with a "Contact Us" link would be added to the <code>#subnav</code> list.</answer>
         <answer>A new menu item with the "active" class would be added to the <code>#subnav</code> list.</answer>
         <answer>The <code>#subnav</code> list would be removed.</answer>
-        <explanation>The value of <code>cityRoad.lanes</code> is <code>4</code>.</explanation>
+        <explanation>A new menu item with a "Contact Us" link would be added to the <code>#subnav</code> list.</explanation>
     </question>
     <question multiple>
         <p>What commands would select the <code>#subnav</code> element and set it equal to <code>subnavUL</code>?</p>
@@ -115,15 +115,7 @@ Review the HTML code, then answer the questions below.
         <answer><code>let shareItem = contentItemWrapper.querySelector('#item-actions.action.share');</code></answer>
         <answer><code>let shareItem = contentItemWrapper.querySelector('.action .share');</code></answer>
         <answer correct><code>let shareItem = contentItemWrapper.querySelector('.action.share');</code></answer>
-        <explanation>The value of <code>cityRoad.lanes</code> is <code>4</code>.</explanation>
-    </question>
-    <question multiple>
-        <p>What commands would select the <code>#subnav</code> element and set it equal to <code>subnavUL</code>?</p>
-        <answer><code>let subnavUL = document.querySelector('.subnav');</code></answer>
-        <answer correct><code>let subnavUL = document.querySelector('#subnav');</code></answer>
-        <answer><code>let subnavUL = document.getElementById('#subnav');</code></answer>
-        <answer correct><code>let subnavUL = document.getElementById('subnav');</code></answer>
-        <explanation>There are two primary ways to select using the element ID from the DOM.</explanation>
+        <explanation>The <code>shareItem</code> can be selected using <code>contentItemWrapper.querySelector()</code> with the correct CSS selector.</explanation>
     </question>
 </quiz>
 

@@ -110,20 +110,11 @@ Review the HTML code, then answer the questions below.
         <explanation>The <code>saveItem</code> element makes the <code>setAttribute()</code> method available for modifying attributes.</explanation>
     </question>
     <question>
-        <p>
-            What would the results of this additional code be?<br>
-            <code>
-            let subnavUL = document.querySelector('#subnav');
-            let newMenuItem = document.createElement('li');
-            newMenuItem.innerHTML = '<a href="#">Contact Us</a>';
-            newMenuItem.setAttribute('class', 'menu-item');
-            subnavUL.appendChild(newMenuItem);
-            </code>
-        </p>
-        <answer>The menu items in the <code>#subnav</code> list would be replaced with a new one.</answer>
-        <answer correct>A new menu item with a "Contact Us" link would be added to the <code>#subnav</code> list.</answer>
-        <answer>A new menu item with the "active" class would be added to the <code>#subnav</code> list.</answer>
-        <answer>The <code>#subnav</code> list would be removed.</answer>
+        <p>Which command would select the "share" list item from the <code>contentItemWrapper</code> element?</p>
+        <answer><code>let shareItem = contentItemWrapper.querySelector('p.share');</code></answer>
+        <answer><code>let shareItem = contentItemWrapper.querySelector('#item-actions.action.share');</code></answer>
+        <answer><code>let shareItem = contentItemWrapper.querySelector('.action .share');</code></answer>
+        <answer correct><code>let shareItem = contentItemWrapper.querySelector('.action.share');</code></answer>
         <explanation>The value of <code>cityRoad.lanes</code> is <code>4</code>.</explanation>
     </question>
     <question multiple>

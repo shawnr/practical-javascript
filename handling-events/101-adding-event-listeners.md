@@ -97,7 +97,7 @@ let button = document.querySelector('button');
 button.addEventListener('click', myAction);
 
 {% validation %}
-assert(true), "Incorrect.");
+assert((myTest===true && triggerCheck===true), "Incorrect.");
 
 {% context %}
 

@@ -47,15 +47,17 @@ function changeColor(event){
 button.addEventListener('click', changeColor);
 ```
 
+The result of the code above is this button:
+
 <button id="color-changer">Click me to change color.</button>
 <script>
 let button = document.querySelector('#color-changer');
 
 function changeColor(event){
-    if(event.target.style.backgroundColor === "blue"){
+    if(event.target.style.backgroundColor === "cornflowerblue"){
         event.target.style.backgroundColor = "red";
     } else {
-        event.target.style.backgroundColor = "blue";
+        event.target.style.backgroundColor = "cornflowerblue";
     }
 }
 
@@ -63,6 +65,8 @@ button.addEventListener('click', changeColor);
 
 </script>
 
+
+In this example we use the same method to apply the event listener to the button as we did to apply the event listener to the form. 
 
 ## Exercises
 Please try working these exercises to practice some of the skills we've learned in this section.

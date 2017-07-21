@@ -100,4 +100,48 @@ button.addEventListener('click', myAction);
 {% validation %}
 assert(true), "Incorrect.");
 
+{% context %}
+
+function saveItem(id){
+    if (id=="12234"){
+        return true;
+    } else {
+        return false;
+    }
+}
+class MockDoc {
+    querySelector(q){
+        if (q == "button"){
+            return new MockElem("button");
+        } else {
+            return null;
+        }
+    }
+    createElement(type){
+        if (type == "button") {
+            return new MockElem("BUTTON");
+        } else {
+            return null;
+        }
+    }
+}
+class MockElem {
+    constructor(type){
+        this.children = [];
+        this.innerHTML = '';
+        this.style = {};
+        this.tagName = type;
+    }
+    addEventListener(trigger, func){
+        if (trigger === 'click') {
+            triggerCheck = true;
+        }        
+        func();
+    }
+}
+var triggerCheck = false;
+var document = new MockDoc();
+
+
+
 {% endexercise %}

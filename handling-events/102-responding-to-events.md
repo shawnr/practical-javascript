@@ -163,6 +163,4 @@ class MockElem {
 var triggerCheck = false;
 var document = new MockDoc();
 
-
-
 {% endexercise %}

@@ -212,7 +212,7 @@ class MockElem {
         if (trigger === 'click') {
             triggerCheck = true;
         }        
-        func();
+        func(event);
     }
 }
 var triggerCheck = false;

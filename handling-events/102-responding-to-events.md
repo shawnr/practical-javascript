@@ -164,3 +164,67 @@ var triggerCheck = false;
 var document = new MockDoc();
 
 {% endexercise %}
+
+{% exercise %}
+Use the <code>event.target</code> object to change the <code>background-color</code> of the element by adding a <code>click</code> event to the <code>button</code> element.
+
+{% initial %}
+let button = document.querySelector('button');
+// add event listener that changes background-color of button
+
+{% solution %}
+//solution code
+let button = document.querySelector('button');
+
+button.addEventListener('click', function(event){
+    event.target.styles.backgroundColor = 'coral';
+});
+
+{% validation %}
+assert((triggerCheck===true && event.target.styles.backgroundColor=='coral'), 'Incorrect.');
+
+{% context %}
+
+class MockDoc {
+    querySelector(q){
+        if (q == "button"){
+            return new MockElem("button");
+        } else {
+            return null;
+        }
+    }
+    createElement(type){
+        if (type == "form") {
+            return new MockElem("BUTTON");
+        } else {
+            return null;
+        }
+    }
+}
+class MockElem {
+    constructor(type){
+        this.children = [];
+        this.innerHTML = '';
+        this.style = {};
+        this.tagName = type;
+    }
+    addEventListener(trigger, func){
+        if (trigger === 'click') {
+            triggerCheck = true;
+        }        
+        func();
+    }
+}
+var triggerCheck = false;
+var document = new MockDoc();
+
+var event = {
+    target: {
+        styles: {
+            backgroundColor: 'gainsboro'
+        }
+    }
+};
+
+
+{% endexercise %}

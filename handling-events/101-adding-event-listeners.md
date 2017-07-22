@@ -37,10 +37,10 @@ Here is another example that creates a `button` that changes color.
 let button = document.querySelector('#color-changer');
 
 function changeColor(event){
-    if(event.target.style.backgroundColor === "blue"){
-        event.target.style.backgroundColor = "red";
+    if(event.target.style.backgroundColor === "cornflowerblue"){
+        event.target.style.backgroundColor = "pink";
     } else {
-        event.target.style.backgroundColor = "blue";
+        event.target.style.backgroundColor = "cornflowerblue";
     }
 }
 
@@ -55,7 +55,7 @@ let button = document.querySelector('#color-changer');
 
 function changeColor(event){
     if(event.target.style.backgroundColor === "cornflowerblue"){
-        event.target.style.backgroundColor = "red";
+        event.target.style.backgroundColor = "pink";
     } else {
         event.target.style.backgroundColor = "cornflowerblue";
     }

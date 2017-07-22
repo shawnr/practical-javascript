@@ -45,7 +45,7 @@ Local objects are only known within the scope where they are defined. This is ty
 A function related to a Class object. Class objects are made up of data properties and methods that perform some behavior or action. The methods are the "verbs" of the Class.
 
 ## named function
-A function that is declared with either the `let functionName = function(){};` or the `function functionName(){}` syntax. This function has a named reference that is available within its scope and context.
+A function that is declared with the `function functionName(){}` syntax. This function has a named reference that is available within its scope and context.
 
 ## property
 A piece of data related to a Class or object. Objects are made up of data properties, which contain information describing the object, and methods, which perform some behavior or action. The properties are the "adjectives" of the object.

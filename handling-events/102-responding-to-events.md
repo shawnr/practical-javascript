@@ -70,7 +70,7 @@ In our JavaScript, we have used a `document.querySelectorAll()` command to selec
 ## Preventing Default Actions
 Sometimes when we are responding to event triggers, we need to prevent the default action of the browser. This happens a lot when we are building more complex JavaScript applications that use elements like forms and links to provide user interface components. But it also comes up when we are using JavaScript to provide client-side validation of form inputs or allow for users to do smaller changes to the interface. If we write enough JavaScript that uses event handling, we are eventually going to need to prevent some default behavior.
 
-Preventing default behavior is as simple as including a single command in our event handler function: `Event.preventDefault()`. This command stops the browser from executing whatever the default action is for that event. Here is an example of using it to provide a form validation.
+Preventing default behavior is as simple as including a single command in our event handler function: [`Event.preventDefault()`](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault). This command stops the browser from executing whatever the default action is for that event. Here is an example of using it to provide a form validation.
 
 **html**
 ```html
@@ -99,7 +99,9 @@ form.addEventListener('submit', function(event){
 });
 ```
 
-The example above shows the `event.
+The example above shows the `event.preventDefault()` command used to stop a `form` from submitting when the password fields do not match. This kind of client-side form validation is helpful to a user because it provides an instantaneous feedback about whether or not they filled out the form properly. (**Note:** These sorts of validations are not a substitute for strong validation on the server or database side, too, but they provide a more enjoyable user experience.)
+
+Our custom event handler will execute before the default actions take place in the browser, so we have a chance to determine whether or not we wish for those default actions to happen at all. If not, the `Event.preventDefault()` command stops those actions from happening. This allows JavaScript developers the ability to truly alter the way the browser behaves in order to best serve their users.
 
 
 ## Exercises

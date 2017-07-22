@@ -50,43 +50,34 @@ Please try working these exercises to practice some of the skills we've learned 
 
 
 {% exercise %}
-Add a <code>submit</code> event listener to the <code>form</code> element using an anonymous function.
+Add a <code>keyup</code> event listener to the <code>document</code> sets <code>keyCheck</code> to <code>true</code> when the <code>w</code>, <code>a</code>, <code>s</code>, <code>d</code> keys are pressed.
 
 {% initial %}
-let myTest = false;
-let form = document.querySelector('form');
-// add event listener that executes `myAction()`
+let keyCheck = false;
+
+// create event listener
+
+// determine which key was pressed
+
+// if `w`, `a`, `s`, `d` keys are pressed, set `keyCheck = true`
 
 {% solution %}
 // solution code
-let myTest = false;
+let keyCheck = false;
 
-let form = document.querySelector('form');
-form.addEventListener('submit', function(event){
-    myTest = true;
+document.addEventListener('keyup', function(event){
+    if ( (event.key === 'w') ||
+         (event.key === 'a') ||
+         (event.key === 's') ||
+         (event.key === 'd') ) {
+             keyCheck = true;
+     }
 });
 
 {% validation %}
-assert((myTest===true && triggerCheck===true), "Incorrect.");
+assert((keyCheck===true && triggerCheck===true), "Incorrect.");
 
 {% context %}
-
-class MockDoc {
-    querySelector(q){
-        if (q == "form"){
-            return new MockElem("form");
-        } else {
-            return null;
-        }
-    }
-    createElement(type){
-        if (type == "form") {
-            return new MockElem("FORM");
-        } else {
-            return null;
-        }
-    }
-}
 class MockElem {
     constructor(type){
         this.children = [];
@@ -95,14 +86,16 @@ class MockElem {
         this.tagName = type;
     }
     addEventListener(trigger, func){
-        if (trigger === 'submit') {
+        if (trigger === 'keyup') {
             triggerCheck = true;
         }        
-        func();
+        func(event);
     }
 }
 var triggerCheck = false;
-var document = new MockDoc();
+var document = new MockElem('document');
+
+var event = { key: 'w' };
 
 {% endexercise %}
 

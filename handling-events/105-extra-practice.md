@@ -7,24 +7,31 @@ Remember: Learning to program takes practice! It helps to see concepts over and 
 Review the code, then answer the questions below.
 
 ```js
-TODO
+let saveButtons = document.querySelectorAll('.save-button');
+
+for (let button of saveButtons){
+    button.addEventListener('click', function(event){
+        let contentID = event.target.dataset.id;
+        console.log(`Saving ${contentID}`);
+    });
+}
 ```
 <quiz name="">
     <question>
-        <p>What is the name of the Class?</p>
-        <answer><code>class</code></answer>
-        <answer><code>constructor</code></answer>
-        <answer correct><code>Road</code></answer>
-        <answer><code>road</code></answer>
-        <explanation>The name of the Class is <code>Road</code>.</explanation>
+        <p>What is <code>saveButtons</code> equal-to?</p>
+        <answer correct>an Array-like collection of DOM elements selected by '.save-button'</answer>
+        <answer>the first element in the DOM with the 'save-button' class</answer>
+        <answer>a DOM element object</answer>
+        <answer><code>undefined</code></answer>
+        <explanation><code>saveButtons</code> contains an Array-like collection of DOM elements.</explanation>
     </question>
     <question>
-        <p>The <code>cityRoad</code> variable is a(n) ________ of the <code>Road</code> class.</p>
-        <answer>attribute</answer>
-        <answer>parameter</answer>
-        <answer>element</answer>
-        <answer correct>instance</answer>
-        <explanation>The <code>cityRoad</code> variable is an <i>instance</i> of the <code>Road</code> class.</explanation>
+        <p>Inside the <code>for</code> loop, what name is used to refer to each individual button element?</p>
+        <answer><code>saveButtons[]</code></answer>
+        <answer correct><code>button</code></answer>
+        <answer><code>event</code></answer>
+        <answer><code>undefined</code></answer>
+        <explanation>Inside the <code>for</code> loop, the <code>button</code> variable refers to each individual button element during each iteration of the loop.</explanation>
     </question>
     <question multiple>
         <p>When is the <code>constructor()</code> method executed?</p>

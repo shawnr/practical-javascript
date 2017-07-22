@@ -26,6 +26,14 @@ We can imagine that this event listener is defined as the first block of code in
 
 Because so much DOM manipulation is happening, it's crucial for the full DOM to be loaded and available within the JavaScript context. If our code were trying to manipulate a partially-loaded DOM element, then we may run into errors due to some element not yet being loaded. By using an event listener with the `DOMContentLoaded` trigger we make sure that we never try to operate on a partially-loaded DOM.
 
+<div class="tip-box">
+<h2>Avoid the Load</h2>
+
+<p>The <code>load</code> and <code>DOMContentLoaded</code> events are often confused and used in appropriately. Most of the time, when we are concerned about whether a DOM element will have been loaded in order to be modified or selected, we want to use <code>DOMContentLoaded</code>. However, developers sometimes mistakenly use <code>load</code> instead.</p>
+
+<p>Waiting until the <code>load</code> event is triggered could significantly impact your user because that event signal is not dispatched until after all of the resources for the page have loaded. This includes the images, audio, and video files that might be used in specific ways on the page. There could be a dramatic difference between time it takes to dispatch the <code>DOMContentLoaded</code> event signal and the <code>load</code> signal.</p>
+
+</div>
 
 ## Exercises
 Please try working these exercises to practice some of the skills we've learned in this section.

@@ -263,7 +263,7 @@ myForm.addEventListener('submit', function(event){
 
 
 {% validation %}
-assert((myTest===true && triggerCheck===true), "Incorrect.");
+assert((triggerCheck===true && pdCheck===true), "Incorrect.");
 
 {% context %}
 

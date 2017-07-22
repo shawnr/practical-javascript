@@ -284,7 +284,7 @@ class MockElem {
         this.innerHTML = '';
         this.style = {};
         this.tagName = type;
-        this.value = null;
+        this.value = false;
     }
     addEventListener(trigger, func){
         if (trigger === 'submit') {

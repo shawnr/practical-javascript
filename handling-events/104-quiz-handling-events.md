@@ -17,7 +17,7 @@ Try this self-check quiz to test your knowledge!
         <answer><code>element.listen()</code></answer>
         <answer><code>element.on()</code></answer>
         <answer correct><code>element.addEventListener()</code></answer>
-        <explanation>The command <code>element.addEventListener()</code> is preferred method for creating a new event listener.</explanation>
+        <explanation>The command <code>element.addEventListener()</code> is the preferred method for creating a new event listener.</explanation>
     </question>
     <question>
         <p>The following example uses what type of function to handle an event? <br><br><code>element.addEventListener('click', function(event){});</code></p>

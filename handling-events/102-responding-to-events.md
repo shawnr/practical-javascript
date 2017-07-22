@@ -232,14 +232,6 @@ var event = {
 {% exercise %}
 Use a <code>preventDefault()</code> command to stop the <code>form</code> from submitting unless the user submits both <code>firstName</code> and <code>lastName</code> fields. Refer to this HTML:
 
-<code>
-<form id="registration-form" action="register/" method="post">
-    <label>First Name: <input type="text" value="" name="first-name" required></label>
-    <label>Last Name: <input type="text" value="" name="last-name" required></label>
-    <input type="submit" value="Submit">
-</form>
-</code>
-
 {% initial %}
 let myForm = document.querySelector('#registration-form');
 let firstName = document.querySelector('input[name="first-name"]');

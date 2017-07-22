@@ -230,7 +230,7 @@ var event = {
 {% endexercise %}
 
 {% exercise %}
-Use a <code>preventDefault()</code> command to stop the <code>form</code> from submitting unless the user submits both <code>firstName</code> and <code>lastName</code> fields. Refer to this HTML:
+Use a <code>preventDefault()</code> command to stop the <code>form</code> from submitting unless the user submits both <code>firstName</code> and <code>lastName</code> fields.
 
 {% initial %}
 let myForm = document.querySelector('#registration-form');

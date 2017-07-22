@@ -68,6 +68,39 @@ In the example above, we have some HTML that contains multiple content item list
 In our JavaScript, we have used a `document.querySelectorAll()` command to select all of the links, and then we loop through each link and add an event listener that will call an anonymous function. The anonymous function can then access the `event.target.dataset.contentId` property to determine which content item should be saved to the user's favorites list in the database. This allows us to use the same event listener to respond to event triggers in slightly different ways. Obviously we could not write a separate event listener for each content item in our database, so it's crucial to be able to pass in data using this method. The `Event.target` object allows us to make full use of the HTML `data-` attributes to pass data around in our web application.
 
 ## Preventing Default Actions
+Sometimes when we are responding to event triggers, we need to prevent the default action of the browser. This happens a lot when we are building more complex JavaScript applications that use elements like forms and links to provide user interface components. But it also comes up when we are using JavaScript to provide client-side validation of form inputs or allow for users to do smaller changes to the interface. If we write enough JavaScript that uses event handling, we are eventually going to need to prevent some default behavior.
+
+Preventing default behavior is as simple as including a single command in our event handler function: `Event.preventDefault()`. This command stops the browser from executing whatever the default action is for that event. Here is an example of using it to provide a form validation.
+
+**html**
+```html
+<form id="registration-form" action="register/" method="post">
+    <p class="errors hidden">No errors to report.</p>
+    <label>Username: <input type="text" value="" name="username" required></label>
+    <label>Password: <input type="password" value="" name="pass1" required></label>
+    <label>Confirm Password: <input type="password" value="" name="pass2" required></label>
+    <input type="submit" value="Register">
+</form>
+```
+
+**js**
+```js
+let myForm = document.querySelector('#registration-form');
+let pass1 = document.querySelector('input[name="pass1"]');
+let pass2 = document.querySelector('input[name="pass1"]');
+let errorsParagraph = document.querySelector('p.errors');
+
+form.addEventListener('submit', function(event){
+    if (pass1.value != pass2.value){
+        event.preventDefault();
+        errorsParagraph.innerHTML = "Password values do not match.";
+        errorsParagraph.setAttribute('class', 'errors visible');
+    }
+});
+```
+
+The example above shows the `event.
+
 
 ## Exercises
 Please try working these exercises to practice some of the skills we've learned in this section.

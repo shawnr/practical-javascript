@@ -50,16 +50,6 @@ document.addEventListener('DOMContentLoaded', function(event){
 assert((triggerCheck===true && changeCheck===true), "Incorrect.");
 
 {% context %}
-
-class MockDoc {
-    querySelector(q){
-        if (q == "form"){
-            return new MockElem("form");
-        } else {
-            return new MockElem("input");
-        }
-    }
-}
 class MockElem {
     constructor(type){
         this.children = [];

@@ -20,6 +20,9 @@ A description of a programming language that infers or determines the datatypes 
 ## Ecma International
 The governing body that stewards the ECMAScript standard, upon which JavaScript is based. 
 
+## event handler
+A function that is associated with an event listener and which is called when the event is triggered.
+
 ## executable file
 A file that can be run directly on the computing hardware without requiring any interpretation or compilation at runtime.
 

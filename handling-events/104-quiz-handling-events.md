@@ -36,20 +36,20 @@ Try this self-check quiz to test your knowledge!
         <explanation>The <code>event.target</code> property is a reference to the DOM object that invoked the event.</explanation>
     </question>
     <question>
-        <p>The <code>get</code> command creates what kind of property on a Class?</p>
-        <answer correct>dynamic</answer>
-        <answer>writeable</answer>
-        <answer>readable</answer>
-        <answer>safe</answer>
-        <explanation>The <code>get</code> command creates a dynamic property on a Class.</explanation>
+        <p>Why is the <code>event.preventDefault()</code> command used?</p>
+        <answer>To prevent the setting of default data values in the database.</answer>
+        <answer correct>To prevent the execution of default actions in response to an event trigger.</answer>
+        <answer>To enforce the submission of a form.</answer>
+        <answer>To stop execution of all code.</answer>
+        <explanation>The <code>event.preventDefault()</code> command prevents the execution of default actions in response to an event trigger or signal.</explanation>
     </question>
     <question>
-        <p>Which command is used to bring in the existing functionality of a given method from the parent Class so that additional functionality can be added around it?</p>
-        <answer><code>break()</code></answer>
-        <answer><code>swing()</code></answer>
-        <answer correct><code>super()</code></answer>
-        <answer><code>include()</code></answer>
-        <explanation>The <code>super()</code> command is used to bring in existing functionality of a method from the parent Class.</explanation>
+        <p>Which event trigger indicates the DOM has finished loading and processing?</p>
+        <answer correct><code>DOMContentLoaded</code></answer>
+        <answer><code>DOMReady</code></answer>
+        <answer><code>DOMFinished</code></answer>
+        <answer><code>DocumentReady</code></answer>
+        <explanation>The <code>DOMContentLoaded</code> event is dispatched when the HTML has been downloaded and the DOM has been processed.</explanation>
     </question>
 </quiz>
 

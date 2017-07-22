@@ -232,12 +232,13 @@ var event = {
 {% exercise %}
 Use a <code>preventDefault()</code> command to stop the <code>form</code> from submitting unless the user submits both <code>firstName</code> and <code>lastName</code> fields. Refer to this HTML:
 
-```html
+<code>
 <form id="registration-form" action="register/" method="post">
     <label>First Name: <input type="text" value="" name="first-name" required></label>
     <label>Last Name: <input type="text" value="" name="last-name" required></label>
     <input type="submit" value="Submit">
 </form>
+</code>
 ```
 
 
@@ -290,7 +291,7 @@ class MockElem {
         if (trigger === 'submit') {
             triggerCheck = true;
         }        
-        func();
+        func(event);
     }
 }
 var triggerCheck = false;

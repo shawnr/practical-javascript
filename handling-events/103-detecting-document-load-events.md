@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function(event){
 
 
 {% validation %}
-assert((triggerCheck===true && pdCheck===true), "Incorrect.");
+assert((triggerCheck===true && changeCheck===true), "Incorrect.");
 
 {% context %}
 

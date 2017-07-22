@@ -20,6 +20,6 @@ But you also deserve encouragement, because we have only begun a journey towards
 * Optimizing JavaScript delivery and performance
 * and so much more...
 
-We must keep at it. This foundation will serve us well, and we are in a good position to build, grow, and develop into the creators we want to be. There are many resources out there that can push your knowledge further. Take full advantage of them to keep learning!
+We must keep at it. This foundation will serve us well, and we are in a good position to build, grow, and develop into the creators we want to be. There are many resources out there that can push your knowledge further. Take full advantage of them to keep learning and you will accomplish all of your goals.
 
 

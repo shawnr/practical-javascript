@@ -10,22 +10,81 @@ Luckily, there is a way of knowing when the DOM has finished loading the HTML co
 
 ## The `DOMContentLoaded` Event
 
-As we mentioned in the previous section, there are many events that are triggered by default in the process of viewing a web page. These events are being handled by default actions
+As we mentioned in the previous section, there are many events that are triggered by default in the process of viewing a web page. These events are being handled by default actions, but they are ignored by our code until we create a specific event listener. In order to prevent the problem of executing JavaScript that is trying to manipulate a partially-loaded DOM (because the HTML file has not completed downloading), we can set up an event listener for the [`DOMContentLoaded`](https://developer.mozilla.org/en-US/docs/Web/Events/DOMContentLoaded) event.
+
+The `DOMContentLoaded` event can be used just like any other event trigger (click, submit, etc.). We often attach an event listener to the `document` object that will execute our code when the `DOMContentLoaded` signal is sent. Let's imagine what that would look like in the context of an HTML-based game:
+
+```js
+document.addEventListener('DOMContentLoaded', function(event){
+    // Execute any functions that will manipulate the DOM
+    setUpGameBoard();
+    setUpScoreBoard();
+    runGame();
+});
+```
+We can imagine that this event listener is defined as the first block of code in the main JavaScript file for this web-based game. It is waiting for the `DOMContentLoaded` signal, and when that event is triggered it will execute a set of functions that appear to set up the game environment and kick off the execution of the game code. We can imagine that the `setUpGameBoard()` and `setUpScoreBoard()` functions do some significant DOM manipulation to create those structures. We can also assume that running the game will continue to alter those DOM elements as the game progresses. 
+
+Because so much DOM manipulation is happening, it's crucial for the full DOM to be loaded and available within the JavaScript context. If our code were trying to manipulate a partially-loaded DOM element, then we may run into errors due to some element not yet being loaded. By using an event listener with the `DOMContentLoaded` trigger we make sure that we never try to operate on a partially-loaded DOM.
+
 
 ## Exercises
 Please try working these exercises to practice some of the skills we've learned in this section.
 
 
 {% exercise %}
-Define a problem.
+Create an event listener that will watch for the  <code>DOMContentLoaded</code> signal before it executes the <code>changeDOM()</code> function.
 
 {% initial %}
-// initial code 
+// create event listener on `document` object
+
+// execute `changeDOM()` within event listener
 
 {% solution %}
 // solution code
+document.addEventListener('DOMContentLoaded', function(event){
+    changeDOM(event);
+});
+
 
 {% validation %}
-assert(true), "Incorrect.");
+assert((triggerCheck===true && pdCheck===true), "Incorrect.");
+
+{% context %}
+
+class MockDoc {
+    querySelector(q){
+        if (q == "form"){
+            return new MockElem("form");
+        } else {
+            return new MockElem("input");
+        }
+    }
+}
+class MockElem {
+    constructor(type){
+        this.children = [];
+        this.innerHTML = '';
+        this.style = {};
+        this.tagName = type;
+        this.value = false;
+    }
+    addEventListener(trigger, func){
+        if (trigger === 'DOMContentLoaded') {
+            triggerCheck = true;
+        }        
+        func(event);
+    }
+}
+var triggerCheck = false;
+var document = new MockElem();
+
+event = {result: true};
+
+var changeCheck = false;
+function changeDOM(event){
+    changeCheck = event.result;
+}
 
 {% endexercise %}
+
+

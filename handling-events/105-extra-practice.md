@@ -33,28 +33,29 @@ for (let button of saveButtons){
         <answer><code>undefined</code></answer>
         <explanation>Inside the <code>for</code> loop, the <code>button</code> variable refers to each individual button element during each iteration of the loop.</explanation>
     </question>
-    <question multiple>
-        <p>When is the <code>constructor()</code> method executed?</p>
-        <answer>When we call <code>Road.constructor()</code>.</answer>
-        <answer correct>When we create an instance of the <code>Road</code> class using the <code>new Road()</code> command.</answer>
-        <answer>When we call <code>Road()</code> anywhere in our code.</answer>
-        <answer>When the interpreter reads the <code>Road</code> Class definition.</answer>
-        <explanation>The <code>constructor()</code> method is executed when we create a new instance of the <code>Road</code> class using the <code>new Road()</code> command.</explanation>
-    </question>
     <question>
-        <p>What is <code>cityRoad.lanes</code> equal to?</p>
-        <answer><code>2</code></answer>
-        <answer correct><code>4</code></answer>
-        <answer><code>3</code></answer>
-        <answer><code>0</code></answer>
-        <explanation>The value of <code>cityRoad.lanes</code> is <code>4</code>.</explanation>
-    </question>
-    <question>
-        <p>What is <code>countryRoad.sidewalk</code> equal to?</p>
-        <answer><code>true</code></answer>
-        <answer correct><code>false</code></answer>
+        <p>What will <code>event.target</code> refer to inside the event listener?</p>
+        <answer>The handler function.</answer>
+        <answer>The event listener itself.</answer>
+        <answer correct>The button the user clicked.</answer>
         <answer><code>undefined</code></answer>
-        <explanation>The value of <code>countryRoad.sidewalk</code> is <code>false</code>.</explanation>
+        <explanation>The <code>event.target</code> property will refer to the button element the user clicked.</explanation>
+    </question>
+    <question>
+        <p>What event is being listened for?</p>
+        <answer><code>mouseover</code></answer>
+        <answer correct><code>click</code></answer>
+        <answer><code>load</code></answer>
+        <answer><code>DOMContentLoaded</code></answer>
+        <explanation>The <code>click</code> event is being listened for.</explanation>
+    </question>
+    <question>
+        <p>What attribute on the save button would have contained the <code>contentID</code>?</p>
+        <answer><code>data-contentID</code></answer>
+        <answer correct><code>data-id</code></answer>
+        <answer><code>contentID</code></answer>
+        <answer><code>ID</code></answer>
+        <explanation>The <code>data-id</code> attribute would be accessible as <code>event.target.dataset.id</code>.</explanation>
     </question>
 </quiz>
 

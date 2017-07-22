@@ -4,23 +4,23 @@ Try this self-check quiz to test your knowledge!
 
 <quiz name="">
     <question>
-        <p>What do we mean by "abstraction"?</p>
-        <answer correct>Organizing code into functions, subroutines, and class/method definitions to better contain and isolate functionality and to mask the complexity of the code with an elegant interface.</answer>
-        <answer>Replacing characters with encoded characters.</answer>
-        <answer>Breaking code into small parts and spreading them everywhere.</answer>
-        <answer>Writing code about complex poetry subjects..</answer>
-        <explanation>Abstraction is the process of containing complex instructions and making them accessible through an elegant interface.</explanation>
+        <p>What can we attach to DOM elements in order to respond to events in the system?</p>
+        <answer>Event Handlers</answer>
+        <answer correct>Event Listeners</answer>
+        <answer>Event Processors</answer>
+        <answer>Event Coordinators</answer>
+        <explanation>We create Event Listeners, which are attached to DOM elements and respond to specific event signals dispatched to the system.</explanation>
     </question>
     <question>
-        <p>Inheriting features from another Class uses what command in JavaScript?</p>
-        <answer><code>inherits</code></answer>
-        <answer correct><code>extends</code></answer>
-        <answer><code>overrides</code></answer>
-        <answer><code>compares</code></answer>
-        <explanation>The command <code>extends</code> is used to inherit from another Class.</explanation>
+        <p>What method do we use to create an event listener?</p>
+        <answer><code>element.makeEventListener()</code></answer>
+        <answer><code>element.listen()</code></answer>
+        <answer><code>element.on()</code></answer>
+        <answer correct><code>element.addEventListener()</code></answer>
+        <explanation>The command <code>element.addEventListener()</code> is preferred method for creating a new event listener.</explanation>
     </question>
     <question>
-        <p>What term describes the concept of altering the functionality of inherited Class methods?</p>
+        <p>What </p>
         <answer>parameterization</answer>
         <answer>adjustment</answer>
         <answer correct>polymorphism</answer>

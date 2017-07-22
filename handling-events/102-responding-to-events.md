@@ -296,6 +296,12 @@ class MockElem {
 var triggerCheck = false;
 var document = new MockDoc();
 
+var pdCheck = false;
+event = {};
+event.preventDefault = function(){
+    pdCheck = true;
+};
+
 {% endexercise %}
 
 

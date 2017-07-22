@@ -1,6 +1,6 @@
 # Responding to Events
 
-When an event listener detects an event signal in the system, it executes the specified function. This can be a named function or an anonymous function. The event listener passes in the `Event` object, which contains information about the event itself including the `target` of the event (which is usually the button or link that was clicked, the form that was submitted, etc.). We can use all of these components of an event to make decisions in our code about what lines to execute next. 
+When an event listener detects an event signal in the system, it executes the specified function, which we call an _event handler_. This can be a named function or an anonymous function. The event listener passes in the `Event` object, which contains information about the event itself including the `target` of the event (which is usually the button or link that was clicked, the form that was submitted, etc.). We can use all of these components of an event to make decisions in our code about what lines to execute next. 
 
 Let's take a look at more examples of how we can use this information to respond to events, and how to prevent default browser actions from executing when an event is triggered.
 
@@ -28,6 +28,7 @@ button.addEventListener('click', function(event){
 The result of this code is exactly the same as the code in the previous example: An event listener is added to a `button` element in the DOM that causes a function to be executed that, in this case, writes a log message to the console. We can understand why some developers prefer this approach because it uses fewer lines of code and it keeps all of the logic directly connected to the event listener contained within that code block. JavaScript makes a lot of use of anonymous functions in many situations, so this is not an unusual style choice.
 
 ## Using Event Objects
+Each event triggers a call to the 
 
 ## `stopPropagation()`
 

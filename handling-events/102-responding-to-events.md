@@ -109,15 +109,60 @@ Please try working these exercises to practice some of the skills we've learned 
 
 
 {% exercise %}
-Define a problem.
+Add a <code>submit</code> event listener to the <code>form</code> element using an anonymous function.
 
 {% initial %}
-// initial code 
+let myTest = false;
+let form = document.querySelector('form');
+// add event listener that executes `myAction()`
 
 {% solution %}
 // solution code
+let myTest = false;
+
+let form = document.querySelector('form');
+form.addEventListener('submit', function(event){
+    myTest = true;
+});
 
 {% validation %}
-assert(true), "Incorrect.");
+assert((myTest===true && triggerCheck===true), "Incorrect.");
+
+{% context %}
+
+class MockDoc {
+    querySelector(q){
+        if (q == "form"){
+            return new MockElem("form");
+        } else {
+            return null;
+        }
+    }
+    createElement(type){
+        if (type == "form") {
+            return new MockElem("FORM");
+        } else {
+            return null;
+        }
+    }
+}
+class MockElem {
+    constructor(type){
+        this.children = [];
+        this.innerHTML = '';
+        this.style = {};
+        this.tagName = type;
+    }
+    addEventListener(trigger, func){
+        if (trigger === 'submit') {
+            triggerCheck = true;
+        }        
+        func();
+    }
+}
+var triggerCheck = false;
+var document = new MockDoc();
+
+
 
 {% endexercise %}

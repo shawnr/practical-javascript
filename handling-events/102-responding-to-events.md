@@ -57,7 +57,7 @@ Within the event handler, `event.target` can be used to access any information s
 **js**
 ```js
 let faveLinks = document.querySelectorAll('.fave-link');
-for (link of faveLinks) {
+for (let link of faveLinks) {
     link.addEventListener('click', function(event){
         console.log(`Adding ${event.target.dataset.contentId} to user favorites.`);
     });

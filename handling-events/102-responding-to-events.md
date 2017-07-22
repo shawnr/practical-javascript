@@ -239,9 +239,6 @@ Use a <code>preventDefault()</code> command to stop the <code>form</code> from s
     <input type="submit" value="Submit">
 </form>
 </code>
-```
-
-
 
 {% initial %}
 let myForm = document.querySelector('#registration-form');

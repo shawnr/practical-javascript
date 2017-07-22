@@ -59,6 +59,7 @@
 * [10 Handling Events](handling-events/README.md)
   * [10.1 Adding Event Listeners](handling-events/101-adding-event-listeners.md)
   * [10.2 Responding to Events](handling-events/102-responding-to-events.md)
+  * [10.4 Custom Events](handling-events/104-custom-events.md)
   * [10.3 Detecting Document Load Events](handling-events/103-detecting-document-load-events.md)
   * [10.4 Quiz: Handling Events](handling-events/104-quiz-handling-events.md)
   * [10.5 Extra Practice](handling-events/105-extra-practice.md)

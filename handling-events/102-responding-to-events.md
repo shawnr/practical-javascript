@@ -28,9 +28,46 @@ button.addEventListener('click', function(event){
 The result of this code is exactly the same as the code in the previous example: An event listener is added to a `button` element in the DOM that causes a function to be executed that, in this case, writes a log message to the console. We can understand why some developers prefer this approach because it uses fewer lines of code and it keeps all of the logic directly connected to the event listener contained within that code block. JavaScript makes a lot of use of anonymous functions in many situations, so this is not an unusual style choice.
 
 ## Using Event Objects
-Each event triggers a call to the 
+Each event signal detected in the system triggers a call to the event handler that is defined in the event listener. The function that handles the event always receives an `Event` object as a parameter. This object can be used to access different information about the event. Here is an example of using information from the `Event` object within an event handler.
 
-## `stopPropagation()`
+```js
+let button = document.querySelector('button');
+button.addEventListener('click', function(event){
+    console.log(`Action was triggered by ${event.target} at ${event.timestamp}.`);
+    event.target.style.backgroundColor = 'goldenrod';
+    let itemID = event.target.dataset.itemID;
+});
+```
+
+There are several attributes, like `Event.timestamp` that can be used to respond to events signals, but the most common aspect of the `Event` object to use within an event handler is the `Event.target` object. `Event.target` is the DOM element object that triggered the event handler. In the example above, `event.target` is the `button` object.
+
+Within the event handler, `event.target` can be used to access any information stored in the DOM element object. We can alter attributes of the object (such as the style alteration in the example code), and we can read in any attribute values (such as the `itemID`, which is read from the `event.target.dataset` object). This means we can use the same event to handle multiple elements on the page. Consider the following example of a system where favoriting content is possible.
+
+**html**
+```html
+<ul id="search-results">
+    <li>Content Item Title 1 <a class="fave-link" href="#favorite" data-contentId="1">Add to favorites</a></li>
+    <li>Content Item Title 2 <a class="fave-link" href="#favorite" data-contentId="2">Add to favorites</a></li>
+    <li>Content Item Title 3 <a class="fave-link" href="#favorite" data-contentId="3">Add to favorites</a></li>
+    <li>Content Item Title 4 <a class="fave-link" href="#favorite" data-contentId="4">Add to favorites</a></li>
+    <li>Content Item Title 5 <a class="fave-link" href="#favorite" data-contentId="5">Add to favorites</a></li>
+</ul>
+```
+
+**js**
+```js
+let faveLinks = document.querySelectorAll('.fave-link');
+for (link of faveLinks) {
+    link.addEventListener('click', function(event){
+        console.log(`Adding ${event.target.dataset.contentId} to user favorites.`);
+    });
+}
+```
+In the example above, we have some HTML that contains multiple content item listings. Each item has a "fave link" that allows a user to add the item to their "Favorites" list. Each of those links has a `data-contentId` attribute that stores the ID for the content item.
+
+In our JavaScript, we have used a `document.querySelectorAll()` command to select all of the links, and then we loop through each link and add an event listener that will call an anonymous function. The anonymous function can then access the `event.target.dataset.contentId` property to determine which content item should be saved to the user's favorites list in the database. This allows us to use the same event listener to respond to event triggers in slightly different ways. Obviously we could not write a separate event listener for each content item in our database, so it's crucial to be able to pass in data using this method. The `Event.target` object allows us to make full use of the HTML `data-` attributes to pass data around in our web application.
+
+## Preventing Default Actions
 
 ## Exercises
 Please try working these exercises to practice some of the skills we've learned in this section.

@@ -20,20 +20,20 @@ Try this self-check quiz to test your knowledge!
         <explanation>The command <code>element.addEventListener()</code> is preferred method for creating a new event listener.</explanation>
     </question>
     <question>
-        <p>What </p>
-        <answer>parameterization</answer>
-        <answer>adjustment</answer>
-        <answer correct>polymorphism</answer>
-        <answer>structuring</answer>
-        <explanation>Polymorphism describes the concept of altering the functionality of inherited Class methods.</explanation>
+        <p>The following example uses what type of function to handle an event? <br><br><code>element.addEventListener('click', function(event){});</code></p>
+        <answer>named function</answer>
+        <answer correct>anonymous function</answer>
+        <answer>inline function</answer>
+        <answer>arrow function</answer>
+        <explanation>This example uses an anonymous function.</explanation>
     </question>
     <question>
-        <p>What is the method that initializes a Class called in JavaScript?</p>
-        <answer><code>init()</code></answer>
-        <answer ><code>build()</code></answer>
-        <answer><code>create()</code></answer>
-        <answer correct><code>constructor()</code></answer>
-        <explanation>The <code>constructor()</code> method is called to initialize an instance of a Class.</explanation>
+        <p>What property on the <code>event</code> object contains the DOM object that invoked the event?</p>
+        <answer><code>event.element</code></answer>
+        <answer><code>event.source</code></answer>
+        <answer correct><code>event.target</code></answer>
+        <answer><code>event.invoker</code></answer>
+        <explanation>The <code>event.target</code> property is a reference to the DOM object that invoked the event.</explanation>
     </question>
     <question>
         <p>The <code>get</code> command creates what kind of property on a Class?</p>

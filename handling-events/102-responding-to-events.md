@@ -90,7 +90,7 @@ let pass1 = document.querySelector('input[name="pass1"]');
 let pass2 = document.querySelector('input[name="pass1"]');
 let errorsParagraph = document.querySelector('p.errors');
 
-form.addEventListener('submit', function(event){
+myForm.addEventListener('submit', function(event){
     if (pass1.value != pass2.value){
         event.preventDefault();
         errorsParagraph.innerHTML = "Password values do not match.";
@@ -228,3 +228,74 @@ var event = {
 
 
 {% endexercise %}
+
+{% exercise %}
+Use a <code>preventDefault()</code> command to stop the <code>form</code> from submitting unless the user submits both <code>firstName</code> and <code>lastName</code> fields. Refer to this HTML:
+
+```html
+<form id="registration-form" action="register/" method="post">
+    <label>First Name: <input type="text" value="" name="first-name" required></label>
+    <label>Last Name: <input type="text" value="" name="last-name" required></label>
+    <input type="submit" value="Submit">
+</form>
+```
+
+
+
+{% initial %}
+let myForm = document.querySelector('#registration-form');
+let firstName = document.querySelector('input[name="first-name"]');
+let lastName = document.querySelector('input[name="last-name"]');
+
+// Add submit event listener to `myForm`.
+// Verify that both `firstName` and `lastName` have been filled in.
+
+{% solution %}
+// solution code
+let myForm = document.querySelector('#registration-form');
+let firstName = document.querySelector('input[name="first-name"]');
+let lastName = document.querySelector('input[name="last-name"]');
+
+myForm.addEventListener('submit', function(event){
+    if (!firstName.value || !lastName.value){
+        event.preventDefault();
+        console.log('Both names are required.')
+    }
+});
+
+
+{% validation %}
+assert((myTest===true && triggerCheck===true), "Incorrect.");
+
+{% context %}
+
+class MockDoc {
+    querySelector(q){
+        if (q == "form"){
+            return new MockElem("form");
+        } else {
+            return new MockElem("input");
+        }
+    }
+}
+class MockElem {
+    constructor(type){
+        this.children = [];
+        this.innerHTML = '';
+        this.style = {};
+        this.tagName = type;
+        this.value = null;
+    }
+    addEventListener(trigger, func){
+        if (trigger === 'submit') {
+            triggerCheck = true;
+        }        
+        func();
+    }
+}
+var triggerCheck = false;
+var document = new MockDoc();
+
+{% endexercise %}
+
+

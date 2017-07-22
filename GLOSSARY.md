@@ -1,3 +1,13 @@
+## anonymous function
+A function that is defined as part of a method call or object definition such that it does not take on a name of it's own. Here is an example of an anonymous function used in an `addEventListener()` method call.
+
+```js
+let button = document.querySelector('button');
+button.addEventListener('click', function(event){
+    console.log('Click event was triggered.');
+});
+```
+
 ## compiled language
 A description of a programming language that uses a "compiler" to create an executable file.
 
@@ -33,6 +43,9 @@ Local objects are only known within the scope where they are defined. This is ty
 
 ## method
 A function related to a Class object. Class objects are made up of data properties and methods that perform some behavior or action. The methods are the "verbs" of the Class.
+
+## named function
+A function that is declared with either the `let functionName = function(){};` or the `function functionName(){}` syntax. This function has a named reference that is available within its scope and context.
 
 ## property
 A piece of data related to a Class or object. Objects are made up of data properties, which contain information describing the object, and methods, which perform some behavior or action. The properties are the "adjectives" of the object.

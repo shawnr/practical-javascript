@@ -46,12 +46,12 @@ let x = 2;
 {% solution %}
 let x = 2;
 
-for (let i=0;i<12;i++){
+for (i=0;i<12;i++){
    console.log(x);
 }
 
 {% validation %}
-assert(foo===8192, "Incorrect.");
+assert(x===8192, "Incorrect.");
 
 {% endexercise %}
 

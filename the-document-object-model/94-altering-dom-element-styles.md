@@ -188,36 +188,31 @@ var document = new MockDoc();
 {% endexercise %}
 
 {% exercise %}
-Given the HTML above, write JavaScript to change the <code>data-saved</code> attribute to be <code>true</code> and read the <code>data-id</code> attribute to use in the <code>saveItem()</code> function.
+Given the HTML above, write JavaScript to change the styles to be: background: green, padding: 0.2rem, color: white, 
+border: solid 1px yellow, border-radius: 4px.
 
 
 {% initial %}
 // Select the button from the DOM using document.querySelector(). 
-let saveButton = 
+let saveButton = ;
 
-// Alter the `data-saved` attribute to be 'true'.
+// Alter styles using either Element.style or Element.style.cssText.
 
-// Use the provided `saveItem()` function to save the item.
-// This function requires the item ID.
-
-let saveSuccess = saveItem('Item ID goes here.');
 
 
 {% solution %}
 // Select the button from the DOM using document.querySelector(). 
 let saveButton = document.querySelector('button');
 
-// Alter the `data-saved` attribute to be `true`.
-saveButton.dataset.saved = true;
-
-// Use the provided `saveItem()` function to save the item.
-// This function requires the item ID.
-
-let saveSuccess = saveItem(saveButton.dataset.id);
+saveButton.style.backgroundColor = 'green';
+saveButton.style.padding = '0.2rem';
+saveButton.style.color = 'white';
+saveButton.style.border = 'solid 1px yellow';
+saveButton.style.borderRadius = '4px';
 
 
 {% validation %}
-assert(saveButton.dataset.saved==true, "Incorrect.");
+assert(saveButton.style.color, "Incorrect.");
 
 {% context %}
 

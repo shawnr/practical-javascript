@@ -54,7 +54,7 @@ assert(x==8192, "Incorrect.");
 
 
 {% exercise %}
-Define a `while` loop that will add 1 to a number until it equals 42.
+Define a <code>for</code> loop that will add 1 to a number until it equals 42.
 
 {% initial %}
 let x = 0;

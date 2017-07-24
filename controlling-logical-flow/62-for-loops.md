@@ -38,20 +38,20 @@ Please try working these exercises to practice some of the skills we've learned 
 
 
 {% exercise %}
-Define a <code>for</code> loop that will double the variable <code>x</code> for 12 loops.
+Define a <code>for</code> loop that will double the variable <code>foo</code> for 12 loops.
 
 {% initial %}
-let x = 2;
+let foo = 2;
 
 {% solution %}
-let x = 2;
+let foo = 2;
 
 for (let i=0;i<12;i++){
-    x = x*2;
+    foo = foo*2;
 }
 
 {% validation %}
-assert(x===8192, "Incorrect.");
+assert(foo===8192, "Incorrect.");
 
 {% endexercise %}
 

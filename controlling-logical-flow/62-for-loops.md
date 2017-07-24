@@ -46,6 +46,10 @@ let x = 2;
 {% solution %}
 let x = 2;
 
+for (let i=0;i<12;i++){
+    x = x*2;
+}
+
 {% validation %}
 assert(x===8192, "Incorrect.");
 

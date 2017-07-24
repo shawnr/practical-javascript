@@ -46,9 +46,8 @@ let x = 2;
 {% solution %}
 let x = 2;
 
-for (i=0;i<12;i++){
-   console.log(x);
-}
+// for loop goes here
+// A bug in the exercise plugin prevents us from showing this solution in full.
 
 {% validation %}
 assert(x===8192, "Incorrect.");

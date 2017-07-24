@@ -37,36 +37,20 @@ Notice that in this example we are actually using the `i` variable (which is the
 Please try working these exercises to practice some of the skills we've learned in this section.
 
 
-
 {% exercise %}
-Define a `for` loop that would double (multiply times two) `x` 12 times.
+Define a <code>for</code> loop that will double the variable <code>x</code> for 12 loops.
 
 {% initial %}
 let x = 2;
 
 {% solution %}
-
-
-{% validation %}
-assert(x==8192, "Incorrect.");
-
-{% endexercise %}
-
-
-{% exercise %}
-Define a <code>for</code> loop that will add 1 to a number until it equals 42.
-
-{% initial %}
-let x = 0;
-
-{% solution %}
-let x = 0;
-while (x < 43) {
+let x = 2;
+for (let i=0; i<12; i++) {
+    x = x * 2;
     console.log(`The value of x is: ${x}`);
-    x++;
 }
 {% validation %}
-assert(x===43, "Incorrect.");
+assert(x===8192, "Incorrect.");
 
 {% endexercise %}
 

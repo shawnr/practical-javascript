@@ -122,14 +122,7 @@ let saveButton =
 
 
 {% solution %}
-// Set `saveButton` equal to the DOM element for the save button. 
-let saveButton = document.querySelector('button');
-
-saveButton.style.background = "green";
-saveButton.style.padding = "0.2rem";
-saveButton.style.color = "white";
-saveButton.style.border = "solid 1px yellow";
-saveButton.style.borderRadius = "4px";
+// Solution not available.
 
 {% validation %}
 assert(saveButton.style.color, "Incorrect.");

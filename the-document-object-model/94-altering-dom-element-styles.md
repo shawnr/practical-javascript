@@ -121,7 +121,6 @@ let saveButton =
 
 
 {% solution %}
-// Solution not available.
 
 {% validation %}
 assert(saveButton.style.color, "Incorrect.");

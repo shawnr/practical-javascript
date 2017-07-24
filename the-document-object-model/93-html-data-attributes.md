@@ -27,7 +27,7 @@ Please try working these exercises to practice some of the skills we've learned 
 ```
 
 {% exercise %}
-Given the HTML above, write JavaScript to change the styles. Create style properties for the following:<br>
+Given the HTML above, write JavaScript to change the <code>data-saved</code> attribute to be <code>true</code> and read the <code>data-id</code> attribute to use in the <code>saveItem()</code> function.
 
 
 {% initial %}

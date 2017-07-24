@@ -38,16 +38,16 @@ Please try working these exercises to practice some of the skills we've learned 
 
 
 {% exercise %}
-Define a <code>for</code> loop that will double the variable <code>foo</code> for 12 loops.
+Define a <code>for</code> loop that will double the variable <code>x</code> for 12 loops.
 
 {% initial %}
-let foo = 2;
+let x = 2;
 
 {% solution %}
-let foo = 2;
+let x = 2;
 
 for (let i=0;i<12;i++){
-    foo = foo*2;
+   console.log(x);
 }
 
 {% validation %}

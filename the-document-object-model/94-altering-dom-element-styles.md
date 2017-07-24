@@ -186,3 +186,88 @@ class MockElem {
 var document = new MockDoc();
 
 {% endexercise %}
+
+{% exercise %}
+Given the HTML above, write JavaScript to change the <code>data-saved</code> attribute to be <code>true</code> and read the <code>data-id</code> attribute to use in the <code>saveItem()</code> function.
+
+
+{% initial %}
+// Select the button from the DOM using document.querySelector(). 
+let saveButton = 
+
+// Alter the `data-saved` attribute to be 'true'.
+
+// Use the provided `saveItem()` function to save the item.
+// This function requires the item ID.
+
+let saveSuccess = saveItem('Item ID goes here.');
+
+
+{% solution %}
+// Select the button from the DOM using document.querySelector(). 
+let saveButton = document.querySelector('button');
+
+// Alter the `data-saved` attribute to be `true`.
+saveButton.dataset.saved = true;
+
+// Use the provided `saveItem()` function to save the item.
+// This function requires the item ID.
+
+let saveSuccess = saveItem(saveButton.dataset.id);
+
+
+{% validation %}
+assert(saveButton.dataset.saved==true, "Incorrect.");
+
+{% context %}
+
+function saveItem(id){
+    if (id=="12234"){
+        return true;
+    } else {
+        return false;
+    }
+}
+class MockDoc {
+    querySelector(q){
+        if ((q == "button") ||
+            (q == "button.save") ||
+            (q == ".save") ||
+            (q == ".btn.save") ||
+            (q == "button.btn") ||
+            (q == "button.btn.save")){
+            return new MockElem("button");
+        } else {
+            return null;
+        }
+    }
+    createElement(type){
+        if (type == "button") {
+            return new MockElem("BUTTON");
+        } else {
+            return null;
+        }
+    }
+}
+class MockElem {
+    constructor(type){
+        this.children = [];
+        this.innerHTML = '';
+        this.style = {};
+        this.tagName = type;
+        this.dataset = {};
+        this.dataset.saved = false;
+        this.dataset.id = '12234';
+        
+        this.style.cssText = '';            
+    }
+    appendChild(obj){
+        this.children.push(obj);
+    }
+    setAttribute(attr, value){
+        this[attr] = value;
+    }
+}
+var document = new MockDoc();
+
+{% endexercise %}

@@ -117,7 +117,7 @@ border-radius: 4px;<br>
 // Select the button from the DOM using document.querySelector(). 
 let saveButton = 
 
-// Alter the styles per the directions. Use either `.style` or `.style.cssText`
+// Alter the styles per the directions. Use either .style or .style.cssText
 
 
 {% solution %}

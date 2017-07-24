@@ -106,13 +106,12 @@ Please try working these exercises to practice some of the skills we've learned 
 
 {% exercise %}
 Given the HTML above, write JavaScript to change the styles. Create style properties for the following:<br>
-<code>
-background: green;
-padding: 0.2rem;
-color: white;
-border: solid 1px yellow;
-border-radius: 4px;
-</code>
+
+background: green;<br>
+padding: 0.2rem;<br>
+color: white;<br>
+border: solid 1px yellow;<br>
+border-radius: 4px;<br>
 
 {% initial %}
 // Select the button from the DOM using document.querySelector(). 

@@ -27,6 +27,15 @@ if (Number.isSafeInteger(x)){
 ```
 The `Number.isSafeInteger()` function can be used to determine if a number is an integer or not. If it is an integer, the function will return `true`. If it is not an integer, then it will return `false`. In the cases where differentiation between types of numbers matters, this is a helpful tool.
 
+<div class="tip-box">
+    <h2>Unexpected Math</h2>
+    <p>JavaScript does not have a way of restricting "floating point" or "decimal" numbers to a specific number of places. We can use methods like <code>Number.toFixed()</code> to round off at a specific decimal point, but we can always expect to see weird things like this:</p>
+    <p><code>
+        let total = 0.10 + 0.20; // expected result is 0.3 (or maybe 0.30)  <br>
+        console.log(`Actual value of total is: ${total}`); // prints 0.30000000000000004 to the console.
+    </code></p>
+</div>
+
 
 ## Exercises
 Please try working these exercises to practice some of the skills we've learned in this section.

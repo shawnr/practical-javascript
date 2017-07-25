@@ -31,7 +31,7 @@ The `Number.isSafeInteger()` function can be used to determine if a number is an
     <h2>Unexpected Math</h2>
     <p>JavaScript does not have a way of restricting "floating point" or "decimal" numbers to a specific number of places. We can use methods like <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed">Number.toFixed()</a></code> to round off at a specific decimal point, but we can always expect to see weird things like this:</p>
     <pre>
-        let total = 0.10 + 0.20; // expected result is 0.3 (or maybe 0.30)  <br>
+        let total = 0.10 + 0.20; // expected result is 0.3 (or maybe 0.30)  
         console.log(`Actual value of total is: ${total}`); // prints 0.30000000000000004 to the console.
     </pre>
     <p>This all stems from the fact that numbers with decimal points in JavaScript are all treated as "floating point" numbers, which is not the precise "decimal" numbers we are used to dealing with in our finances or other aspects of our daily lives. We won't dive into what makes "floating point" numbers work, but we can recognize and anticipate that we might encounter trouble working with decimal numbers in JavaScript when dealing with decimals. If we are working on certain types of applications, we may need to explore some different methods for working around the unexpected results of floating point math.</p>

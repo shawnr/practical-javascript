@@ -35,6 +35,7 @@ The `Number.isSafeInteger()` function can be used to determine if a number is an
         console.log(`Actual value of total is: ${total}`); // prints 0.30000000000000004 to the console.
     </pre>
     <p>This all stems from the fact that numbers with decimal points in JavaScript are all treated as "floating point" numbers, which is not the precise "decimal" numbers we are used to dealing with in our finances or other aspects of our daily lives. We won't dive into what makes "floating point" numbers work, but we can recognize and anticipate that we might encounter trouble working with decimal numbers in JavaScript when dealing with decimals. If we are working on certain types of applications, we may need to explore some different methods for working around the unexpected results of floating point math.</p>
+    <p>The savvy developer will search around for the latest guides, articles, <a href="http://floating-point-gui.de/languages/javascript/">cheatsheets</a>, and examples for dealing with floating point issues in their code.</p>
 </div>
 
 

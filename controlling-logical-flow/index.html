@@ -1,0 +1,1213 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>6 Controlling Logical Flow · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-quiz/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="61-conditionals.html" />
+    
+    
+    <link rel="prev" href="../data-types/511-extra-practice.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1 Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../what-is-programming/">
+            
+                <a href="../what-is-programming/">
+            
+                    
+                    2 What Is Programming?
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../what-is-programming/history.html">
+            
+                <a href="../what-is-programming/history.html">
+            
+                    
+                    2.1 History
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../what-is-programming/23-programming-languages.html">
+            
+                <a href="../what-is-programming/23-programming-languages.html">
+            
+                    
+                    2.2 Programming Languages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../what-is-programming/core-concepts.html">
+            
+                <a href="../what-is-programming/core-concepts.html">
+            
+                    
+                    2.3 Core Concepts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../what-is-programming/24-the-code-landscape.html">
+            
+                <a href="../what-is-programming/24-the-code-landscape.html">
+            
+                    
+                    2.4 The Code Landscape
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../what-is-programming/section-1-quiz.html">
+            
+                <a href="../what-is-programming/section-1-quiz.html">
+            
+                    
+                    2.5 Quiz: What is Programming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../what-is-javascript/">
+            
+                <a href="../what-is-javascript/">
+            
+                    
+                    3 What is JavaScript?
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../what-is-javascript/31-history-of-javascript.html">
+            
+                <a href="../what-is-javascript/31-history-of-javascript.html">
+            
+                    
+                    3.1 History of JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../what-is-javascript/32-javascript-on-the-web.html">
+            
+                <a href="../what-is-javascript/32-javascript-on-the-web.html">
+            
+                    
+                    3.2 JavaScript on the Web
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../what-is-javascript/33-javascript-in-the-wild.html">
+            
+                <a href="../what-is-javascript/33-javascript-in-the-wild.html">
+            
+                    
+                    3.3 JavaScript in the Wild
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../what-is-javascript/34-quiz-what-is-js.html">
+            
+                <a href="../what-is-javascript/34-quiz-what-is-js.html">
+            
+                    
+                    3.4 Quiz: What is JS? 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../basic-syntax/">
+            
+                <a href="../basic-syntax/">
+            
+                    
+                    4 Basic Syntax
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../basic-syntax/41-adding-javascript-to-an-html-file.html">
+            
+                <a href="../basic-syntax/41-adding-javascript-to-an-html-file.html">
+            
+                    
+                    4.1 Adding JavaScript to an HTML File
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../basic-syntax/comments.html">
+            
+                <a href="../basic-syntax/comments.html">
+            
+                    
+                    4.2 Comments
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../basic-syntax/43-operators.html">
+            
+                <a href="../basic-syntax/43-operators.html">
+            
+                    
+                    4.3 Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../basic-syntax/45-variables.html">
+            
+                <a href="../basic-syntax/45-variables.html">
+            
+                    
+                    4.4 Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../basic-syntax/45-coding-style.html">
+            
+                <a href="../basic-syntax/45-coding-style.html">
+            
+                    
+                    4.5 Coding Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../basic-syntax/46-quiz-basic-syntax.html">
+            
+                <a href="../basic-syntax/46-quiz-basic-syntax.html">
+            
+                    
+                    4.6 Quiz: Basic Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../basic-syntax/46-extra-practice.html">
+            
+                <a href="../basic-syntax/46-extra-practice.html">
+            
+                    
+                    4.7 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../data-types/">
+            
+                <a href="../data-types/">
+            
+                    
+                    5 Data Types and Structures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../data-types/51-numbers.html">
+            
+                <a href="../data-types/51-numbers.html">
+            
+                    
+                    5.1 Numbers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../data-types/52-strings.html">
+            
+                <a href="../data-types/52-strings.html">
+            
+                    
+                    5.2 Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../data-types/54-other-primitive-data-types.html">
+            
+                <a href="../data-types/54-other-primitive-data-types.html">
+            
+                    
+                    5.4 Other Primitive Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../data-types/55-objects.html">
+            
+                <a href="../data-types/55-objects.html">
+            
+                    
+                    5.5 Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../data-types/55-arrays.html">
+            
+                <a href="../data-types/55-arrays.html">
+            
+                    
+                    5.7 Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../data-types/57-json.html">
+            
+                <a href="../data-types/57-json.html">
+            
+                    
+                    5.8 JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../data-types/58-working-with-text.html">
+            
+                <a href="../data-types/58-working-with-text.html">
+            
+                    
+                    5.9 Working with Text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../data-types/510-quiz-data-types-and-structures.html">
+            
+                <a href="../data-types/510-quiz-data-types-and-structures.html">
+            
+                    
+                    5.10 Quiz: Data Types and Structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../data-types/511-extra-practice.html">
+            
+                <a href="../data-types/511-extra-practice.html">
+            
+                    
+                    5.11 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    6 Controlling Logical Flow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="61-conditionals.html">
+            
+                <a href="61-conditionals.html">
+            
+                    
+                    6.1 Conditionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="62-for-loops.html">
+            
+                <a href="62-for-loops.html">
+            
+                    
+                    6.2 For Loops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="64-while-loops.html">
+            
+                <a href="64-while-loops.html">
+            
+                    
+                    6.3 While Loops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="63-forof-loops.html">
+            
+                <a href="63-forof-loops.html">
+            
+                    
+                    6.4 Looping Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="65-quiz-controlling-local-flow.html">
+            
+                <a href="65-quiz-controlling-local-flow.html">
+            
+                    
+                    6.5 Quiz: Controlling Local Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="66-extra-practice.html">
+            
+                <a href="66-extra-practice.html">
+            
+                    
+                    6.6 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../organizing-code/">
+            
+                <a href="../organizing-code/">
+            
+                    
+                    7 Organizing Code
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../organizing-code/71-functions.html">
+            
+                <a href="../organizing-code/71-functions.html">
+            
+                    
+                    7.1 Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../organizing-code/72-scoping.html">
+            
+                <a href="../organizing-code/72-scoping.html">
+            
+                    
+                    7.2 Scoping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../organizing-code/73-quiz-organizing-code.html">
+            
+                <a href="../organizing-code/73-quiz-organizing-code.html">
+            
+                    
+                    7.3 Quiz: Organizing Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../organizing-code/74-extra-practice.html">
+            
+                <a href="../organizing-code/74-extra-practice.html">
+            
+                    
+                    7.4 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../object-oriented-javascript/">
+            
+                <a href="../object-oriented-javascript/">
+            
+                    
+                    8 Object Oriented JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../object-oriented-javascript/81-what-is-object-oriented-programming.html">
+            
+                <a href="../object-oriented-javascript/81-what-is-object-oriented-programming.html">
+            
+                    
+                    8.1 What is Object Oriented Programming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../object-oriented-javascript/82-creating-and-using-classes.html">
+            
+                <a href="../object-oriented-javascript/82-creating-and-using-classes.html">
+            
+                    
+                    8.2 Creating and Using Classes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../object-oriented-javascript/82-extending-classes.html">
+            
+                <a href="../object-oriented-javascript/82-extending-classes.html">
+            
+                    
+                    8.3 Extending Classes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../object-oriented-javascript/84-quiz-object-oriented-javascript.html">
+            
+                <a href="../object-oriented-javascript/84-quiz-object-oriented-javascript.html">
+            
+                    
+                    8.4 Quiz: Object Oriented JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../object-oriented-javascript/85-extra-practice.html">
+            
+                <a href="../object-oriented-javascript/85-extra-practice.html">
+            
+                    
+                    8.5 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../the-document-object-model/">
+            
+                <a href="../the-document-object-model/">
+            
+                    
+                    9 The Document Object Model (DOM)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../the-document-object-model/91-selecting-elements-in-the-dom.html">
+            
+                <a href="../the-document-object-model/91-selecting-elements-in-the-dom.html">
+            
+                    
+                    9.1 Selecting Elements in the DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../the-document-object-model/92-creating-and-removing-dom-elements.html">
+            
+                <a href="../the-document-object-model/92-creating-and-removing-dom-elements.html">
+            
+                    
+                    9.2 Creating and Removing DOM Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../the-document-object-model/93-modifying-elements-in-the-dom.html">
+            
+                <a href="../the-document-object-model/93-modifying-elements-in-the-dom.html">
+            
+                    
+                    9.3 Modifying DOM Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../the-document-object-model/94-altering-dom-element-styles.html">
+            
+                <a href="../the-document-object-model/94-altering-dom-element-styles.html">
+            
+                    
+                    9.4 Altering DOM Element Styles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../the-document-object-model/93-html-data-attributes.html">
+            
+                <a href="../the-document-object-model/93-html-data-attributes.html">
+            
+                    
+                    9.5 Using HTML Data Attributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../the-document-object-model/94-quiz-the-dom.html">
+            
+                <a href="../the-document-object-model/94-quiz-the-dom.html">
+            
+                    
+                    9.6 Quiz: The DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../the-document-object-model/97-extra-practice.html">
+            
+                <a href="../the-document-object-model/97-extra-practice.html">
+            
+                    
+                    9.7 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../handling-events/">
+            
+                <a href="../handling-events/">
+            
+                    
+                    10 Handling Events
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../handling-events/101-adding-event-listeners.html">
+            
+                <a href="../handling-events/101-adding-event-listeners.html">
+            
+                    
+                    10.1 Adding Event Listeners
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../handling-events/102-responding-to-events.html">
+            
+                <a href="../handling-events/102-responding-to-events.html">
+            
+                    
+                    10.2 Responding to Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../handling-events/104-custom-events.html">
+            
+                <a href="../handling-events/104-custom-events.html">
+            
+                    
+                    10.3 Custom Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../handling-events/103-detecting-document-load-events.html">
+            
+                <a href="../handling-events/103-detecting-document-load-events.html">
+            
+                    
+                    10.4 Detecting Document Load Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../handling-events/104-quiz-handling-events.html">
+            
+                <a href="../handling-events/104-quiz-handling-events.html">
+            
+                    
+                    10.5 Quiz: Handling Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../handling-events/105-extra-practice.html">
+            
+                <a href="../handling-events/105-extra-practice.html">
+            
+                    
+                    10.6 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../11-conclusion.html">
+            
+                <a href="../11-conclusion.html">
+            
+                    
+                    11 Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../appendix-a-resources-for-learning-more-about-javascript.html">
+            
+                <a href="../appendix-a-resources-for-learning-more-about-javascript.html">
+            
+                    
+                    Appendix A: Resources for Learning More About JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../appendix-b-debugging-tips.html">
+            
+                <a href="../appendix-b-debugging-tips.html">
+            
+                    
+                    Appendix B: Debugging Tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../GLOSSARY.html">
+            
+                <a href="../GLOSSARY.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >6 Controlling Logical Flow</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="controlling-logical-flow">Controlling Logical Flow</h1>
+<p>In all programming languages, and in every program beyond the most basic set of instructions, it&apos;s crucial to control the flow of logic to achieve the desired result. Most programs are built to handle some task, and most of those tasks require the program logic to make decisions about what should be done next. The process of determining what instructions the program should execute next is one of the tasks we work hardest on as we write our code.</p>
+<h2 id="a-big-example">A Big Example</h2>
+<p>Imagine a situation where we have a website that requires users to be logged in and have a verified email address in order to use the features the site provides. This is a common case, and requires the application powering the website to determine a few things:</p>
+<ul>
+<li>Is the user currently logged in?</li>
+</ul>
+<p>This seems like an easy question, and on one level it is: The user&apos;s login state could be represented with a Boolean (<code>true</code> or <code>false</code>). But in order to determine that, we&apos;ve already decided at the very beginning of our application that we need to check if the user is logged in.</p>
+<p>Let&apos;s imagine the user is not currently logged in. What next? We might move the user to a login page so they can login. Now we would encounter even more branching logic:</p>
+<ul>
+<li>Does the user have an account?<ul>
+<li>If so, did the user provide the required credentials to login?<ul>
+<li>If yes, then did the user verify their email?<ul>
+<li>If they <em>did</em> verify their email, then we can finally move them into the app.</li>
+<li>If they did <em>not yet</em> verify their email, then we need to move into the email verification logic.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>If the credentials are bad, redirect the user to an account recovery screen.</li>
+</ul>
+</li>
+</ul>
+<p>But all of that is assuming the user has an account. What if that&apos;s not the case? If the user has not yet created an account, then we know we must go through the account registration <em>and</em> the email verification process before allowing the user to access the website. </p>
+<h2 id="a-smaller-example">A Smaller Example</h2>
+<p>All of the decisions about big picture things like &quot;user registration and verification&quot; can be overwhelming to think about for novice developers. There are a lot of parts to the puzzle, and depending on the business logic (the rules and policies governing business operations) they can be more or less complicated. However, we encounter the need for logical flow control in many smaller ways, too.</p>
+<p>Imagine that we&apos;re writing a page that fetches the posts from a blog. The data might be retrieved from a database or API, but once it has been fetched it&apos;s up to our application code to process the information into something that can be read by a user. In order to do this, we must properly insert the data into an HTML template for processing by the web browser.</p>
+<p>We typically use a loop to process sets of data. Within the loop we might even need to do some checking in order to determine different aspects of the presentation, but in general we would be controlling our logical flow sort of like this:</p>
+<ul>
+<li>Got data. Begin processing.</li>
+<li>Process output of an item.</li>
+<li>Is there another item?<ul>
+<li>If so, process the next item.</li>
+<li>If not, stop looping and move on to next section of code.</li>
+</ul>
+</li>
+</ul>
+<p>This kind of processing is very common and used in large and small ways. Within a loop to present content items there might be smaller loops to, perhaps, display each tag associated with the content, or to list each author on the content.</p>
+<p>Controlling logical flow through different parts of our programs is an essential part of development. In this section we will explore the concepts of conditionals and loops to control logical flow.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../data-types/511-extra-practice.html" class="navigation navigation-prev " aria-label="Previous page: 5.11 Extra Practice">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="61-conditionals.html" class="navigation navigation-next " aria-label="Next page: 6.1 Conditionals">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"6 Controlling Logical Flow","level":"1.6","depth":1,"next":{"title":"6.1 Conditionals","level":"1.6.1","depth":2,"path":"controlling-logical-flow/61-conditionals.md","ref":"controlling-logical-flow/61-conditionals.md","articles":[]},"previous":{"title":"5.11 Extra Practice","level":"1.5.9","depth":2,"path":"data-types/511-extra-practice.md","ref":"data-types/511-extra-practice.md","articles":[]},"dir":"ltr"},"config":{"plugins":["exercises","quiz"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"quiz":{"labels":{"check":"Check my answers","showExplanation":"Explain","showCorrect":"Show all","explanationHeader":"Explanation"},"text":{"noChosen":"Choose at least one answer","incomplete":"Some correct answers are missing"},"buttons":{"showCorrect":true,"showExplanation":true}},"exercises":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"controlling-logical-flow/README.md","mtime":"2017-08-24T00:03:32.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-08-24T00:04:33.822Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-quiz/script.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+
+    </body>
+</html>
+

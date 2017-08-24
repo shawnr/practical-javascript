@@ -1,0 +1,1285 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Appendix B: Debugging Tips · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-quiz/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="GLOSSARY.html" />
+    
+    
+    <link rel="prev" href="appendix-a-resources-for-learning-more-about-javascript.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    1 Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="what-is-programming/">
+            
+                <a href="what-is-programming/">
+            
+                    
+                    2 What Is Programming?
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="what-is-programming/history.html">
+            
+                <a href="what-is-programming/history.html">
+            
+                    
+                    2.1 History
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="what-is-programming/23-programming-languages.html">
+            
+                <a href="what-is-programming/23-programming-languages.html">
+            
+                    
+                    2.2 Programming Languages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="what-is-programming/core-concepts.html">
+            
+                <a href="what-is-programming/core-concepts.html">
+            
+                    
+                    2.3 Core Concepts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="what-is-programming/24-the-code-landscape.html">
+            
+                <a href="what-is-programming/24-the-code-landscape.html">
+            
+                    
+                    2.4 The Code Landscape
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="what-is-programming/section-1-quiz.html">
+            
+                <a href="what-is-programming/section-1-quiz.html">
+            
+                    
+                    2.5 Quiz: What is Programming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="what-is-javascript/">
+            
+                <a href="what-is-javascript/">
+            
+                    
+                    3 What is JavaScript?
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="what-is-javascript/31-history-of-javascript.html">
+            
+                <a href="what-is-javascript/31-history-of-javascript.html">
+            
+                    
+                    3.1 History of JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="what-is-javascript/32-javascript-on-the-web.html">
+            
+                <a href="what-is-javascript/32-javascript-on-the-web.html">
+            
+                    
+                    3.2 JavaScript on the Web
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="what-is-javascript/33-javascript-in-the-wild.html">
+            
+                <a href="what-is-javascript/33-javascript-in-the-wild.html">
+            
+                    
+                    3.3 JavaScript in the Wild
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="what-is-javascript/34-quiz-what-is-js.html">
+            
+                <a href="what-is-javascript/34-quiz-what-is-js.html">
+            
+                    
+                    3.4 Quiz: What is JS? 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="basic-syntax/">
+            
+                <a href="basic-syntax/">
+            
+                    
+                    4 Basic Syntax
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="basic-syntax/41-adding-javascript-to-an-html-file.html">
+            
+                <a href="basic-syntax/41-adding-javascript-to-an-html-file.html">
+            
+                    
+                    4.1 Adding JavaScript to an HTML File
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="basic-syntax/comments.html">
+            
+                <a href="basic-syntax/comments.html">
+            
+                    
+                    4.2 Comments
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="basic-syntax/43-operators.html">
+            
+                <a href="basic-syntax/43-operators.html">
+            
+                    
+                    4.3 Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="basic-syntax/45-variables.html">
+            
+                <a href="basic-syntax/45-variables.html">
+            
+                    
+                    4.4 Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="basic-syntax/45-coding-style.html">
+            
+                <a href="basic-syntax/45-coding-style.html">
+            
+                    
+                    4.5 Coding Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="basic-syntax/46-quiz-basic-syntax.html">
+            
+                <a href="basic-syntax/46-quiz-basic-syntax.html">
+            
+                    
+                    4.6 Quiz: Basic Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="basic-syntax/46-extra-practice.html">
+            
+                <a href="basic-syntax/46-extra-practice.html">
+            
+                    
+                    4.7 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="data-types/">
+            
+                <a href="data-types/">
+            
+                    
+                    5 Data Types and Structures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="data-types/51-numbers.html">
+            
+                <a href="data-types/51-numbers.html">
+            
+                    
+                    5.1 Numbers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="data-types/52-strings.html">
+            
+                <a href="data-types/52-strings.html">
+            
+                    
+                    5.2 Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="data-types/54-other-primitive-data-types.html">
+            
+                <a href="data-types/54-other-primitive-data-types.html">
+            
+                    
+                    5.4 Other Primitive Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="data-types/55-objects.html">
+            
+                <a href="data-types/55-objects.html">
+            
+                    
+                    5.5 Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="data-types/55-arrays.html">
+            
+                <a href="data-types/55-arrays.html">
+            
+                    
+                    5.7 Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="data-types/57-json.html">
+            
+                <a href="data-types/57-json.html">
+            
+                    
+                    5.8 JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="data-types/58-working-with-text.html">
+            
+                <a href="data-types/58-working-with-text.html">
+            
+                    
+                    5.9 Working with Text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="data-types/510-quiz-data-types-and-structures.html">
+            
+                <a href="data-types/510-quiz-data-types-and-structures.html">
+            
+                    
+                    5.10 Quiz: Data Types and Structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="data-types/511-extra-practice.html">
+            
+                <a href="data-types/511-extra-practice.html">
+            
+                    
+                    5.11 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="controlling-logical-flow/">
+            
+                <a href="controlling-logical-flow/">
+            
+                    
+                    6 Controlling Logical Flow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="controlling-logical-flow/61-conditionals.html">
+            
+                <a href="controlling-logical-flow/61-conditionals.html">
+            
+                    
+                    6.1 Conditionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="controlling-logical-flow/62-for-loops.html">
+            
+                <a href="controlling-logical-flow/62-for-loops.html">
+            
+                    
+                    6.2 For Loops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="controlling-logical-flow/64-while-loops.html">
+            
+                <a href="controlling-logical-flow/64-while-loops.html">
+            
+                    
+                    6.3 While Loops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="controlling-logical-flow/63-forof-loops.html">
+            
+                <a href="controlling-logical-flow/63-forof-loops.html">
+            
+                    
+                    6.4 Looping Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="controlling-logical-flow/65-quiz-controlling-local-flow.html">
+            
+                <a href="controlling-logical-flow/65-quiz-controlling-local-flow.html">
+            
+                    
+                    6.5 Quiz: Controlling Local Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="controlling-logical-flow/66-extra-practice.html">
+            
+                <a href="controlling-logical-flow/66-extra-practice.html">
+            
+                    
+                    6.6 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="organizing-code/">
+            
+                <a href="organizing-code/">
+            
+                    
+                    7 Organizing Code
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="organizing-code/71-functions.html">
+            
+                <a href="organizing-code/71-functions.html">
+            
+                    
+                    7.1 Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="organizing-code/72-scoping.html">
+            
+                <a href="organizing-code/72-scoping.html">
+            
+                    
+                    7.2 Scoping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="organizing-code/73-quiz-organizing-code.html">
+            
+                <a href="organizing-code/73-quiz-organizing-code.html">
+            
+                    
+                    7.3 Quiz: Organizing Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="organizing-code/74-extra-practice.html">
+            
+                <a href="organizing-code/74-extra-practice.html">
+            
+                    
+                    7.4 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="object-oriented-javascript/">
+            
+                <a href="object-oriented-javascript/">
+            
+                    
+                    8 Object Oriented JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="object-oriented-javascript/81-what-is-object-oriented-programming.html">
+            
+                <a href="object-oriented-javascript/81-what-is-object-oriented-programming.html">
+            
+                    
+                    8.1 What is Object Oriented Programming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="object-oriented-javascript/82-creating-and-using-classes.html">
+            
+                <a href="object-oriented-javascript/82-creating-and-using-classes.html">
+            
+                    
+                    8.2 Creating and Using Classes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="object-oriented-javascript/82-extending-classes.html">
+            
+                <a href="object-oriented-javascript/82-extending-classes.html">
+            
+                    
+                    8.3 Extending Classes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="object-oriented-javascript/84-quiz-object-oriented-javascript.html">
+            
+                <a href="object-oriented-javascript/84-quiz-object-oriented-javascript.html">
+            
+                    
+                    8.4 Quiz: Object Oriented JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="object-oriented-javascript/85-extra-practice.html">
+            
+                <a href="object-oriented-javascript/85-extra-practice.html">
+            
+                    
+                    8.5 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="the-document-object-model/">
+            
+                <a href="the-document-object-model/">
+            
+                    
+                    9 The Document Object Model (DOM)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="the-document-object-model/91-selecting-elements-in-the-dom.html">
+            
+                <a href="the-document-object-model/91-selecting-elements-in-the-dom.html">
+            
+                    
+                    9.1 Selecting Elements in the DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="the-document-object-model/92-creating-and-removing-dom-elements.html">
+            
+                <a href="the-document-object-model/92-creating-and-removing-dom-elements.html">
+            
+                    
+                    9.2 Creating and Removing DOM Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="the-document-object-model/93-modifying-elements-in-the-dom.html">
+            
+                <a href="the-document-object-model/93-modifying-elements-in-the-dom.html">
+            
+                    
+                    9.3 Modifying DOM Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="the-document-object-model/94-altering-dom-element-styles.html">
+            
+                <a href="the-document-object-model/94-altering-dom-element-styles.html">
+            
+                    
+                    9.4 Altering DOM Element Styles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="the-document-object-model/93-html-data-attributes.html">
+            
+                <a href="the-document-object-model/93-html-data-attributes.html">
+            
+                    
+                    9.5 Using HTML Data Attributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="the-document-object-model/94-quiz-the-dom.html">
+            
+                <a href="the-document-object-model/94-quiz-the-dom.html">
+            
+                    
+                    9.6 Quiz: The DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="the-document-object-model/97-extra-practice.html">
+            
+                <a href="the-document-object-model/97-extra-practice.html">
+            
+                    
+                    9.7 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="handling-events/">
+            
+                <a href="handling-events/">
+            
+                    
+                    10 Handling Events
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="handling-events/101-adding-event-listeners.html">
+            
+                <a href="handling-events/101-adding-event-listeners.html">
+            
+                    
+                    10.1 Adding Event Listeners
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="handling-events/102-responding-to-events.html">
+            
+                <a href="handling-events/102-responding-to-events.html">
+            
+                    
+                    10.2 Responding to Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="handling-events/104-custom-events.html">
+            
+                <a href="handling-events/104-custom-events.html">
+            
+                    
+                    10.3 Custom Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="handling-events/103-detecting-document-load-events.html">
+            
+                <a href="handling-events/103-detecting-document-load-events.html">
+            
+                    
+                    10.4 Detecting Document Load Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="handling-events/104-quiz-handling-events.html">
+            
+                <a href="handling-events/104-quiz-handling-events.html">
+            
+                    
+                    10.5 Quiz: Handling Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="handling-events/105-extra-practice.html">
+            
+                <a href="handling-events/105-extra-practice.html">
+            
+                    
+                    10.6 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="11-conclusion.html">
+            
+                <a href="11-conclusion.html">
+            
+                    
+                    11 Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="appendix-a-resources-for-learning-more-about-javascript.html">
+            
+                <a href="appendix-a-resources-for-learning-more-about-javascript.html">
+            
+                    
+                    Appendix A: Resources for Learning More About JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="appendix-b-debugging-tips.html">
+            
+                <a href="appendix-b-debugging-tips.html">
+            
+                    
+                    Appendix B: Debugging Tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="GLOSSARY.html">
+            
+                <a href="GLOSSARY.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Appendix B: Debugging Tips</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="debugging-tips">Debugging Tips</h1>
+<p>Anytime we write code, we expect to encounter errors. In code, we call errors <a href="https://en.wikipedia.org/wiki/Software_bug" target="_blank">&quot;bugs&quot;</a> and we call the process of tracking down and fixing errors &quot;debugging&quot;. These bugs can come from syntax errors (when we misplace a comma, semicolon, brace, etc.) or from logical errors (when we make a mistake in calculating data or accessing a variable). Syntax errors are often the most frustrating for new developers because they consist mainly of things that are difficult for the untrained eye to spot. We have great tools for helping us find syntax errors, and once we get used to a language, those errors are not nearly as frustrating as they are to begin with. However, we still face the tricky task of figuring out our logical errors. Logical errors often require a more nuanced approach to debugging.</p>
+<p>The process (and art) of debugging is enough to fill an entire book on its own, but we will review some methods that will often help find and fix bugs in our code.</p>
+<div class="tip-box">
+    <h2 id="always-look-at-the-console">Always Look at the Console</h2>
+    <p>Whenever something isn&apos;t working properly in your JavaScript, always open up the developer tools in whatever browser you&apos;re using and check out the JavaScript console. The console will usually show what errors have been triggered by the page, and they will often give you a specific filename and line number where the error has been found. The console is an incredibly useful tool for developing JavaScript, so don&apos;t forget to consult the console (and your other developer tools) whenever something goes wrong.</p>
+</div>
+
+<h2 id="syntax-errors">Syntax Errors</h2>
+<p>Syntax errors consist of errors that are caused by some bad text in our code. Here are some common syntax errors:</p>
+<pre><code class="lang-js">let myString = &apos;Some text here; // Syntax error: no closing quote.
+let myArray = [1, 2, 3,]; // Syntax error: trailing comma in Array definition.
+
+if (x &lt; 12) {
+    console.log(x);
+
+// Syntax error: conditional statement has no closing brace.
+</code></pre>
+<p>These errors are annoying, but they tend to be the easiest to fix. </p>
+<h3 id="check-the-console">Check the Console</h3>
+<p>Like the tip above says, we always begin by checking the console. In the case of syntax errors the console will usually lead you to the specific file and line number, often with a helpful link. Sometimes syntax errors actually exist on the line before the one that triggers the error, so be sure to look around the line noted in the console if you don&apos;t find the error right away. Here are some tips for where to look to resolve syntax errors:</p>
+<ul>
+<li>Look on the line (or lines) before the one indicated in the console. For many syntax errors they register on the line after the missing quote, semicolon, etc.</li>
+<li>When the console indicates the last line of the file, look closely at the curly braces and how we&apos;ve closed all of the code blocks. </li>
+<li>Go through and fix up all of our indentation and spacing. We often find syntax errors when we clean up our style, and lining up our code blocks helps figure out where we&apos;ve forgotten to close things.</li>
+</ul>
+<h3 id="prevent-the-error">Prevent the Error</h3>
+<p>If we use tools like linters in our editors, we can be alerted to syntax errors before we see them in the browser. Sometimes if we see a line number indicated in an error in the JavaScript console we can return to our editor and notice a warning or error that will help track down the error. Using tools in our editor to alert us to the simplest syntax errors is a great way to avoid needless frustration. Anticipate that everyone makes typos and mistakes, so it&apos;s no shame to rely on tools to help us discover those bugs.</p>
+<h2 id="logical-errors">Logical Errors</h2>
+<p>Logical errors are much more difficult to track down and fix. They involve a mistake in our logic that leads to an incorrect value or some erroneous logical flow. Because these errors do not trigger syntactical errors, and often do not trigger any error at all in the JavaScript <a href="GLOSSARY.html#interpreter" class="glossary-term" title="An application used to convert source code in a given programming language into machine instructions that can be executed by the computing hardware.">interpreter</a>, they can be very difficult to track down and fix.</p>
+<p>The first step to fixing any bug of this sort is to <strong>reproduce the error</strong>. It is impossible to fix a bug that we cannot reproduce, and if we cannot reproduce a bug then we can never verify a fix. If the error happens every time, then we are lucky. The toughest bugs to fix are those that only show up in very specific (and possibly rare) circumstances. </p>
+<p>When working to reproduce a bug, try to follow these steps:</p>
+<ul>
+<li>Note exactly what you did to cause the bug.</li>
+<li>Come up with a set of inputs or steps that lead to the bug and write them down.</li>
+<li>Work with a colleague to have them reproduce the bug on their own using your steps.</li>
+<li>If you cannot figure out how to reproduce a bug, be sure to capture as much information about your system and actions whenever you do manage to make the bug happen.</li>
+</ul>
+<p>Remember: <strong>If you cannot reproduce a bug then you cannot fix the bug.</strong></p>
+<p>Once you can make a bug happen again, you can begin to track down a fix.</p>
+<h2 id="console-logging">Console Logging</h2>
+<p>Throughout the code in this book we have used the <code>console.log()</code> command to output information to the JavaScript console. This is a valuable tool that can allow us to emit messages to the JavaScript console to track the movement of information and logic in our programs. We can use <code>console.log()</code> to help verify that things we can&apos;t otherwise &quot;see&quot; are happening. Here is an example:</p>
+<pre><code>let maxNum = 20;
+
+for (let i = 1; i&lt;=20; i++) {
+    if (i % 2 === 0 ) {
+        console.log(`${i} is even`);
+        // additional program logic
+    } else {
+        console.log(`${i} is odd`);
+        // additional program logic
+    }
+}
+</code></pre><p>In the example above, the <code>console.log()</code> command is used to ping some information out to the console that we can use to verify our conditional is working properly. If we start seeing messages saying things like <code>&quot;3 is even&quot;</code> then we know that something is wrong.</p>
+<h2 id="debugger">Debugger</h2>
+<p>When <code>console.log()</code> is not enough, we can use the JavaScript Debugger, which exists in the developer tools for every major browser. When we use the debugger, we invoke a &quot;breakpoint&quot;, which is like putting a big stop sign in our code. When the JavaScript <a href="GLOSSARY.html#interpreter" class="glossary-term" title="An application used to convert source code in a given programming language into machine instructions that can be executed by the computing hardware.">interpreter</a> hits the breakpoint, it stops and &quot;freezes time&quot; in the execution of the code. This can be very useful because we can then look at all the values of the code at that moment in the execution. This is extremely helpful in figuring out what went wrong.</p>
+<p>Exactly how this works will vary just a little bit from browser to browser. Below I&apos;ve linked to suitable tutorials covering the developer tools in all of the major browsers. But by way of an example, consider this:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">capitalizeEachWord</span>(<span class="hljs-params">text</span>) </span>{
+    <span class="hljs-keyword">let</span> wordArray = text.split(<span class="hljs-string">&apos; &apos;</span>);
+    <span class="hljs-keyword">let</span> newWordArray = [];
+    <span class="hljs-keyword">for</span> (word <span class="hljs-keyword">of</span> wordArray){
+        <span class="hljs-keyword">let</span> firstLetter = word[<span class="hljs-number">0</span>].toUpperCase()
+        <span class="hljs-keyword">let</span> wordRemainder = word.slice(<span class="hljs-number">1</span>);
+        <span class="hljs-keyword">let</span> newWord = firstLetter + wordRemainder;
+        newWordArray.push(newWord);
+        <span class="hljs-keyword">debugger</span>;
+    }
+
+    <span class="hljs-keyword">return</span> newWordArray.join(<span class="hljs-string">&apos; &apos;</span>);
+}
+
+<span class="hljs-keyword">let</span> myText = capitalizeEachWord(<span class="hljs-string">&quot;capitalize this text&quot;</span>);
+
+<span class="hljs-built_in">console</span>.log(myText);
+</code></pre>
+<p>That code snippet has a <code>debugger</code> command in the <code>for</code> loop within the <code>capitalizeEachWord()</code> function. This will freeze the execution of the code like this:</p>
+<p><img src="images/debugger-stopped.png" alt="Debugger Stopped at Breakpoint">
+<br><strong>Debugger Stopped at Breakpoint</strong></p>
+<p>In the image above we can see that the debugger has stopped at the line with the <code>debugger</code> command. This has caused the JavaScript debugger in Chrome Devtools to show us the current values of the variables in use around this line of code. We can take a closer look at these values in the &quot;<a href="GLOSSARY.html#scope" class="glossary-term" title="The context of the code, including all known object, function, and variable references, as it is executed by the interpreter.">scope</a>&quot; panel:</p>
+<p><img src="images/debugger-scope.png" alt="Debugger Scope Panel">
+<br><strong>Debugger <a href="GLOSSARY.html#scope" class="glossary-term" title="The context of the code, including all known object, function, and variable references, as it is executed by the interpreter.">Scope</a> Panel</strong></p>
+<p>In the &quot;<a href="GLOSSARY.html#scope" class="glossary-term" title="The context of the code, including all known object, function, and variable references, as it is executed by the interpreter.">scope</a>&quot; panel we can see the values of the variables available at the moment that the <code>debugger</code> line has been executed. We could alter these values using the JavaScript console and we can use the big &quot;play&quot; button at the top of the debugger window to continue executing code. Since our <code>debugger</code> command is in a <code>for</code> loop, it will pause the program each time it executes. In this way, we can watch the values change on each iteration of the <code>for</code> loop.</p>
+<div class="tip-box">
+    <h2 id="learn-your-dev-tools">Learn Your Dev Tools</h2>
+    <p>Although we can use the <code>debugger</code> command in pretty much any browser, there is always a danger that we could forget to remove that line from our code after we&apos;ve figured out the problem. This is fairly common, and, as a result, developers tend not to use the `debugger` command to set a breakpoint.</p>
+    <p>Every major browser provides developer tools of some kind, and these all allow you to set breakpoints by clicking on the line number in the code view within the developer tools. Setting breakpoints using the interface in our browser&apos;s developer tools is safer because we avoid making any changes directly to our code. It allows us to quickly set and remove breakpoints as we try to find and fix bugs. Consult the resources listed below for more information about how to get the most from our debugging tools.</p>
+</div>
+
+<h2 id="additional-resources">Additional Resources</h2>
+<p>The amazing developers and community of people who make and use different tools to help with development and debugging also create a lot of educational resources. Check out these resources for more information about how to debug code.</p>
+<h3 id="suitable-for-beginners">Suitable for Beginners</h3>
+<p><strong>Chrome</strong></p>
+<ul>
+<li><a href="https://developers.google.com/web/tools/chrome-devtools/" target="_blank">Chrome Devtools Overview</a></li>
+<li><a href="https://developers.google.com/web/tools/chrome-devtools/javascript/" target="_blank">Get Started Debugging JavaScript with Chrome Developer Tools</a></li>
+<li><a href="https://developers.google.com/web/tools/chrome-devtools/javascript/breakpoints" target="_blank">Pausing Your Code With Breakpoints</a></li>
+</ul>
+<p><strong>Firefox</strong></p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Tools/Debugger" target="_blank">Firefox Debugger Overview</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Debugging/Debugging_JavaScript" target="_blank">Debugging JavaScript</a></li>
+</ul>
+<p><strong> MS Edge and IE</strong></p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/microsoft-edge/f12-devtools-guide" target="_blank">F12 Devtools Guide</a> (MS IE and Edge)</li>
+</ul>
+<h3 id="more-advanced-resources">More Advanced Resources</h3>
+<ul>
+<li><a href="https://developers.google.com/web/tools/chrome-devtools/javascript/reference" target="_blank">JavaScript Debugging Reference</a></li>
+<li><a href="https://raygun.com/blog/javascript-debugging/" target="_blank">JavaScript Debugging Tips</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="appendix-a-resources-for-learning-more-about-javascript.html" class="navigation navigation-prev " aria-label="Previous page: Appendix A: Resources for Learning More About JavaScript">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="GLOSSARY.html" class="navigation navigation-next " aria-label="Next page: Glossary">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Appendix B: Debugging Tips","level":"1.13","depth":1,"next":{"title":"Glossary","level":"1.14","depth":1,"path":"GLOSSARY.md","ref":"GLOSSARY.md","articles":[]},"previous":{"title":"Appendix A: Resources for Learning More About JavaScript","level":"1.12","depth":1,"path":"appendix-a-resources-for-learning-more-about-javascript.md","ref":"appendix-a-resources-for-learning-more-about-javascript.md","articles":[]},"dir":"ltr"},"config":{"plugins":["exercises","quiz"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"quiz":{"labels":{"check":"Check my answers","showExplanation":"Explain","showCorrect":"Show all","explanationHeader":"Explanation"},"text":{"noChosen":"Choose at least one answer","incomplete":"Some correct answers are missing"},"buttons":{"showCorrect":true,"showExplanation":true}},"exercises":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"appendix-b-debugging-tips.md","mtime":"2017-08-24T00:03:32.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-08-24T00:04:33.822Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-quiz/script.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+
+    </body>
+</html>
+

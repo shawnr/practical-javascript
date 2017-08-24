@@ -1,0 +1,16 @@
+.no-quiz { display: none;}
+
+.tip-box {
+    background: #edf7ff;
+    padding: 1rem 4rem;
+    border: #999 double 4px;
+}
+.tip-box h3 {
+    margin: 1rem 0 0 0;
+}
+.page-inner .exercise div.editor.ace_editor {
+    min-height: 300px !important;
+}
+.tip-box pre {
+    font-size: 12px;
+}

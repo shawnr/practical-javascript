@@ -1,0 +1,1471 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>10.2 Responding to Events · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-quiz/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="104-custom-events.html" />
+    
+    
+    <link rel="prev" href="101-adding-event-listeners.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1 Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../what-is-programming/">
+            
+                <a href="../what-is-programming/">
+            
+                    
+                    2 What Is Programming?
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../what-is-programming/history.html">
+            
+                <a href="../what-is-programming/history.html">
+            
+                    
+                    2.1 History
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../what-is-programming/23-programming-languages.html">
+            
+                <a href="../what-is-programming/23-programming-languages.html">
+            
+                    
+                    2.2 Programming Languages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../what-is-programming/core-concepts.html">
+            
+                <a href="../what-is-programming/core-concepts.html">
+            
+                    
+                    2.3 Core Concepts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../what-is-programming/24-the-code-landscape.html">
+            
+                <a href="../what-is-programming/24-the-code-landscape.html">
+            
+                    
+                    2.4 The Code Landscape
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../what-is-programming/section-1-quiz.html">
+            
+                <a href="../what-is-programming/section-1-quiz.html">
+            
+                    
+                    2.5 Quiz: What is Programming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../what-is-javascript/">
+            
+                <a href="../what-is-javascript/">
+            
+                    
+                    3 What is JavaScript?
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../what-is-javascript/31-history-of-javascript.html">
+            
+                <a href="../what-is-javascript/31-history-of-javascript.html">
+            
+                    
+                    3.1 History of JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../what-is-javascript/32-javascript-on-the-web.html">
+            
+                <a href="../what-is-javascript/32-javascript-on-the-web.html">
+            
+                    
+                    3.2 JavaScript on the Web
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../what-is-javascript/33-javascript-in-the-wild.html">
+            
+                <a href="../what-is-javascript/33-javascript-in-the-wild.html">
+            
+                    
+                    3.3 JavaScript in the Wild
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../what-is-javascript/34-quiz-what-is-js.html">
+            
+                <a href="../what-is-javascript/34-quiz-what-is-js.html">
+            
+                    
+                    3.4 Quiz: What is JS? 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../basic-syntax/">
+            
+                <a href="../basic-syntax/">
+            
+                    
+                    4 Basic Syntax
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../basic-syntax/41-adding-javascript-to-an-html-file.html">
+            
+                <a href="../basic-syntax/41-adding-javascript-to-an-html-file.html">
+            
+                    
+                    4.1 Adding JavaScript to an HTML File
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../basic-syntax/comments.html">
+            
+                <a href="../basic-syntax/comments.html">
+            
+                    
+                    4.2 Comments
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../basic-syntax/43-operators.html">
+            
+                <a href="../basic-syntax/43-operators.html">
+            
+                    
+                    4.3 Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../basic-syntax/45-variables.html">
+            
+                <a href="../basic-syntax/45-variables.html">
+            
+                    
+                    4.4 Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../basic-syntax/45-coding-style.html">
+            
+                <a href="../basic-syntax/45-coding-style.html">
+            
+                    
+                    4.5 Coding Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../basic-syntax/46-quiz-basic-syntax.html">
+            
+                <a href="../basic-syntax/46-quiz-basic-syntax.html">
+            
+                    
+                    4.6 Quiz: Basic Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../basic-syntax/46-extra-practice.html">
+            
+                <a href="../basic-syntax/46-extra-practice.html">
+            
+                    
+                    4.7 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../data-types/">
+            
+                <a href="../data-types/">
+            
+                    
+                    5 Data Types and Structures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../data-types/51-numbers.html">
+            
+                <a href="../data-types/51-numbers.html">
+            
+                    
+                    5.1 Numbers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../data-types/52-strings.html">
+            
+                <a href="../data-types/52-strings.html">
+            
+                    
+                    5.2 Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../data-types/54-other-primitive-data-types.html">
+            
+                <a href="../data-types/54-other-primitive-data-types.html">
+            
+                    
+                    5.4 Other Primitive Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../data-types/55-objects.html">
+            
+                <a href="../data-types/55-objects.html">
+            
+                    
+                    5.5 Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../data-types/55-arrays.html">
+            
+                <a href="../data-types/55-arrays.html">
+            
+                    
+                    5.7 Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../data-types/57-json.html">
+            
+                <a href="../data-types/57-json.html">
+            
+                    
+                    5.8 JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../data-types/58-working-with-text.html">
+            
+                <a href="../data-types/58-working-with-text.html">
+            
+                    
+                    5.9 Working with Text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../data-types/510-quiz-data-types-and-structures.html">
+            
+                <a href="../data-types/510-quiz-data-types-and-structures.html">
+            
+                    
+                    5.10 Quiz: Data Types and Structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../data-types/511-extra-practice.html">
+            
+                <a href="../data-types/511-extra-practice.html">
+            
+                    
+                    5.11 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../controlling-logical-flow/">
+            
+                <a href="../controlling-logical-flow/">
+            
+                    
+                    6 Controlling Logical Flow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../controlling-logical-flow/61-conditionals.html">
+            
+                <a href="../controlling-logical-flow/61-conditionals.html">
+            
+                    
+                    6.1 Conditionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../controlling-logical-flow/62-for-loops.html">
+            
+                <a href="../controlling-logical-flow/62-for-loops.html">
+            
+                    
+                    6.2 For Loops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../controlling-logical-flow/64-while-loops.html">
+            
+                <a href="../controlling-logical-flow/64-while-loops.html">
+            
+                    
+                    6.3 While Loops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../controlling-logical-flow/63-forof-loops.html">
+            
+                <a href="../controlling-logical-flow/63-forof-loops.html">
+            
+                    
+                    6.4 Looping Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../controlling-logical-flow/65-quiz-controlling-local-flow.html">
+            
+                <a href="../controlling-logical-flow/65-quiz-controlling-local-flow.html">
+            
+                    
+                    6.5 Quiz: Controlling Local Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../controlling-logical-flow/66-extra-practice.html">
+            
+                <a href="../controlling-logical-flow/66-extra-practice.html">
+            
+                    
+                    6.6 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../organizing-code/">
+            
+                <a href="../organizing-code/">
+            
+                    
+                    7 Organizing Code
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../organizing-code/71-functions.html">
+            
+                <a href="../organizing-code/71-functions.html">
+            
+                    
+                    7.1 Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../organizing-code/72-scoping.html">
+            
+                <a href="../organizing-code/72-scoping.html">
+            
+                    
+                    7.2 Scoping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../organizing-code/73-quiz-organizing-code.html">
+            
+                <a href="../organizing-code/73-quiz-organizing-code.html">
+            
+                    
+                    7.3 Quiz: Organizing Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../organizing-code/74-extra-practice.html">
+            
+                <a href="../organizing-code/74-extra-practice.html">
+            
+                    
+                    7.4 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../object-oriented-javascript/">
+            
+                <a href="../object-oriented-javascript/">
+            
+                    
+                    8 Object Oriented JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../object-oriented-javascript/81-what-is-object-oriented-programming.html">
+            
+                <a href="../object-oriented-javascript/81-what-is-object-oriented-programming.html">
+            
+                    
+                    8.1 What is Object Oriented Programming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../object-oriented-javascript/82-creating-and-using-classes.html">
+            
+                <a href="../object-oriented-javascript/82-creating-and-using-classes.html">
+            
+                    
+                    8.2 Creating and Using Classes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../object-oriented-javascript/82-extending-classes.html">
+            
+                <a href="../object-oriented-javascript/82-extending-classes.html">
+            
+                    
+                    8.3 Extending Classes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../object-oriented-javascript/84-quiz-object-oriented-javascript.html">
+            
+                <a href="../object-oriented-javascript/84-quiz-object-oriented-javascript.html">
+            
+                    
+                    8.4 Quiz: Object Oriented JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../object-oriented-javascript/85-extra-practice.html">
+            
+                <a href="../object-oriented-javascript/85-extra-practice.html">
+            
+                    
+                    8.5 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../the-document-object-model/">
+            
+                <a href="../the-document-object-model/">
+            
+                    
+                    9 The Document Object Model (DOM)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../the-document-object-model/91-selecting-elements-in-the-dom.html">
+            
+                <a href="../the-document-object-model/91-selecting-elements-in-the-dom.html">
+            
+                    
+                    9.1 Selecting Elements in the DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../the-document-object-model/92-creating-and-removing-dom-elements.html">
+            
+                <a href="../the-document-object-model/92-creating-and-removing-dom-elements.html">
+            
+                    
+                    9.2 Creating and Removing DOM Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../the-document-object-model/93-modifying-elements-in-the-dom.html">
+            
+                <a href="../the-document-object-model/93-modifying-elements-in-the-dom.html">
+            
+                    
+                    9.3 Modifying DOM Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../the-document-object-model/94-altering-dom-element-styles.html">
+            
+                <a href="../the-document-object-model/94-altering-dom-element-styles.html">
+            
+                    
+                    9.4 Altering DOM Element Styles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../the-document-object-model/93-html-data-attributes.html">
+            
+                <a href="../the-document-object-model/93-html-data-attributes.html">
+            
+                    
+                    9.5 Using HTML Data Attributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../the-document-object-model/94-quiz-the-dom.html">
+            
+                <a href="../the-document-object-model/94-quiz-the-dom.html">
+            
+                    
+                    9.6 Quiz: The DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../the-document-object-model/97-extra-practice.html">
+            
+                <a href="../the-document-object-model/97-extra-practice.html">
+            
+                    
+                    9.7 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    10 Handling Events
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="101-adding-event-listeners.html">
+            
+                <a href="101-adding-event-listeners.html">
+            
+                    
+                    10.1 Adding Event Listeners
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.2" data-path="102-responding-to-events.html">
+            
+                <a href="102-responding-to-events.html">
+            
+                    
+                    10.2 Responding to Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="104-custom-events.html">
+            
+                <a href="104-custom-events.html">
+            
+                    
+                    10.3 Custom Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="103-detecting-document-load-events.html">
+            
+                <a href="103-detecting-document-load-events.html">
+            
+                    
+                    10.4 Detecting Document Load Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="104-quiz-handling-events.html">
+            
+                <a href="104-quiz-handling-events.html">
+            
+                    
+                    10.5 Quiz: Handling Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="105-extra-practice.html">
+            
+                <a href="105-extra-practice.html">
+            
+                    
+                    10.6 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../11-conclusion.html">
+            
+                <a href="../11-conclusion.html">
+            
+                    
+                    11 Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../appendix-a-resources-for-learning-more-about-javascript.html">
+            
+                <a href="../appendix-a-resources-for-learning-more-about-javascript.html">
+            
+                    
+                    Appendix A: Resources for Learning More About JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../appendix-b-debugging-tips.html">
+            
+                <a href="../appendix-b-debugging-tips.html">
+            
+                    
+                    Appendix B: Debugging Tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../GLOSSARY.html">
+            
+                <a href="../GLOSSARY.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >10.2 Responding to Events</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="responding-to-events">Responding to Events</h1>
+<p>When an event listener detects an event signal in the system, it executes the specified function, which we call an <em><a href="../GLOSSARY.html#event-handler" class="glossary-term" title="A function that is associated with an event listener and which is called when the event is triggered.">event handler</a></em>. This can be a <a href="../GLOSSARY.html#named-function" class="glossary-term" title="A function that is declared with the function functionName(){} syntax. This function has a named reference that is available within its scope and context.">named function</a> or an <a href="../GLOSSARY.html#anonymous-function" class="glossary-term" title="A function that is defined as part of a method call or object definition such that it does not take on a name of it&apos;s own. Here is an example of an anonymous function used in an addEventListener() method call.">anonymous function</a>. The event listener passes in the <code>Event</code> object, which contains information about the event itself including the <code>target</code> of the event (which is usually the button or link that was clicked, the form that was submitted, etc.). We can use all of these components of an event to make decisions in our code about what lines to execute next. </p>
+<p>Let&apos;s take a look at more examples of how we can use this information to respond to events, and how to prevent default browser actions from executing when an event is triggered.</p>
+<h2 id="named-vs-anonymous-functions">Named vs. Anonymous Functions</h2>
+<p>There are two ways to define the functions that are executed when an event signal is detected by an event listener. The way used in the examples in the previous section uses a <em><a href="../GLOSSARY.html#named-function" class="glossary-term" title="A function that is declared with the function functionName(){} syntax. This function has a named reference that is available within its scope and context.">named function</a></em> that is executed when the listener detects an event signal. Here is an example.</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myAction</span>(<span class="hljs-params">event</span>)</span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;My action has been triggered!&apos;</span>);
+}
+
+<span class="hljs-keyword">let</span> button = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;button&apos;</span>);
+button.addEventListener(<span class="hljs-string">&apos;click&apos;</span>, myAction);
+</code></pre>
+<p>In the example above, we define a function called <code>myAction()</code> that accepts a parameter called <code>event</code>. Then we select a <code>button</code> element from the DOM and add an event listener watching for the <code>&apos;click&apos;</code> event. This approach is clear and easy to read, and it allows for the same action to be attached to multiple events. In the case where you need to add a listener that would call the <code>myAction()</code> function to multiple DOM elements, this could be a more efficient and clear way to do so.</p>
+<p>However, we often want to add a singular event listener to a single DOM element. In this case, many developers consider it more efficient and just as clear to create an event listener that calls an <em><a href="../GLOSSARY.html#anonymous-function" class="glossary-term" title="A function that is defined as part of a method call or object definition such that it does not take on a name of it&apos;s own. Here is an example of an anonymous function used in an addEventListener() method call.">anonymous function</a></em>. Here is an example of that approach.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> button = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;button&apos;</span>);
+button.addEventListener(<span class="hljs-string">&apos;click&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>)</span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;My action has been triggered!&apos;</span>);
+});
+</code></pre>
+<p>The result of this code is exactly the same as the code in the previous example: An event listener is added to a <code>button</code> element in the DOM that causes a function to be executed that, in this case, writes a log message to the console. We can understand why some developers prefer this approach because it uses fewer lines of code and it keeps all of the logic directly connected to the event listener contained within that code block. JavaScript makes a lot of use of anonymous functions in many situations, so this is not an unusual style choice.</p>
+<h2 id="using-event-objects">Using Event Objects</h2>
+<p>Each event signal detected in the system triggers a call to the <a href="../GLOSSARY.html#event-handler" class="glossary-term" title="A function that is associated with an event listener and which is called when the event is triggered.">event handler</a> that is defined in the event listener. The function that handles the event always receives an <code>Event</code> object as a parameter. This object can be used to access different information about the event. Here is an example of using information from the <code>Event</code> object within an <a href="../GLOSSARY.html#event-handler" class="glossary-term" title="A function that is associated with an event listener and which is called when the event is triggered.">event handler</a>.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> button = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;button&apos;</span>);
+button.addEventListener(<span class="hljs-string">&apos;click&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>)</span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Action was triggered by <span class="hljs-subst">${event.target}</span> at <span class="hljs-subst">${event.timestamp}</span>.`</span>);
+    event.target.style.backgroundColor = <span class="hljs-string">&apos;goldenrod&apos;</span>;
+    <span class="hljs-keyword">let</span> itemID = event.target.dataset.itemID;
+});
+</code></pre>
+<p>There are several attributes, like <code>Event.timestamp</code> that can be used to respond to events signals, but the most common aspect of the <code>Event</code> object to use within an <a href="../GLOSSARY.html#event-handler" class="glossary-term" title="A function that is associated with an event listener and which is called when the event is triggered.">event handler</a> is the <code>Event.target</code> object. <code>Event.target</code> is the DOM element object that triggered the <a href="../GLOSSARY.html#event-handler" class="glossary-term" title="A function that is associated with an event listener and which is called when the event is triggered.">event handler</a>. In the example above, <code>event.target</code> is the <code>button</code> object.</p>
+<p>Within the <a href="../GLOSSARY.html#event-handler" class="glossary-term" title="A function that is associated with an event listener and which is called when the event is triggered.">event handler</a>, <code>event.target</code> can be used to access any information stored in the DOM element object. We can alter attributes of the object (such as the style alteration in the example code), and we can read in any attribute values (such as the <code>itemID</code>, which is read from the <code>event.target.dataset</code> object). This means we can use the same event to handle multiple elements on the page. Consider the following example of a system where favoriting content is possible.</p>
+<p><strong>html</strong></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;search-results&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Content Item Title 1 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fave-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#favorite&quot;</span> <span class="hljs-attr">data-contentId</span>=<span class="hljs-string">&quot;1&quot;</span>&gt;</span>Add to favorites<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Content Item Title 2 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fave-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#favorite&quot;</span> <span class="hljs-attr">data-contentId</span>=<span class="hljs-string">&quot;2&quot;</span>&gt;</span>Add to favorites<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Content Item Title 3 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fave-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#favorite&quot;</span> <span class="hljs-attr">data-contentId</span>=<span class="hljs-string">&quot;3&quot;</span>&gt;</span>Add to favorites<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Content Item Title 4 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fave-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#favorite&quot;</span> <span class="hljs-attr">data-contentId</span>=<span class="hljs-string">&quot;4&quot;</span>&gt;</span>Add to favorites<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Content Item Title 5 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fave-link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#favorite&quot;</span> <span class="hljs-attr">data-contentId</span>=<span class="hljs-string">&quot;5&quot;</span>&gt;</span>Add to favorites<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+<p><strong>js</strong></p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> faveLinks = <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&apos;.fave-link&apos;</span>);
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> link <span class="hljs-keyword">of</span> faveLinks) {
+    link.addEventListener(<span class="hljs-string">&apos;click&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>)</span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Adding <span class="hljs-subst">${event.target.dataset.contentId}</span> to user favorites.`</span>);
+    });
+}
+</code></pre>
+<p>In the example above, we have some HTML that contains multiple content item listings. Each item has a &quot;fave link&quot; that allows a user to add the item to their &quot;Favorites&quot; list. Each of those links has a <code>data-contentId</code> attribute that stores the ID for the content item.</p>
+<p>In our JavaScript, we have used a <code>document.querySelectorAll()</code> command to select all of the links, and then we loop through each link and add an event listener that will call an <a href="../GLOSSARY.html#anonymous-function" class="glossary-term" title="A function that is defined as part of a method call or object definition such that it does not take on a name of it&apos;s own. Here is an example of an anonymous function used in an addEventListener() method call.">anonymous function</a>. The <a href="../GLOSSARY.html#anonymous-function" class="glossary-term" title="A function that is defined as part of a method call or object definition such that it does not take on a name of it&apos;s own. Here is an example of an anonymous function used in an addEventListener() method call.">anonymous function</a> can then access the <code>event.target.dataset.contentId</code> <a href="../GLOSSARY.html#property" class="glossary-term" title="A piece of data related to a Class or object. Objects are made up of data properties, which contain information describing the object, and methods, which perform some behavior or action. The properties are the &quot;adjectives&quot; of the object.">property</a> to determine which content item should be saved to the user&apos;s favorites list in the database. This allows us to use the same event listener to respond to event triggers in slightly different ways. Obviously we could not write a separate event listener for each content item in our database, so it&apos;s crucial to be able to pass in data using this <a href="../GLOSSARY.html#method" class="glossary-term" title="A function related to a Class object. Class objects are made up of data properties and methods that perform some behavior or action. The methods are the &quot;verbs&quot; of the Class.">method</a>. The <code>Event.target</code> object allows us to make full use of the HTML <code>data-</code> attributes to pass data around in our web application.</p>
+<h2 id="preventing-default-actions">Preventing Default Actions</h2>
+<p>Sometimes when we are responding to event triggers, we need to prevent the default action of the browser. This happens a lot when we are building more complex JavaScript applications that use elements like forms and links to provide user interface components. But it also comes up when we are using JavaScript to provide client-side validation of form inputs or allow for users to do smaller changes to the interface. If we write enough JavaScript that uses event handling, we are eventually going to need to prevent some default behavior.</p>
+<p>Preventing default behavior is as simple as including a single command in our <a href="../GLOSSARY.html#event-handler" class="glossary-term" title="A function that is associated with an event listener and which is called when the event is triggered.">event handler</a> function: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault" target="_blank"><code>Event.preventDefault()</code></a>. This command stops the browser from executing whatever the default action is for that event. Here is an example of using it to provide a form validation.</p>
+<p><strong>html</strong></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;registration-form&quot;</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;register/&quot;</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;errors hidden&quot;</span>&gt;</span>No errors to report.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Username: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;username&quot;</span> <span class="hljs-attr">required</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Password: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;pass1&quot;</span> <span class="hljs-attr">required</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>Confirm Password: <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;password&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;pass2&quot;</span> <span class="hljs-attr">required</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;Register&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</code></pre>
+<p><strong>js</strong></p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> myForm = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;#registration-form&apos;</span>);
+<span class="hljs-keyword">let</span> pass1 = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;input[name=&quot;pass1&quot;]&apos;</span>);
+<span class="hljs-keyword">let</span> pass2 = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;input[name=&quot;pass1&quot;]&apos;</span>);
+<span class="hljs-keyword">let</span> errorsParagraph = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;p.errors&apos;</span>);
+
+myForm.addEventListener(<span class="hljs-string">&apos;submit&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>)</span>{
+    <span class="hljs-keyword">if</span> (pass1.value != pass2.value){
+        event.preventDefault();
+        errorsParagraph.innerHTML = <span class="hljs-string">&quot;Password values do not match.&quot;</span>;
+        errorsParagraph.setAttribute(<span class="hljs-string">&apos;class&apos;</span>, <span class="hljs-string">&apos;errors visible&apos;</span>);
+    }
+});
+</code></pre>
+<p>The example above shows the <code>event.preventDefault()</code> command used to stop a <code>form</code> from submitting when the password fields do not match. This kind of client-side form validation is helpful to a user because it provides an instantaneous feedback about whether or not they filled out the form properly. (<strong>Note:</strong> These sorts of validations are not a substitute for strong validation on the server or database side, too, but they provide a more enjoyable user experience.)</p>
+<p>Our custom <a href="../GLOSSARY.html#event-handler" class="glossary-term" title="A function that is associated with an event listener and which is called when the event is triggered.">event handler</a> will execute before the <a href="../GLOSSARY.html#default-actions" class="glossary-term" title="An action executed in the browser in response to a page event (e.g. click, submit, load, etc.).">default actions</a> take place in the browser, so we have a chance to determine whether or not we wish for those <a href="../GLOSSARY.html#default-actions" class="glossary-term" title="An action executed in the browser in response to a page event (e.g. click, submit, load, etc.).">default actions</a> to happen at all. If not, the <code>Event.preventDefault()</code> command stops those actions from happening. This allows JavaScript developers the ability to truly alter the way the browser behaves in order to best serve their users.</p>
+<h2 id="exercises">Exercises</h2>
+<p>Please try working these exercises to practice some of the skills we&apos;ve learned in this section.</p>
+<p><div class="exercise">
+	<div class="header">Exercise</div>
+	<div class="alert alert-success">
+	    <b>Correct!</b>
+	</div>
+
+	<div class="alert alert-danger error-message">
+	    <b>False!</b>
+	</div>
+
+	<div class="message">
+	
+Add a <code>submit</code> event listener to the <code>form</code> element using an <a href="../GLOSSARY.html#anonymous-function" class="glossary-term" title="A function that is defined as part of a method call or object definition such that it does not take on a name of it&apos;s own. Here is an example of an anonymous function used in an addEventListener() method call.">anonymous function</a>.
+
+
+	</div>
+	<div class="editor" style="height: 140px">let myTest = false;
+let form = document.querySelector(&apos;form&apos;);
+// add event listener that executes `myAction()`</div>
+
+	<pre class="hidden code-solution">// solution code
+let myTest = false;
+
+let form = document.querySelector(&apos;form&apos;);
+form.addEventListener(&apos;submit&apos;, function(event){
+    myTest = true;
+});</pre>
+	<pre class="hidden code-validation">assert((myTest===true &amp;&amp; triggerCheck===true), &quot;Incorrect.&quot;);</pre>
+	
+	<pre class="hidden code-context">class MockDoc {
+    querySelector(q){
+        if (q == &quot;form&quot;){
+            return new MockElem(&quot;form&quot;);
+        } else {
+            return null;
+        }
+    }
+    createElement(type){
+        if (type == &quot;form&quot;) {
+            return new MockElem(&quot;FORM&quot;);
+        } else {
+            return null;
+        }
+    }
+}
+class MockElem {
+    constructor(type){
+        this.children = [];
+        this.innerHTML = &apos;&apos;;
+        this.style = {};
+        this.tagName = type;
+    }
+    addEventListener(trigger, func){
+        if (trigger === &apos;submit&apos;) {
+            triggerCheck = true;
+        }        
+        func();
+    }
+}
+var triggerCheck = false;
+var document = new MockDoc();</pre>
+	
+
+	<div class="buttons">
+	    <a href="#" class="button size-2 action-submit">Submit</a>
+	    <a href="#" class="button size-2 action-solution">Solution</a>
+	</div>
+</div></p>
+<p><div class="exercise">
+	<div class="header">Exercise</div>
+	<div class="alert alert-success">
+	    <b>Correct!</b>
+	</div>
+
+	<div class="alert alert-danger error-message">
+	    <b>False!</b>
+	</div>
+
+	<div class="message">
+	
+Use the <code>event.target</code> object to change the <code>background-color</code> of the element by adding a <code>click</code> event to the <code>button</code> element.
+
+
+	</div>
+	<div class="editor" style="height: 120px">let button = document.querySelector(&apos;button&apos;);
+// add event listener that changes background-color of button</div>
+
+	<pre class="hidden code-solution">//solution code
+let button = document.querySelector(&apos;button&apos;);
+
+button.addEventListener(&apos;click&apos;, function(event){
+    event.target.styles.backgroundColor = &apos;coral&apos;;
+});</pre>
+	<pre class="hidden code-validation">assert((triggerCheck===true &amp;&amp; event.target.styles.backgroundColor==&apos;coral&apos;), &apos;Incorrect.&apos;);</pre>
+	
+	<pre class="hidden code-context">class MockDoc {
+    querySelector(q){
+        if (q == &quot;button&quot;){
+            return new MockElem(&quot;button&quot;);
+        } else {
+            return null;
+        }
+    }
+    createElement(type){
+        if (type == &quot;form&quot;) {
+            return new MockElem(&quot;BUTTON&quot;);
+        } else {
+            return null;
+        }
+    }
+}
+class MockElem {
+    constructor(type){
+        this.children = [];
+        this.innerHTML = &apos;&apos;;
+        this.style = {};
+        this.tagName = type;
+    }
+    addEventListener(trigger, func){
+        if (trigger === &apos;click&apos;) {
+            triggerCheck = true;
+        }        
+        func(event);
+    }
+}
+var triggerCheck = false;
+var document = new MockDoc();
+
+var event = {
+    target: {
+        styles: {
+            backgroundColor: &apos;gainsboro&apos;
+        }
+    }
+};</pre>
+	
+
+	<div class="buttons">
+	    <a href="#" class="button size-2 action-submit">Submit</a>
+	    <a href="#" class="button size-2 action-solution">Solution</a>
+	</div>
+</div></p>
+<p><div class="exercise">
+	<div class="header">Exercise</div>
+	<div class="alert alert-success">
+	    <b>Correct!</b>
+	</div>
+
+	<div class="alert alert-danger error-message">
+	    <b>False!</b>
+	</div>
+
+	<div class="message">
+	
+Use a <code>preventDefault()</code> command to stop the <code>form</code> from submitting unless the user submits both <code>firstName</code> and <code>lastName</code> fields.
+
+
+	</div>
+	<div class="editor" style="height: 220px">let myForm = document.querySelector(&apos;#registration-form&apos;);
+let firstName = document.querySelector(&apos;input[name=&quot;first-name&quot;]&apos;);
+let lastName = document.querySelector(&apos;input[name=&quot;last-name&quot;]&apos;);
+
+// Add submit event listener to `myForm`.
+// Verify that both `firstName` and `lastName` have been filled in.</div>
+
+	<pre class="hidden code-solution">// solution code
+let myForm = document.querySelector(&apos;#registration-form&apos;);
+let firstName = document.querySelector(&apos;input[name=&quot;first-name&quot;]&apos;);
+let lastName = document.querySelector(&apos;input[name=&quot;last-name&quot;]&apos;);
+
+myForm.addEventListener(&apos;submit&apos;, function(event){
+    if (!firstName.value || !lastName.value){
+        event.preventDefault();
+        console.log(&apos;Both names are required.&apos;)
+    }
+});</pre>
+	<pre class="hidden code-validation">assert((triggerCheck===true &amp;&amp; pdCheck===true), &quot;Incorrect.&quot;);</pre>
+	
+	<pre class="hidden code-context">class MockDoc {
+    querySelector(q){
+        if (q == &quot;form&quot;){
+            return new MockElem(&quot;form&quot;);
+        } else {
+            return new MockElem(&quot;input&quot;);
+        }
+    }
+}
+class MockElem {
+    constructor(type){
+        this.children = [];
+        this.innerHTML = &apos;&apos;;
+        this.style = {};
+        this.tagName = type;
+        this.value = false;
+    }
+    addEventListener(trigger, func){
+        if (trigger === &apos;submit&apos;) {
+            triggerCheck = true;
+        }        
+        func(event);
+    }
+}
+var triggerCheck = false;
+var document = new MockDoc();
+
+var pdCheck = false;
+event = {};
+event.preventDefault = function(){
+    pdCheck = true;
+};</pre>
+	
+
+	<div class="buttons">
+	    <a href="#" class="button size-2 action-submit">Submit</a>
+	    <a href="#" class="button size-2 action-solution">Solution</a>
+	</div>
+</div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="101-adding-event-listeners.html" class="navigation navigation-prev " aria-label="Previous page: 10.1 Adding Event Listeners">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="104-custom-events.html" class="navigation navigation-next " aria-label="Next page: 10.3 Custom Events">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"10.2 Responding to Events","level":"1.10.2","depth":2,"next":{"title":"10.3 Custom Events","level":"1.10.3","depth":2,"path":"handling-events/104-custom-events.md","ref":"handling-events/104-custom-events.md","articles":[]},"previous":{"title":"10.1 Adding Event Listeners","level":"1.10.1","depth":2,"path":"handling-events/101-adding-event-listeners.md","ref":"handling-events/101-adding-event-listeners.md","articles":[]},"dir":"ltr"},"config":{"plugins":["exercises","quiz"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"quiz":{"labels":{"check":"Check my answers","showExplanation":"Explain","showCorrect":"Show all","explanationHeader":"Explanation"},"text":{"noChosen":"Choose at least one answer","incomplete":"Some correct answers are missing"},"buttons":{"showCorrect":true,"showExplanation":true}},"exercises":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"handling-events/102-responding-to-events.md","mtime":"2017-08-24T00:03:32.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-08-24T00:04:33.822Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-quiz/script.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+
+    </body>
+</html>
+

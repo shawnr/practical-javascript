@@ -1,0 +1,1497 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>6.1 Conditionals · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-quiz/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="62-for-loops.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1 Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../what-is-programming/">
+            
+                <a href="../what-is-programming/">
+            
+                    
+                    2 What Is Programming?
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../what-is-programming/history.html">
+            
+                <a href="../what-is-programming/history.html">
+            
+                    
+                    2.1 History
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../what-is-programming/23-programming-languages.html">
+            
+                <a href="../what-is-programming/23-programming-languages.html">
+            
+                    
+                    2.2 Programming Languages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../what-is-programming/core-concepts.html">
+            
+                <a href="../what-is-programming/core-concepts.html">
+            
+                    
+                    2.3 Core Concepts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../what-is-programming/24-the-code-landscape.html">
+            
+                <a href="../what-is-programming/24-the-code-landscape.html">
+            
+                    
+                    2.4 The Code Landscape
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../what-is-programming/section-1-quiz.html">
+            
+                <a href="../what-is-programming/section-1-quiz.html">
+            
+                    
+                    2.5 Quiz: What is Programming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../what-is-javascript/">
+            
+                <a href="../what-is-javascript/">
+            
+                    
+                    3 What is JavaScript?
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../what-is-javascript/31-history-of-javascript.html">
+            
+                <a href="../what-is-javascript/31-history-of-javascript.html">
+            
+                    
+                    3.1 History of JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../what-is-javascript/32-javascript-on-the-web.html">
+            
+                <a href="../what-is-javascript/32-javascript-on-the-web.html">
+            
+                    
+                    3.2 JavaScript on the Web
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../what-is-javascript/33-javascript-in-the-wild.html">
+            
+                <a href="../what-is-javascript/33-javascript-in-the-wild.html">
+            
+                    
+                    3.3 JavaScript in the Wild
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../what-is-javascript/34-quiz-what-is-js.html">
+            
+                <a href="../what-is-javascript/34-quiz-what-is-js.html">
+            
+                    
+                    3.4 Quiz: What is JS? 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../basic-syntax/">
+            
+                <a href="../basic-syntax/">
+            
+                    
+                    4 Basic Syntax
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../basic-syntax/41-adding-javascript-to-an-html-file.html">
+            
+                <a href="../basic-syntax/41-adding-javascript-to-an-html-file.html">
+            
+                    
+                    4.1 Adding JavaScript to an HTML File
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../basic-syntax/comments.html">
+            
+                <a href="../basic-syntax/comments.html">
+            
+                    
+                    4.2 Comments
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../basic-syntax/43-operators.html">
+            
+                <a href="../basic-syntax/43-operators.html">
+            
+                    
+                    4.3 Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../basic-syntax/45-variables.html">
+            
+                <a href="../basic-syntax/45-variables.html">
+            
+                    
+                    4.4 Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../basic-syntax/45-coding-style.html">
+            
+                <a href="../basic-syntax/45-coding-style.html">
+            
+                    
+                    4.5 Coding Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../basic-syntax/46-quiz-basic-syntax.html">
+            
+                <a href="../basic-syntax/46-quiz-basic-syntax.html">
+            
+                    
+                    4.6 Quiz: Basic Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../basic-syntax/46-extra-practice.html">
+            
+                <a href="../basic-syntax/46-extra-practice.html">
+            
+                    
+                    4.7 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../data-types/">
+            
+                <a href="../data-types/">
+            
+                    
+                    5 Data Types and Structures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../data-types/51-numbers.html">
+            
+                <a href="../data-types/51-numbers.html">
+            
+                    
+                    5.1 Numbers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../data-types/52-strings.html">
+            
+                <a href="../data-types/52-strings.html">
+            
+                    
+                    5.2 Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../data-types/54-other-primitive-data-types.html">
+            
+                <a href="../data-types/54-other-primitive-data-types.html">
+            
+                    
+                    5.4 Other Primitive Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../data-types/55-objects.html">
+            
+                <a href="../data-types/55-objects.html">
+            
+                    
+                    5.5 Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../data-types/55-arrays.html">
+            
+                <a href="../data-types/55-arrays.html">
+            
+                    
+                    5.7 Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../data-types/57-json.html">
+            
+                <a href="../data-types/57-json.html">
+            
+                    
+                    5.8 JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../data-types/58-working-with-text.html">
+            
+                <a href="../data-types/58-working-with-text.html">
+            
+                    
+                    5.9 Working with Text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../data-types/510-quiz-data-types-and-structures.html">
+            
+                <a href="../data-types/510-quiz-data-types-and-structures.html">
+            
+                    
+                    5.10 Quiz: Data Types and Structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../data-types/511-extra-practice.html">
+            
+                <a href="../data-types/511-extra-practice.html">
+            
+                    
+                    5.11 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    6 Controlling Logical Flow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.1" data-path="61-conditionals.html">
+            
+                <a href="61-conditionals.html">
+            
+                    
+                    6.1 Conditionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="62-for-loops.html">
+            
+                <a href="62-for-loops.html">
+            
+                    
+                    6.2 For Loops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="64-while-loops.html">
+            
+                <a href="64-while-loops.html">
+            
+                    
+                    6.3 While Loops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="63-forof-loops.html">
+            
+                <a href="63-forof-loops.html">
+            
+                    
+                    6.4 Looping Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="65-quiz-controlling-local-flow.html">
+            
+                <a href="65-quiz-controlling-local-flow.html">
+            
+                    
+                    6.5 Quiz: Controlling Local Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="66-extra-practice.html">
+            
+                <a href="66-extra-practice.html">
+            
+                    
+                    6.6 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../organizing-code/">
+            
+                <a href="../organizing-code/">
+            
+                    
+                    7 Organizing Code
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../organizing-code/71-functions.html">
+            
+                <a href="../organizing-code/71-functions.html">
+            
+                    
+                    7.1 Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../organizing-code/72-scoping.html">
+            
+                <a href="../organizing-code/72-scoping.html">
+            
+                    
+                    7.2 Scoping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../organizing-code/73-quiz-organizing-code.html">
+            
+                <a href="../organizing-code/73-quiz-organizing-code.html">
+            
+                    
+                    7.3 Quiz: Organizing Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../organizing-code/74-extra-practice.html">
+            
+                <a href="../organizing-code/74-extra-practice.html">
+            
+                    
+                    7.4 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../object-oriented-javascript/">
+            
+                <a href="../object-oriented-javascript/">
+            
+                    
+                    8 Object Oriented JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../object-oriented-javascript/81-what-is-object-oriented-programming.html">
+            
+                <a href="../object-oriented-javascript/81-what-is-object-oriented-programming.html">
+            
+                    
+                    8.1 What is Object Oriented Programming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../object-oriented-javascript/82-creating-and-using-classes.html">
+            
+                <a href="../object-oriented-javascript/82-creating-and-using-classes.html">
+            
+                    
+                    8.2 Creating and Using Classes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../object-oriented-javascript/82-extending-classes.html">
+            
+                <a href="../object-oriented-javascript/82-extending-classes.html">
+            
+                    
+                    8.3 Extending Classes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../object-oriented-javascript/84-quiz-object-oriented-javascript.html">
+            
+                <a href="../object-oriented-javascript/84-quiz-object-oriented-javascript.html">
+            
+                    
+                    8.4 Quiz: Object Oriented JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../object-oriented-javascript/85-extra-practice.html">
+            
+                <a href="../object-oriented-javascript/85-extra-practice.html">
+            
+                    
+                    8.5 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../the-document-object-model/">
+            
+                <a href="../the-document-object-model/">
+            
+                    
+                    9 The Document Object Model (DOM)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../the-document-object-model/91-selecting-elements-in-the-dom.html">
+            
+                <a href="../the-document-object-model/91-selecting-elements-in-the-dom.html">
+            
+                    
+                    9.1 Selecting Elements in the DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../the-document-object-model/92-creating-and-removing-dom-elements.html">
+            
+                <a href="../the-document-object-model/92-creating-and-removing-dom-elements.html">
+            
+                    
+                    9.2 Creating and Removing DOM Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../the-document-object-model/93-modifying-elements-in-the-dom.html">
+            
+                <a href="../the-document-object-model/93-modifying-elements-in-the-dom.html">
+            
+                    
+                    9.3 Modifying DOM Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../the-document-object-model/94-altering-dom-element-styles.html">
+            
+                <a href="../the-document-object-model/94-altering-dom-element-styles.html">
+            
+                    
+                    9.4 Altering DOM Element Styles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../the-document-object-model/93-html-data-attributes.html">
+            
+                <a href="../the-document-object-model/93-html-data-attributes.html">
+            
+                    
+                    9.5 Using HTML Data Attributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../the-document-object-model/94-quiz-the-dom.html">
+            
+                <a href="../the-document-object-model/94-quiz-the-dom.html">
+            
+                    
+                    9.6 Quiz: The DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../the-document-object-model/97-extra-practice.html">
+            
+                <a href="../the-document-object-model/97-extra-practice.html">
+            
+                    
+                    9.7 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../handling-events/">
+            
+                <a href="../handling-events/">
+            
+                    
+                    10 Handling Events
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../handling-events/101-adding-event-listeners.html">
+            
+                <a href="../handling-events/101-adding-event-listeners.html">
+            
+                    
+                    10.1 Adding Event Listeners
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../handling-events/102-responding-to-events.html">
+            
+                <a href="../handling-events/102-responding-to-events.html">
+            
+                    
+                    10.2 Responding to Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../handling-events/104-custom-events.html">
+            
+                <a href="../handling-events/104-custom-events.html">
+            
+                    
+                    10.3 Custom Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../handling-events/103-detecting-document-load-events.html">
+            
+                <a href="../handling-events/103-detecting-document-load-events.html">
+            
+                    
+                    10.4 Detecting Document Load Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../handling-events/104-quiz-handling-events.html">
+            
+                <a href="../handling-events/104-quiz-handling-events.html">
+            
+                    
+                    10.5 Quiz: Handling Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../handling-events/105-extra-practice.html">
+            
+                <a href="../handling-events/105-extra-practice.html">
+            
+                    
+                    10.6 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../11-conclusion.html">
+            
+                <a href="../11-conclusion.html">
+            
+                    
+                    11 Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../appendix-a-resources-for-learning-more-about-javascript.html">
+            
+                <a href="../appendix-a-resources-for-learning-more-about-javascript.html">
+            
+                    
+                    Appendix A: Resources for Learning More About JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../appendix-b-debugging-tips.html">
+            
+                <a href="../appendix-b-debugging-tips.html">
+            
+                    
+                    Appendix B: Debugging Tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../GLOSSARY.html">
+            
+                <a href="../GLOSSARY.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >6.1 Conditionals</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="conditionals">Conditionals</h1>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling#Conditional_statements" target="_blank">Conditionals</a> are sets of code instructions that execute if a given assertion is <code>true</code>. These are commonly expressed as &quot;if/then&quot; statements, and they are essential to controlling logical flow. </p>
+<h2 id="basic-conditional-syntax">Basic Conditional Syntax</h2>
+<p>We often call conditionals &quot;if statements&quot; because in most programming languages the keyword &quot;if&quot; is used. In JavaScript, we write a conditional statement like so:</p>
+<pre><code class="lang-js">if (true) {
+    // code here executes when the condition is true
+    console.log(&apos;It&apos;s true!&apos;);
+}
+</code></pre>
+<p>This is a simple statement that checks if an assertion is true. In this case, since the assertion is simply <code>true</code> it will always execute the code. But we can do more with conditionals. Here is a more complex example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> foo = <span class="hljs-number">12</span>;
+<span class="hljs-keyword">let</span> bar = <span class="hljs-number">42</span>;
+
+<span class="hljs-keyword">if</span> (foo &gt; bar ) {
+    <span class="hljs-comment">// In this example, this `foo` is less than `bar`, so this code will not execute.</span>
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Foo is bigger.&apos;</span>);
+} <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// Since `bar` is greater than `foo`, this code will execute.</span>
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Bar is bigger.&apos;</span>);
+}
+</code></pre>
+<p>The <code>else</code> clause is used to provide instructions for what to do if the initial assertion is not <code>true</code>. For very complex conditionals, it&apos;s possible to provide multiple assertions that can be checked:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> foo = <span class="hljs-number">12</span>;
+<span class="hljs-keyword">let</span> bar = <span class="hljs-number">12</span>;
+
+<span class="hljs-keyword">if</span> (foo &gt; bar ) {
+    <span class="hljs-comment">// If `foo` is greater than `bar`, then this code executes.</span>
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Foo is bigger.&apos;</span>);
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (foo == bar) {
+    <span class="hljs-comment">// If `foo` and `bar` are equal, then this code executes.</span>
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Foo and Bar are equal.&apos;</span>);
+} <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// If `bar` is greater than `foo`, this code will execute.</span>
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Bar is bigger.&apos;</span>);
+}
+</code></pre>
+<p>In the example above, the <code>else if</code> clause provides a second assertion that is checked. If the first assertion is <code>true</code>, then the second assertion will never be checked. But if the first assertion is <code>false</code>, then the second assertion will be checked. If the second assertion is <code>true</code>, then that code executes. If the second assertion is also <code>false</code>, then the <code>else</code> clause will be executed.</p>
+<p>Of course, it is possible to nest conditionals to create even more complex conditionals:</p>
+<pre><code class="lang-js">let foo = 12;
+let bar = 42;
+let baz = 7;
+
+if (foo &gt; bar ) {
+    console.log(&apos;Foo is bigger than bar.&apos;);
+    if (foo &gt; baz) {
+        console.log(&apos;Foo is bigger than baz, so it is the biggest!);
+    } else {
+        console.log(&apos;Baz is bigger than foo, so it is the biggest!);
+    }
+} else if (foo == bar) {
+    // If `foo` and `bar` are equal, then this code executes.
+    console.log(&apos;Foo and Bar are equal.&apos;);
+    if (foo == baz) {
+        console.log(&apos;Foo, bar, and baz are all equal.&apos;);
+    } else if (foo &gt; baz) {
+        console.log(&apos;Foo and bar are larger than baz.&apos;);
+    } else {
+        console.log(&apos;Foo and bar are smaller than baz.&apos;);
+    }
+} else {
+    // If `bar` is greater than `foo`, this code will execute.
+    console.log(&apos;Bar is bigger than foo.&apos;);
+    if (bar &gt; baz) {
+        console.log(&apos;Bar is bigger than baz, so it is the biggest!);
+    } else {
+        console.log(&apos;Baz is bigger than bar, so it is the biggest!);
+    }
+}
+</code></pre>
+<p>As you can see in the example above, we can nest conditionals in all kinds of ways to achieve whatever logical control we need. </p>
+<h2 id="comparison-operators">Comparison Operators</h2>
+<p>In order to make assertions that conditional statements can check, we must use a few more operators. We are often making comparisons between values, so the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Comparison_operators" target="_blank">comparison operators</a> are important. We can see comparison operators at work in the examples above, but there are more than those. Here is a chart of commonly used comparison operators:</p>
+<table>
+<thead>
+<tr>
+<th>operator</th>
+<th>description</th>
+<th>example </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>==</code></td>
+<td><strong>Equal</strong>: Returns <code>true</code> if the operands on either side of the operator are equal.</td>
+<td><code>x == y</code></td>
+</tr>
+<tr>
+<td><code>!=</code></td>
+<td><strong>Not Equal</strong>: Returns <code>true</code> if the operands on either side of the operator are <em>not</em> equal.</td>
+<td><code>x != y</code></td>
+</tr>
+<tr>
+<td><code>===</code></td>
+<td><strong>Strict Equal</strong>: Returns <code>true</code> if the operands are equal and of the same type.</td>
+<td><code>x === 2</code></td>
+</tr>
+<tr>
+<td><code>!==</code></td>
+<td><strong>Strict Not Equal</strong>: Returns <code>true</code> if the operands are of the same type but not equal, or are of different type.</td>
+<td><code>x !== &apos;text&apos;</code></td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td><strong>Greater Than</strong>: Returns <code>true</code> if the left operand is greater than the right operand.</td>
+<td><code>x &gt; 42</code></td>
+</tr>
+<tr>
+<td><code>&gt;=</code></td>
+<td><strong>Greater Than or Equal To</strong>: Returns <code>true</code> if the left operand is greater than or equal to the right operand.</td>
+<td><code>foo &gt;= 32</code></td>
+</tr>
+<tr>
+<td><code>&lt;</code></td>
+<td><strong>Less Than</strong>: Returns <code>true</code> if the left operand is less than the right operand.</td>
+<td><code>y &lt; 1337</code></td>
+</tr>
+<tr>
+<td><code>&lt;=</code></td>
+<td><strong>Less Than or Equal To</strong>: Returns <code>true</code> if the left operand is less than or equal to the right operand.</td>
+<td><code>bar &lt;= 42</code></td>
+</tr>
+</tbody>
+</table>
+<p>Using these comparison operators we can compare the values of any two variables.</p>
+<h2 id="logical-operators">Logical Operators</h2>
+<p>Sometimes when we want to check especially complex conditionals, it&apos;s useful to utilize <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Logical_operators" target="_blank">logical operators</a> to make compound assertions. There are three main logical operators:</p>
+<table>
+<thead>
+<tr>
+<th>operator</th>
+<th>description</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&amp;&amp;</code></td>
+<td><strong>AND</strong>: Returns <code>true</code> if BOTH operands equal <code>true</code>.</td>
+<td><code>x == 12 &amp;&amp; y == 42</code></td>
+</tr>
+<tr>
+<td>||</td>
+<td><strong>OR</strong>: Returns <code>true</code> if EITHER operand equals <code>true</code>.</td>
+<td><code>x &gt; 3</code> || <code>y &lt; 31</code></td>
+</tr>
+<tr>
+<td><code>!</code></td>
+<td><strong>NOT</strong>: Returns the opposite of whatever the operand evaluates to be. That is <code>false</code> if the operand equals <code>true</code>, or <code>true</code> if the operand equals <code>false</code>.</td>
+<td><code>!foo</code></td>
+</tr>
+</tbody>
+</table>
+<p>These three logical operators round out our ability to check conditions between operands. <code>AND</code> and <code>OR</code> are especially useful for making compound assertions. We can use them in a conditional like this:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> x = <span class="hljs-number">12</span>;
+<span class="hljs-keyword">let</span> y = <span class="hljs-number">42</span>;
+
+<span class="hljs-keyword">if</span> (x==<span class="hljs-number">12</span> &amp;&amp; y==<span class="hljs-number">42</span>){
+    <span class="hljs-comment">// This code would execute because both `x==12` and `y==42` are `true`.</span>
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;This is true!&apos;</span>);
+}
+
+<span class="hljs-keyword">if</span> (x==<span class="hljs-number">144</span> &amp;&amp; y==<span class="hljs-number">42</span>){
+    <span class="hljs-comment">// This code would not execute because one side of the assertion is `false`.</span>
+    <span class="hljs-comment">// The `AND` operator requires both sides to evaluate to `true`.</span>
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;This is true!&apos;</span>);
+}
+
+<span class="hljs-keyword">if</span> (x==<span class="hljs-number">36</span> || y==<span class="hljs-number">42</span>) {
+    <span class="hljs-comment">// This code would execute because although `x==36` is `false`, the other side of the assertion is true.</span>
+    <span class="hljs-comment">// This happens because of the `OR` operator.</span>
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;One of these is true!&apos;</span>);
+}
+</code></pre>
+<p>Although it can be tricky if we string together several <code>AND</code> or <code>OR</code> clauses in an assertion, these example keep things simple. It&apos;s often best when writing code to keep things simple and break out complex logic into multiple conditionals.</p>
+<p>It can sometimes be tougher to understand the <code>NOT</code> operator because it equals <code>true</code> when the value is <code>false</code>. This can be a bit of a head trip. Here is an example using <code>NOT</code>:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> loggedIn = <span class="hljs-literal">false</span>;
+
+<span class="hljs-keyword">if</span> (!loggedIn) {
+    <span class="hljs-comment">// Since `loggedIn` is `false`, this code will execute.</span>
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;This user is not logged in!&apos;</span>);
+}
+</code></pre>
+<h2 id="truthiness-and-falsiness">Truthiness and Falsiness</h2>
+<p>Just like with Data Types, JavaScript is more than happy to attempt to arrive at a <code>true</code> or <code>false</code> value based on whatever we give it. Sometimes this can be very convenient. In JavaScript we have a notion of <a href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy" target="_blank">&quot;truthy&quot;</a> and <a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy" target="_blank">&quot;falsy&quot;</a>.</p>
+<p>The following values all evaluate to <code>true</code> in a conditional:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span> (<span class="hljs-literal">true</span>)
+<span class="hljs-keyword">if</span> (<span class="hljs-number">12</span>)
+<span class="hljs-keyword">if</span> (<span class="hljs-string">&quot;some text&quot;</span>)
+<span class="hljs-keyword">if</span> ({})
+<span class="hljs-keyword">if</span> ([])
+<span class="hljs-keyword">if</span> (<span class="hljs-number">3.14</span>)
+</code></pre>
+<p>Likewise, the following values all evaluate to <code>false</code> in a conditional:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">if</span> (<span class="hljs-literal">false</span>)
+<span class="hljs-keyword">if</span> (<span class="hljs-literal">null</span>)
+<span class="hljs-keyword">if</span> (<span class="hljs-literal">undefined</span>)
+<span class="hljs-keyword">if</span> (<span class="hljs-number">0</span>)
+<span class="hljs-keyword">if</span> (<span class="hljs-literal">NaN</span>)
+<span class="hljs-keyword">if</span> (<span class="hljs-string">&apos;&apos;</span>)
+<span class="hljs-keyword">if</span> (<span class="hljs-string">&quot;&quot;</span>)
+</code></pre>
+<p>Using the principles of truthy and falsy, we could write a conditional like this:</p>
+<pre><code>let x;
+
+if(x) {
+    // This code would execute if `x` has any value assigned other than `null` or `undefined`.
+    // Since `x` is currently equal to `undefined`, this code will NOT execute.
+} else {
+    // This code will execute.
+    console.log(&apos;X exists, but it has no value.&apos;);
+}
+</code></pre><p>Of course, when possible it&apos;s good to check explicitly against an expected value. If we expect <code>x</code> to be <code>undefined</code> then we should check for that (<code>if (x===undefined)</code>). But sometimes that is not possible. Given the dynamic typing of JavaScript and the complex nature of programs, we might find a situation where we are not sure if a value might be <code>undefined</code> or <code>null</code>, but we want to catch that condition regardless. Or, we might consider <code>0</code>, and <code>false</code> to be equivalent for some purpose in our code. In this case, it is helpful to be able to perform truthy and falsy checks. </p>
+<h2 id="exercises">Exercises</h2>
+<p>Please try working these exercises to practice some of the skills we&apos;ve learned in this section.</p>
+<p><div class="exercise">
+	<div class="header">Exercise</div>
+	<div class="alert alert-success">
+	    <b>Correct!</b>
+	</div>
+
+	<div class="alert alert-danger error-message">
+	    <b>False!</b>
+	</div>
+
+	<div class="message">
+	
+Write a conditional to check if `x` and `y` are equal. If so, set `status` to &quot;success&quot;. If not, set `status` to &quot;failure&quot;.
+
+
+	</div>
+	<div class="editor" style="height: 180px">let x = 12;
+let y = 42;
+let status;</div>
+
+	<pre class="hidden code-solution">let x = 12;
+let y = 42;
+let status;
+
+if (x==y) {
+    status = &quot;success&quot;;
+} else {
+    status = &quot;failure&quot;;
+}</pre>
+	<pre class="hidden code-validation">assert(status==&quot;failure&quot;, &quot;Incorrect. Please be sure to set the status variable accordingly.&quot;);</pre>
+	
+
+	<div class="buttons">
+	    <a href="#" class="button size-2 action-submit">Submit</a>
+	    <a href="#" class="button size-2 action-solution">Solution</a>
+	</div>
+</div></p>
+<p><div class="exercise">
+	<div class="header">Exercise</div>
+	<div class="alert alert-success">
+	    <b>Correct!</b>
+	</div>
+
+	<div class="alert alert-danger error-message">
+	    <b>False!</b>
+	</div>
+
+	<div class="message">
+	
+Write a conditional to check if `x` OR `y` are true. If so, set `status` to &quot;success&quot;.
+
+
+	</div>
+	<div class="editor" style="height: 140px">let x = true;
+let y = false;
+let status;</div>
+
+	<pre class="hidden code-solution">let x = 12;
+let y = 42;
+let status;
+
+if (x || y) {
+    status = &quot;success&quot;;
+}</pre>
+	<pre class="hidden code-validation">assert(status, &quot;Incorrect. Please be sure to set the status variable accordingly.&quot;);</pre>
+	
+
+	<div class="buttons">
+	    <a href="#" class="button size-2 action-submit">Submit</a>
+	    <a href="#" class="button size-2 action-solution">Solution</a>
+	</div>
+</div></p>
+<p><div class="exercise">
+	<div class="header">Exercise</div>
+	<div class="alert alert-success">
+	    <b>Correct!</b>
+	</div>
+
+	<div class="alert alert-danger error-message">
+	    <b>False!</b>
+	</div>
+
+	<div class="message">
+	
+Write a conditional to check if `x` AND `y` are true. If so, set `status` to &quot;success&quot;. If not, set `status` to &quot;failure&quot;.
+
+
+	</div>
+	<div class="editor" style="height: 180px">let x = true;
+let y = false;
+let status;</div>
+
+	<pre class="hidden code-solution">let x = 12;
+let y = 42;
+let status;
+
+if (x &amp;&amp; y) {
+    status = &quot;success&quot;;
+} else {
+    status = &quot;failure&quot;;
+}</pre>
+	<pre class="hidden code-validation">assert(status, &quot;Incorrect. Please be sure to set the status variable accordingly.&quot;);</pre>
+	
+
+	<div class="buttons">
+	    <a href="#" class="button size-2 action-submit">Submit</a>
+	    <a href="#" class="button size-2 action-solution">Solution</a>
+	</div>
+</div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 6 Controlling Logical Flow">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="62-for-loops.html" class="navigation navigation-next " aria-label="Next page: 6.2 For Loops">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"6.1 Conditionals","level":"1.6.1","depth":2,"next":{"title":"6.2 For Loops","level":"1.6.2","depth":2,"path":"controlling-logical-flow/62-for-loops.md","ref":"controlling-logical-flow/62-for-loops.md","articles":[]},"previous":{"title":"6 Controlling Logical Flow","level":"1.6","depth":1,"path":"controlling-logical-flow/README.md","ref":"controlling-logical-flow/README.md","articles":[{"title":"6.1 Conditionals","level":"1.6.1","depth":2,"path":"controlling-logical-flow/61-conditionals.md","ref":"controlling-logical-flow/61-conditionals.md","articles":[]},{"title":"6.2 For Loops","level":"1.6.2","depth":2,"path":"controlling-logical-flow/62-for-loops.md","ref":"controlling-logical-flow/62-for-loops.md","articles":[]},{"title":"6.3 While Loops","level":"1.6.3","depth":2,"path":"controlling-logical-flow/64-while-loops.md","ref":"controlling-logical-flow/64-while-loops.md","articles":[]},{"title":"6.4 Looping Arrays","level":"1.6.4","depth":2,"path":"controlling-logical-flow/63-forof-loops.md","ref":"controlling-logical-flow/63-forof-loops.md","articles":[]},{"title":"6.5 Quiz: Controlling Local Flow","level":"1.6.5","depth":2,"path":"controlling-logical-flow/65-quiz-controlling-local-flow.md","ref":"controlling-logical-flow/65-quiz-controlling-local-flow.md","articles":[]},{"title":"6.6 Extra Practice","level":"1.6.6","depth":2,"path":"controlling-logical-flow/66-extra-practice.md","ref":"controlling-logical-flow/66-extra-practice.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["exercises","quiz"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"quiz":{"labels":{"check":"Check my answers","showExplanation":"Explain","showCorrect":"Show all","explanationHeader":"Explanation"},"text":{"noChosen":"Choose at least one answer","incomplete":"Some correct answers are missing"},"buttons":{"showCorrect":true,"showExplanation":true}},"exercises":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"controlling-logical-flow/61-conditionals.md","mtime":"2017-08-24T00:03:32.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-08-24T00:04:33.822Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-quiz/script.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+
+    </body>
+</html>
+

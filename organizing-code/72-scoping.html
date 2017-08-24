@@ -1,0 +1,1240 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>7.2 Scoping · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-quiz/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="73-quiz-organizing-code.html" />
+    
+    
+    <link rel="prev" href="71-functions.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1 Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../what-is-programming/">
+            
+                <a href="../what-is-programming/">
+            
+                    
+                    2 What Is Programming?
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../what-is-programming/history.html">
+            
+                <a href="../what-is-programming/history.html">
+            
+                    
+                    2.1 History
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../what-is-programming/23-programming-languages.html">
+            
+                <a href="../what-is-programming/23-programming-languages.html">
+            
+                    
+                    2.2 Programming Languages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../what-is-programming/core-concepts.html">
+            
+                <a href="../what-is-programming/core-concepts.html">
+            
+                    
+                    2.3 Core Concepts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../what-is-programming/24-the-code-landscape.html">
+            
+                <a href="../what-is-programming/24-the-code-landscape.html">
+            
+                    
+                    2.4 The Code Landscape
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../what-is-programming/section-1-quiz.html">
+            
+                <a href="../what-is-programming/section-1-quiz.html">
+            
+                    
+                    2.5 Quiz: What is Programming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../what-is-javascript/">
+            
+                <a href="../what-is-javascript/">
+            
+                    
+                    3 What is JavaScript?
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../what-is-javascript/31-history-of-javascript.html">
+            
+                <a href="../what-is-javascript/31-history-of-javascript.html">
+            
+                    
+                    3.1 History of JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../what-is-javascript/32-javascript-on-the-web.html">
+            
+                <a href="../what-is-javascript/32-javascript-on-the-web.html">
+            
+                    
+                    3.2 JavaScript on the Web
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../what-is-javascript/33-javascript-in-the-wild.html">
+            
+                <a href="../what-is-javascript/33-javascript-in-the-wild.html">
+            
+                    
+                    3.3 JavaScript in the Wild
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../what-is-javascript/34-quiz-what-is-js.html">
+            
+                <a href="../what-is-javascript/34-quiz-what-is-js.html">
+            
+                    
+                    3.4 Quiz: What is JS? 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../basic-syntax/">
+            
+                <a href="../basic-syntax/">
+            
+                    
+                    4 Basic Syntax
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../basic-syntax/41-adding-javascript-to-an-html-file.html">
+            
+                <a href="../basic-syntax/41-adding-javascript-to-an-html-file.html">
+            
+                    
+                    4.1 Adding JavaScript to an HTML File
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../basic-syntax/comments.html">
+            
+                <a href="../basic-syntax/comments.html">
+            
+                    
+                    4.2 Comments
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../basic-syntax/43-operators.html">
+            
+                <a href="../basic-syntax/43-operators.html">
+            
+                    
+                    4.3 Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../basic-syntax/45-variables.html">
+            
+                <a href="../basic-syntax/45-variables.html">
+            
+                    
+                    4.4 Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../basic-syntax/45-coding-style.html">
+            
+                <a href="../basic-syntax/45-coding-style.html">
+            
+                    
+                    4.5 Coding Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../basic-syntax/46-quiz-basic-syntax.html">
+            
+                <a href="../basic-syntax/46-quiz-basic-syntax.html">
+            
+                    
+                    4.6 Quiz: Basic Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../basic-syntax/46-extra-practice.html">
+            
+                <a href="../basic-syntax/46-extra-practice.html">
+            
+                    
+                    4.7 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../data-types/">
+            
+                <a href="../data-types/">
+            
+                    
+                    5 Data Types and Structures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../data-types/51-numbers.html">
+            
+                <a href="../data-types/51-numbers.html">
+            
+                    
+                    5.1 Numbers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../data-types/52-strings.html">
+            
+                <a href="../data-types/52-strings.html">
+            
+                    
+                    5.2 Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../data-types/54-other-primitive-data-types.html">
+            
+                <a href="../data-types/54-other-primitive-data-types.html">
+            
+                    
+                    5.4 Other Primitive Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../data-types/55-objects.html">
+            
+                <a href="../data-types/55-objects.html">
+            
+                    
+                    5.5 Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../data-types/55-arrays.html">
+            
+                <a href="../data-types/55-arrays.html">
+            
+                    
+                    5.7 Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../data-types/57-json.html">
+            
+                <a href="../data-types/57-json.html">
+            
+                    
+                    5.8 JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../data-types/58-working-with-text.html">
+            
+                <a href="../data-types/58-working-with-text.html">
+            
+                    
+                    5.9 Working with Text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../data-types/510-quiz-data-types-and-structures.html">
+            
+                <a href="../data-types/510-quiz-data-types-and-structures.html">
+            
+                    
+                    5.10 Quiz: Data Types and Structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../data-types/511-extra-practice.html">
+            
+                <a href="../data-types/511-extra-practice.html">
+            
+                    
+                    5.11 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../controlling-logical-flow/">
+            
+                <a href="../controlling-logical-flow/">
+            
+                    
+                    6 Controlling Logical Flow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../controlling-logical-flow/61-conditionals.html">
+            
+                <a href="../controlling-logical-flow/61-conditionals.html">
+            
+                    
+                    6.1 Conditionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../controlling-logical-flow/62-for-loops.html">
+            
+                <a href="../controlling-logical-flow/62-for-loops.html">
+            
+                    
+                    6.2 For Loops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../controlling-logical-flow/64-while-loops.html">
+            
+                <a href="../controlling-logical-flow/64-while-loops.html">
+            
+                    
+                    6.3 While Loops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../controlling-logical-flow/63-forof-loops.html">
+            
+                <a href="../controlling-logical-flow/63-forof-loops.html">
+            
+                    
+                    6.4 Looping Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../controlling-logical-flow/65-quiz-controlling-local-flow.html">
+            
+                <a href="../controlling-logical-flow/65-quiz-controlling-local-flow.html">
+            
+                    
+                    6.5 Quiz: Controlling Local Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../controlling-logical-flow/66-extra-practice.html">
+            
+                <a href="../controlling-logical-flow/66-extra-practice.html">
+            
+                    
+                    6.6 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    7 Organizing Code
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="71-functions.html">
+            
+                <a href="71-functions.html">
+            
+                    
+                    7.1 Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.2" data-path="72-scoping.html">
+            
+                <a href="72-scoping.html">
+            
+                    
+                    7.2 Scoping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="73-quiz-organizing-code.html">
+            
+                <a href="73-quiz-organizing-code.html">
+            
+                    
+                    7.3 Quiz: Organizing Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="74-extra-practice.html">
+            
+                <a href="74-extra-practice.html">
+            
+                    
+                    7.4 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../object-oriented-javascript/">
+            
+                <a href="../object-oriented-javascript/">
+            
+                    
+                    8 Object Oriented JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../object-oriented-javascript/81-what-is-object-oriented-programming.html">
+            
+                <a href="../object-oriented-javascript/81-what-is-object-oriented-programming.html">
+            
+                    
+                    8.1 What is Object Oriented Programming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../object-oriented-javascript/82-creating-and-using-classes.html">
+            
+                <a href="../object-oriented-javascript/82-creating-and-using-classes.html">
+            
+                    
+                    8.2 Creating and Using Classes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../object-oriented-javascript/82-extending-classes.html">
+            
+                <a href="../object-oriented-javascript/82-extending-classes.html">
+            
+                    
+                    8.3 Extending Classes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../object-oriented-javascript/84-quiz-object-oriented-javascript.html">
+            
+                <a href="../object-oriented-javascript/84-quiz-object-oriented-javascript.html">
+            
+                    
+                    8.4 Quiz: Object Oriented JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../object-oriented-javascript/85-extra-practice.html">
+            
+                <a href="../object-oriented-javascript/85-extra-practice.html">
+            
+                    
+                    8.5 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../the-document-object-model/">
+            
+                <a href="../the-document-object-model/">
+            
+                    
+                    9 The Document Object Model (DOM)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../the-document-object-model/91-selecting-elements-in-the-dom.html">
+            
+                <a href="../the-document-object-model/91-selecting-elements-in-the-dom.html">
+            
+                    
+                    9.1 Selecting Elements in the DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../the-document-object-model/92-creating-and-removing-dom-elements.html">
+            
+                <a href="../the-document-object-model/92-creating-and-removing-dom-elements.html">
+            
+                    
+                    9.2 Creating and Removing DOM Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../the-document-object-model/93-modifying-elements-in-the-dom.html">
+            
+                <a href="../the-document-object-model/93-modifying-elements-in-the-dom.html">
+            
+                    
+                    9.3 Modifying DOM Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../the-document-object-model/94-altering-dom-element-styles.html">
+            
+                <a href="../the-document-object-model/94-altering-dom-element-styles.html">
+            
+                    
+                    9.4 Altering DOM Element Styles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../the-document-object-model/93-html-data-attributes.html">
+            
+                <a href="../the-document-object-model/93-html-data-attributes.html">
+            
+                    
+                    9.5 Using HTML Data Attributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../the-document-object-model/94-quiz-the-dom.html">
+            
+                <a href="../the-document-object-model/94-quiz-the-dom.html">
+            
+                    
+                    9.6 Quiz: The DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../the-document-object-model/97-extra-practice.html">
+            
+                <a href="../the-document-object-model/97-extra-practice.html">
+            
+                    
+                    9.7 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../handling-events/">
+            
+                <a href="../handling-events/">
+            
+                    
+                    10 Handling Events
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../handling-events/101-adding-event-listeners.html">
+            
+                <a href="../handling-events/101-adding-event-listeners.html">
+            
+                    
+                    10.1 Adding Event Listeners
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../handling-events/102-responding-to-events.html">
+            
+                <a href="../handling-events/102-responding-to-events.html">
+            
+                    
+                    10.2 Responding to Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../handling-events/104-custom-events.html">
+            
+                <a href="../handling-events/104-custom-events.html">
+            
+                    
+                    10.3 Custom Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../handling-events/103-detecting-document-load-events.html">
+            
+                <a href="../handling-events/103-detecting-document-load-events.html">
+            
+                    
+                    10.4 Detecting Document Load Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../handling-events/104-quiz-handling-events.html">
+            
+                <a href="../handling-events/104-quiz-handling-events.html">
+            
+                    
+                    10.5 Quiz: Handling Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="../handling-events/105-extra-practice.html">
+            
+                <a href="../handling-events/105-extra-practice.html">
+            
+                    
+                    10.6 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../11-conclusion.html">
+            
+                <a href="../11-conclusion.html">
+            
+                    
+                    11 Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../appendix-a-resources-for-learning-more-about-javascript.html">
+            
+                <a href="../appendix-a-resources-for-learning-more-about-javascript.html">
+            
+                    
+                    Appendix A: Resources for Learning More About JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../appendix-b-debugging-tips.html">
+            
+                <a href="../appendix-b-debugging-tips.html">
+            
+                    
+                    Appendix B: Debugging Tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../GLOSSARY.html">
+            
+                <a href="../GLOSSARY.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >7.2 Scoping</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="scope-and-scoping">Scope and Scoping</h1>
+<p>Some commands we&apos;ve used throughout this book without really explaining why are the <code>var</code> and <code>let</code> commands, which are used to declare a variable. We know they indicate that a new variable has been created, but we have not yet discussed how these commands are different, or what those differences mean for our code. In this section we will cover these differences and how to use them in a program.</p>
+<h2 id="scope">Scope</h2>
+<p>In programming languages there is generally a notion of &quot;<a href="../GLOSSARY.html#scope" class="glossary-term" title="The context of the code, including all known object, function, and variable references, as it is executed by the interpreter.">scope</a>&quot;. The <a href="https://developer.mozilla.org/en-US/docs/Glossary/Scope" target="_blank">scope</a> is a term used to describe the current context of the code: all of the variables, functions, objects, etc. that are known to the programming language <a href="../GLOSSARY.html#interpreter" class="glossary-term" title="An application used to convert source code in a given programming language into machine instructions that can be executed by the computing hardware.">interpreter</a> at the time of execution. Take the following snippet of JavaScript as an example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> foo = <span class="hljs-string">&quot;Hello, world!&quot;</span>;
+<span class="hljs-keyword">var</span> bar = <span class="hljs-number">42</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">baz</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;The question of whether a computer can think is no more interesting than the question of whether a submarine can swim.&quot;</span>);
+}
+
+<span class="hljs-keyword">var</span> quote = baz();
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Foo: <span class="hljs-subst">${foo}</span>`</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Bar: <span class="hljs-subst">${bar}</span>`</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Quote: <span class="hljs-subst">${quote}</span>`</span>);
+</code></pre>
+<p>In the example above, the <a href="../GLOSSARY.html#scope" class="glossary-term" title="The context of the code, including all known object, function, and variable references, as it is executed by the interpreter.">scope</a> of this script includes all of the globally available objects available in JavaScript (objects like <code>Number</code> and <code>Object</code> and <code>for</code> and <code>if</code>, to name a few). The <a href="../GLOSSARY.html#scope" class="glossary-term" title="The context of the code, including all known object, function, and variable references, as it is executed by the interpreter.">scope</a> also includes three code objects that we have defined: <code>foo</code>, <code>bar</code>, and <code>baz()</code>. Although <code>foo</code> is a String, <code>bar</code> is a Number, and <code>baz()</code> is a Function, each of them is &quot;known&quot; to the JavaScript <a href="../GLOSSARY.html#interpreter" class="glossary-term" title="An application used to convert source code in a given programming language into machine instructions that can be executed by the computing hardware.">interpreter</a> as it executes these lines. When we set <code>quote</code> equal to <code>baz()</code>, the <a href="../GLOSSARY.html#interpreter" class="glossary-term" title="An application used to convert source code in a given programming language into machine instructions that can be executed by the computing hardware.">interpreter</a> understands which function we are calling because everything is accessible within the same <a href="../GLOSSARY.html#scope" class="glossary-term" title="The context of the code, including all known object, function, and variable references, as it is executed by the interpreter.">scope</a>.</p>
+<p>There are, however, situations where variables or functions may not be known to all scopes. Sometimes we want to make variables exclusive to certain parts of our code. Each time we declare a variable, we must make a choice about whether we want that variable to be &quot;<a href="../GLOSSARY.html#global" class="glossary-term" title="A global object is available at every scope and at every line of code. In JavaScript, the Window object is an example of a global object. Variables may be declared at a global or local scope level.">global</a>&quot; or &quot;<a href="../GLOSSARY.html#local" class="glossary-term" title="Local objects are only known within the scope where they are defined. This is typically limited to a code block between two curly braces. Local objects are often used within functions, loops, and conditionals for  specific tasks, and they may be named with generic names that are re-used in other local scope contexts.">local</a>&quot;. </p>
+<h2 id="global-variables-var">Global Variables: <code>var</code></h2>
+<p>In ECMAScript 6 (the latest standard for JavaScript), there are two types of variables: <a href="../GLOSSARY.html#global" class="glossary-term" title="A global object is available at every scope and at every line of code. In JavaScript, the Window object is an example of a global object. Variables may be declared at a global or local scope level.">Global</a> and <a href="../GLOSSARY.html#local" class="glossary-term" title="Local objects are only known within the scope where they are defined. This is typically limited to a code block between two curly braces. Local objects are often used within functions, loops, and conditionals for  specific tasks, and they may be named with generic names that are re-used in other local scope contexts.">local</a>. <a href="../GLOSSARY.html#global" class="glossary-term" title="A global object is available at every scope and at every line of code. In JavaScript, the Window object is an example of a global object. Variables may be declared at a global or local scope level.">Global</a> variables in JavaScript are declared with the <code>var</code> command:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">echoNum</span>(<span class="hljs-params"></span>)</span>{
+    myNum = <span class="hljs-number">42</span>
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`myNum: <span class="hljs-subst">${myNum}</span>`</span>);
+}
+
+echoNum();
+<span class="hljs-keyword">var</span> foo = myNum;
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`foo: <span class="hljs-subst">${foo}</span>`</span>);
+</code></pre>
+<p>In the code above, <code>myNum</code> is declared as a <a href="../GLOSSARY.html#global" class="glossary-term" title="A global object is available at every scope and at every line of code. In JavaScript, the Window object is an example of a global object. Variables may be declared at a global or local scope level.">global</a> variable within the <code>echoNum()</code> function. This means that we can reference <code>myNum</code> from outside the function where it is declared (and assign its value to <code>foo</code>).</p>
+<p>The <code>var</code> command used to be the standard way of declaring a variable in a JavaScript program. There is a distinction between variables that are truly <a href="../GLOSSARY.html#global" class="glossary-term" title="A global object is available at every scope and at every line of code. In JavaScript, the Window object is an example of a global object. Variables may be declared at a global or local scope level.">global</a> (declared with no <code>var</code>, <code>let</code>, or <code>const</code> command) and variables declared with <code>var</code>, but we won&apos;t be getting into that at this point. In most cases, <code>var</code> effectively creates a variable that is usable by all parts of your program. <strong>NOTE:</strong> At this point in JavaScript history, it&apos;s preferred to use <a href="../GLOSSARY.html#local" class="glossary-term" title="Local objects are only known within the scope where they are defined. This is typically limited to a code block between two curly braces. Local objects are often used within functions, loops, and conditionals for  specific tasks, and they may be named with generic names that are re-used in other local scope contexts.">local</a> variables declared with <code>let</code> (see below) over <a href="../GLOSSARY.html#global" class="glossary-term" title="A global object is available at every scope and at every line of code. In JavaScript, the Window object is an example of a global object. Variables may be declared at a global or local scope level.">global</a> variables or variables declared with <code>var</code>.</p>
+<p>Variables declared with the <code>var</code> command should be treated as <a href="../GLOSSARY.html#global" class="glossary-term" title="A global object is available at every scope and at every line of code. In JavaScript, the Window object is an example of a global object. Variables may be declared at a global or local scope level.">global</a> variables (they aren&apos;t <em>exactly</em> <a href="../GLOSSARY.html#global" class="glossary-term" title="A global object is available at every scope and at every line of code. In JavaScript, the Window object is an example of a global object. Variables may be declared at a global or local scope level.">global</a> variables, but for now that&apos;s the safest way to treat them), which means their usage should be limited. In general we try to declare as few <a href="../GLOSSARY.html#global" class="glossary-term" title="A global object is available at every scope and at every line of code. In JavaScript, the Window object is an example of a global object. Variables may be declared at a global or local scope level.">global</a> variables as possible. This is for a few reasons, but primary among them are these three: </p>
+<ol>
+<li><a href="../GLOSSARY.html#global" class="glossary-term" title="A global object is available at every scope and at every line of code. In JavaScript, the Window object is an example of a global object. Variables may be declared at a global or local scope level.">Global</a> variables take up a name that cannot be used anywhere else in our code. Having <a href="../GLOSSARY.html#global" class="glossary-term" title="A global object is available at every scope and at every line of code. In JavaScript, the Window object is an example of a global object. Variables may be declared at a global or local scope level.">global</a> variables with generic names like <code>counter</code> or <code>item</code> would be difficult to accommodate, since we often want to use those words in different contexts and not have our data or operations get mixed up.</li>
+<li>The larger the <a href="../GLOSSARY.html#scope" class="glossary-term" title="The context of the code, including all known object, function, and variable references, as it is executed by the interpreter.">scope</a> becomes for any given piece of code, the longer it takes to interpret. By controlling how many code objects we load into our <a href="../GLOSSARY.html#scope" class="glossary-term" title="The context of the code, including all known object, function, and variable references, as it is executed by the interpreter.">scope</a> we can make our code execute more quickly.</li>
+<li>The more objects we have floating around in our <a href="../GLOSSARY.html#global" class="glossary-term" title="A global object is available at every scope and at every line of code. In JavaScript, the Window object is an example of a global object. Variables may be declared at a global or local scope level.">global</a> <a href="../GLOSSARY.html#scope" class="glossary-term" title="The context of the code, including all known object, function, and variable references, as it is executed by the interpreter.">scope</a>, the more chance there is for error. Operations can get mixed up. Data can get mangled. Generally &quot;bad craziness&quot; might ensue.</li>
+</ol>
+<h2 id="local-variables-let">Local Variables: <code>let</code></h2>
+<p>In most of our coding tasks, we attempt to keep our variables and functions <a href="../GLOSSARY.html#local" class="glossary-term" title="Local objects are only known within the scope where they are defined. This is typically limited to a code block between two curly braces. Local objects are often used within functions, loops, and conditionals for  specific tasks, and they may be named with generic names that are re-used in other local scope contexts.">local</a> to small pieces of code. The <code>let</code> command allows us to declare a variable that only exists in the code block where it is declared and any code blocks contained within (children of the original code block). Here&apos;s an example:</p>
+<pre><code class="lang-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">echoNum</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">let</span> myNum = <span class="hljs-number">42</span>;
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`myNum can be referenced inside the function: <span class="hljs-subst">${myNum}</span>`</span>);
+    <span class="hljs-keyword">if</span> (myNum === <span class="hljs-number">42</span>){
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`myNum can be referenced in this conditional: <span class="hljs-subst">${myNum}</span>`</span>);
+        <span class="hljs-keyword">let</span> foo = <span class="hljs-string">&quot;Even more local.&quot;</span>;
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`foo has been declared and scoped to exist only within this conditional: <span class="hljs-subst">${foo}</span>`</span>);
+    }
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`foo cannot be referenced outside of the conditional where it is declared: <span class="hljs-subst">${foo}</span>`</span>);
+}
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`myNum CANNOT be referenced outside the function: <span class="hljs-subst">${myNum}</span>`</span>);
+</code></pre>
+<p>In this example, we see that <code>myNum</code> is declared inside of <code>echoNum()</code>, but it is declared with the <code>let</code> command. This means that <code>myNum</code> only exists inside of <code>echoNum()</code> and any code blocks contained within <code>echoNum()</code>. The conditional inside of <code>echoNum()</code> is another code block (indicated by the curly braces), and it can reference <code>myNum</code>. Within the conditional codeblock the variable <code>foo</code> is declared. This variable only exists within the conditional statement. It cannot be referenced outside of the conditional at all.</p>
+<p>This example shows several ways in which <code>let</code> restricts the availability of <a href="../GLOSSARY.html#local" class="glossary-term" title="Local objects are only known within the scope where they are defined. This is typically limited to a code block between two curly braces. Local objects are often used within functions, loops, and conditionals for  specific tasks, and they may be named with generic names that are re-used in other local scope contexts.">local</a> variables. <a href="../GLOSSARY.html#local" class="glossary-term" title="Local objects are only known within the scope where they are defined. This is typically limited to a code block between two curly braces. Local objects are often used within functions, loops, and conditionals for  specific tasks, and they may be named with generic names that are re-used in other local scope contexts.">Local</a> variables are available inside their own <a href="../GLOSSARY.html#scope" class="glossary-term" title="The context of the code, including all known object, function, and variable references, as it is executed by the interpreter.">scope</a> (code block) and any &quot;child&quot; scopes (code blocks). </p>
+<p>It&apos;s useful to be able to make <a href="../GLOSSARY.html#local" class="glossary-term" title="Local objects are only known within the scope where they are defined. This is typically limited to a code block between two curly braces. Local objects are often used within functions, loops, and conditionals for  specific tasks, and they may be named with generic names that are re-used in other local scope contexts.">local</a> variables with <code>let</code> because we often need to make quick variables that perform similar tasks within different code blocks. For example, we may wish to use variables to control a loop (e.g. <code>counter</code>, <code>index</code>, <code>item</code>) or to help with a conditional (e.g. <code>isSaved</code>, <code>isDirty</code>) and not have those values persist outside of their specific code block. We could use these variable names in multiple contexts, so keeping them <a href="../GLOSSARY.html#local" class="glossary-term" title="Local objects are only known within the scope where they are defined. This is typically limited to a code block between two curly braces. Local objects are often used within functions, loops, and conditionals for  specific tasks, and they may be named with generic names that are re-used in other local scope contexts.">local</a> to each one is crucial.</p>
+<div class="tip-box">
+
+<h3 id="hoisting-in-javascript">Hoisting in JavaScript</h3>
+
+<p>A somewhat unique quality of JavaScript is the notion of &quot;<a href="../GLOSSARY.html#hoisting" class="glossary-term" title="A feature of JavaScript where variables and functions may be referenced before they are declared without error. (See this article on MDN for additional details.)">hoisting</a>&quot;. A variable declared with <code>var</code> or function may be used before it is declared, as long as it is declared somewhere later in the code. This can lead to situations where a variable may be referenced or a function may be invoked on a line preceding the actual declaration of that variable or function. In general, it&apos;s best to avoid reliance on this quality because it can lead to writing confusing code that is difficult for other developers to read and understand.</p>
+<p>This is not an actual feature of JavaScript; it is a byproduct of the way that JavaScript is interpreted and executed. When a JavaScript program is interpreted, the code is reviewed and all objects that are defined are kept in memory. This allows the <a href="../GLOSSARY.html#interpreter" class="glossary-term" title="An application used to convert source code in a given programming language into machine instructions that can be executed by the computing hardware.">interpreter</a> to review the code, find the important objects, and then understand references to those objects, even if the references in the code are made on lines preceding the object declarations. Although it&apos;s a reliable effect of interpretation,  it&apos;s still not recommended to make a habit of using functions or variables before you have declared them. In fact, the standard practice is to declare all variables at the beginning of a code block or file, and to define functions in some location within our code that makes sense.</p>
+
+</div>
+
+
+
+
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="71-functions.html" class="navigation navigation-prev " aria-label="Previous page: 7.1 Functions">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="73-quiz-organizing-code.html" class="navigation navigation-next " aria-label="Next page: 7.3 Quiz: Organizing Code">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"7.2 Scoping","level":"1.7.2","depth":2,"next":{"title":"7.3 Quiz: Organizing Code","level":"1.7.3","depth":2,"path":"organizing-code/73-quiz-organizing-code.md","ref":"organizing-code/73-quiz-organizing-code.md","articles":[]},"previous":{"title":"7.1 Functions","level":"1.7.1","depth":2,"path":"organizing-code/71-functions.md","ref":"organizing-code/71-functions.md","articles":[]},"dir":"ltr"},"config":{"plugins":["exercises","quiz"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"quiz":{"labels":{"check":"Check my answers","showExplanation":"Explain","showCorrect":"Show all","explanationHeader":"Explanation"},"text":{"noChosen":"Choose at least one answer","incomplete":"Some correct answers are missing"},"buttons":{"showCorrect":true,"showExplanation":true}},"exercises":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"organizing-code/72-scoping.md","mtime":"2017-08-24T00:03:32.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-08-24T00:04:33.822Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-quiz/script.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+
+    </body>
+</html>
+

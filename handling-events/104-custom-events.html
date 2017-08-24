@@ -1,0 +1,1275 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>10.3 Custom Events · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-exercises/exercises.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-quiz/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="103-detecting-document-load-events.html" />
+    
+    
+    <link rel="prev" href="102-responding-to-events.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1 Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../what-is-programming/">
+            
+                <a href="../what-is-programming/">
+            
+                    
+                    2 What Is Programming?
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../what-is-programming/history.html">
+            
+                <a href="../what-is-programming/history.html">
+            
+                    
+                    2.1 History
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../what-is-programming/23-programming-languages.html">
+            
+                <a href="../what-is-programming/23-programming-languages.html">
+            
+                    
+                    2.2 Programming Languages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../what-is-programming/core-concepts.html">
+            
+                <a href="../what-is-programming/core-concepts.html">
+            
+                    
+                    2.3 Core Concepts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../what-is-programming/24-the-code-landscape.html">
+            
+                <a href="../what-is-programming/24-the-code-landscape.html">
+            
+                    
+                    2.4 The Code Landscape
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../what-is-programming/section-1-quiz.html">
+            
+                <a href="../what-is-programming/section-1-quiz.html">
+            
+                    
+                    2.5 Quiz: What is Programming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../what-is-javascript/">
+            
+                <a href="../what-is-javascript/">
+            
+                    
+                    3 What is JavaScript?
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../what-is-javascript/31-history-of-javascript.html">
+            
+                <a href="../what-is-javascript/31-history-of-javascript.html">
+            
+                    
+                    3.1 History of JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../what-is-javascript/32-javascript-on-the-web.html">
+            
+                <a href="../what-is-javascript/32-javascript-on-the-web.html">
+            
+                    
+                    3.2 JavaScript on the Web
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../what-is-javascript/33-javascript-in-the-wild.html">
+            
+                <a href="../what-is-javascript/33-javascript-in-the-wild.html">
+            
+                    
+                    3.3 JavaScript in the Wild
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../what-is-javascript/34-quiz-what-is-js.html">
+            
+                <a href="../what-is-javascript/34-quiz-what-is-js.html">
+            
+                    
+                    3.4 Quiz: What is JS? 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../basic-syntax/">
+            
+                <a href="../basic-syntax/">
+            
+                    
+                    4 Basic Syntax
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../basic-syntax/41-adding-javascript-to-an-html-file.html">
+            
+                <a href="../basic-syntax/41-adding-javascript-to-an-html-file.html">
+            
+                    
+                    4.1 Adding JavaScript to an HTML File
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../basic-syntax/comments.html">
+            
+                <a href="../basic-syntax/comments.html">
+            
+                    
+                    4.2 Comments
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../basic-syntax/43-operators.html">
+            
+                <a href="../basic-syntax/43-operators.html">
+            
+                    
+                    4.3 Operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../basic-syntax/45-variables.html">
+            
+                <a href="../basic-syntax/45-variables.html">
+            
+                    
+                    4.4 Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../basic-syntax/45-coding-style.html">
+            
+                <a href="../basic-syntax/45-coding-style.html">
+            
+                    
+                    4.5 Coding Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../basic-syntax/46-quiz-basic-syntax.html">
+            
+                <a href="../basic-syntax/46-quiz-basic-syntax.html">
+            
+                    
+                    4.6 Quiz: Basic Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../basic-syntax/46-extra-practice.html">
+            
+                <a href="../basic-syntax/46-extra-practice.html">
+            
+                    
+                    4.7 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../data-types/">
+            
+                <a href="../data-types/">
+            
+                    
+                    5 Data Types and Structures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../data-types/51-numbers.html">
+            
+                <a href="../data-types/51-numbers.html">
+            
+                    
+                    5.1 Numbers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../data-types/52-strings.html">
+            
+                <a href="../data-types/52-strings.html">
+            
+                    
+                    5.2 Strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../data-types/54-other-primitive-data-types.html">
+            
+                <a href="../data-types/54-other-primitive-data-types.html">
+            
+                    
+                    5.4 Other Primitive Data Types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../data-types/55-objects.html">
+            
+                <a href="../data-types/55-objects.html">
+            
+                    
+                    5.5 Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../data-types/55-arrays.html">
+            
+                <a href="../data-types/55-arrays.html">
+            
+                    
+                    5.7 Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../data-types/57-json.html">
+            
+                <a href="../data-types/57-json.html">
+            
+                    
+                    5.8 JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../data-types/58-working-with-text.html">
+            
+                <a href="../data-types/58-working-with-text.html">
+            
+                    
+                    5.9 Working with Text
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../data-types/510-quiz-data-types-and-structures.html">
+            
+                <a href="../data-types/510-quiz-data-types-and-structures.html">
+            
+                    
+                    5.10 Quiz: Data Types and Structures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../data-types/511-extra-practice.html">
+            
+                <a href="../data-types/511-extra-practice.html">
+            
+                    
+                    5.11 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../controlling-logical-flow/">
+            
+                <a href="../controlling-logical-flow/">
+            
+                    
+                    6 Controlling Logical Flow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../controlling-logical-flow/61-conditionals.html">
+            
+                <a href="../controlling-logical-flow/61-conditionals.html">
+            
+                    
+                    6.1 Conditionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../controlling-logical-flow/62-for-loops.html">
+            
+                <a href="../controlling-logical-flow/62-for-loops.html">
+            
+                    
+                    6.2 For Loops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../controlling-logical-flow/64-while-loops.html">
+            
+                <a href="../controlling-logical-flow/64-while-loops.html">
+            
+                    
+                    6.3 While Loops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../controlling-logical-flow/63-forof-loops.html">
+            
+                <a href="../controlling-logical-flow/63-forof-loops.html">
+            
+                    
+                    6.4 Looping Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../controlling-logical-flow/65-quiz-controlling-local-flow.html">
+            
+                <a href="../controlling-logical-flow/65-quiz-controlling-local-flow.html">
+            
+                    
+                    6.5 Quiz: Controlling Local Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../controlling-logical-flow/66-extra-practice.html">
+            
+                <a href="../controlling-logical-flow/66-extra-practice.html">
+            
+                    
+                    6.6 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../organizing-code/">
+            
+                <a href="../organizing-code/">
+            
+                    
+                    7 Organizing Code
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../organizing-code/71-functions.html">
+            
+                <a href="../organizing-code/71-functions.html">
+            
+                    
+                    7.1 Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../organizing-code/72-scoping.html">
+            
+                <a href="../organizing-code/72-scoping.html">
+            
+                    
+                    7.2 Scoping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../organizing-code/73-quiz-organizing-code.html">
+            
+                <a href="../organizing-code/73-quiz-organizing-code.html">
+            
+                    
+                    7.3 Quiz: Organizing Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../organizing-code/74-extra-practice.html">
+            
+                <a href="../organizing-code/74-extra-practice.html">
+            
+                    
+                    7.4 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../object-oriented-javascript/">
+            
+                <a href="../object-oriented-javascript/">
+            
+                    
+                    8 Object Oriented JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../object-oriented-javascript/81-what-is-object-oriented-programming.html">
+            
+                <a href="../object-oriented-javascript/81-what-is-object-oriented-programming.html">
+            
+                    
+                    8.1 What is Object Oriented Programming?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../object-oriented-javascript/82-creating-and-using-classes.html">
+            
+                <a href="../object-oriented-javascript/82-creating-and-using-classes.html">
+            
+                    
+                    8.2 Creating and Using Classes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../object-oriented-javascript/82-extending-classes.html">
+            
+                <a href="../object-oriented-javascript/82-extending-classes.html">
+            
+                    
+                    8.3 Extending Classes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../object-oriented-javascript/84-quiz-object-oriented-javascript.html">
+            
+                <a href="../object-oriented-javascript/84-quiz-object-oriented-javascript.html">
+            
+                    
+                    8.4 Quiz: Object Oriented JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../object-oriented-javascript/85-extra-practice.html">
+            
+                <a href="../object-oriented-javascript/85-extra-practice.html">
+            
+                    
+                    8.5 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../the-document-object-model/">
+            
+                <a href="../the-document-object-model/">
+            
+                    
+                    9 The Document Object Model (DOM)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../the-document-object-model/91-selecting-elements-in-the-dom.html">
+            
+                <a href="../the-document-object-model/91-selecting-elements-in-the-dom.html">
+            
+                    
+                    9.1 Selecting Elements in the DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../the-document-object-model/92-creating-and-removing-dom-elements.html">
+            
+                <a href="../the-document-object-model/92-creating-and-removing-dom-elements.html">
+            
+                    
+                    9.2 Creating and Removing DOM Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../the-document-object-model/93-modifying-elements-in-the-dom.html">
+            
+                <a href="../the-document-object-model/93-modifying-elements-in-the-dom.html">
+            
+                    
+                    9.3 Modifying DOM Elements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../the-document-object-model/94-altering-dom-element-styles.html">
+            
+                <a href="../the-document-object-model/94-altering-dom-element-styles.html">
+            
+                    
+                    9.4 Altering DOM Element Styles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../the-document-object-model/93-html-data-attributes.html">
+            
+                <a href="../the-document-object-model/93-html-data-attributes.html">
+            
+                    
+                    9.5 Using HTML Data Attributes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../the-document-object-model/94-quiz-the-dom.html">
+            
+                <a href="../the-document-object-model/94-quiz-the-dom.html">
+            
+                    
+                    9.6 Quiz: The DOM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../the-document-object-model/97-extra-practice.html">
+            
+                <a href="../the-document-object-model/97-extra-practice.html">
+            
+                    
+                    9.7 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    10 Handling Events
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="101-adding-event-listeners.html">
+            
+                <a href="101-adding-event-listeners.html">
+            
+                    
+                    10.1 Adding Event Listeners
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="102-responding-to-events.html">
+            
+                <a href="102-responding-to-events.html">
+            
+                    
+                    10.2 Responding to Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.3" data-path="104-custom-events.html">
+            
+                <a href="104-custom-events.html">
+            
+                    
+                    10.3 Custom Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="103-detecting-document-load-events.html">
+            
+                <a href="103-detecting-document-load-events.html">
+            
+                    
+                    10.4 Detecting Document Load Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="104-quiz-handling-events.html">
+            
+                <a href="104-quiz-handling-events.html">
+            
+                    
+                    10.5 Quiz: Handling Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="105-extra-practice.html">
+            
+                <a href="105-extra-practice.html">
+            
+                    
+                    10.6 Extra Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../11-conclusion.html">
+            
+                <a href="../11-conclusion.html">
+            
+                    
+                    11 Conclusion
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../appendix-a-resources-for-learning-more-about-javascript.html">
+            
+                <a href="../appendix-a-resources-for-learning-more-about-javascript.html">
+            
+                    
+                    Appendix A: Resources for Learning More About JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../appendix-b-debugging-tips.html">
+            
+                <a href="../appendix-b-debugging-tips.html">
+            
+                    
+                    Appendix B: Debugging Tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../GLOSSARY.html">
+            
+                <a href="../GLOSSARY.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >10.3 Custom Events</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="custom-events">Custom Events</h1>
+<p>Although we are often working with existing events that are triggered by elements in the DOM according to their specifications (things like &quot;click&quot;, &quot;submit&quot;, &quot;mouseover&quot;, etc.), sometimes we want to create our own events based on actions in the system. We might have various processes happening in an asynchronous fashion, or we might want to alert people of new items available on a feed, or we could kick off a loosely coupled custom process based on our specific requirements. There are many reasons for creating a custom event, and they are not too difficult to manage.</p>
+<h2 id="general-purpose-custom-events">General Purpose Custom Events</h2>
+<p>In order to create a custom event, we must first create a new <code>Event</code> object, and then we must create some listener to watch for our new event. When we wish to trigger the event we use the <code>document.dispatchEvent()</code> <a href="../GLOSSARY.html#method" class="glossary-term" title="A function related to a Class object. Class objects are made up of data properties and methods that perform some behavior or action. The methods are the &quot;verbs&quot; of the Class.">method</a>, which also exists on all DOM elements. </p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> publishCompleted = <span class="hljs-keyword">new</span> Event(<span class="hljs-string">&apos;publishCompleted&apos;</span>);
+
+<span class="hljs-keyword">let</span> notification = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;#notification&apos;</span>);
+
+notification.addEventListener(<span class="hljs-string">&apos;publishCompleted&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>)</span>{
+    event.target.innerHTML = <span class="hljs-string">&quot;Publishing has completed.&quot;</span>;
+});
+
+<span class="hljs-built_in">document</span>.dispatchEvent(publishCompleted);
+</code></pre>
+<p>In the example above, we see that a new <code>Event</code> object is created for a <code>&apos;publishCompleted&apos;</code> event. This <code>Event</code> can now be dispatched whenever we need. The <code>notification</code> object is a DOM element that has an event listener watching for the <code>&apos;publishCompleted&apos;</code> signal. When it detects the <code>&apos;publishCompleted&apos;</code> event signal, it will trigger an <a href="../GLOSSARY.html#anonymous-function" class="glossary-term" title="A function that is defined as part of a method call or object definition such that it does not take on a name of it&apos;s own. Here is an example of an anonymous function used in an addEventListener() method call.">anonymous function</a> that changes the text of the <code>notification</code> element (since <code>notification</code> is the <code>event.target</code> in this case).</p>
+<p>These kinds of custom events can help us build an event-driven system based upon loose coupling. But there are many events pre-defined in JavaScript that we can extend and use to fit our needs.</p>
+<h2 id="using-built-in-events">Using Built-in Events</h2>
+<p>There are <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" target="_blank">many events defined in JavaScript</a> that can be used to create custom event handlers. Here are a few:</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/AnimationEvent" target="_blank"><code>AnimationEvent</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/DragEvent" target="_blank"><code>DragEvent</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent" target="_blank"><code>KeyboardEvent</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent" target="_blank"><code>MouseEvent</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/UIEvent" target="_blank"><code>UIEvent</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/GamepadEvent" target="_blank"><code>GamePadEvent</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/ErrorEvent" target="_blank"><code>ErrorEvent</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/PointerEvent" target="_blank"><code>PointerEvent</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/StorageEvent" target="_blank"><code>StorageEvent</code></a></li>
+<li>and many more...</li>
+</ul>
+<p>If we want to make an event listener that leverages more than the standard &quot;click&quot; style behavior, we can use these events to our advantage. We can intercept <code>MouseEvent</code> events and determine the <code>x, y</code> coordinates of the mouse pointer. We can listen for <code>KeyboardEvent</code> events to provide keyboard shortcuts for our users. Each of these <code>Event</code> types offers extra information and extra event signals that we can use in defining our own listeners. For example, the <code>KeyboardEvent</code> object makes a <code>keydown</code> event signal available. This signal is dispatched whenever the user presses a key on the keyboard.  Here is an example of using <code>keydown</code> events to provide some interaction for the user.</p>
+<pre><code class="lang-js"><span class="hljs-built_in">document</span>.addEventListener(<span class="hljs-string">&apos;keydown&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>)</span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`You pressed the <span class="hljs-subst">${event.key}</span> key.`</span>);
+}
+</code></pre>
+<p>The code above will print a message into the console every time the user presses a key. One of the extra data points the <code>KeyboardEvent</code> event gives us is the <code>event.key</code> <a href="../GLOSSARY.html#property" class="glossary-term" title="A piece of data related to a Class or object. Objects are made up of data properties, which contain information describing the object, and methods, which perform some behavior or action. The properties are the &quot;adjectives&quot; of the object.">property</a>, which tells us the key that was pressed. Other <code>KeyboardEvent</code> events that are dispatched include <code>keyup</code>, <code>keydown</code>, and <code>keypressed</code>. There are also many more properties that can help us build great keyboard interfaces. </p>
+<p>For any family of events we wish to explore, we should read through the documentation so we understand exactly what events they signal and how those events are determined. It&apos;s useful to know, for example, the difference between a <code>keydown</code> and a <code>keyup</code> and the fact that most people want actions to happen on <code>keyup</code>, but not on <code>keydown</code> (because that&apos;s how most systems already work). There is no way to apply a general approach to all of these intricate details, so we must dive into each case on its own.</p>
+<h2 id="exercises">Exercises</h2>
+<p>Please try working these exercises to practice some of the skills we&apos;ve learned in this section.</p>
+<p><div class="exercise">
+	<div class="header">Exercise</div>
+	<div class="alert alert-success">
+	    <b>Correct!</b>
+	</div>
+
+	<div class="alert alert-danger error-message">
+	    <b>False!</b>
+	</div>
+
+	<div class="message">
+	
+Add a <code>keyup</code> event listener to the <code>document</code> sets <code>keyCheck</code> to <code>true</code> when the <code>w</code>, <code>a</code>, <code>s</code>, <code>d</code> keys are pressed.
+
+
+	</div>
+	<div class="editor" style="height: 220px">let keyCheck = false;
+
+// create event listener
+
+// determine which key was pressed
+
+// if `w`, `a`, `s`, `d` keys are pressed, set `keyCheck = true`</div>
+
+	<pre class="hidden code-solution">// solution code
+let keyCheck = false;
+
+document.addEventListener(&apos;keyup&apos;, function(event){
+    if ( (event.key === &apos;w&apos;) ||
+         (event.key === &apos;a&apos;) ||
+         (event.key === &apos;s&apos;) ||
+         (event.key === &apos;d&apos;) ) {
+             keyCheck = true;
+     }
+});</pre>
+	<pre class="hidden code-validation">assert((keyCheck===true &amp;&amp; triggerCheck===true), &quot;Incorrect.&quot;);</pre>
+	
+	<pre class="hidden code-context">class MockElem {
+    constructor(type){
+        this.children = [];
+        this.innerHTML = &apos;&apos;;
+        this.style = {};
+        this.tagName = type;
+    }
+    addEventListener(trigger, func){
+        if (trigger === &apos;keyup&apos;) {
+            triggerCheck = true;
+        }        
+        func(event);
+    }
+}
+var triggerCheck = false;
+var document = new MockElem(&apos;document&apos;);
+
+var event = { key: &apos;w&apos; };</pre>
+	
+
+	<div class="buttons">
+	    <a href="#" class="button size-2 action-submit">Submit</a>
+	    <a href="#" class="button size-2 action-solution">Solution</a>
+	</div>
+</div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="102-responding-to-events.html" class="navigation navigation-prev " aria-label="Previous page: 10.2 Responding to Events">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="103-detecting-document-load-events.html" class="navigation navigation-next " aria-label="Next page: 10.4 Detecting Document Load Events">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"10.3 Custom Events","level":"1.10.3","depth":2,"next":{"title":"10.4 Detecting Document Load Events","level":"1.10.4","depth":2,"path":"handling-events/103-detecting-document-load-events.md","ref":"handling-events/103-detecting-document-load-events.md","articles":[]},"previous":{"title":"10.2 Responding to Events","level":"1.10.2","depth":2,"path":"handling-events/102-responding-to-events.md","ref":"handling-events/102-responding-to-events.md","articles":[]},"dir":"ltr"},"config":{"plugins":["exercises","quiz"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"quiz":{"labels":{"check":"Check my answers","showExplanation":"Explain","showCorrect":"Show all","explanationHeader":"Explanation"},"text":{"noChosen":"Choose at least one answer","incomplete":"Some correct answers are missing"},"buttons":{"showCorrect":true,"showExplanation":true}},"exercises":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"handling-events/104-custom-events.md","mtime":"2017-08-24T00:03:32.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-08-24T00:04:33.822Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook-plugin-exercises/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/ace.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/theme-tomorrow.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/ace/mode-javascript.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-exercises/exercises.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-quiz/script.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+
+    </body>
+</html>
+

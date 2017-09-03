@@ -200,7 +200,7 @@ A common concept in a code interpreter is a "pointer". A pointer is the indicati
 
 Visualizing the pointer moving through code can be a good way to better understand what's happening when you "run" a program. Here is a video illustration that demonstrates how the pointer moves through some example code.
 
-{% youtube src="https://www.youtube.com/watch?v=mMQ9XfKASKc" %}{% endyoutube %}
+{% youtube %}https://www.youtube.com/watch?v=mMQ9XfKASKc{% endyoutube %}
 
 ## Conclusion
 

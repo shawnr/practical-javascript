@@ -1,5 +1,5 @@
 {
-    "plugins": ["exercises","quiz"],
+    "plugins": ["exercises","quiz", "youtube"],
     "language": "en",
     "pluginsConfig": {
         "quiz": {

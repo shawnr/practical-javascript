@@ -1,5 +1,5 @@
 {
-    "plugins": ["exercises","quiz", "youtube"],
+    "plugins": ["exercises","quiz", "youtube", "responsive-iframes"],
     "language": "en",
     "pluginsConfig": {
         "quiz": {

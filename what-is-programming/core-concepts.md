@@ -192,6 +192,16 @@ while(counter < 100){
 
 In the example above, the `while` loop continues until the counter reaches a certain number. In other cases, a `while` loop may be watching for another value to change within the system, such as when a process has finished and data can be updated. In general, `while` loops are used less often and are seen as being a little more risky because it's possible to create situations where the `while` loop might run forever (which breaks our applications).
 
+## How Code is Interpreted
+
+All code is interpreted by some kind of system. That system reads through the code following specific rules and interpreting each line. Some common coding structures define code that does not run until it needs to be invoked. Other lines of code are executed at the moment they are read. 
+
+A common concept in a code interpreter is a "pointer". A pointer is the indication of where in the code the interpreter is reading at any given moment. The pointer indicates what line and character the interpreter is reading, and when the interpreter encounters an error it can report the position of the pointer to help us hone in on where the error might have happened.
+
+Visualizing the pointer moving through code can be a good way to better understand what's happening when you "run" a program. Here is a video illustration that demonstrates how the pointer moves through some example code.
+
+{% youtube src="https://www.youtube.com/watch?v=mMQ9XfKASKc" %}{% endyoutube %}
+
 ## Conclusion
 
 This is just a brief, general overview of some core concepts that tend to exist across programming languages. The rest of this book will go much deeper into the ways these concepts are expressed in JavaScript. 

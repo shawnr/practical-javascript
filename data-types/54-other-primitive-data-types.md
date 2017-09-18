@@ -19,7 +19,7 @@ The following example indicates how this could be used in code:
 
 ```js
 let foo;
-if (typeof(foo) === undefined) {
+if (typeof(foo) === 'undefined') {
     // Code here would execute because foo is undefined.
 }
 ```
@@ -35,7 +35,7 @@ Here's an example of using `null` in code. Imagine we are writing a system tryin
 
 ```js
 let currentUser;
-if (typeof(foo) === undefined) {
+if (typeof(foo) === 'undefined') {
     // This code executes because foo has not been assigned a value.
 }
 ```
@@ -43,15 +43,15 @@ Later on in our code, we might want to set the `currentUser` back to `null` to i
 
 ```js
 currentUser = null;
-if (typeof(foo) === undefined) {
+if (typeof(foo) === 'undefined') {
     // This code will not execute because currentUser is equal to null.
-} else if (typeof(foo) === null) {
+} else if (typeof(foo) === 'null') {
     // This code will execute.
     // Do something to login the user
 }
 
 ```
-Now, when we do the check against `undefined` it's `false` because `currentUser` has been defined as `null`. 
+Now, when we do the check against `'undefined'` it's `false` because `currentUser` has been defined as `'null'`. 
 
 It's common for developers to use `null` to represent missing data. Imagine an object that stores an address. We could picture that object with attributes for both "street address" and "street address line two". However, many people do not have an additional street address line to use in their addresses. In this case, the optional "street address line two" might be equal to `null` to represent that value is missing in a purposeful way.
 

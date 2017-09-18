@@ -139,7 +139,7 @@ Define a Class called `Book` with `title`, `author`, `numReviews`, and `totalSco
 let book1 = new Book('Slaughterhouse Five', 'Kurt Vonnegut Jr.');
 book1.review(4);
 book1.review(2);
-console.log(book.rating);
+console.log(book1.rating);
 
 {% solution %}
 class Book {

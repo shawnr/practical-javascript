@@ -45,12 +45,12 @@ let countryRoad = new Road(['east','west'], false);
         <explanation>The <code>constructor()</code> method is executed when we create a new instance of the <code>Road</code> class using the <code>new Road()</code> command.</explanation>
     </question>
     <question>
-        <p>What is <code>cityRoad.lanes</code> equal to?</p>
+        <p>What is <code>cityRoad.numLanes</code> equal to?</p>
         <answer><code>2</code></answer>
         <answer correct><code>4</code></answer>
         <answer><code>3</code></answer>
         <answer><code>0</code></answer>
-        <explanation>The value of <code>cityRoad.lanes</code> is <code>4</code>.</explanation>
+        <explanation>The value of <code>cityRoad.numLanes</code> is <code>4</code>.</explanation>
     </question>
     <question>
         <p>What is <code>countryRoad.sidewalk</code> equal to?</p>

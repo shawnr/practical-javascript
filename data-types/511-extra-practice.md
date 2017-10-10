@@ -49,8 +49,8 @@ let userRegistered = true;
         <p>What are <code>foo</code>, <code>bar</code>, and <code>baz</code> equal to?</p>
         <answer><code>0</code></answer>
         <answer><code>''</code></answer>
-        <answer undefined><code>null</code></answer>
-        <answer><code>undefined</code></answer>
+        <answer><code>null</code></answer>
+        <answer correct><code>undefined</code></answer>
         <explanation>The variables <code>foo</code>, <code>bar</code>, and <code>baz</code> are equal to <code>undefined</code> because they have been declared but not initialized.</explanation>
     </question>
     <question>

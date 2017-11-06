@@ -29,3 +29,6 @@ Each section of the book contains a Quiz. These quizzes are designed to allow yo
 ### Practice Some More
 Each section contains an Extra Practice page, which presents you with code examples and asks you questions about each example. You are encouraged to attempt to figure out the answers interpreting the code in your head, but each example has also been written so that it will run if copy/pasted into a JavaScript console. You are encouraged to dig into these practice problems to strengthen your understanding of core concepts and see more examples of how the code looks.
 
+## Acknowledgements
+Thanks to [Jiun Ting Wang](http://jiuntingwang.com/), who designed the cover for this book. Thanks to all of the students who have worked through this book, caught errors or tyops, and helped me become a better teacher.
+

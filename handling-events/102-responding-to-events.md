@@ -87,7 +87,7 @@ Preventing default behavior is as simple as including a single command in our ev
 ```js
 let myForm = document.querySelector('#registration-form');
 let pass1 = document.querySelector('input[name="pass1"]');
-let pass2 = document.querySelector('input[name="pass1"]');
+let pass2 = document.querySelector('input[name="pass2"]');
 let errorsParagraph = document.querySelector('p.errors');
 
 myForm.addEventListener('submit', function(event){
